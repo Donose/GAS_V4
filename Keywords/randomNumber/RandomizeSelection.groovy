@@ -31,24 +31,24 @@ public class generateNumber {
 	def selectPrio(){
 		int optionListLength = 4
 		Random rand = new Random()
-		int indexP = rand.nextInt(optionListLength + 1)
+		int indexP = rand.nextInt(optionListLength + 2)
 		WebUI.selectOptionByIndex(findTestObject('POR/select_priority'), indexP)
 	}
 	@Keyword
 	def selectSuperv(){
 		int optionListLength = 5
 		Random rand = new Random()
-		int indexS = rand.nextInt(optionListLength + 1)
+		int indexS = rand.nextInt(optionListLength + 2)
 		WebUI.selectOptionByIndex(findTestObject('POR/select_supervisor'), indexS)
 	}
 	@Keyword
 	def selectDepartment(){
 		int optionListLength = 12
 		Random rand = new Random()
-		int indexD = rand.nextInt(optionListLength + 1)
+		int indexD = rand.nextInt(optionListLength + 2)
 		WebUI.selectOptionByIndex(findTestObject('POR/select_department'), indexD)
 	}
-    def selectWh(){
+	def selectWh(){
 		String [] warehouse = new String [4]
 		warehouse[0]='Warehouse number 1'
 		warehouse[1]='Warehouse number 2'
@@ -67,26 +67,29 @@ public class generateNumber {
 		Robot press = new Robot()
 		press.keyPress(KeyEvent.VK_ENTER)
 		press.keyRelease(KeyEvent.VK_ENTER)
-		}
+	}
 	@Keyword
 	def selectMaterial(){
-		
+
 		WebUI.click(findTestObject('POR/span_Select material'))
-		WebUI.setText(findTestObject('POR/span_Select material'), 'Gaming_machine1')
+		WebUI.setText(findTestObject('POR/input_Select material'), 'Gaming')
+		Robot press2 = new Robot()
+		press2.keyPress(KeyEvent.VK_ENTER)
+		press2.keyRelease(KeyEvent.VK_ENTER)
 	}
 	def int createRandomIntBetween(int start, int end) {
 		return start + (int) Math.round(Math.random() * (end - start))
 	}
-	 def LocalDate createRandomDate(int startYear, int endYear) {
+	def LocalDate createRandomDate(int startYear, int endYear) {
 		int day = createRandomIntBetween(1, 28)
 		int month = createRandomIntBetween(1, 12)
 		int year = createRandomIntBetween(startYear, endYear)
 		return LocalDate.of(year, month, day)
 	}
-	@Keyword
+
+	@  Keyword
 	def inputDeadline(){
 		LocalDate randomDate = createRandomDate(2019, 2021)
 		WebUI.setText(findTestObject('POR/input_Deadline'), randomDate )
-		
 	}
 }
