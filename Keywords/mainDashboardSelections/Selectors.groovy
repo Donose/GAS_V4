@@ -24,6 +24,7 @@ public class Selectors {
 	def selectPOR(){
 		WebUI.click(findTestObject('MainDashboard/Nav_Menu_Top/a_Purchasing'))
 		WebUI.click(findTestObject('MainDashboard/Nav_Menu_Top/Purchasing/a_Add Purchase Requisition'), FailureHandling.STOP_ON_FAILURE)
+		WebUI.waitForElementVisible(findTestObject('POR_V2/Project Information/div_Project Information'), 5)
 	}
 	@Keyword
 	def selectOTmeeting(){
