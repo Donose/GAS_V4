@@ -71,7 +71,3 @@ def static "mainDashboardSelections.Selectors.selectAccaddMonetaryReq"() {
 def static "VerifySelection.verifyPrio"() {
     (new VerifySelection()).verifyPrio()
 }
-
-def static "randomNumber.RandomDropDownProjectInfo.randomPOR"() {
-    (new randomNumber.RandomDropDownProjectInfo()).randomPOR()
-}

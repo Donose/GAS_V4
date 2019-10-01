@@ -42,7 +42,7 @@ public class RandomDropDownProjectInfo {
 
 	def randomDepartment(){
 		int optionListLength = 12
-		Random rand = new Random()
+		Random rand = new Random()
 		int indexD = rand.nextInt(optionListLength )
 		WebUI.selectOptionByIndex(findTestObject('POR_V2/Project Information/select_Department'), indexD)
 	}
