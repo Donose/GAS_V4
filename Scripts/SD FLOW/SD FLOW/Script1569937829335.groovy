@@ -13,5 +13,11 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Login/LoginAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
+
 CustomKeywords.'mainDashboardSelections.Selectors.selectSDMeeting'()
+
+WebUI.selectOptionByLabel(findTestObject('ME/select_me_prio'), 'High', false)
+
+WebUI.setText(findTestObject('ME/input_Company name'), 'COMPANY TEST', FailureHandling.STOP_ON_FAILURE)
 
