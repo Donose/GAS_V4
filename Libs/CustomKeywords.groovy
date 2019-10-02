@@ -4,6 +4,10 @@
  */
 
 
+def static "dates.CurrentDate.date"() {
+    (new dates.CurrentDate()).date()
+}
+
 def static "mainDashboardSelections.Selectors.selectPOR"() {
     (new mainDashboardSelections.Selectors()).selectPOR()
 }
@@ -70,4 +74,8 @@ def static "mainDashboardSelections.Selectors.selectAccaddMonetaryReq"() {
 
 def static "VerifySelection.verifyPrio"() {
     (new VerifySelection()).verifyPrio()
+}
+
+def static "randomNumber.RandomDropDownProjectInfo.randomPOR"() {
+    (new randomNumber.RandomDropDownProjectInfo()).randomPOR()
 }

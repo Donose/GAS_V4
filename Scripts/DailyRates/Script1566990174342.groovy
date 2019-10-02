@@ -15,11 +15,11 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'mainDashboardSelections.Selectors.selectAccDailyRates'()
 
-WebUI.setText(findTestObject('DailyRates/input_RON'), '4.7655')
+WebUI.setText(findTestObject('DailyRates/input_RON'), '2')
 
-WebUI.setText(findTestObject('DailyRates/input_BGN'), '1.3177')
+WebUI.setText(findTestObject('DailyRates/input_BGN'), '3')
 
-WebUI.setText(findTestObject('DailyRates/input_USD'), '1.4387')
+WebUI.setText(findTestObject('DailyRates/input_USD'), '4')
 
 WebUI.click(findTestObject('DailyRates/input_Save'))
 

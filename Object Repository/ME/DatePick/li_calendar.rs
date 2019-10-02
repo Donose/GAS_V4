@@ -3,7 +3,7 @@
    <description></description>
    <name>li_calendar</name>
    <tag></tag>
-   <elementGuidId>5ecfe0e2-3e7f-48a0-a1f1-5b146a63e23b</elementGuidId>
+   <elementGuidId>24024705-011f-4f1c-8ac5-fc72529e7cd9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>

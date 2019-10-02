@@ -14,7 +14,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\DANIEL~1.DON\\AppData\\Local\\Temp\\Katalon\\Test Cases\\SD FLOW\\SD FLOW\\20191001_174911\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\DANIEL~1.DON\\AppData\\Local\\Temp\\Katalon\\Test Cases\\DatePicker_by_sendKey\\20191002_154555\\execution.properties')
 
 TestCaseMain.beforeStart()
 
@@ -34,13 +34,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-not_run: WebUI.callTestCase(findTestCase('Login/LoginAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'dates.CurrentDate.date'()
 
-not_run: CustomKeywords.'mainDashboardSelections.Selectors.selectSDMeeting'()
-
-WebUI.selectOptionByLabel(findTestObject('ME/select_me_prio'), 'High', false)
-
-WebUI.selectOptionByValue(findTestObject('ME/input_Company name'), 'COMPANY TEST', false)
-
-''', 'Test Cases/SD FLOW/SD FLOW', new TestCaseBinding('Test Cases/SD FLOW/SD FLOW',[:]), FailureHandling.STOP_ON_FAILURE , false)
+''', 'Test Cases/DatePicker_by_sendKey', new TestCaseBinding('Test Cases/DatePicker_by_sendKey',[:]), FailureHandling.STOP_ON_FAILURE , false)
     
