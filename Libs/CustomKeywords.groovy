@@ -82,6 +82,10 @@ def static "outputExcel.MeetingOutput.write"(
          , 	Column_Name)
 }
 
+def static "checkers.TextCheckOF.checkMyTxt"() {
+    (new checkers.TextCheckOF()).checkMyTxt()
+}
+
 def static "VerifySelection.verifyPrio"() {
     (new VerifySelection()).verifyPrio()
 }

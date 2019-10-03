@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Offer</name>
+   <name>button_OF1</name>
    <tag></tag>
    <elementGuidId>721af842-613a-4eb8-ace7-bf7f6c93e015</elementGuidId>
    <selectorCollection>
