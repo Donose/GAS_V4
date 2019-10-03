@@ -3,6 +3,8 @@
  * This class is generated automatically by Katalon Studio and should not be modified or deleted.
  */
 
+import java.lang.String
+
 
 def static "dates.CurrentDate.date"() {
     (new dates.CurrentDate()).date()
@@ -70,6 +72,14 @@ def static "mainDashboardSelections.Selectors.selectAccaddCashReq"() {
 
 def static "mainDashboardSelections.Selectors.selectAccaddMonetaryReq"() {
     (new mainDashboardSelections.Selectors()).selectAccaddMonetaryReq()
+}
+
+def static "outputExcel.MeetingOutput.write"(
+    	String name	
+     , 	String Column_Name	) {
+    (new outputExcel.MeetingOutput()).write(
+        	name
+         , 	Column_Name)
 }
 
 def static "VerifySelection.verifyPrio"() {

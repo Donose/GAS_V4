@@ -14,7 +14,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\DANIEL~1.DON\\AppData\\Local\\Temp\\Katalon\\Test Cases\\DatePicker_by_sendKey\\20191002_154555\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\DANIEL~1.DON\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Linkers\\ME to SO\\20191003_153126\\execution.properties')
 
 TestCaseMain.beforeStart()
 
@@ -34,7 +34,10 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'dates.CurrentDate.date'()
+if (WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME'), 'From ' + findTestData('Test Data').getValue(
+        1, 1)) == true) {
+    WebUI.click(findTestObject('Link Processes/ME to SO/button_Offer'))
+}
 
-''', 'Test Cases/DatePicker_by_sendKey', new TestCaseBinding('Test Cases/DatePicker_by_sendKey',[:]), FailureHandling.STOP_ON_FAILURE , false)
+''', 'Test Cases/Linkers/ME to SO', new TestCaseBinding('Test Cases/Linkers/ME to SO',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

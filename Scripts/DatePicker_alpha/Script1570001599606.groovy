@@ -21,8 +21,6 @@ println('Current month count of dates: ' + monthMaxDays)
 
 int day = c.get(Calendar.DATE)
 
-CustomKeywords.'mainDashboardSelections.Selectors.selectAccaddCashReq'()
-
 int validDays = monthMaxDays - day
 
 println('Valid calendar days in month: ' + validDays)

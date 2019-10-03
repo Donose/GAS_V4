@@ -1,4 +1,25 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import com.kms.katalon.core.main.TestCaseMain
+import com.kms.katalon.core.logging.KeywordLogger
+import com.kms.katalon.core.testcase.TestCaseBinding
+import com.kms.katalon.core.driver.internal.DriverCleanerCollector
+import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.webui.contribution.WebUiDriverCleaner
+import com.kms.katalon.core.mobile.contribution.MobileDriverCleaner
+import com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner
+
+
+DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.webui.contribution.WebUiDriverCleaner())
+DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.mobile.contribution.MobileDriverCleaner())
+DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
+
+
+RunConfiguration.setExecutionSettingFile('C:\\Users\\DANIEL~1.DON\\AppData\\Local\\Temp\\Katalon\\Test Cases\\SD FLOW\\SD FLOW_Meeting_AndRent\\20191003_153000\\execution.properties')
+
+TestCaseMain.beforeStart()
+
+        TestCaseMain.runTestCaseRawScript(
+'''import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -14,7 +35,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Login/LoginAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.callTestCase(findTestCase('Login/LoginAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'mainDashboardSelections.Selectors.selectSDMeeting'()
 
@@ -44,7 +65,7 @@ WebUI.selectOptionByIndex(findTestObject('ME/select_Opportunity'), 1, FailureHan
 
 WebUI.selectOptionByIndex(findTestObject('ME/select_Purpose'), 1, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('DatePicker_alpha'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('DatePicker_by_sendKey'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('ME/Client Products/span_Client interested in products'), 5)
 
@@ -58,7 +79,25 @@ WebUI.sendKeys(findTestObject('ME/Client Products/input_Materials'), Keys.chord(
 
 WebUI.selectOptionByIndex(findTestObject('ME/Client Products/select_DealTypeForMaterial'), 1)
 
+WebUI.click(findTestObject('ME/Client Products/button_AddMaterial'))
+
+WebUI.setText(findTestObject('ME/Client Products/input_Quantty_rent'), '2')
+
+WebUI.click(findTestObject('ME/Client Products/span_Select materialRent'))
+
+WebUI.setText(findTestObject('ME/Client Products/input_Select materialRent'), 'Gaming_machine1')
+
+WebUI.sendKeys(findTestObject('ME/Client Products/input_Select materialRent'), Keys.chord(Keys.ENTER))
+
+WebUI.selectOptionByIndex(findTestObject('ME/Client Products/select_DealTypeForMaterial'), 2)
+
 WebUI.click(findTestObject('ME/button_Create Offer'))
 
-WebUI.getText(findTestObject('Notifications/ME-OF/div_Meeting ME'))
+String Meeting = WebUI.getText(findTestObject('Notifications/ME-OF/div_Meeting ME')).substring(8, 14)
 
+CustomKeywords.'outputExcel.MeetingOutput.write'(Meeting, 'Meeting')
+
+System.out.println(Meeting)
+
+''', 'Test Cases/SD FLOW/SD FLOW_Meeting_AndRent', new TestCaseBinding('Test Cases/SD FLOW/SD FLOW_Meeting_AndRent',[:]), FailureHandling.STOP_ON_FAILURE , false)
+    
