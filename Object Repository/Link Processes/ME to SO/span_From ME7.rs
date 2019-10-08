@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>//div[@id='mainData']/table/tbody/tr[8]/td/div/span</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;mainData&quot;)/table[@class=&quot;table table-bordered table-striped&quot;]/tbody[1]/tr[7]/td[1]/div[@class=&quot;btn-group-xs pull-center&quot;]/span[1][count(. | //*[(contains(text(), 'From ME') or contains(., 'From ME'))]) = count(//*[(contains(text(), 'From ME') or contains(., 'From ME'))])]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -28,17 +32,17 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>From ME-401</value>
+      <value>From ME</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;mainData&quot;)/table[@class=&quot;table table-bordered table-striped&quot;]/tbody[1]/tr[8]/td[1]/div[@class=&quot;btn-group-xs pull-center&quot;]/span[1]</value>
+      <value>id(&quot;mainData&quot;)/table[@class=&quot;table table-bordered table-striped&quot;]/tbody[1]/tr[7]/td[1]/div[@class=&quot;btn-group-xs pull-center&quot;]/span[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -80,6 +84,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[8]/td/div/span</value>
+      <value>//tr[7]/td/div/span</value>
    </webElementXpaths>
 </WebElementEntity>

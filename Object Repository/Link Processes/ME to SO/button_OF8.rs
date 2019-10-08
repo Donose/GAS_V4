@@ -11,11 +11,11 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>id(&quot;mainData&quot;)/table[@class=&quot;table table-bordered table-striped&quot;]/tbody[1]/tr[8]/td[1]/div[@class=&quot;btn-group-xs pull-center&quot;]/button[@class=&quot;btn btn-info pull-center&quot;][count(. | //*[@type = 'button' and (text() = '
-                            OF' or . = '
-                            OF')]) = count(//*[@type = 'button' and (text() = '
-                            OF' or . = '
-                            OF')])]</value>
+         <value>id(&quot;mainData&quot;)/table[@class=&quot;table table-bordered table-striped&quot;]/tbody[1]/tr[8]/td[1]/div[@class=&quot;btn-group-xs pull-center&quot;]/button[@class=&quot;btn btn-info pull-center&quot;][count(. | //*[@type = 'button' and (contains(text(), '
+                            OF') or contains(., '
+                            OF'))]) = count(//*[@type = 'button' and (contains(text(), '
+                            OF') or contains(., '
+                            OF'))])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -57,7 +57,7 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>

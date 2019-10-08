@@ -13,3 +13,17 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.click(findTestObject('Link Processes/ME to SO/button_OF1'))
+
+WebUI.click(findTestObject('SO/Status Open/input_Sale Offer_Open'))
+
+WebUI.rightClick(findTestObject('POR_V2/Content Information/input_Deadline'))
+
+CustomKeywords.'checkers.TextCheckOF.checkMyTxt'()
+
+WebUI.acceptAlert()
+
+CustomKeywords.'com.kms.katalon.keyword.datetime.DateTimeUtility.formatStringDate'('', '', '')
+
+WebUI.sendKeys(findTestObject('POR_V2/Content Information/input_Deadline'), '2019-10-08')
+

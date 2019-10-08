@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>//div[@id='mainData']/table/tbody/tr[2]/td/div/span</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;mainData&quot;)/table[@class=&quot;table table-bordered table-striped&quot;]/tbody[1]/tr[2]/td[1]/div[@class=&quot;btn-group-xs pull-center&quot;]/span[1][count(. | //*[(contains(text(), 'From ME') or contains(., 'From ME'))]) = count(//*[(contains(text(), 'From ME') or contains(., 'From ME'))])]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -28,13 +32,13 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>From ME-406</value>
+      <value>From ME</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

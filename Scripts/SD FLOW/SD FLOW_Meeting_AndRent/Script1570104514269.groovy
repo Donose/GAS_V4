@@ -44,7 +44,7 @@ WebUI.selectOptionByIndex(findTestObject('ME/select_Opportunity'), 1, FailureHan
 
 WebUI.selectOptionByIndex(findTestObject('ME/select_Purpose'), 1, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('DatePicker_by_sendKey'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('ME/Client Products/span_Client interested in products'), 5)
 

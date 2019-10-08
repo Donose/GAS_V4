@@ -5,10 +5,8 @@
 
 import java.lang.String
 
+import com.kms.katalon.core.testobject.TestObject
 
-def static "dates.CurrentDate.date"() {
-    (new dates.CurrentDate()).date()
-}
 
 def static "mainDashboardSelections.Selectors.selectPOR"() {
     (new mainDashboardSelections.Selectors()).selectPOR()
@@ -82,8 +80,32 @@ def static "outputExcel.MeetingOutput.write"(
          , 	Column_Name)
 }
 
+def static "dates.DatePicker.handleDatepicker"(
+    	TestObject calender	
+     , 	String exp_Date	
+     , 	String exp_Month	
+     , 	String exp_Year	) {
+    (new dates.DatePicker()).handleDatepicker(
+        	calender
+         , 	exp_Date
+         , 	exp_Month
+         , 	exp_Year)
+}
+
 def static "checkers.TextCheckOF.checkMyTxt"() {
     (new checkers.TextCheckOF()).checkMyTxt()
+}
+
+def static "dates.DateGenerate.date"() {
+    (new dates.DateGenerate()).date()
+}
+
+def static "dates.DateGenerate.dateWeek"() {
+    (new dates.DateGenerate()).dateWeek()
+}
+
+def static "dates.DateGenerate.dateWeekAgo"() {
+    (new dates.DateGenerate()).dateWeekAgo()
 }
 
 def static "VerifySelection.verifyPrio"() {

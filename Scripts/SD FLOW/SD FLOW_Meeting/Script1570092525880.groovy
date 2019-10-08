@@ -16,6 +16,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login/LoginAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
 
+//for (int i = 0; i = 20; i++) {
+WebUI.waitForElementPresent(findTestObject('MainDashboard/Nav_Menu_Top/a_SD'), 10)
+
 CustomKeywords.'mainDashboardSelections.Selectors.selectSDMeeting'()
 
 WebUI.delay(10)
@@ -44,7 +47,9 @@ WebUI.selectOptionByIndex(findTestObject('ME/select_Opportunity'), 1, FailureHan
 
 WebUI.selectOptionByIndex(findTestObject('ME/select_Purpose'), 1, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('DatePicker_by_sendKey'), [:], FailureHandling.STOP_ON_FAILURE)
+String date = CustomKeywords.'dates.DateGenerate.dateWeek'()
+
+WebUI.setText(findTestObject('Object Repository/ME/DatePick/input_Meeting date'), date, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('ME/Client Products/span_Client interested in products'), 5)
 
@@ -60,8 +65,11 @@ WebUI.selectOptionByIndex(findTestObject('ME/Client Products/select_DealTypeForM
 
 WebUI.click(findTestObject('ME/button_Create Offer'))
 
-String Meeting = WebUI.getText(findTestObject('Notifications/ME-OF/div_Meeting ME')).substring(8,14)
+String Meeting = WebUI.getText(findTestObject('Notifications/ME-OF/div_Meeting ME')).substring(8, 14)
 
-CustomKeywords.'outputExcel.MeetingOutput.write'(Meeting,'Meeting')
+CustomKeywords.'outputExcel.MeetingOutput.write'(Meeting, 'Meeting')
 
 System.out.println(Meeting)
+
+WebUI.delay(5)
+

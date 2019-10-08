@@ -13,9 +13,19 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'mainDashboardSelections.Selectors.selectPMcheckPrice'()
+CustomKeywords.'mainDashboardSelections.Selectors.selectPOR'()
 
 CustomKeywords.'randomNumber.RandomDropDownProjectInfo.randomPOR'()
 
-WebUI.setText(findTestObject('POR_V2/Content Information/Materials/span_Select material'), 'raw_currency2')
+WebUI.click(findTestObject('POR_V2/Content Information/Materials/span_Select material'))
+
+WebUI.setText(findTestObject('POR_V2/Content Information/Materials/input_Select material'), findTestData('POR Test data').getValue(
+        1, 6))
+
+WebUI.selectOptionByLabel(findTestObject('POR_V2/Content Information/select_Warehous'), findTestData('POR Test data').getValue(
+        2, 1), false)
+
+WebUI.selectOptionByLabel(findTestObject('POR_V2/Content Information/input_Deadline'), '2019-10-04', false)
+
+WebUI.verifyElementText(findTestObject('SO/Status Open/input_Sale Offer_Cancel'), '', FailureHandling.CONTINUE_ON_FAILURE)
 

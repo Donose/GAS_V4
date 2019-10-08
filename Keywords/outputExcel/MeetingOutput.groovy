@@ -39,20 +39,19 @@ public class MeetingOutput{
 
 	@Keyword
 	public static void write(String name,String Column_Name) throws IOException{
-		FileInputStream fis = new FileInputStream("C:\\Users\\daniel.donose\\git\\GAS_AUTOMATION\\Data Files\\processes.xlsx");
-		XSSFWorkbook workbook = new XSSFWorkbook(fis);
-		XSSFSheet sheet = workbook.getSheet("data");
-		int rowCount = i;
+		FileInputStream fis = new FileInputStream("C:\\Users\\daniel.donose\\git\\GAS_AUTOMATION\\Data Files\\processes.xlsx")
+		XSSFWorkbook workbook = new XSSFWorkbook(fis)
+		XSSFSheet sheet = workbook.getSheet("data")
+		int rowCount = i
 		if (Column_Name=='Meeting'){
-			Row row = sheet.getRow(rowCount+1);
-			Cell cell = row.createCell(0,0);
-			cell.setCellType(cell.CELL_TYPE_STRING);
-			cell.setCellValue(name);
+			Row row = sheet.getRow(rowCount+1)
+			Cell cell = row.createCell(0,0)
+			cell.setCellType(cell.CELL_TYPE_STRING)
+			cell.setCellValue(name)
 		}
 
-
-		FileOutputStream fos = new FileOutputStream("C:\\Users\\daniel.donose\\git\\GAS_AUTOMATION\\Data Files\\processes.xlsx");
-		workbook.write(fos);
-		fos.close();
+        FileOutputStream fos = new FileOutputStream("C:\\Users\\daniel.donose\\git\\GAS_AUTOMATION\\Data Files\\processes.xlsx")
+		workbook.write(fos)
+		fos.close()
 	}
 }

@@ -22,8 +22,72 @@ public class TextCheckOF {
 
 	@Keyword
 	def checkMyTxt(){
-		
-		
 
- }
+
+		if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME1'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF1'))
+		}else if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME2'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF2'))
+		} else if (WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME3'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF3'))
+		}else if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME4'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF4'))
+		}else if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME5'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF5'))
+		} else if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME6'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF6'))
+		}else if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME7'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF7'))
+		}else if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME8'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF8'))
+		}else if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME9'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF9'))
+		} else if (WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME10'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF10'))
+		}else if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME11'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF11'))
+		}else if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME12'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF12'))
+		} else if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME13'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF13'))
+		}else if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME14'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF14'))
+		}else if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME15'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF15'))
+		}else if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME16'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF16'))
+		} else if (WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME17'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF17'))
+		}else if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME18'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF18'))
+		}else if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME19'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF19'))
+		} else if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME20'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF20'))
+		}else if ( WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME21'), 'From ' + findTestData('Test Data').getValue(
+		1, 1),FailureHandling.OPTIONAL) == true){
+			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF21'))
+		}
+		
+	}
 }

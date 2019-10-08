@@ -31,7 +31,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control input-sm ng-pristine ng-valid input-required ng-empty ng-valid-date ng-touched</value>
+      <value>form-control input-sm ng-pristine ng-untouched ng-valid input-required ng-empty ng-valid-date</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,9 +57,30 @@
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>ng-keypress</name>
+      <type>Main</type>
+      <value>$event.preventDefault()</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-keydown</name>
+      <type>Main</type>
+      <value>$event.preventDefault()</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>is-open</name>
       <type>Main</type>
       <value>openedDates['deadline']</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>min-date</name>
+      <type>Main</type>
+      <value>currentDate</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -73,14 +94,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[@class=&quot;k-webkit k-webkit76&quot;]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;modal fade in&quot;]/div[@class=&quot;modal-dialog modal-offer&quot;]/div[@class=&quot;modal-content&quot;]/form[@class=&quot;ng-valid ng-valid-date ng-dirty ng-valid-parse&quot;]/div[@class=&quot;treeGroups&quot;]/div[3]/div[@class=&quot;field-group&quot;]/table[1]/tbody[1]/tr[6]/td[@class=&quot;col-sm-7&quot;]/div[1]/div[1]/input[@class=&quot;form-control input-sm ng-pristine ng-valid input-required ng-empty ng-valid-date ng-touched&quot;]</value>
+      <value>/html[@class=&quot;k-webkit k-webkit77&quot;]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;modal fade in&quot;]/div[@class=&quot;modal-dialog modal-offer&quot;]/div[@class=&quot;modal-content&quot;]/form[@class=&quot;ng-pristine ng-valid ng-valid-date&quot;]/div[@class=&quot;treeGroups&quot;]/div[3]/div[@class=&quot;field-group&quot;]/table[1]/tbody[1]/tr[6]/td[@class=&quot;col-sm-7&quot;]/div[1]/div[1]/input[@class=&quot;form-control input-sm ng-pristine ng-untouched ng-valid input-required ng-empty ng-valid-date&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//input[@type='text'])[19]</value>
+      <value>(//input[@type='text'])[18]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

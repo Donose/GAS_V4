@@ -23,3 +23,5 @@ WebUI.setText(findTestObject('Login/input_password'), '11111sase')
 
 WebUI.click(findTestObject('Login/button_Login'))
 
+not_run: WebUI.callTestCase(findTestCase('DailyRates'), [:], FailureHandling.STOP_ON_FAILURE)
+
