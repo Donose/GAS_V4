@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Sale Offer_Client</name>
+   <name>input_Sale Offer_director</name>
    <tag></tag>
-   <elementGuidId>aebe8fc8-1b20-48bf-8c45-f766ca8def0d</elementGuidId>
+   <elementGuidId>85c2321e-8a89-4ee5-bf8e-66dc216dc2ce</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -66,7 +66,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[@class=&quot;k-webkit k-webkit77&quot;]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;modal fade in&quot;]/div[@class=&quot;modal-dialog modal-offer&quot;]/div[@class=&quot;modal-content&quot;]/form[@class=&quot;ng-valid ng-dirty ng-valid-parse&quot;]/div[@class=&quot;treeGroups&quot;]/div[@class=&quot;addCompany&quot;]/div[1]/div[1]/input[@class=&quot;btn-success input-sm&quot;]</value>
+      <value>/html[@class=&quot;k-webkit k-webkit77&quot;]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;modal fade in&quot;]/div[@class=&quot;modal-dialog modal-offer&quot;]/div[@class=&quot;modal-content&quot;]/form[@class=&quot;ng-valid ng-valid-date ng-dirty ng-valid-parse&quot;]/div[@class=&quot;treeGroups&quot;]/div[@class=&quot;addCompany&quot;]/div[1]/div[1]/input[@class=&quot;btn-success input-sm&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

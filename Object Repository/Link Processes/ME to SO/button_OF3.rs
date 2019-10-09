@@ -6,16 +6,12 @@
    <elementGuidId>66c75808-b914-4aac-92c9-4c84f2e71381</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[86]</value>
+         <key>BASIC</key>
+         <value>id(&quot;mainData&quot;)/table[@class=&quot;table table-bordered table-striped&quot;]/tbody[1]/tr[3]/td[1]/div[@class=&quot;btn-group-xs pull-center&quot;]/button[@class=&quot;btn btn-info pull-center&quot;][count(. | //*[@type = 'button' and (contains(text(), 'OF') or contains(., 'OF'))]) = count(//*[@type = 'button' and (contains(text(), 'OF') or contains(., 'OF'))])]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>id(&quot;mainData&quot;)/table[@class=&quot;table table-bordered table-striped&quot;]/tbody[1]/tr[3]/td[1]/div[@class=&quot;btn-group-xs pull-center&quot;]/button[@class=&quot;btn btn-info pull-center&quot;][count(. | //*[@type = 'button' and (contains(text(), '
-                            OF') or contains(., '
-                            OF'))]) = count(//*[@type = 'button' and (contains(text(), '
-                            OF') or contains(., '
-                            OF'))])]</value>
+         <key>XPATH</key>
+         <value>(//button[@type='button'])[86]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -60,8 +56,7 @@
       <matchCondition>contains</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>
-                            OF</value>
+      <value>OF</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

@@ -15,5 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'checkers.TextCheckOF.checkMyTxt'()
 
+WebUI.delay(2)
+
 WebUI.click(findTestObject('SO/Status Archiving/input_Sale_Offer_Close'))
 
