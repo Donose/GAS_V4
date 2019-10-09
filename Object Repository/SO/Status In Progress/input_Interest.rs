@@ -73,7 +73,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[@class=&quot;k-webkit k-webkit77&quot;]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;modal fade in&quot;]/div[@class=&quot;modal-dialog modal-offer&quot;]/div[@class=&quot;modal-content&quot;]/form[@class=&quot;ng-valid ng-dirty ng-valid-parse ng-valid-date&quot;]/div[4]/div[1]/div[@class=&quot;addCompany&quot;]/table[1]/tbody[1]/tr[9]/td[@class=&quot;col-sm-2&quot;]/input[@class=&quot;form-control input-sm text-center ng-pristine ng-untouched ng-valid input-free ng-empty&quot;]</value>
+      <value>/html[@class=&quot;k-webkit k-webkit77&quot;]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;modal fade in&quot;]/div[@class=&quot;modal-dialog modal-offer&quot;]/div[@class=&quot;modal-content&quot;]/form[@class=&quot;ng-valid ng-valid-date ng-dirty ng-valid-parse&quot;]/div[4]/div[1]/div[@class=&quot;addCompany&quot;]/table[1]/tbody[1]/tr[9]/td[@class=&quot;col-sm-2&quot;]/input[@class=&quot;form-control input-sm text-center ng-pristine ng-untouched ng-valid input-free ng-empty&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

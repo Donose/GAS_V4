@@ -43,14 +43,13 @@ import com.kms.katalon.core.testobject.TestObjectProperty
 
 import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
 import com.kms.katalon.core.util.KeywordUtil
-import java.text.SimpleDateFormat
 import org.codehaus.groovy.runtime.*;
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 
 class DateGenerate {
-    @Keyword
+	@Keyword
 	def date(){
 		System.currentTimeMillis()
 		Date date = new Date()
@@ -61,16 +60,16 @@ class DateGenerate {
 	@Keyword
 	def dateWeek(){
 		System.currentTimeMillis()
-		Date date = new Date().plus(7)
-		String formatdateFuture = date.format('yyyy-MM-dd')
+		Date dateFuture = new Date().plus(7)
+		String formatdateFuture = dateFuture.format('yyyy-MM-dd')
 		return formatdateFuture
 	}
 
 	@Keyword
 	def dateWeekAgo(){
 		System.currentTimeMillis()
-		Date date = new Date().plus(-7)
-		String formatdateAgo = date.format('yyyy-MM-dd')
+		Date datePast = new Date().plus(-7)
+		String formatdateAgo = datePast.format('yyyy-MM-dd')
 		return formatdateAgo
 	}
 }

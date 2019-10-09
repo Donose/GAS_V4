@@ -50,7 +50,25 @@ public class MeetingOutput{
 			cell.setCellValue(name)
 		}
 
-        FileOutputStream fos = new FileOutputStream("C:\\Users\\daniel.donose\\git\\GAS_AUTOMATION\\Data Files\\processes.xlsx")
+		FileOutputStream fos = new FileOutputStream("C:\\Users\\daniel.donose\\git\\GAS_AUTOMATION\\Data Files\\processes.xlsx")
+		workbook.write(fos)
+		fos.close()
+	}
+
+	@Keyword
+	public static void writeCT(String name,String Column_Name) throws IOException{
+		FileInputStream fis = new FileInputStream("C:\\Users\\daniel.donose\\git\\GAS_AUTOMATION\\Data Files\\processes.xlsx")
+		XSSFWorkbook workbook = new XSSFWorkbook(fis)
+		XSSFSheet sheet = workbook.getSheet("data")
+		int rowCount = i
+		if (Column_Name=='Contract'){
+			Row row = sheet.getRow(rowCount+1)
+			Cell cell = row.createCell(0,2)
+			cell.setCellType(cell.CELL_TYPE_STRING)
+			cell.setCellValue(name)
+		}
+
+		FileOutputStream fos = new FileOutputStream("C:\\Users\\daniel.donose\\git\\GAS_AUTOMATION\\Data Files\\processes.xlsx")
 		workbook.write(fos)
 		fos.close()
 	}

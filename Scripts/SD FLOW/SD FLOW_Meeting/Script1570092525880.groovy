@@ -14,8 +14,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Login/LoginAdmin'), [:], FailureHandling.STOP_ON_FAILURE)
-
 //for (int i = 0; i = 20; i++) {
 WebUI.waitForElementPresent(findTestObject('MainDashboard/Nav_Menu_Top/a_SD'), 10)
 
@@ -47,9 +45,9 @@ WebUI.selectOptionByIndex(findTestObject('ME/select_Opportunity'), 1, FailureHan
 
 WebUI.selectOptionByIndex(findTestObject('ME/select_Purpose'), 1, FailureHandling.STOP_ON_FAILURE)
 
-String date = CustomKeywords.'dates.DateGenerate.dateWeek'()
+String dateCurrent = CustomKeywords.'dates.DateGenerate.date'()
 
-WebUI.setText(findTestObject('Object Repository/ME/DatePick/input_Meeting date'), date, FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Object Repository/ME/DatePick/input_Meeting date'), dateCurrent, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('ME/Client Products/span_Client interested in products'), 5)
 
@@ -63,6 +61,10 @@ WebUI.sendKeys(findTestObject('ME/Client Products/input_Materials'), Keys.chord(
 
 WebUI.selectOptionByIndex(findTestObject('ME/Client Products/select_DealTypeForMaterial'), 1)
 
+String dateFuture = CustomKeywords.'dates.DateGenerate.dateWeek'()
+
+not_run: WebUI.setText(findTestObject('ME/Client Products/input_Prefer Delivery Date'), dateFuture)
+
 WebUI.click(findTestObject('ME/button_Create Offer'))
 
 String Meeting = WebUI.getText(findTestObject('Notifications/ME-OF/div_Meeting ME')).substring(8, 14)
@@ -72,6 +74,4 @@ CustomKeywords.'outputExcel.MeetingOutput.write'(Meeting, 'Meeting')
 System.out.println(Meeting)
 
 WebUI.delay(5)
-
-CustomKeywords.'checkers.TextCheckOF.checkMyTxt'()
 

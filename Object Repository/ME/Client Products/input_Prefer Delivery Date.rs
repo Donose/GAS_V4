@@ -6,6 +6,10 @@
    <elementGuidId>64e54865-924f-481b-97da-e3a1d309fc3e</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>id(&quot;mainData&quot;)/div[1]/div[@class=&quot;row-fluid&quot;]/div[@class=&quot;row-fluid&quot;]/ng-include[1]/form[@class=&quot;ng-dirty ng-valid-parse ng-valid ng-valid-date ng-valid-date-disabled&quot;]/div[@class=&quot;treeGroups&quot;]/div[5]/div[@class=&quot;addCompany&quot;]/table[3]/tbody[1]/tr[2]/td[4]/input[@class=&quot;form-control input-sm col-off-2 input-free ng-touched ng-dirty ng-empty ng-valid ng-valid-date&quot;][count(. | //input[@type = 'text']) = count(//input[@type = 'text'])]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>(//input[@type='text'])[9]</value>
       </entry>
@@ -73,28 +77,28 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control input-sm col-off-2 input-free ng-touched ng-dirty ng-empty ng-valid ng-valid-date</value>
+      <value>form-control input-sm col-off-2 ng-pristine ng-valid input-free ng-empty ng-valid-date ng-touched</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;mainData&quot;)/div[1]/div[@class=&quot;row-fluid&quot;]/div[@class=&quot;row-fluid&quot;]/ng-include[1]/form[@class=&quot;ng-dirty ng-valid-parse ng-valid ng-valid-date ng-valid-date-disabled&quot;]/div[@class=&quot;treeGroups&quot;]/div[5]/div[@class=&quot;addCompany&quot;]/table[3]/tbody[1]/tr[2]/td[4]/input[@class=&quot;form-control input-sm col-off-2 input-free ng-touched ng-dirty ng-empty ng-valid ng-valid-date&quot;]</value>
+      <value>id(&quot;mainData&quot;)/div[1]/div[@class=&quot;row-fluid&quot;]/div[@class=&quot;row-fluid&quot;]/ng-include[1]/form[@class=&quot;ng-valid ng-valid-date ng-dirty ng-valid-parse ng-valid-date-disabled&quot;]/div[@class=&quot;treeGroups&quot;]/div[5]/div[@class=&quot;addCompany&quot;]/table[2]/tbody[1]/tr[2]/td[4]/input[@class=&quot;form-control input-sm col-off-2 ng-pristine ng-valid input-free ng-empty ng-valid-date ng-touched&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//input[@type='text'])[9]</value>
+      <value>(//input[@type='text'])[8]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='mainData']/div/div/div[2]/ng-include/form/div/div[5]/div/table[3]/tbody/tr[2]/td[4]/input</value>
+      <value>//div[@id='mainData']/div/div/div[2]/ng-include/form/div/div[5]/div/table[2]/tbody/tr[2]/td[4]/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -108,7 +112,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Accessory Total'])[1]/following::input[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Product Total'])[1]/following::input[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

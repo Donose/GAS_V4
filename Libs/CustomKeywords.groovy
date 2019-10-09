@@ -80,6 +80,14 @@ def static "outputExcel.MeetingOutput.write"(
          , 	Column_Name)
 }
 
+def static "outputExcel.MeetingOutput.writeCT"(
+    	String name	
+     , 	String Column_Name	) {
+    (new outputExcel.MeetingOutput()).writeCT(
+        	name
+         , 	Column_Name)
+}
+
 def static "dates.DatePicker.handleDatepicker"(
     	TestObject calender	
      , 	String exp_Date	
@@ -90,6 +98,30 @@ def static "dates.DatePicker.handleDatepicker"(
          , 	exp_Date
          , 	exp_Month
          , 	exp_Year)
+}
+
+def static "checkers.RadioButton.OwnCompany"() {
+    (new checkers.RadioButton()).OwnCompany()
+}
+
+def static "checkers.RadioButton.ClientCompanies"() {
+    (new checkers.RadioButton()).ClientCompanies()
+}
+
+def static "checkers.RadioButton.Office"() {
+    (new checkers.RadioButton()).Office()
+}
+
+def static "checkers.RadioButton.Gaming"() {
+    (new checkers.RadioButton()).Gaming()
+}
+
+def static "checkers.RadioButton.Warehouse"() {
+    (new checkers.RadioButton()).Warehouse()
+}
+
+def static "checkers.RadioButton.BetShop"() {
+    (new checkers.RadioButton()).BetShop()
 }
 
 def static "checkers.TextCheckOF.checkMyTxt"() {

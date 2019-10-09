@@ -13,17 +13,41 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Link Processes/ME to SO/button_OF1'))
+CustomKeywords.'checkers.TextCheckOF.checkMyTxt'()
 
 WebUI.click(findTestObject('SO/Status Open/input_Sale Offer_Open'))
 
-WebUI.rightClick(findTestObject('POR_V2/Content Information/input_Deadline'))
+WebUI.delay(2)
 
-CustomKeywords.'checkers.TextCheckOF.checkMyTxt'()
+String date = CustomKeywords.'dates.DateGenerate.dateWeek'()
 
-WebUI.acceptAlert()
+WebUI.sendKeys(findTestObject('SO/Status In Progress/input_Offer Validity_Date'), date)
 
-CustomKeywords.'com.kms.katalon.keyword.datetime.DateTimeUtility.formatStringDate'('', '', '')
+'TO BE MADE'
+not_run: WebUI.sendKeys(findTestObject('SO/Status In Progress/input_Discount'), '')
 
-WebUI.sendKeys(findTestObject('POR_V2/Content Information/input_Deadline'), '2019-10-08')
+WebUI.sendKeys(findTestObject('SO/Status In Progress/input_Advance - Pay'), '20')
+
+String dateAdvance = CustomKeywords.'dates.DateGenerate.dateWeek'()
+
+WebUI.sendKeys(findTestObject('SO/Status In Progress/input_First Advance Payment (deadline)'), dateAdvance)
+
+WebUI.selectOptionByIndex(findTestObject('SO/Status In Progress/select_Installments'), 5)
+
+'TO BE MADE'
+not_run: WebUI.sendKeys(findTestObject('SO/Status In Progress/input_Interest'), '')
+
+WebUI.click(findTestObject('SO/Status In Progress/Calculate'))
+
+CustomKeywords.'checkers.RadioButton.OwnCompany'()
+
+WebUI.selectOptionByIndex(findTestObject('SO/Status In Progress/select_Company'), 1)
+
+CustomKeywords.'checkers.RadioButton.Warehouse'()
+
+WebUI.selectOptionByLabel(findTestObject('SO/Status In Progress/Warehouse/select_Warehouse'), 'Warehouse number 1', false)
+
+WebUI.click(findTestObject('SO/Status In Progress/input_Sale Offer_SendForConfirmation'))
+
+WebUI.delay(5)
 
