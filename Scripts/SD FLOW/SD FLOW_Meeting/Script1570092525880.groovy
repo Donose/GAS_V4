@@ -73,3 +73,5 @@ System.out.println(Meeting)
 
 WebUI.delay(5)
 
+CustomKeywords.'checkers.TextCheckOF.checkMyTxt'()
+
