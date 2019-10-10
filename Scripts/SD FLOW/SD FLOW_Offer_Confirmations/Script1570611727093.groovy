@@ -13,10 +13,12 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.delay(5)
+
 'Sale Director'
 CustomKeywords.'checkers.TextCheckOF.checkMyTxt'()
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('SO/Status Sale Confirmation/Sale Director/input_Sale Offer_director'))
 
@@ -25,12 +27,16 @@ WebUI.delay(5)
 'EGT Romania Director'
 CustomKeywords.'checkers.TextCheckOF.checkMyTxt'()
 
+WebUI.delay(5)
+
 WebUI.click(findTestObject('SO/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector'))
 
 WebUI.delay(5)
 
 'EGT Bulgaria Director'
 CustomKeywords.'checkers.TextCheckOF.checkMyTxt'()
+
+WebUI.delay(5)
 
 WebUI.click(findTestObject('SO/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector'))
 
@@ -39,7 +45,7 @@ WebUI.delay(5)
 'Client'
 CustomKeywords.'checkers.TextCheckOF.checkMyTxt'()
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('SO/Status Sale Confirmation/Client/input_Sale Offer_Client'))
 

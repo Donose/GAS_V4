@@ -74,7 +74,7 @@ WebUI.click(findTestObject('ME/button_Create Offer'))
 
 String Meeting = WebUI.getText(findTestObject('Notifications/ME-OF/div_Meeting ME')).substring(8, 14)
 
-CustomKeywords.'outputExcel.MeetingOutput.write'(Meeting, 'Meeting')
+CustomKeywords.'outputExcel.NotificationOutput.write'(Meeting, 'Meeting')
 
 System.out.println(Meeting)
 

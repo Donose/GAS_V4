@@ -19,7 +19,7 @@ WebUI.waitForElementPresent(findTestObject('MainDashboard/Nav_Menu_Top/a_SD'), 1
 
 CustomKeywords.'mainDashboardSelections.Selectors.selectSDMeeting'()
 
-WebUI.delay(10)
+WebUI.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.selectOptionByIndex(findTestObject('ME/select_me_prio'), 1, FailureHandling.STOP_ON_FAILURE)
 
@@ -69,9 +69,7 @@ WebUI.click(findTestObject('ME/button_Create Offer'))
 
 String Meeting = WebUI.getText(findTestObject('Notifications/ME-OF/div_Meeting ME')).substring(8, 14)
 
-CustomKeywords.'outputExcel.MeetingOutput.write'(Meeting, 'Meeting')
+CustomKeywords.'outputExcel.NotificationOutput.write'(Meeting, 'Meeting')
 
 System.out.println(Meeting)
-
-WebUI.delay(5)
 

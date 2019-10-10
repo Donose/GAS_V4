@@ -72,18 +72,26 @@ def static "mainDashboardSelections.Selectors.selectAccaddMonetaryReq"() {
     (new mainDashboardSelections.Selectors()).selectAccaddMonetaryReq()
 }
 
-def static "outputExcel.MeetingOutput.write"(
+def static "outputExcel.NotificationOutput.write"(
     	String name	
      , 	String Column_Name	) {
-    (new outputExcel.MeetingOutput()).write(
+    (new outputExcel.NotificationOutput()).write(
         	name
          , 	Column_Name)
 }
 
-def static "outputExcel.MeetingOutput.writeCT"(
+def static "outputExcel.NotificationOutput.writeOF"(
     	String name	
      , 	String Column_Name	) {
-    (new outputExcel.MeetingOutput()).writeCT(
+    (new outputExcel.NotificationOutput()).writeOF(
+        	name
+         , 	Column_Name)
+}
+
+def static "outputExcel.NotificationOutput.writeCT"(
+    	String name	
+     , 	String Column_Name	) {
+    (new outputExcel.NotificationOutput()).writeCT(
         	name
          , 	Column_Name)
 }

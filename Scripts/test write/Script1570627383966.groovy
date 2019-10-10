@@ -13,9 +13,11 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-String CT = WebUI.getText(findTestObject('Notifications/span_Meeting ME')).substring(19, 25)
+WebUI.delay(2)
 
-CustomKeywords.'outputExcel.MeetingOutput.writeCT'(CT, 'Contract')
+String CT = WebUI.getText(findTestObject('Object Repository/Notifications/OF-CT/div_OF-CT')).substring(18, 25)
+
+CustomKeywords.'outputExcel.NotificationOutput.writeCT'(CT, 'Contract')
 
 System.out.println(CT)
 

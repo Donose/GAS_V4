@@ -13,6 +13,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.delay(3)
+
 CustomKeywords.'checkers.TextCheckOF.checkMyTxt'()
 
 WebUI.click(findTestObject('SO/Status Open/input_Sale Offer_Open'))
@@ -48,6 +50,4 @@ CustomKeywords.'checkers.RadioButton.Warehouse'()
 WebUI.selectOptionByLabel(findTestObject('SO/Status In Progress/Warehouse/select_Warehouse'), 'Warehouse number 1', false)
 
 WebUI.click(findTestObject('SO/Status In Progress/input_Sale Offer_SendForConfirmation'))
-
-WebUI.delay(5)
 
