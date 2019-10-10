@@ -21,3 +21,5 @@ CustomKeywords.'outputExcel.NotificationOutput.writeCT'(CT, 'Contract')
 
 System.out.println(CT)
 
+CustomKeywords.'checkers.TextCheckOF.checkMyTextCT'()
+

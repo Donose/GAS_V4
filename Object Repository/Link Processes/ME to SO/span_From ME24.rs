@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_From ME21</name>
+   <name>span_From ME24</name>
    <tag></tag>
    <elementGuidId>722f8a0e-7994-44b8-b01d-1eec7bcb1959</elementGuidId>
    <selectorCollection>
@@ -42,7 +42,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;mainData&quot;)/table[@class=&quot;table table-bordered table-striped&quot;]/tbody[1]/tr[21]/td[1]/div[@class=&quot;btn-group-xs pull-center&quot;]/span[1]</value>
+      <value>id(&quot;mainData&quot;)/table[@class=&quot;table table-bordered table-striped&quot;]/tbody[1]/tr[24]/td[1]/div[@class=&quot;btn-group-xs pull-center&quot;]/span[1]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

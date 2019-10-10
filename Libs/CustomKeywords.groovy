@@ -136,6 +136,10 @@ def static "checkers.TextCheckOF.checkMyTxt"() {
     (new checkers.TextCheckOF()).checkMyTxt()
 }
 
+def static "checkers.TextCheckOF.checkMyTextCT"() {
+    (new checkers.TextCheckOF()).checkMyTextCT()
+}
+
 def static "dates.DateGenerate.date"() {
     (new dates.DateGenerate()).date()
 }

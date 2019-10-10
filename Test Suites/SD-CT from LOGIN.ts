@@ -4,8 +4,8 @@
    <name>SD-CT from LOGIN</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <mailRecipient>byulent.mutalibov@egt-bg.com;donose-daniel.andrei@outlook.com;</mailRecipient>
-   <numberOfRerun>1</numberOfRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>10</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
