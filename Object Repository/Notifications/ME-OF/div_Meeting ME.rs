@@ -3,18 +3,14 @@
    <description></description>
    <name>div_Meeting ME</name>
    <tag></tag>
-   <elementGuidId>2533c628-9150-44a9-ba64-282cfd1d60b3</elementGuidId>
+   <elementGuidId>a21224a5-6cbc-48aa-a600-79ceaf1207d0</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>BASIC</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Welcome, Daniel Donose (daniel.donose)'])[1]/preceding::div[1][count(. | //*[(contains(text(), 'Meeting ME') or contains(., 'Meeting ME'))]) = count(//*[(contains(text(), 'Meeting ME') or contains(., 'Meeting ME'))])]</value>
-      </entry>
       <entry>
          <key>XPATH</key>
          <value>(.//*[normalize-space(text()) and normalize-space(.)='Welcome, Daniel Donose (daniel.donose)'])[1]/preceding::div[1]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,17 +49,20 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>contains</matchCondition>
+      <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Meeting ME</value>
+      <value>
+			
+			Meeting ME-530 created !
+		</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Welcome, Daniel Donose (daniel.donose)'])[1]/preceding::div[1]</value>
+      <value>/html[@class=&quot;k-webkit k-webkit77&quot;]/body[1]/div[@class=&quot;main&quot;]/div[@class=&quot;alert alert-success&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

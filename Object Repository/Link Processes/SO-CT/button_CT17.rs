@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>id(&quot;mainData&quot;)/table[@class=&quot;table table-bordered table-striped&quot;]/tbody[1]/tr[17]/td[1]/div[@class=&quot;btn-group-xs pull-center&quot;]/button[@class=&quot;btn btn-info pull-center&quot;][count(. | //*[@type = 'button' and (contains(text(), 'CT') or contains(., 'CT'))]) = count(//*[@type = 'button' and (contains(text(), 'CT') or contains(., 'CT'))])]</value>
+         <value>id(&quot;mainData&quot;)/table[@class=&quot;table table-bordered table-striped&quot;]/tbody[1]/tr[17]/td[1]/div[@class=&quot;btn-group-xs pull-center&quot;]/button[@class=&quot;btn btn-primary pull-center&quot;][count(. | //*[@type = 'button' and (contains(text(), 'CT') or contains(., 'CT'))]) = count(//*[@type = 'button' and (contains(text(), 'CT') or contains(., 'CT'))])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -63,7 +63,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;mainData&quot;)/table[@class=&quot;table table-bordered table-striped&quot;]/tbody[1]/tr[17]/td[1]/div[@class=&quot;btn-group-xs pull-center&quot;]/button[@class=&quot;btn btn-info pull-center&quot;]</value>
+      <value>id(&quot;mainData&quot;)/table[@class=&quot;table table-bordered table-striped&quot;]/tbody[1]/tr[17]/td[1]/div[@class=&quot;btn-group-xs pull-center&quot;]/button[@class=&quot;btn btn-primary pull-center&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

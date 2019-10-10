@@ -21,5 +21,11 @@ CustomKeywords.'outputExcel.NotificationOutput.writeCT'(CT, 'Contract')
 
 System.out.println(CT)
 
+WebUI.acceptAlert()
+
+WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT1'), findTestData('Test Data').getValue(3, 1), FailureHandling.OPTIONAL)
+
+WebUI.getText(findTestObject('Link Processes/SO-CT/button_CT1'))
+
 CustomKeywords.'checkers.TextCheckOF.checkMyTextCT'()
 

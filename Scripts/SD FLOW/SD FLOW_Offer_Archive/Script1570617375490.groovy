@@ -19,3 +19,9 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('SO/Status Archiving/input_Sale_Offer_Close'))
 
+String CT = WebUI.getText(findTestObject('Notifications/ME-OF/div_Meeting ME')).substring(8, 14)
+
+CustomKeywords.'outputExcel.NotificationOutput.writeCT'(CT, 'Contract')
+
+System.out.println(CT)
+

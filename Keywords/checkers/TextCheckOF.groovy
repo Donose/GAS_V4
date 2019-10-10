@@ -177,106 +177,106 @@ public class TextCheckOF {
 
 	@Keyword
 	def checkMyTextCT(){
-		if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT1'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
+		if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT1'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
 			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT1'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
 			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT3'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT3'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
 			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT3'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT4'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT4'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
 			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT4'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT5'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT5'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
 			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT5'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT6'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT6'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
 			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT6'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(1, 2),FailureHandling.OPTIONAL)==true){
-			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT7'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT7'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT8'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT8'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT9'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT9'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT10'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT10'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT11'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT11'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT12'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT12'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT13'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT13'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT14'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT14'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT15'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT15'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT16'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT16'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT17'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT17'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT18'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT18'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT19'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT19'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT20'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT20'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT21'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT21'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT22'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT22'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT23'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT23'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT24'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT24'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT25'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT25'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT26'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT26'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT27'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT27'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT28'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT28'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT29'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT29'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT30'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT30'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT31'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT31'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT32'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT32'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT33'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT33'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT34'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT34'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT35'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT35'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT36'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT36'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT37'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT37'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT38'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT38'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT39'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT39'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT40'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT40'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT41'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT41'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT42'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT42'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT43'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT43'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT44'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT44'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT45'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT45'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT46'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT46'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT47'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT47'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT48'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT48'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT49'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT49'))
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT50'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+		WebUI.click(findTestObject('Link Processes/SO-CT/button_CT50'))
 		}
-	}
+  }
 }

@@ -96,6 +96,14 @@ def static "outputExcel.NotificationOutput.writeCT"(
          , 	Column_Name)
 }
 
+def static "outputExcel.NotificationOutput.writeBR"(
+    	String name	
+     , 	String Column_Name	) {
+    (new outputExcel.NotificationOutput()).writeBR(
+        	name
+         , 	Column_Name)
+}
+
 def static "dates.DatePicker.handleDatepicker"(
     	TestObject calender	
      , 	String exp_Date	
