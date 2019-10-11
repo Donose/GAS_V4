@@ -14,7 +14,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\DANIEL~1.DON\\AppData\\Local\\Temp\\Katalon\\Test Cases\\SD FLOW\\SD FLOW_Contract_Skip\\20191011_171652\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\DANIEL~1.DON\\AppData\\Local\\Temp\\Katalon\\Test Cases\\SD FLOW\\SD FLOW_Offer_Confirmations\\20191011_172815\\execution.properties')
 
 TestCaseMain.beforeStart()
 
@@ -38,15 +38,33 @@ not_run: WebUI.delay(5)
 
 CustomKeywords.'linkers.Link.offer'()
 
-WebUI.delay(2)
+WebUI.delay(5)
 
-WebUI.click(findTestObject('CT/Status Open/input__btn-Skip'))
+WebUI.click(findTestObject('SO/Status Sale Confirmation/Sale Director/input_Sale Offer_director'))
 
-String Contract = WebUI.getText(findTestObject('CT/Status Open/span_CT'))
+WebUI.delay(5)
 
-CustomKeywords.'outputExcel.NotificationOutput.writeCT'(Contract, 'Contract')
+CustomKeywords.'linkers.Link.offer'()
 
-System.out.println(Contract)
+WebUI.delay(5)
 
-''', 'Test Cases/SD FLOW/SD FLOW_Contract_Skip', new TestCaseBinding('Test Cases/SD FLOW/SD FLOW_Contract_Skip',[:]), FailureHandling.STOP_ON_FAILURE , false)
+WebUI.click(findTestObject('SO/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector'))
+
+WebUI.delay(5)
+
+CustomKeywords.'linkers.Link.offer'()
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('SO/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector'))
+
+WebUI.delay(5)
+
+CustomKeywords.'linkers.Link.offer'()
+
+WebUI.click(findTestObject('SO/Status Sale Confirmation/Client/input_Sale Offer_Client'))
+
+WebUI.delay(5)
+
+''', 'Test Cases/SD FLOW/SD FLOW_Offer_Confirmations', new TestCaseBinding('Test Cases/SD FLOW/SD FLOW_Offer_Confirmations',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

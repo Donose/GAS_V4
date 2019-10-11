@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.delay(10)
 
-CustomKeywords.'linkers.Link.meeting'()
+CustomKeywords.'linkers.Link.fromMeeting'()
 
 WebUI.delay(3)
 
