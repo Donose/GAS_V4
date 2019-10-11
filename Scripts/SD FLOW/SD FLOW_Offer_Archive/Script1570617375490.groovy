@@ -13,15 +13,17 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'checkers.TextCheckOF.checkMyTxt'()
+CustomKeywords.'linkers.Link.offer'()
 
 WebUI.delay(2)
 
 WebUI.click(findTestObject('SO/Status Archiving/input_Sale_Offer_Close'))
 
-String CT = WebUI.getText(findTestObject('Notifications/ME-OF/div_Meeting ME')).substring(8, 14)
+WebUI.delay(2)
 
-CustomKeywords.'outputExcel.NotificationOutput.writeCT'(CT, 'Contract')
+//String CT = WebUI.getText(findTestObject('Notifications/OF-CT/div_OF-CT')).substring(8, 14)
 
-System.out.println(CT)
+//CustomKeywords.'outputExcel.NotificationOutput.writeCT'(CT, 'Contract')
+
+//System.out.println(CT)
 

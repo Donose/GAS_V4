@@ -8,6 +8,22 @@ import java.lang.String
 import com.kms.katalon.core.testobject.TestObject
 
 
+def static "linkers.Link.contract"() {
+    (new linkers.Link()).contract()
+}
+
+def static "linkers.Link.fromMeeting"() {
+    (new linkers.Link()).fromMeeting()
+}
+
+def static "linkers.Link.offer"() {
+    (new linkers.Link()).offer()
+}
+
+def static "linkers.Link.fromOffer"() {
+    (new linkers.Link()).fromOffer()
+}
+
 def static "mainDashboardSelections.Selectors.selectPOR"() {
     (new mainDashboardSelections.Selectors()).selectPOR()
 }

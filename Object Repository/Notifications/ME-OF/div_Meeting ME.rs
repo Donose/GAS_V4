@@ -9,11 +9,27 @@
          <key>XPATH</key>
          <value>(.//*[normalize-space(text()) and normalize-space(.)='Welcome, Daniel Donose (daniel.donose)'])[1]/preceding::div[1]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>/html[@class=&quot;k-webkit k-webkit77&quot;]/body[1]/div[@class=&quot;main&quot;]/div[@class=&quot;alert alert-success&quot;][count(. | //div[(text() = '
+			
+			Meeting ME
+		' or . = '
+			
+			Meeting ME
+		')]) = count(//div[(text() = '
+			
+			Meeting ME
+		' or . = '
+			
+			Meeting ME
+		')])]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -54,11 +70,11 @@
       <type>Main</type>
       <value>
 			
-			Meeting ME-530 created !
+			Meeting ME
 		</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

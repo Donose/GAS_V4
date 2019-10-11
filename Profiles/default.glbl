@@ -4,4 +4,19 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Test Data').getValue(1, 1)</initValue>
+      <name>Meeting</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Test Data').getValue(2, 1)</initValue>
+      <name>Offer</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Test Data').getValue(3, 1)</initValue>
+      <name>Contract</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

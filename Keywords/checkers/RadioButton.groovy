@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 
 public class RadioButton {
-	
+
 	@Keyword
 	def OwnCompany(){
 		if (WebUI.verifyElementText(findTestObject('SO/Status In Progress/Radio buttons/span_Own Companies'), 'Own Companies')==true){
@@ -38,7 +38,7 @@ public class RadioButton {
 			WebUI.check(findTestObject('SO/Status In Progress/Radio buttons/input_Office'))
 		}
 	}
-	@Keyword 
+	@Keyword
 	def Gaming(){
 		if (WebUI.verifyElementText(findTestObject('SO/Status In Progress/Radio buttons/span_Gaming Hall'), 'Gaming Hall')==true){
 			WebUI.check(findTestObject('SO/Status In Progress/Radio buttons/input_Gaming Hall'))

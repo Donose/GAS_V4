@@ -9,6 +9,21 @@ import com.kms.katalon.core.main.TestCaseMain
  */
 public class GlobalVariable {
      
+    /**
+     * <p></p>
+     */
+    public static Object Meeting
+     
+    /**
+     * <p></p>
+     */
+    public static Object Offer
+     
+    /**
+     * <p></p>
+     */
+    public static Object Contract
+     
 
     static {
         try {
@@ -16,6 +31,9 @@ public class GlobalVariable {
 			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
             selectedVariables += RunConfiguration.getOverridingParameters()
     
+            Meeting = selectedVariables['Meeting']
+            Offer = selectedVariables['Offer']
+            Contract = selectedVariables['Contract']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

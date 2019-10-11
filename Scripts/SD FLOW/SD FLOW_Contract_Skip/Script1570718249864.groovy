@@ -15,15 +15,15 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.delay(5)
 
-CustomKeywords.'checkers.TextCheckOF.checkMyTextCT'()
+CustomKeywords.'linkers.Link.fromOffer'()
 
 WebUI.delay(2)
 
 WebUI.click(findTestObject('CT/Status Open/input__btn-Skip'))
 
-String BR = WebUI.getText(findTestObject('Notifications/CT-BR/div_CT-BR'))
- 
-CustomKeywords.'outputExcel.NotificationOutput.writeBR'(BR, 'Billing req')
+String Contract = WebUI.getText(findTestObject('CT/Status Open/span_CT'))
 
-System.out.println(BR)
+CustomKeywords.'outputExcel.NotificationOutput.writeCT'(Contract, 'Contract')
+
+System.out.println(Contract)
 

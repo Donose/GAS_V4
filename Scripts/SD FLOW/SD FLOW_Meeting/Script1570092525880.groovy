@@ -67,9 +67,9 @@ not_run: WebUI.setText(findTestObject('ME/Client Products/input_Prefer Delivery 
 
 WebUI.click(findTestObject('ME/button_Create Offer'))
 
-String Meeting = WebUI.getText(findTestObject('Object Repository/Notifications/ME-OF/div_Meeting ME')).substring(8, 14)
+String meeting = WebUI.getText(findTestObject('Notifications/ME-OF/span_ME')).substring(5,8)
 
-CustomKeywords.'outputExcel.NotificationOutput.write'(Meeting, 'Meeting')
+System.out.println(meeting)
 
-System.out.println(Meeting)
+CustomKeywords.'outputExcel.NotificationOutput.write'("ME-"+meeting, 'Meeting')
 

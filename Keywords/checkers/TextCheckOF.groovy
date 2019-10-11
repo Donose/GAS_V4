@@ -160,7 +160,7 @@ public class TextCheckOF {
 		}else if (WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME46'), 'From ' + findTestData('Test Data').getValue(
 		1, 1),FailureHandling.OPTIONAL) == true){
 			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF46'))
-		}else if (WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From M47'), 'From ' + findTestData('Test Data').getValue(
+		}else if (WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME47'), 'From ' + findTestData('Test Data').getValue(
 		1, 1),FailureHandling.OPTIONAL) == true){
 			WebUI.click(findTestObject('Link Processes/ME to SO/button_OF47'))
 		}else if (WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME48'), 'From ' + findTestData('Test Data').getValue(
@@ -177,7 +177,7 @@ public class TextCheckOF {
 
 	@Keyword
 	def checkMyTextCT(){
-		if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT1'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
+		if (WebUI.verifyElementText(findTestObject('Link Processes/ME to SO/span_From ME1'),'From '+ findTestData('Test Data').getValue(2, 1),FailureHandling.OPTIONAL)==true){
 			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT1'))
 		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT2'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
 			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT2'))
@@ -276,7 +276,7 @@ public class TextCheckOF {
 		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT49'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
 			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT49'))
 		}else if (WebUI.verifyElementText(findTestObject('Link Processes/SO-CT/button_CT50'), findTestData('Test Data').getValue(3, 1),FailureHandling.OPTIONAL)==true){
-		WebUI.click(findTestObject('Link Processes/SO-CT/button_CT50'))
+			WebUI.click(findTestObject('Link Processes/SO-CT/button_CT50'))
 		}
-  }
+	}
 }

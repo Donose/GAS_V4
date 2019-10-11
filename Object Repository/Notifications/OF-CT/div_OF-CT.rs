@@ -7,10 +7,30 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Welcome, Daniel Donose (daniel.donose)'])[1]/preceding::div[1]</value>
+         <value>/html/body/div[4]/div[1]/text()</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>/html[@class=&quot;k-webkit k-webkit77&quot;]/body[1]/div[@class=&quot;main&quot;]/div[@class=&quot;alert-success alert&quot;][count(. | //*[@ng-show = concat('message!=') and (contains(text(), '
+			
+			OF Closed and CT  Opened
+		') or contains(., '
+			
+			OF Closed and CT  Opened
+		'))]) = count(//*[@ng-show = concat('message!=') and (contains(text(), '
+			
+			OF Closed and CT  Opened
+		') or contains(., '
+			
+			OF Closed and CT  Opened
+		'))])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -27,7 +47,7 @@
       <value>alert-success alert</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-show</name>
       <type>Main</type>
@@ -49,16 +69,16 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
+      <matchCondition>contains</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>
 			
-			OF-490 Closed and CT-252 Opened
+			OF Closed and CT  Opened
 		</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

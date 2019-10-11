@@ -13,13 +13,21 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.delay(3)
+WebUI.delay(10)
 
-CustomKeywords.'checkers.TextCheckOF.checkMyTxt'()
+CustomKeywords.'linkers.Link.meeting'()
+
+WebUI.delay(3)
 
 WebUI.click(findTestObject('SO/Status Open/input_Sale Offer_Open'))
 
 WebUI.delay(2)
+
+String offer = WebUI.getText(findTestObject('SO/Status Open/td_OFnumber'))
+
+System.out.println(offer)
+
+CustomKeywords.'outputExcel.NotificationOutput.writeOF'(offer, 'Offer')
 
 String date = CustomKeywords.'dates.DateGenerate.dateWeek'()
 

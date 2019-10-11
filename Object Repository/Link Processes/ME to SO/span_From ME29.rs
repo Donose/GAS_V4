@@ -6,12 +6,12 @@
    <elementGuidId>722f8a0e-7994-44b8-b01d-1eec7bcb1959</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='mainData']/table/tbody/tr[8]/td/div/span</value>
+         <key>BASIC</key>
+         <value>id(&quot;mainData&quot;)/table[@class=&quot;table table-bordered table-striped&quot;]/tbody[1]/tr[29]/td[1]/div[@class=&quot;btn-group-xs pull-center&quot;]/span[1][count(. | //*[(contains(text(), 'From ') or contains(., 'From '))]) = count(//*[(contains(text(), 'From ') or contains(., 'From '))])]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>id(&quot;mainData&quot;)/table[@class=&quot;table table-bordered table-striped&quot;]/tbody[1]/tr[29]/td[1]/div[@class=&quot;btn-group-xs pull-center&quot;]/span[1][count(. | //*[(contains(text(), 'From ME') or contains(., 'From ME'))]) = count(//*[(contains(text(), 'From ME') or contains(., 'From ME'))])]</value>
+         <key>XPATH</key>
+         <value>//div[@id='mainData']/table/tbody/tr[8]/td/div/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -35,7 +35,7 @@
       <matchCondition>contains</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>From ME</value>
+      <value>From </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

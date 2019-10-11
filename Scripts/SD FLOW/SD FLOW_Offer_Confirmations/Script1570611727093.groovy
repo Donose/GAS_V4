@@ -15,8 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.delay(5)
 
-'Sale Director'
-CustomKeywords.'checkers.TextCheckOF.checkMyTxt'()
+CustomKeywords.'linkers.Link.offer'()
 
 WebUI.delay(5)
 
@@ -24,8 +23,7 @@ WebUI.click(findTestObject('SO/Status Sale Confirmation/Sale Director/input_Sale
 
 WebUI.delay(5)
 
-'EGT Romania Director'
-CustomKeywords.'checkers.TextCheckOF.checkMyTxt'()
+CustomKeywords.'linkers.Link.offer'()
 
 WebUI.delay(5)
 
@@ -33,8 +31,7 @@ WebUI.click(findTestObject('SO/Status Sale Confirmation/EGT Romania Director/inp
 
 WebUI.delay(5)
 
-'EGT Bulgaria Director'
-CustomKeywords.'checkers.TextCheckOF.checkMyTxt'()
+CustomKeywords.'linkers.Link.offer'()
 
 WebUI.delay(5)
 
@@ -42,10 +39,7 @@ WebUI.click(findTestObject('SO/Status Sale Confirmation/EGT Bulgaria Director/in
 
 WebUI.delay(5)
 
-'Client'
-CustomKeywords.'checkers.TextCheckOF.checkMyTxt'()
-
-WebUI.delay(5)
+CustomKeywords.'linkers.Link.offer'()
 
 WebUI.click(findTestObject('SO/Status Sale Confirmation/Client/input_Sale Offer_Client'))
 
