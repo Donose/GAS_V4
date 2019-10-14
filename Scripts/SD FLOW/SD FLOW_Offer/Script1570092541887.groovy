@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.delay(10)
+WebUI.delay(7, FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'linkers.Link.fromMeeting'()
 

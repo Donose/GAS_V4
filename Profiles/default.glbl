@@ -19,4 +19,19 @@
       <initValue>findTestData('Test Data').getValue(3, 1)</initValue>
       <name>Contract</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Test Data').getValue(4, 1)</initValue>
+      <name>Billing_Req</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Test Data').getValue(5, 1)</initValue>
+      <name>Billing_inv</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Test Data').getValue(6, 1)</initValue>
+      <name>Receivables</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

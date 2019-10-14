@@ -24,6 +24,22 @@ def static "linkers.Link.fromOffer"() {
     (new linkers.Link()).fromOffer()
 }
 
+def static "linkers.Link.fromCT"() {
+    (new linkers.Link()).fromCT()
+}
+
+def static "linkers.Link.billingIv"() {
+    (new linkers.Link()).billingIv()
+}
+
+def static "linkers.Link.receivables"() {
+    (new linkers.Link()).receivables()
+}
+
+def static "linkers.Link.fromRE"() {
+    (new linkers.Link()).fromRE()
+}
+
 def static "mainDashboardSelections.Selectors.selectPOR"() {
     (new mainDashboardSelections.Selectors()).selectPOR()
 }
@@ -120,6 +136,22 @@ def static "outputExcel.NotificationOutput.writeBR"(
          , 	Column_Name)
 }
 
+def static "outputExcel.NotificationOutput.writeBI"(
+    	String name	
+     , 	String Column_Name	) {
+    (new outputExcel.NotificationOutput()).writeBI(
+        	name
+         , 	Column_Name)
+}
+
+def static "outputExcel.NotificationOutput.writeRE"(
+    	String name	
+     , 	String Column_Name	) {
+    (new outputExcel.NotificationOutput()).writeRE(
+        	name
+         , 	Column_Name)
+}
+
 def static "dates.DatePicker.handleDatepicker"(
     	TestObject calender	
      , 	String exp_Date	
@@ -182,4 +214,8 @@ def static "VerifySelection.verifyPrio"() {
 
 def static "randomNumber.RandomDropDownProjectInfo.randomPOR"() {
     (new randomNumber.RandomDropDownProjectInfo()).randomPOR()
+}
+
+def static "randomNumber.RandomDropDownProjectInfo.generate"() {
+    (new randomNumber.RandomDropDownProjectInfo()).generate()
 }

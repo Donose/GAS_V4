@@ -24,6 +24,21 @@ public class GlobalVariable {
      */
     public static Object Contract
      
+    /**
+     * <p></p>
+     */
+    public static Object Billing_Req
+     
+    /**
+     * <p></p>
+     */
+    public static Object Billing_inv
+     
+    /**
+     * <p></p>
+     */
+    public static Object Receivables
+     
 
     static {
         try {
@@ -34,6 +49,9 @@ public class GlobalVariable {
             Meeting = selectedVariables['Meeting']
             Offer = selectedVariables['Offer']
             Contract = selectedVariables['Contract']
+            Billing_Req = selectedVariables['Billing_Req']
+            Billing_inv = selectedVariables['Billing_inv']
+            Receivables = selectedVariables['Receivables']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

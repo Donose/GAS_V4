@@ -61,4 +61,8 @@ public class RandomDropDownProjectInfo {
 		int n = rand.nextInt(15)
 		WebUI.setText(findTestObject('POR_V2/Content Information/Materials/input_Quantity'), String.valueOf(n))
 	}
+	@Keyword
+	def generate(){
+		int a = randomMath
+	}
 }

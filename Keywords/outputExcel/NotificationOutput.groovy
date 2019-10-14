@@ -39,7 +39,7 @@ public class NotificationOutput{
 
 	@Keyword
 	public static void write(String name,String Column_Name) throws IOException{
-		FileInputStream fis = new FileInputStream("C:\\Users\\daniel.donose\\git\\GAS_V4\\Data Files\\processes.xlsx")
+		FileInputStream fis = new FileInputStream("./Data Files/processes.xlsx")
 		XSSFWorkbook workbook = new XSSFWorkbook(fis)
 		XSSFSheet sheet = workbook.getSheet("data")
 		int rowCount = i
@@ -50,14 +50,14 @@ public class NotificationOutput{
 			cell.setCellValue(name)
 		}
 
-		FileOutputStream fos = new FileOutputStream("C:\\Users\\daniel.donose\\git\\GAS_V4\\Data Files\\processes.xlsx")
+		FileOutputStream fos = new FileOutputStream("./Data Files/processes.xlsx")
 		workbook.write(fos)
 		fos.close()
 	}
 
 	@Keyword
 	public static void writeOF(String name,String Column_Name) throws IOException{
-		FileInputStream fis = new FileInputStream("C:\\Users\\daniel.donose\\git\\GAS_V4\\Data Files\\processes.xlsx")
+		FileInputStream fis = new FileInputStream("./Data Files/processes.xlsx")
 		XSSFWorkbook workbook = new XSSFWorkbook(fis)
 		XSSFSheet sheet = workbook.getSheet("data")
 		int rowCount = i
@@ -68,13 +68,13 @@ public class NotificationOutput{
 			cell.setCellValue(name)
 		}
 
-		FileOutputStream fos = new FileOutputStream("C:\\Users\\daniel.donose\\git\\GAS_V4\\Data Files\\processes.xlsx")
+		FileOutputStream fos = new FileOutputStream("./Data Files/processes.xlsx")
 		workbook.write(fos)
 		fos.close()
 	}
 	@Keyword
 	public static void writeCT(String name,String Column_Name) throws IOException{
-		FileInputStream fis = new FileInputStream("C:\\Users\\daniel.donose\\git\\GAS_V4\\Data Files\\processes.xlsx")
+		FileInputStream fis = new FileInputStream("./Data Files/processes.xlsx")
 		XSSFWorkbook workbook = new XSSFWorkbook(fis)
 		XSSFSheet sheet = workbook.getSheet("data")
 		int rowCount = i
@@ -85,13 +85,13 @@ public class NotificationOutput{
 			cell.setCellValue(name)
 		}
 
-		FileOutputStream fos = new FileOutputStream("C:\\Users\\daniel.donose\\git\\GAS_V4\\Data Files\\processes.xlsx")
+		FileOutputStream fos = new FileOutputStream("./Data Files/processes.xlsx")
 		workbook.write(fos)
 		fos.close()
 	}
 	@Keyword
 	public static void writeBR(String name,String Column_Name) throws IOException{
-		FileInputStream fis = new FileInputStream("C:\\Users\\daniel.donose\\git\\GAS_V4\\Data Files\\processes.xlsx")
+		FileInputStream fis = new FileInputStream("./Data Files/processes.xlsx")
 		XSSFWorkbook workbook = new XSSFWorkbook(fis)
 		XSSFSheet sheet = workbook.getSheet("data")
 		int rowCount = i
@@ -102,7 +102,41 @@ public class NotificationOutput{
 			cell.setCellValue(name)
 		}
 
-		FileOutputStream fos = new FileOutputStream("C:\\Users\\daniel.donose\\git\\GAS_V4\\Data Files\\processes.xlsx")
+		FileOutputStream fos = new FileOutputStream("./Data Files/processes.xlsx")
+		workbook.write(fos)
+		fos.close()
+	}
+	@Keyword
+	public static void writeBI(String name,String Column_Name) throws IOException{
+		FileInputStream fis = new FileInputStream("./Data Files/processes.xlsx")
+		XSSFWorkbook workbook = new XSSFWorkbook(fis)
+		XSSFSheet sheet = workbook.getSheet("data")
+		int rowCount = i
+		if (Column_Name=='Billing inv'){
+			Row row = sheet.getRow(rowCount+1)
+			Cell cell = row.createCell(4,0)
+			cell.setCellType(cell.CELL_TYPE_STRING)
+			cell.setCellValue(name)
+		}
+
+		FileOutputStream fos = new FileOutputStream("./Data Files/processes.xlsx")
+		workbook.write(fos)
+		fos.close()
+	}
+	@Keyword
+	public static void writeRE(String name,String Column_Name) throws IOException{
+		FileInputStream fis = new FileInputStream("./Data Files/processes.xlsx")
+		XSSFWorkbook workbook = new XSSFWorkbook(fis)
+		XSSFSheet sheet = workbook.getSheet("data")
+		int rowCount = i
+		if (Column_Name=='Receivables'){
+			Row row = sheet.getRow(rowCount+1)
+			Cell cell = row.createCell(5,0)
+			cell.setCellType(cell.CELL_TYPE_STRING)
+			cell.setCellValue(name)
+		}
+
+		FileOutputStream fos = new FileOutputStream("./Data Files/processes.xlsx")
 		workbook.write(fos)
 		fos.close()
 	}

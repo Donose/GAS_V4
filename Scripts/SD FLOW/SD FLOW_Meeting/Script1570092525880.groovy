@@ -1,7 +1,3 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -13,6 +9,14 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 //for (int i = 0; i = 20; i++) {
 WebUI.waitForElementPresent(findTestObject('MainDashboard/Nav_Menu_Top/a_SD'), 10)
@@ -67,9 +71,15 @@ not_run: WebUI.setText(findTestObject('ME/Client Products/input_Prefer Delivery 
 
 WebUI.click(findTestObject('ME/button_Create Offer'))
 
-String meeting = WebUI.getText(findTestObject('Notifications/ME-OF/span_ME')).substring(5,8)
+WebUI.delay(1)
 
-System.out.println(meeting)
+WebDriver notificationME = DriverFactory.getWebDriver()
 
-CustomKeywords.'outputExcel.NotificationOutput.write'("ME-"+meeting, 'Meeting')
+String NotificationME = notificationME.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(8, 14)
+
+println(NotificationME)
+
+CustomKeywords.'outputExcel.NotificationOutput.write'(NotificationME, 'Meeting')
+
+
 

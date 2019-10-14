@@ -41,7 +41,7 @@ WebUI.delay(5)
 
 CustomKeywords.'linkers.Link.offer'()
 
-WebUI.click(findTestObject('SO/Status Sale Confirmation/Client/input_Sale Offer_Client'))
-
 WebUI.delay(5)
+
+WebUI.click(findTestObject('SO/Status Sale Confirmation/Client/input_Sale Offer_Client'))
 
