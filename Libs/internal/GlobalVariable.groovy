@@ -39,6 +39,16 @@ public class GlobalVariable {
      */
     public static Object Receivables
      
+    /**
+     * <p></p>
+     */
+    public static Object Sale_Order
+     
+    /**
+     * <p></p>
+     */
+    public static Object Purchase_req
+     
 
     static {
         try {
@@ -52,6 +62,8 @@ public class GlobalVariable {
             Billing_Req = selectedVariables['Billing_Req']
             Billing_inv = selectedVariables['Billing_inv']
             Receivables = selectedVariables['Receivables']
+            Sale_Order = selectedVariables['Sale_Order']
+            Purchase_req = selectedVariables['Purchase_req']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

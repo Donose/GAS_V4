@@ -19,9 +19,15 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.delay(5)
 
+WebUI.scrollToPosition(0, 0)
+
+WebUI.delay(1)
+
 WebDriver bilingOpen = DriverFactory.getWebDriver()
 
 WebElement plus = bilingOpen.findElement(By.xpath(' /html/body/div[4]/div[3]/div/div/ul[29]/li/div/button/b')).click()
+
+WebUI.delay(1)
 
 WebDriver billingElem = DriverFactory.getWebDriver()
 
@@ -63,11 +69,11 @@ WebUI.delay(1)
 
 WebDriver driverRE = DriverFactory.getWebDriver()
 
-String NotificationRE = driverRE.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(19, 24)
+String NotificationRE = driverRE.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(18, 24)
 
 println(NotificationRE)
 
-CustomKeywords.'outputExcel.NotificationOutput.writeBR'(NotificationRE, 'Receivables')
+CustomKeywords.'outputExcel.NotificationOutput.writeRE'(NotificationRE, 'Receivables')
 
 WebUI.delay(2)
 

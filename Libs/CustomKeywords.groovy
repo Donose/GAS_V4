@@ -40,6 +40,10 @@ def static "linkers.Link.fromRE"() {
     (new linkers.Link()).fromRE()
 }
 
+def static "linkers.Link.purchaseReq"() {
+    (new linkers.Link()).purchaseReq()
+}
+
 def static "mainDashboardSelections.Selectors.selectPOR"() {
     (new mainDashboardSelections.Selectors()).selectPOR()
 }
@@ -148,6 +152,22 @@ def static "outputExcel.NotificationOutput.writeRE"(
     	String name	
      , 	String Column_Name	) {
     (new outputExcel.NotificationOutput()).writeRE(
+        	name
+         , 	Column_Name)
+}
+
+def static "outputExcel.NotificationOutput.writeOR"(
+    	String name	
+     , 	String Column_Name	) {
+    (new outputExcel.NotificationOutput()).writeOR(
+        	name
+         , 	Column_Name)
+}
+
+def static "outputExcel.NotificationOutput.writePOR"(
+    	String name	
+     , 	String Column_Name	) {
+    (new outputExcel.NotificationOutput()).writePOR(
         	name
          , 	Column_Name)
 }

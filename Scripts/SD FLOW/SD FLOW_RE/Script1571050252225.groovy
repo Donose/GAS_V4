@@ -15,11 +15,14 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.delay(2)
 
+'this needs to change/ uses >= operator, is shity'
 CustomKeywords.'linkers.Link.receivables'()
 
-WebUI.delay(2)
+WebUI.delay(1)
 
 WebUI.click(findTestObject('RE/input_Receivable_Start'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('RE/input_Receivable_Entry'))
 
@@ -28,6 +31,7 @@ String dateNow = CustomKeywords.'dates.DateGenerate.date'()
 WebUI.setText(findTestObject('RE/input_Transaction Date'), dateNow)
 
 String amount = WebUI.getText(findTestObject('RE/span_getText'))
+
 println(amount)
 
 WebUI.setText(findTestObject('RE/input_Amount'), amount)

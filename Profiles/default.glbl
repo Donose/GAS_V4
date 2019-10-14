@@ -34,4 +34,14 @@
       <initValue>findTestData('Test Data').getValue(6, 1)</initValue>
       <name>Receivables</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Test Data').getValue(7, 1)</initValue>
+      <name>Sale_Order</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Test Data').getValue(8, 1)</initValue>
+      <name>Purchase_req</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

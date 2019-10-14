@@ -81,5 +81,7 @@ println(NotificationME)
 
 CustomKeywords.'outputExcel.NotificationOutput.write'(NotificationME, 'Meeting')
 
+WebUI.scrollToPosition(0, 0)
+
 
 

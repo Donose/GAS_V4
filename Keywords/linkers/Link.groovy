@@ -30,6 +30,11 @@ import com.kms.katalon.core.testdata.reader.ExcelFactory
 public class Link {
 	@Keyword
 	def contract(){
+		Object excel = ExcelFactory.getExcelDataWithDefaultSheet("./Data Files/processes.xlsx","data",true)
+		excel.getValue("Contract",1)
+		TestData update
+		println('This is test data '+findTestData('Test data').getValue(3, 1))
+		println('This is global variable '+GlobalVariable.Contract)
 		WebDriver driver = DriverFactory.getWebDriver()
 		String lookFor = GlobalVariable.Contract
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
@@ -53,7 +58,11 @@ public class Link {
 	}
 	@Keyword
 	def fromMeeting(){
-
+		Object excel = ExcelFactory.getExcelDataWithDefaultSheet("./Data Files/processes.xlsx","data",true)
+		excel.getValue("Meeting",1)
+		TestData update
+		println('This is test data '+findTestData('Test data').getValue(1, 1))
+		println('This is global variable '+GlobalVariable.Meeting)
 		WebDriver driver = DriverFactory.getWebDriver()
 		String lookFor = GlobalVariable.Meeting
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
@@ -80,7 +89,8 @@ public class Link {
 		Object excel = ExcelFactory.getExcelDataWithDefaultSheet("./Data Files/processes.xlsx","data",true)
 		excel.getValue("Offer",1)
 		TestData update
-		println(GlobalVariable.Offer)
+		println('This is test data '+findTestData('Test data').getValue(2, 1))
+		println('This is global variable '+GlobalVariable.Offer)
 		WebDriver driver = DriverFactory.getWebDriver()
 		String lookFor = GlobalVariable.Offer
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
@@ -107,11 +117,12 @@ public class Link {
 		Object excel = ExcelFactory.getExcelDataWithDefaultSheet("./Data Files/processes.xlsx","data",true)
 		excel.getValue("Offer",1)
 		TestData update
+		println('This is test data '+findTestData('Test data').getValue(2, 1))
+		println('This is global variable '+GlobalVariable.Offer)
 		WebDriver driver = DriverFactory.getWebDriver()
 		String lookFor = GlobalVariable.Offer
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
 		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
-		List<WebElement> buttons = Table.findElements(By.tagName('button'))
 		int rows_count = rows_table.size
 		for (int row = 0; row < rows_count; row++){
 			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('span'))
@@ -133,9 +144,11 @@ public class Link {
 		Object excel = ExcelFactory.getExcelDataWithDefaultSheet("./Data Files/processes.xlsx","data",true)
 		excel.getValue("Billing req",1)
 		TestData update
+		println('This is test data '+findTestData('Test data').getValue(3, 1))
+		println('This is global variable '+GlobalVariable.Contract)
 		WebDriver driver = DriverFactory.getWebDriver()
 		String lookFor = GlobalVariable.Billing_Req
-		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table/tbody'))
+		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
 		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 		int rows_count = rows_table.size
 		for (int row = 0; row < rows_count; row++){
@@ -158,6 +171,8 @@ public class Link {
 		Object excel = ExcelFactory.getExcelDataWithDefaultSheet("./Data Files/processes.xlsx","data",true)
 		excel.getValue("Billing req",1)
 		TestData update
+		println('This is test data '+findTestData('Test data').getValue(5, 1))
+		println('This is global variable '+GlobalVariable.Billing_inv)
 		WebDriver driver = DriverFactory.getWebDriver()
 		String lookFor = GlobalVariable.Billing_inv
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
@@ -183,19 +198,21 @@ public class Link {
 		Object excel = ExcelFactory.getExcelDataWithDefaultSheet("./Data Files/processes.xlsx","data",true)
 		excel.getValue("Receivables",1)
 		TestData update
+		println('This is test data '+findTestData('Test data').getValue(6, 1))
+		println('This is global variable '+GlobalVariable.Receivables)
 		WebDriver driver = DriverFactory.getWebDriver()
 		String lookFor = GlobalVariable.Receivables
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
 		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 		int rows_count = rows_table.size
 		for (int row = 0; row < rows_count; row++){
-			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('button'))
+			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('td'))
 			int columns_count = Columns_row.size()
 			println(((lookFor) + ' are ') + columns_count)
 			for (int column = 0; column < columns_count; column++){
 				String celltext = Columns_row.get(column).getText()
 				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
-				if (celltext == lookFor){
+				if (celltext >= lookFor){
 					rows_table.get(row).findElement(By.tagName('button')).click()
 					return
 				}
@@ -208,20 +225,49 @@ public class Link {
 		Object excel = ExcelFactory.getExcelDataWithDefaultSheet("./Data Files/processes.xlsx","data",true)
 		excel.getValue("Receivables",1)
 		TestData update
+		println('This is test data '+findTestData('Test data').getValue(6, 1))
+		println('This is global variable '+GlobalVariable.Receivables)
 		WebDriver driver = DriverFactory.getWebDriver()
 		String lookFor = GlobalVariable.Receivables
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
 		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 		int rows_count = rows_table.size
 		for (int row = 0; row < rows_count; row++){
-			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('span'))
+			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('td'))
+			int columns_count = Columns_row.size()
+			println(((lookFor) + ' are ') + columns_count)
+			for (int column = 0; column < columns_count; column++){
+				String celltext = Columns_row.get(column).getText()
+				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
+				if (celltext >= ('From ')+lookFor){
+					rows_table.get(row).findElement(By.tagName('button')).click()
+					return
+				}
+				break
+			}
+		}
+	}
+	@Keyword
+	def purchaseReq(){
+		Object excel = ExcelFactory.getExcelDataWithDefaultSheet("./Data Files/processes.xlsx","data",true)
+		excel.getValue("Purchase req",1)
+		TestData update
+		println('This is test data '+findTestData('Test data').getValue(8, 1))
+		println('This is global variable '+GlobalVariable.Purchase_req)
+		WebDriver driver = DriverFactory.getWebDriver()
+		String lookFor = GlobalVariable.Purchase_req
+		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
+		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
+		int rows_count = rows_table.size
+		for (int row = 0; row < rows_count; row++){
+			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('button'))
 			int columns_count = Columns_row.size()
 			println(((lookFor) + ' are ') + columns_count)
 			for (int column = 0; column < columns_count; column++){
 				String celltext = Columns_row.get(column).getText()
 				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
 				if (celltext == lookFor){
-					rows_table.get(row).findElement(By.tagName('button')).click()
+					rows_table.get(row).findElement(By.tagName('input')).click()
 					return
 				}
 				break
