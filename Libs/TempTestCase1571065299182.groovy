@@ -14,7 +14,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\DANIEL~1.DON\\AppData\\Local\\Temp\\Katalon\\Test Cases\\SD FLOW\\SD FLOW Purchase_req\\20191014_174602\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\DANIEL~1.DON\\AppData\\Local\\Temp\\Katalon\\Test Cases\\SD FLOW\\SD FLOW SaleOrder_from_Vendor\\20191014_180139\\execution.properties')
 
 TestCaseMain.beforeStart()
 
@@ -29,6 +29,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -37,28 +38,60 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
 
-not_run: WebUI.scrollToPosition(0, 0)
+not_run: WebUI.delay(5)
 
-not_run: WebUI.delay(1)
+not_run: CustomKeywords.'linkers.Link.fromRE'()
 
-not_run: WebDriver openPurchase = DriverFactory.getWebDriver()
+not_run: WebUI.delay(5)
 
-not_run: WebElement plus = openPurchase.findElement(By.xpath('html/body/div[4]/div[3]/div/div/ul[28]/li/div/button/b')).click()
+not_run: WebUI.click(findTestObject('OR/Open-SendtoConfirm/input_Sale Order_Progress'))
 
-not_run: WebUI.delay(1)
+not_run: WebUI.delay(5)
 
-//WebUI.scrollToElement( 2600,570)
-not_run: WebUI.delay(1)
+not_run: WebUI.selectOptionByIndex(findTestObject('OR/Open-SendtoConfirm/select_Activation'), 1)
 
-WebDriver openPOR = DriverFactory.getWebDriver()
+not_run: WebUI.selectOptionByLabel(findTestObject('OR/Open-SendtoConfirm/select_OrderTo'), 'Provider 1', false)
 
-WebUI.scrollToElement.findElement(By.xpath('/html/body/div[4]/div[3]/div/div/ul[28]/li/ul/li[2]/div/a'), 1)
+String dateFutureWEeek = CustomKeywords.'dates.DateGenerate.dateWeek'()
 
-WebElement por = openPOR.findElement(By.xpath('/html/body/div[4]/div[3]/div/div/ul[28]/li/ul/li[2]/div/a')).click()
+WebUI.setText(findTestObject('OR/Open-SendtoConfirm/input_Deadline'), dateFutureWEeek)
 
-CustomKeywords.'linkers.Link.purchaseReq'()
+WebUI.click(findTestObject('OR/Open-SendtoConfirm/input_Sale Order_SendForConfirmation'))
 
-''', 'Test Cases/SD FLOW/SD FLOW Purchase_req', new TestCaseBinding('Test Cases/SD FLOW/SD FLOW Purchase_req',[:]), FailureHandling.STOP_ON_FAILURE , false)
+WebUI.delay(5)
+
+WebDriver driver1 = DriverFactory.getWebDriver()
+
+String SpanOR = driver1.findElement(By.xpath('/html/body/div[6]/div[1]/div/form/div[1]/table/tbody/tr/td[3]/table/tbody/tr[1]/td[2]')).getText()
+
+println(SpanOR)
+
+CustomKeywords.'outputExcel.NotificationOutput.writeOR'(SpanOR, 'Sale Order')
+
+WebUI.click(findTestObject('OR/OR Confirm/input_Sale Order_Confirm'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('OR/OR Confirm/input_Sale Order_SEND'))
+
+WebUI.delay(5)
+
+CustomKeywords.'linkers.Link.fromRE'()
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('OR/OR Confirm/input_Sale Order_sendClose'))
+
+WebUI.delay(1)
+
+WebDriver driverPOR = DriverFactory.getWebDriver()
+
+String NotificationPOR = driverPOR.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(19, 26)
+
+println(NotificationPOR)
+
+CustomKeywords.'outputExcel.NotificationOutput.writePOR'(NotificationPOR, 'Purchase req')
+
+''', 'Test Cases/SD FLOW/SD FLOW SaleOrder_from_Vendor', new TestCaseBinding('Test Cases/SD FLOW/SD FLOW SaleOrder_from_Vendor',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

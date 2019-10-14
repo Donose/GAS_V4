@@ -14,12 +14,16 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\DANIEL~1.DON\\AppData\\Local\\Temp\\Katalon\\Test Cases\\SD FLOW\\SD FLOW Purchase_req\\20191014_173445\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\DANIEL~1.DON\\AppData\\Local\\Temp\\Katalon\\Test Cases\\SD FLOW\\SD FLOW_RE\\20191014_175744\\execution.properties')
 
 TestCaseMain.beforeStart()
 
         TestCaseMain.runTestCaseRawScript(
-'''import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+'''import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
@@ -29,35 +33,33 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import org.openqa.selenium.By as By
-import org.openqa.selenium.WebDriver as WebDriver
-import org.openqa.selenium.WebElement as WebElement
-import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
 
-not_run: WebUI.scrollToPosition(0, 0)
+not_run: WebUI.delay(2)
 
-not_run: WebUI.delay(1)
-
-not_run: WebDriver openPurchase = DriverFactory.getWebDriver()
-
-not_run: WebElement plus = openPurchase.findElement(By.xpath('html/body/div[4]/div[3]/div/div/ul[28]/li/div/button/b')).click()
+'this needs to change/ uses >= operator, is shity'
+CustomKeywords.'linkers.Link.receivables'()
 
 WebUI.delay(1)
 
-WebUI.scrollToPosition(2600, 570)
+WebUI.click(findTestObject('RE/input_Receivable_Start'))
 
 WebUI.delay(1)
 
-WebDriver openPOR = DriverFactory.getWebDriver()
+WebUI.click(findTestObject('RE/input_Receivable_Entry'))
 
-WebElement por = openPOR.findElement(By.xpath('/html/body/div[4]/div[3]/div/div/ul[28]/li/ul/li[2]/div/a')).click()
+String dateNow = CustomKeywords.'dates.DateGenerate.date'()
 
-CustomKeywords.'linkers.Link.purchaseReq'()
+WebUI.setText(findTestObject('RE/input_Transaction Date'), dateNow)
 
-''', 'Test Cases/SD FLOW/SD FLOW Purchase_req', new TestCaseBinding('Test Cases/SD FLOW/SD FLOW Purchase_req',[:]), FailureHandling.STOP_ON_FAILURE , false)
+String amount = WebUI.getText(findTestObject('RE/span_getText'))
+
+println(amount)
+
+WebUI.setText(findTestObject('RE/input_Amount'), amount)
+
+WebUI.click(findTestObject('RE/input_Save'))
+
+WebUI.click(findTestObject('RE/input_Receivable_Close'))
+
+''', 'Test Cases/SD FLOW/SD FLOW_RE', new TestCaseBinding('Test Cases/SD FLOW/SD FLOW_RE',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

@@ -32,7 +32,7 @@ WebUI.selectOptionByIndex(findTestObject('OR/Open-SendtoConfirm/select_Activatio
 
 WebUI.selectOptionByLabel(findTestObject('OR/Open-SendtoConfirm/select_OrderTo'), 'Provider 1', false)
 
-String dateFutureWEeek = CustomKeywords.'dates.DateGenerate. dateWeek'()
+String dateFutureWEeek = CustomKeywords.'dates.DateGenerate.dateWeek'()
 
 WebUI.setText(findTestObject('OR/Open-SendtoConfirm/input_Deadline'), dateFutureWEeek)
 
@@ -64,9 +64,9 @@ WebUI.click(findTestObject('OR/OR Confirm/input_Sale Order_sendClose'))
 
 WebUI.delay(1)
 
-WebDriver driver1 = DriverFactory.getWebDriver()
+WebDriver driverPOR = DriverFactory.getWebDriver()
 
-String NotificationPOR = driver1.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(19, 26)
+String NotificationPOR = driverPOR.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(19, 26)
 
 println(NotificationPOR)
 
