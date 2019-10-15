@@ -175,4 +175,21 @@ public class NotificationOutput{
 		workbook.write(fos)
 		fos.close()
 	}
+	@Keyword
+	public static void writePO(String name,String Column_Name) throws IOException{
+		FileInputStream fis = new FileInputStream("./Data Files/processes.xlsx")
+		XSSFWorkbook workbook = new XSSFWorkbook(fis)
+		XSSFSheet sheet = workbook.getSheet("data")
+		int rowCount = i
+		if (Column_Name=='Purchase order'){
+			Row row = sheet.getRow(rowCount+1)
+			Cell cell = row.createCell(8,0)
+			cell.setCellType(cell.CELL_TYPE_STRING)
+			cell.setCellValue(name)
+		}
+
+		FileOutputStream fos = new FileOutputStream("./Data Files/processes.xlsx")
+		workbook.write(fos)
+		fos.close()
+	}
 }

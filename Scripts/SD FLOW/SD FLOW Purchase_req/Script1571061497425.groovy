@@ -7,7 +7,6 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import internal.GlobalVariable as GlobalVariable
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -16,11 +15,11 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
+import internal.GlobalVariable as GlobalVariable
 
-WebUI.scrollToPosition(0, 0)
+WebUI.scrollToPosition(0, 0, FailureHandling.OPTIONAL)
 
-WebUI.delay(1)
+WebUI.delay(5)
 
 WebDriver openPurchase = DriverFactory.getWebDriver()
 
@@ -32,7 +31,29 @@ WebDriver openPOR = DriverFactory.getWebDriver()
 
 WebElement por = openPOR.findElement(By.xpath('/html/body/div[4]/div[3]/div/div/ul[28]/li/ul/li[2]/div/a')).click()
 
+WebUI.delay(5)
+
 CustomKeywords.'linkers.Link.purchaseReq'()
 
+WebUI.selectOptionByIndex(findTestObject('POR/select_Purchase Order'), 1)
 
+WebUI.delay(1)
+
+WebUI.selectOptionByIndex(findTestObject('POR/From SD/select_prio'), 1)
+
+String dateFuture = CustomKeywords.'dates.DateGenerate.dateWeek'()
+
+WebUI.setText(findTestObject('POR/From SD/input_Deadline'), dateFuture)
+
+WebUI.click(findTestObject('POR/From SD/input_Purchase Create'))
+
+WebUI.delay(1)
+
+WebDriver driverPO = DriverFactory.getWebDriver()
+
+String NotificationPO = driverPO.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(15, 18)
+
+println(NotificationPO)
+
+CustomKeywords.'outputExcel.NotificationOutput.writePO'('PO-' + NotificationPO, 'Purchase order')
 

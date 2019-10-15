@@ -44,4 +44,19 @@
       <initValue>findTestData('Test Data').getValue(8, 1)</initValue>
       <name>Purchase_req</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://82.76.235.88:7946/?#!/'</initValue>
+      <name>HomeLogin</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://deploy.egt-bg.ro:7946/?#!/'</initValue>
+      <name>WorkLogin</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Test Data').getValue(9, 1)</initValue>
+      <name>Purchase_order</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

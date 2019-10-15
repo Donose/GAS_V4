@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://deploy.egt-bg.ro:7946/?#!/')
+WebUI.navigateToUrl(GlobalVariable.HomeLogin)
 
 WebUI.setText(findTestObject('Login/input_username'), 'daniel.donose')
 

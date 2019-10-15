@@ -6,6 +6,10 @@
    <elementGuidId>88d362da-e0f2-4e76-8919-f999c23151c9</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//input[@value='Send Order']</value>
       </entry>

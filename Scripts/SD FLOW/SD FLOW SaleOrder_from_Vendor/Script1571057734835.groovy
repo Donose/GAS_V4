@@ -36,6 +36,10 @@ String dateFutureWEeek = CustomKeywords.'dates.DateGenerate.dateWeek'()
 
 WebUI.setText(findTestObject('OR/Open-SendtoConfirm/input_Deadline'), dateFutureWEeek)
 
+WebUI.click(findTestObject('OR/Open-SendtoConfirm/div_Save_scrollToTopModal'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(1)
+
 WebUI.click(findTestObject('OR/Open-SendtoConfirm/input_Sale Order_SendForConfirmation'))
 
 WebDriver driver1 = DriverFactory.getWebDriver()
@@ -49,6 +53,8 @@ CustomKeywords.'outputExcel.NotificationOutput.writeOR'(SpanOR, 'Sale Order')
 WebUI.delay(5)
 
 CustomKeywords.'linkers.Link.fromRE'()
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('OR/OR Confirm/input_Sale Order_Confirm'))
 
@@ -66,7 +72,7 @@ CustomKeywords.'linkers.Link.fromRE'()
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('OR/OR Confirm/input_Sale Order_sendClose'))
+WebUI.click(findTestObject('OR/OR Confirm/input_Sale Order_Confirm'))
 
 WebUI.delay(1)
 

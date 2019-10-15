@@ -172,6 +172,14 @@ def static "outputExcel.NotificationOutput.writePOR"(
          , 	Column_Name)
 }
 
+def static "outputExcel.NotificationOutput.writePO"(
+    	String name	
+     , 	String Column_Name	) {
+    (new outputExcel.NotificationOutput()).writePO(
+        	name
+         , 	Column_Name)
+}
+
 def static "dates.DatePicker.handleDatepicker"(
     	TestObject calender	
      , 	String exp_Date	

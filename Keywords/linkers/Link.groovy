@@ -80,16 +80,6 @@ public class Link {
 				String celltext = Columns_row.get(column).getText()
 				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
 				if (celltext == ('From ')+lookFor){
-					Point location = rows_table.get(row).findElement(By.tagName('button')).getLocation()
-					WebElement Button = rows_table.get(row).findElement(By.tagName('button'))
-					int x = location.getX()
-					int y = location.getY()
-					Actions actions = new Actions(driver);
-					//actions.moveByOffset(x, y)
-					actions.moveToElement(Table, x, y)
-					actions.pause(20000000)
-					println(location)
-				
 					rows_table.get(row).findElement(By.tagName('button')).click()
 					return
 				}
@@ -199,7 +189,7 @@ public class Link {
 				String celltext = Columns_row.get(column).getText()
 				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
 				if (celltext == lookFor){
-					
+
 					rows_table.get(row).findElement(By.tagName('button')).click()
 					return
 				}

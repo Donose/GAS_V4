@@ -6,6 +6,10 @@
    <elementGuidId>40b92674-c4a5-4c33-ad74-23d3ab144d46</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>/html[@class=&quot;k-webkit k-webkit77&quot;]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;modal fade in&quot;]/div[@class=&quot;modal-dialog modal-offer&quot;]/div[@class=&quot;modal-content&quot;]/form[@class=&quot;ng-valid ng-valid-date ng-dirty&quot;]/div[@class=&quot;treeGroups&quot;]/div[@class=&quot;addCompany&quot;]/div[1]/div[1]/input[@class=&quot;btn-success input-sm&quot;][count(. | //*[@type = 'button' and @class = 'btn-success input-sm' and @value = 'Send for Confirmation']) = count(//*[@type = 'button' and @class = 'btn-success input-sm' and @value = 'Send for Confirmation'])]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//input[@value='Send for Confirmation']</value>
       </entry>
@@ -27,7 +31,7 @@
       <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
@@ -48,7 +52,7 @@
       <value>changeProjectStatus()</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>value</name>
       <type>Main</type>
@@ -62,7 +66,7 @@
       <value>formData.products_order_status == 2</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
