@@ -22,7 +22,7 @@ WebUI.delay(5)
 
 CustomKeywords.'linkers.Link.offer'()
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('SO/Status Archiving/input_Sale_Offer_Close'))
 

@@ -6,11 +6,15 @@
    <elementGuidId>101908af-fe9b-4c4d-852e-63a6e9b18b4e</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and @ng-click = 'changeProjectStatus()' and @value = 'Close']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//input[@value='Send Order']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -41,18 +45,18 @@
       <value>customize_privilege[2]</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-click</name>
       <type>Main</type>
       <value>changeProjectStatus()</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>value</name>
       <type>Main</type>
-      <value>Send Order</value>
+      <value>Close</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

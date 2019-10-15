@@ -14,7 +14,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.m
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\DANIEL~1.DON\\AppData\\Local\\Temp\\Katalon\\Test Cases\\SD FLOW\\SD FLOW_RE\\20191014_175744\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\DANIEL~1.DON\\AppData\\Local\\Temp\\Katalon\\Test Cases\\SD FLOW\\SD FLOW_Offer\\20191015_152823\\execution.properties')
 
 TestCaseMain.beforeStart()
 
@@ -34,32 +34,51 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-not_run: WebUI.delay(2)
+not_run: WebUI.delay(7, FailureHandling.STOP_ON_FAILURE)
 
-'this needs to change/ uses >= operator, is shity'
-CustomKeywords.'linkers.Link.receivables'()
+CustomKeywords.'linkers.Link.fromMeeting'()
 
-WebUI.delay(1)
+WebUI.delay(3)
 
-WebUI.click(findTestObject('RE/input_Receivable_Start'))
+WebUI.click(findTestObject('SO/Status Open/input_Sale Offer_Open'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
-WebUI.click(findTestObject('RE/input_Receivable_Entry'))
+String offer = WebUI.getText(findTestObject('SO/Status Open/td_OFnumber'))
 
-String dateNow = CustomKeywords.'dates.DateGenerate.date'()
+System.out.println(offer)
 
-WebUI.setText(findTestObject('RE/input_Transaction Date'), dateNow)
+CustomKeywords.'outputExcel.NotificationOutput.writeOF'(offer, 'Offer')
 
-String amount = WebUI.getText(findTestObject('RE/span_getText'))
+String date = CustomKeywords.'dates.DateGenerate.dateWeek'()
 
-println(amount)
+WebUI.sendKeys(findTestObject('SO/Status In Progress/input_Offer Validity_Date'), date)
 
-WebUI.setText(findTestObject('RE/input_Amount'), amount)
+'TO BE MADE'
+not_run: WebUI.sendKeys(findTestObject('SO/Status In Progress/input_Discount'), '')
 
-WebUI.click(findTestObject('RE/input_Save'))
+WebUI.sendKeys(findTestObject('SO/Status In Progress/input_Advance - Pay'), '20')
 
-WebUI.click(findTestObject('RE/input_Receivable_Close'))
+String dateAdvance = CustomKeywords.'dates.DateGenerate.dateWeek'()
 
-''', 'Test Cases/SD FLOW/SD FLOW_RE', new TestCaseBinding('Test Cases/SD FLOW/SD FLOW_RE',[:]), FailureHandling.STOP_ON_FAILURE , false)
+WebUI.sendKeys(findTestObject('SO/Status In Progress/input_First Advance Payment (deadline)'), dateAdvance)
+
+WebUI.selectOptionByIndex(findTestObject('SO/Status In Progress/select_Installments'), 5)
+
+'TO BE MADE'
+not_run: WebUI.sendKeys(findTestObject('SO/Status In Progress/input_Interest'), '')
+
+WebUI.click(findTestObject('SO/Status In Progress/Calculate'))
+
+CustomKeywords.'checkers.RadioButton.OwnCompany'()
+
+WebUI.selectOptionByIndex(findTestObject('SO/Status In Progress/select_Company'), 1)
+
+CustomKeywords.'checkers.RadioButton.Warehouse'()
+
+WebUI.selectOptionByLabel(findTestObject('SO/Status In Progress/Warehouse/select_Warehouse'), 'Warehouse number 1', false)
+
+WebUI.click(findTestObject('SO/Status In Progress/input_Sale Offer_SendForConfirmation'))
+
+''', 'Test Cases/SD FLOW/SD FLOW_Offer', new TestCaseBinding('Test Cases/SD FLOW/SD FLOW_Offer',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

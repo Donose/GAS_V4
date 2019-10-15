@@ -52,4 +52,28 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/SD FLOW/SD FLOW_Contract_Skip</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>2c5be9ef-16f8-4f12-aae2-7db989e848ce</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SD FLOW/SD FLOW_BR_Advance_and_BI</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1bfaf9c0-667f-4383-b21c-e882001948f1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SD FLOW/SD FLOW_RE</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3cde458b-e89c-4b95-8547-537c58b9b411</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SD FLOW/SD FLOW SaleOrder_from_Vendor</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>acfe2e88-3e8b-4645-86a4-cdc2c30a3000</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SD FLOW/SD FLOW Purchase_req</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

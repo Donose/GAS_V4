@@ -21,19 +21,23 @@ WebUI.delay(5)
 
 WebUI.scrollToPosition(0, 0)
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 WebDriver bilingOpen = DriverFactory.getWebDriver()
 
 WebElement plus = bilingOpen.findElement(By.xpath(' /html/body/div[4]/div[3]/div/div/ul[29]/li/div/button/b')).click()
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 WebDriver billingElem = DriverFactory.getWebDriver()
 
 WebElement billing = billingElem.findElement(By.xpath('/html/body/div[4]/div[3]/div/div/ul[29]/li/ul/li[1]/div/a')).click()
 
-CustomKeywords.'linkers.Link.fromCT'()
+WebUI.delay(2)
+
+CustomKeywords.'linkers.Link.BR'()
+
+WebUI.delay(2)
 
 WebUI.selectOptionByIndex(findTestObject('BR/select_Generate Billing'), 1)
 

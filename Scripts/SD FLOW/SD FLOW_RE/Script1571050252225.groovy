@@ -13,16 +13,16 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 'this needs to change/ uses >= operator, is shity'
 CustomKeywords.'linkers.Link.receivables'()
 
-WebUI.delay(1)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('RE/input_Receivable_Start'))
 
-WebUI.delay(1)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('RE/input_Receivable_Entry'))
 
@@ -31,8 +31,10 @@ String dateNow = CustomKeywords.'dates.DateGenerate.date'()
 WebUI.setText(findTestObject('RE/input_Transaction Date'), dateNow)
 
 String amount = WebUI.getText(findTestObject('RE/span_getText'))
+String currency = WebUI.getText(findTestObject('RE/span_Currency'))
+String rate = WebUI.getText(findTestObject('RE/input_ExchangeRate'))
 
-println(amount)
+println('Amout in ' + amount+ ' Currency: '+currency+' At a rate of: '+rate)
 
 WebUI.setText(findTestObject('RE/input_Amount'), amount)
 

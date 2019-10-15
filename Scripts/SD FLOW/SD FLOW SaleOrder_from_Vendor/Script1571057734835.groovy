@@ -38,8 +38,6 @@ WebUI.setText(findTestObject('OR/Open-SendtoConfirm/input_Deadline'), dateFuture
 
 WebUI.click(findTestObject('OR/Open-SendtoConfirm/input_Sale Order_SendForConfirmation'))
 
-WebUI.delay(5)
-
 WebDriver driver1 = DriverFactory.getWebDriver()
 
 String SpanOR = driver1.findElement(By.xpath('/html/body/div[6]/div[1]/div/form/div[1]/table/tbody/tr/td[3]/table/tbody/tr[1]/td[2]')).getText()
@@ -48,7 +46,15 @@ println(SpanOR)
 
 CustomKeywords.'outputExcel.NotificationOutput.writeOR'(SpanOR, 'Sale Order')
 
+WebUI.delay(5)
+
+CustomKeywords.'linkers.Link.fromRE'()
+
 WebUI.click(findTestObject('OR/OR Confirm/input_Sale Order_Confirm'))
+
+WebUI.delay(5)
+
+CustomKeywords.'linkers.Link.fromRE'()
 
 WebUI.delay(5)
 
@@ -66,7 +72,7 @@ WebUI.delay(1)
 
 WebDriver driverPOR = DriverFactory.getWebDriver()
 
-String NotificationPOR = driverPOR.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(19, 26)
+String NotificationPOR = driverPOR.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(18, 26)
 
 println(NotificationPOR)
 

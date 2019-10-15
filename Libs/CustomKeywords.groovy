@@ -24,8 +24,8 @@ def static "linkers.Link.fromOffer"() {
     (new linkers.Link()).fromOffer()
 }
 
-def static "linkers.Link.fromCT"() {
-    (new linkers.Link()).fromCT()
+def static "linkers.Link.BR"() {
+    (new linkers.Link()).BR()
 }
 
 def static "linkers.Link.billingIv"() {
