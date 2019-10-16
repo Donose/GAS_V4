@@ -239,11 +239,3 @@ def static "dates.DateGenerate.dateWeekAgo"() {
 def static "VerifySelection.verifyPrio"() {
     (new VerifySelection()).verifyPrio()
 }
-
-def static "randomNumber.RandomDropDownProjectInfo.randomPOR"() {
-    (new randomNumber.RandomDropDownProjectInfo()).randomPOR()
-}
-
-def static "randomNumber.RandomDropDownProjectInfo.generate"() {
-    (new randomNumber.RandomDropDownProjectInfo()).generate()
-}

@@ -15,7 +15,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.HomeLogin)
+WebUI.maximizeWindow()
+
+WebUI.navigateToUrl(GlobalVariable.WorkLogin)
 
 WebUI.setText(findTestObject('Login/input_username'), 'daniel.donose')
 
