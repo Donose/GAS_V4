@@ -18,46 +18,53 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CustomKeywords.'mainDashboardSelections.Selectors.selectPOR'()
+for (int i = 0; i = 10; i++) {
+    WebUI.delay(4)
 
-WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Prio'), 1)
+    CustomKeywords.'mainDashboardSelections.Selectors.selectPOR'()
 
-WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Department'), 6)
+    WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Prio'), 1)
 
-'will be replaced by test data'
-WebUI.selectOptionByLabel(findTestObject('POR/New POR/select_wh'), 'Warehouse number 1', false)
+    WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Department'), 6)
 
-WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Supervisor'), 2)
+    'will be replaced by test data'
+    WebUI.selectOptionByLabel(findTestObject('POR/New POR/select_wh'), 'Warehouse number 1', false)
 
-String dateFuture = CustomKeywords.'dates.DateGenerate.dateWeek'()
+    WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Supervisor'), 2)
 
-WebUI.setText(findTestObject('POR/New POR/input_Deadline'), dateFuture)
+    String dateFuture = CustomKeywords.'dates.DateGenerate.dateWeek'()
 
-WebUI.click(findTestObject('POR/New POR/span_Select material'))
+    WebUI.setText(findTestObject('POR/New POR/input_Deadline'), dateFuture)
 
-'will be replaced by test data'
-WebUI.setText(findTestObject('POR/New POR/input_Select material'), 'Gaming_machine2')
+    WebUI.click(findTestObject('POR/New POR/span_Select material'))
 
-WebUI.delay(1)
+    'will be replaced by test data'
+    WebUI.setText(findTestObject('POR/New POR/input_Select material'), 'iSmart 6 Apple watch')
 
-WebUI.sendKeys(findTestObject('POR/New POR/input_Select material'), Keys.chord(Keys.ENTER))
+    WebUI.delay(1)
 
-WebUI.setText(findTestObject('POR/New POR/input_QTT'), '2')
+    WebUI.sendKeys(findTestObject('POR/New POR/input_Select material'), Keys.chord(Keys.ENTER))
 
-WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Reason'), 9)
+    WebUI.setText(findTestObject('POR/New POR/input_QTT'), '10')
 
-WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Type'), 1)
+    WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Reason'), 9)
 
-'not working'
-WebUI.getText(findTestObject('POR/New POR/input_AveragePriceEURO'))
+    WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Type'), 1)
 
-WebUI.click(findTestObject('POR/New POR/input_Purchase Requisition'))
+    'not working'
+    WebUI.getText(findTestObject('POR/New POR/input_AveragePriceEURO'))
 
-WebUI.delay(1)
+    WebUI.click(findTestObject('POR/New POR/input_Purchase Requisition'))
 
-WebDriver driverPOR = DriverFactory.getWebDriver()
+    WebUI.delay(1)
 
-String NotificationPOR = driverPOR.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(0, 7)
+    not_run: WebDriver driverPOR = DriverFactory.getWebDriver()
 
-println(NotificationPOR)
+    not_run: String NotificationPOR = driverPOR.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(0, 
+        7)
+
+    not_run: println(NotificationPOR)
+
+    WebUI.delay(1)
+}
 

@@ -59,7 +59,7 @@ WebUI.setText(findTestObject('ME/Client Products/input_Quantty'), '4')
 
 WebUI.click(findTestObject('ME/Client Products/span_Select material'))
 
-WebUI.setText(findTestObject('ME/Client Products/input_Materials'), 'Gaming_machine1')
+WebUI.setText(findTestObject('ME/Client Products/input_Materials'), variable_0)
 
 WebUI.sendKeys(findTestObject('ME/Client Products/input_Materials'), Keys.chord(Keys.ENTER))
 
@@ -82,6 +82,4 @@ println(NotificationME)
 CustomKeywords.'outputExcel.NotificationOutput.write'(NotificationME, 'Meeting')
 
 WebUI.scrollToPosition(0, 0)
-
-
 

@@ -26,7 +26,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('CT/Status Open/input__btn-Skip'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
 WebDriver driver1 = DriverFactory.getWebDriver()
 

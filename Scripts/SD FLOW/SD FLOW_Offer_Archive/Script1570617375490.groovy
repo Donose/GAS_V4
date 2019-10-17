@@ -26,7 +26,7 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('SO/Status Archiving/input_Sale_Offer_Close'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 WebDriver driver1 = DriverFactory.getWebDriver()
 

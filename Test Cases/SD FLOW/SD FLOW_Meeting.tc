@@ -6,10 +6,17 @@
    <comment></comment>
    <testCaseGuid>700eaea0-1f76-4d62-a023-3a07fac591ef</testCaseGuid>
    <variable>
-      <defaultValue>[:]</defaultValue>
+      <defaultValue>findTestData('Materials')</defaultValue>
       <description></description>
-      <id>4029f530-1bf5-4ff2-9c17-65642cccb760</id>
+      <id>7fbb2f5c-5039-4549-8ad7-23029dd820dc</id>
       <masked>false</masked>
       <name>variable</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Materials').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>6d256c95-2bf9-4c2b-8027-caa9c07669d7</id>
+      <masked>false</masked>
+      <name>variable_0</name>
    </variable>
 </TestCaseEntity>

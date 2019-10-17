@@ -61,15 +61,23 @@ WebUI.setText(findTestObject('BI/input__form_DATE'), invoiceDateNow)
 
 WebUI.selectOptionByIndex(findTestObject('BI/select_TYPE'), 1)
 
-WebUI.selectOptionByIndex(findTestObject('BI/select_reason'), 1)
+WebUI.delay(1)
+
+WebUI.selectOptionByIndex(findTestObject('BI/select_reason'), 2)
+
+WebUI.delay(1)
 
 WebUI.selectOptionByIndex(findTestObject('BI/select_CURRENCY'), 1)
 
+WebUI.delay(1)
+
 WebUI.selectOptionByIndex(findTestObject('BI/select_CASH_TRANSFER'), 1)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('BI/input_Billing'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
 WebDriver driverRE = DriverFactory.getWebDriver()
 
