@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description>For selecting prio</description>
+   <name>DropDowns</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>cf2a6a00-efc8-42bb-8cd5-22106df38839</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>Low Meeting New+Deal Own+Office High Offer Sale Generate+Billing ING Rent+Incomes Rent Romanian+Leu Fiscal+Bill</data>
+   <data>High Phone+Call Old+Deal Client+Office Medium Negotiation Rent Cancel Office+Cash+Box Sales+Incomes Sale Euro Payment+Order</data>
+   <data>Medium E-mail null Neutral Low Contract null Select+All Bank+of+Swiss Service+Incomes Service null Invoice</data>
+   <data>URGENT Post null Exhibition null Annex null purchase_order Bank+BRD Other+Incomes CMS null Receipt</data>
+   <data>null null null Restaurant%2FCafe null Coffe null null null CMS+Incomes null null null</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>1.Prio</name>
+      <size>5</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>2.Manner of Contact</name>
+      <size>5</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>2</columnIndex>
+      <name>3.Deal Category</name>
+      <size>5</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>3</columnIndex>
+      <name>4.Meeting Location</name>
+      <size>5</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>4</columnIndex>
+      <name>5.Opportunity</name>
+      <size>5</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>5</columnIndex>
+      <name>6.Purpose</name>
+      <size>5</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>6</columnIndex>
+      <name>7.Deal Type</name>
+      <size>5</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>7</columnIndex>
+      <name>8.Process Actions</name>
+      <size>5</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>8</columnIndex>
+      <name>9.BR Cash Box</name>
+      <size>5</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>9</columnIndex>
+      <name>10.BR Income Type</name>
+      <size>5</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>10</columnIndex>
+      <name>11.BR Accounting Division</name>
+      <size>5</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>11</columnIndex>
+      <name>12.BR Currency</name>
+      <size>5</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>12</columnIndex>
+      <name>13.BR Payment Method</name>
+      <size>5</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

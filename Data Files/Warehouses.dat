@@ -10,7 +10,7 @@
    <driver>DBData</driver>
    <isInternalPath>false</isInternalPath>
    <password></password>
-   <query>SELECT warehouse_name FROM warehouse.warehouses;</query>
+   <query>SELECT warehouse_id,warehouse_name FROM warehouse.warehouses ORDER BY warehouse_id ASC;</query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName></sheetName>
    <user></user>
