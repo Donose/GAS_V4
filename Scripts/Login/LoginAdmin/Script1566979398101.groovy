@@ -25,5 +25,3 @@ WebUI.setText(findTestObject('Login/input_password'), '11111sase')
 
 WebUI.click(findTestObject('Login/button_Login'))
 
-WebUI.delay(5)
-

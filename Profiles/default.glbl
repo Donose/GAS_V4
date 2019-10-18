@@ -6,46 +6,6 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>findTestData('Test Data').getValue(1, 1)</initValue>
-      <name>Meeting</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>findTestData('Test Data').getValue(2, 1)</initValue>
-      <name>Offer</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>findTestData('Test Data').getValue(3, 1)</initValue>
-      <name>Contract</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>findTestData('Test Data').getValue(4, 1)</initValue>
-      <name>Billing_Req</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>findTestData('Test Data').getValue(5, 1)</initValue>
-      <name>Billing_inv</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>findTestData('Test Data').getValue(6, 1)</initValue>
-      <name>Receivables</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>findTestData('Test Data').getValue(7, 1)</initValue>
-      <name>Sale_Order</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>findTestData('Test Data').getValue(8, 1)</initValue>
-      <name>Purchase_req</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
       <initValue>'http://82.76.235.88:7946/?#!/'</initValue>
       <name>HomeLogin</name>
    </GlobalVariableEntity>
@@ -56,7 +16,47 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>findTestData('Test Data').getValue(9, 1)</initValue>
+      <initValue>findTestData('Process numbers').getValue(1, 1)</initValue>
+      <name>Meeting</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Process numbers').getValue(2, 1)</initValue>
+      <name>Offer</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Process numbers').getValue(3, 1)</initValue>
+      <name>Contract</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Process numbers').getValue(4, 1)</initValue>
+      <name>Billing_Req</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Process numbers').getValue(5, 1)</initValue>
+      <name>Billing_inv</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Process numbers').getValue(6, 1)</initValue>
+      <name>Receivables</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Process numbers').getValue(7, 1)</initValue>
+      <name>Sale_Order</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Process numbers').getValue(8, 1)</initValue>
+      <name>Purchase_req</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Process numbers').getValue(9, 1)</initValue>
       <name>Purchase_order</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
