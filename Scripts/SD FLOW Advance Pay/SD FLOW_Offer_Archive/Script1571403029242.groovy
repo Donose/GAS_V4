@@ -20,21 +20,11 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
-WebUI.waitForElementPresent(findTestObject('Waiters/WaitButton_Element'), 20)
+WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
 
 CustomKeywords.'linkers.Link.offer'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
 WebUI.click(findTestObject('SO/Status Archiving/input_Sale_Offer_Close'))
-
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitNotification_Element'), 20)
-
-WebDriver driver1 = DriverFactory.getWebDriver()
-
-String NotificationCT = driver1.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(18, 24)
-
-println(NotificationCT)
-
-CustomKeywords.'outputExcel.NotificationOutput.writeCT'(NotificationCT, 'Contract')
 

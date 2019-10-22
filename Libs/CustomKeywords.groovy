@@ -12,36 +12,28 @@ def static "linkers.Link.contract"() {
     (new linkers.Link()).contract()
 }
 
-def static "linkers.Link.fromMeeting"() {
-    (new linkers.Link()).fromMeeting()
-}
-
 def static "linkers.Link.offer"() {
     (new linkers.Link()).offer()
 }
 
-def static "linkers.Link.fromOffer"() {
-    (new linkers.Link()).fromOffer()
+def static "linkers.Link.billing_request"() {
+    (new linkers.Link()).billing_request()
 }
 
-def static "linkers.Link.BR"() {
-    (new linkers.Link()).BR()
-}
-
-def static "linkers.Link.billingIv"() {
-    (new linkers.Link()).billingIv()
+def static "linkers.Link.billing"() {
+    (new linkers.Link()).billing()
 }
 
 def static "linkers.Link.receivables"() {
     (new linkers.Link()).receivables()
 }
 
-def static "linkers.Link.fromRE"() {
-    (new linkers.Link()).fromRE()
+def static "linkers.Link.order"() {
+    (new linkers.Link()).order()
 }
 
-def static "linkers.Link.purchaseReq"() {
-    (new linkers.Link()).purchaseReq()
+def static "linkers.Link.purchase_req"() {
+    (new linkers.Link()).purchase_req()
 }
 
 def static "mainDashboardSelections.Selectors.selectPOR"() {

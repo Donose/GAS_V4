@@ -10,7 +10,7 @@
    <driver>DBData</driver>
    <isInternalPath>false</isInternalPath>
    <password></password>
-   <query>SELECT material_name,creation_date FROM warehouse.materials WHERE creation_date > 1566040825</query>
+   <query>SELECT material_name,creation_date FROM warehouse.materials WHERE creation_date > 1565004025</query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName></sheetName>
    <user></user>

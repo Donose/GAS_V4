@@ -57,11 +57,11 @@ WebUI.setText(findTestObject('Object Repository/ME/DatePick/input_Meeting date')
 
 WebUI.waitForElementVisible(findTestObject('ME/Client Products/span_Client interested in products'), 5)
 
-WebUI.setText(findTestObject('ME/Client Products/input_Quantty'), '4')
+WebUI.setText(findTestObject('ME/Client Products/input_Quantty'), findTestData('Materials').getValue(1, 24))
 
 WebUI.click(findTestObject('ME/Client Products/span_Select material'))
 
-WebUI.setText(findTestObject('ME/Client Products/input_Materials'), findTestData('Materials').getValue(1, 12))
+WebUI.setText(findTestObject('ME/Client Products/input_Materials'), 'Gaming_machine1')
 
 WebUI.sendKeys(findTestObject('ME/Client Products/input_Materials'), Keys.chord(Keys.ENTER))
 
@@ -72,23 +72,15 @@ String dateFuture = CustomKeywords.'dates.DateGenerate.dateWeek'()
 
 not_run: WebUI.setText(findTestObject('ME/Client Products/input_Prefer Delivery Date'), dateFuture)
 
+WebUI.setText(findTestObject('ME/textarea_Comment'), 'This is made by automation')
+
 WebUI.click(findTestObject('ME/button_Create Offer'))
 
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitNotification_Element'), 20)
-
-WebDriver notificationME = DriverFactory.getWebDriver()
-
-String NotificationME = notificationME.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(8, 14)
-
-println(NotificationME)
-
-CustomKeywords.'outputExcel.NotificationOutput.write'(NotificationME, 'Meeting')
+WebUI.delay(1)
 
 WebUI.scrollToPosition(0, 0)
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Waiters/WaitNotification_Element'), 20)
-
-
 

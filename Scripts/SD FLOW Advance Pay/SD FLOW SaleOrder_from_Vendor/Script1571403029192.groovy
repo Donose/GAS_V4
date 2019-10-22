@@ -20,7 +20,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
 
-CustomKeywords.'linkers.Link.fromRE'()
+CustomKeywords.'linkers.Link.order'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.STOP_ON_FAILURE)
 
@@ -32,7 +32,7 @@ WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element')
 WebUI.selectOptionByIndex(findTestObject('OR/Open-SendtoConfirm/select_Activation'), 1)
 
 WebUI.selectOptionByLabel(findTestObject('OR/Open-SendtoConfirm/select_OrderTo'), findTestData('Provider Company').getValue(
-        1, 44), false)
+        2, 6), false)
 
 String dateFutureWEeek = CustomKeywords.'dates.DateGenerate.dateWeek'()
 
@@ -44,29 +44,23 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('OR/Open-SendtoConfirm/input_Sale Order_SendForConfirmation'))
 
-WebDriver driver1 = DriverFactory.getWebDriver()
-
-String SpanOR = driver1.findElement(By.xpath('/html/body/div[6]/div[1]/div/form/div[1]/table/tbody/tr/td[3]/table/tbody/tr[1]/td[2]')).getText()
-
-println(SpanOR)
-
-CustomKeywords.'outputExcel.NotificationOutput.writeOR'(SpanOR, 'Sale Order')
-
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
 
-CustomKeywords.'linkers.Link.fromRE'()
+CustomKeywords.'linkers.Link.order'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('OR/OR Confirm/input_Sale Order_Confirm'))
 
-CustomKeywords.'linkers.Link.fromRE'()
-
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
+
+CustomKeywords.'linkers.Link.order'()
+
+WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('OR/OR Confirm/input_Sale Order_SEND'))
 
@@ -74,19 +68,13 @@ WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element')
 
 WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
 
-CustomKeywords.'linkers.Link.fromRE'()
+WebUI.delay(2)
+
+CustomKeywords.'linkers.Link.order'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('OR/OR Confirm/input_Sale Order_Confirm'))
 
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitNotification_Element'), 20)
-
-WebDriver driverPOR = DriverFactory.getWebDriver()
-
-String NotificationPOR = driverPOR.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(18, 26)
-
-println(NotificationPOR)
-
-CustomKeywords.'outputExcel.NotificationOutput.writePOR'(NotificationPOR, 'Purchase req')
+WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.STOP_ON_FAILURE)
 

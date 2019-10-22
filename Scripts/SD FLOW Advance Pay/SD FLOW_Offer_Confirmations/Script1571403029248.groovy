@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
-WebUI.waitForElementPresent(findTestObject('Waiters/WaitButton_Element'), 20)
+WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
 
 CustomKeywords.'linkers.Link.offer'()
 
@@ -25,7 +25,7 @@ WebUI.click(findTestObject('SO/Status Sale Confirmation/Sale Director/input_Sale
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
-WebUI.waitForElementPresent(findTestObject('Waiters/WaitButton_Element'), 20)
+WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
 
 CustomKeywords.'linkers.Link.offer'()
 
@@ -35,7 +35,7 @@ WebUI.click(findTestObject('SO/Status Sale Confirmation/EGT Romania Director/inp
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
-WebUI.waitForElementPresent(findTestObject('Waiters/WaitButton_Element'), 20)
+WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
 
 CustomKeywords.'linkers.Link.offer'()
 
@@ -45,7 +45,7 @@ WebUI.click(findTestObject('SO/Status Sale Confirmation/EGT Bulgaria Director/in
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
-WebUI.waitForElementPresent(findTestObject('Waiters/WaitButton_Element'), 20)
+WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
 
 CustomKeywords.'linkers.Link.offer'()
 

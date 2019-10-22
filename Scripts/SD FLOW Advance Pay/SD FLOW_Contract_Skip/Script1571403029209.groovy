@@ -22,6 +22,8 @@ WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element')
 
 WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
 
+WebUI.delay(2)
+
 CustomKeywords.'linkers.Link.contract'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.CONTINUE_ON_FAILURE)
@@ -29,14 +31,4 @@ WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element')
 WebUI.click(findTestObject('CT/Status Open/input__btn-Skip'))
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitNotification_Element'), 20)
-
-WebDriver driver1 = DriverFactory.getWebDriver()
-
-String NotificationBR = driver1.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(18, 24)
-
-println(NotificationBR)
-
-CustomKeywords.'outputExcel.NotificationOutput.writeBR'(NotificationBR, 'Billing req')
 

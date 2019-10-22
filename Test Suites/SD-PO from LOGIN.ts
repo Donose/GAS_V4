@@ -21,21 +21,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW_Meeting</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>9573c0b5-afa1-477a-9b49-0cf783fe0817</id>
-         <iterationEntity>
-            <iterationType>SPECIFIC</iterationType>
-            <value>15</value>
-         </iterationEntity>
-         <testDataId>Data Files/Materials</testDataId>
-      </testDataLink>
-      <variableLink>
-         <testDataLinkId>9573c0b5-afa1-477a-9b49-0cf783fe0817</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>material_name</value>
-         <variableId>7fbb2f5c-5039-4549-8ad7-23029dd820dc</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>d4875971-fb74-45cb-b32b-2f39556a0450</guid>

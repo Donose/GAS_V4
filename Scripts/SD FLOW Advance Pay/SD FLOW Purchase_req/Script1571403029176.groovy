@@ -25,15 +25,13 @@ WebDriver openPurchase = DriverFactory.getWebDriver()
 
 WebElement plus = openPurchase.findElement(By.xpath('html/body/div[4]/div[3]/div/div/ul[28]/li/div/button/b')).click()
 
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitPurchaseReq_Element'), 0)
+WebUI.waitForElementVisible(findTestObject('Waiters/WaitPurchaseReq_Element'), 20)
 
 WebDriver openPOR = DriverFactory.getWebDriver()
 
 WebElement por = openPOR.findElement(By.xpath('/html/body/div[4]/div[3]/div/div/ul[28]/li/ul/li[2]/div/a')).click()
 
 WebUI.waitForElementVisible(findTestObject('Waiters/WaitBRButton_Element'), 20)
-
-CustomKeywords.'linkers.Link.purchaseReq'()
 
 WebUI.selectOptionByValue(findTestObject('POR/select_Purchase Order'), findTestData('DropDowns').getValue(8, 4), false)
 
@@ -47,14 +45,4 @@ String dateFuture = CustomKeywords.'dates.DateGenerate.dateWeek'()
 WebUI.setText(findTestObject('POR/From SD/input_Deadline'), dateFuture)
 
 WebUI.click(findTestObject('POR/From SD/input_Purchase Create'))
-
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitNotification_Element'), 20, FailureHandling.STOP_ON_FAILURE)
-
-WebDriver driverPO = DriverFactory.getWebDriver()
-
-String NotificationPO = driverPO.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(15, 18)
-
-println(NotificationPO)
-
-CustomKeywords.'outputExcel.NotificationOutput.writePO'('PO-' + NotificationPO, 'Purchase order')
 

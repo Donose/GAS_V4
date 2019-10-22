@@ -15,23 +15,15 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
-WebUI.waitForElementPresent(findTestObject('Waiters/WaitButton_Element'), 20, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(10)
-
-CustomKeywords.'linkers.Link.fromOffer'()
+CustomKeywords.'linkers.Link.offer'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('SO/Status Open/input_Sale Offer_Open'))
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
-
-String offer = WebUI.getText(findTestObject('SO/Status Open/td_OFnumber'))
-
-System.out.println(offer)
-
-CustomKeywords.'outputExcel.NotificationOutput.writeOF'(offer, 'Offer')
 
 String date = CustomKeywords.'dates.DateGenerate.dateWeek'()
 

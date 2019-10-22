@@ -6,6 +6,18 @@
    <elementGuidId>a0960477-8ac6-48a9-8995-efed7ff3d91f</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>/html[@class=&quot;k-webkit k-webkit77&quot;]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;modal fade in&quot;]/div[@class=&quot;modal-dialog modal-offer&quot;]/div[@class=&quot;modal-content&quot;]/form[@class=&quot;ng-valid ng-valid-date ng-dirty ng-valid-parse&quot;]/div[@class=&quot;treeGroups&quot;]/div[3]/div[@class=&quot;field-group&quot;]/table[2]/tbody[1]/tr[1]/td[6]/select[@class=&quot;form-control input-sm text-center input-free ng-pristine ng-untouched ng-valid input-required ng-empty&quot;][count(. | //*[(text() = '
+                    BuybackCeased Rent ContractConversionExibitionExternal ServiceInternal ServiceLow Stock LevelRentSale
+                ' or . = '
+                    BuybackCeased Rent ContractConversionExibitionExternal ServiceInternal ServiceLow Stock LevelRentSale
+                ')]) = count(//*[(text() = '
+                    BuybackCeased Rent ContractConversionExibitionExternal ServiceInternal ServiceLow Stock LevelRentSale
+                ' or . = '
+                    BuybackCeased Rent ContractConversionExibitionExternal ServiceInternal ServiceLow Stock LevelRentSale
+                ')])]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>(.//*[normalize-space(text()) and normalize-space(.)='Piece'])[1]/following::select[1]</value>
       </entry>
@@ -64,7 +76,7 @@
                 </value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

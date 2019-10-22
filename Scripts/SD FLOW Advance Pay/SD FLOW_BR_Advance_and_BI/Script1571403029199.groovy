@@ -37,7 +37,7 @@ WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element')
 
 WebUI.waitForElementVisible(findTestObject('Waiters/WaitBRButton_Element'), 20)
 
-CustomKeywords.'linkers.Link.BR'()
+CustomKeywords.'linkers.Link.billing_request'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -48,14 +48,6 @@ WebUI.selectOptionByLabel(findTestObject('BR/select_Generate Billing'), findTest
 WebUI.click(findTestObject('BR/input_InProgress'))
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebDriver notificationBI = DriverFactory.getWebDriver()
-
-String NotificationBi = notificationBI.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(0, 6)
-
-println(NotificationBi)
-
-CustomKeywords.'outputExcel.NotificationOutput.writeBI'(NotificationBi, 'Billing inv')
 
 'This must be saved/ future'
 WebUI.setText(findTestObject('BI/input__form_invoiceNR'), String.valueOf(Math.abs(new Random().nextInt() % 9999) + 1))
@@ -79,16 +71,6 @@ not_run: WebUI.selectOptionByLabel(findTestObject('BI/select_PaymentMethod'), fi
     false)
 
 WebUI.click(findTestObject('BI/input_Billing'))
-
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitNotification_Element'), 20)
-
-WebDriver driverRE = DriverFactory.getWebDriver()
-
-String NotificationRE = driverRE.findElement(By.xpath('/html/body/div[4]/div[1]')).getText().substring(18, 24)
-
-println(NotificationRE)
-
-CustomKeywords.'outputExcel.NotificationOutput.writeRE'(NotificationRE, 'Receivables')
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.CONTINUE_ON_FAILURE)
 
