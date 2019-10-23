@@ -23,7 +23,7 @@ WebUI.waitForElementVisible(findTestObject('MainDashboard/Nav_Menu_Top/a_SD'), 1
 
 CustomKeywords.'mainDashboardSelections.Selectors.selectSDMeeting'()
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
 WebUI.delay(5)
 
@@ -76,11 +76,7 @@ WebUI.setText(findTestObject('ME/textarea_Comment'), 'This is made by automation
 
 WebUI.click(findTestObject('ME/button_Create Offer'))
 
-WebUI.delay(1)
+WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
 WebUI.scrollToPosition(0, 0)
-
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.STOP_ON_FAILURE)
-
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitNotification_Element'), 20)
 

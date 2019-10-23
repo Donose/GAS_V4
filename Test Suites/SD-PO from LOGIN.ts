@@ -85,4 +85,10 @@
          <testDataId>Data Files/Warehouses</testDataId>
       </testDataLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>b86b5dd4-03b3-4edf-bdb8-d9b325426e67</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW PO</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

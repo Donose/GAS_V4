@@ -15,7 +15,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
 
-'this needs to change/ uses >= operator, is shity'
+WebUI.waitForElementClickable(findTestObject('Waiters/WaitButton_Element'), 20)
+
 CustomKeywords.'linkers.Link.receivables'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.STOP_ON_FAILURE)

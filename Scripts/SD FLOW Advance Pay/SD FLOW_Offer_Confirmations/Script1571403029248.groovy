@@ -17,9 +17,15 @@ WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element')
 
 WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
 
+WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
+
 CustomKeywords.'linkers.Link.offer'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+
+WebUI.waitForElementVisible(findTestObject('SO/Status Sale Confirmation/Sale Director/input_Sale Offer_director'), 20)
+
+WebUI.waitForElementClickable(findTestObject('SO/Status Sale Confirmation/Sale Director/input_Sale Offer_director'), 20)
 
 WebUI.click(findTestObject('SO/Status Sale Confirmation/Sale Director/input_Sale Offer_director'))
 
@@ -31,15 +37,29 @@ CustomKeywords.'linkers.Link.offer'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
+WebUI.waitForElementVisible(findTestObject('SO/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector'), 
+    20)
+
+WebUI.waitForElementClickable(findTestObject('SO/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector'), 
+    20)
+
 WebUI.click(findTestObject('SO/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector'))
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
 WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
 
+WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
+
 CustomKeywords.'linkers.Link.offer'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+
+WebUI.waitForElementVisible(findTestObject('SO/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector'), 
+    20)
+
+WebUI.waitForElementClickable(findTestObject('SO/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector'), 
+    20)
 
 WebUI.click(findTestObject('SO/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector'))
 
@@ -47,9 +67,15 @@ WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element')
 
 WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
 
+WebUI.waitForElementClickable(findTestObject('Waiters/WaitButton_Element'), 20)
+
 CustomKeywords.'linkers.Link.offer'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+
+WebUI.waitForElementVisible(findTestObject('SO/Status Sale Confirmation/Client/input_Sale Offer_Client'), 20)
+
+WebUI.waitForElementClickable(findTestObject('SO/Status Sale Confirmation/Client/input_Sale Offer_Client'), 20)
 
 WebUI.click(findTestObject('SO/Status Sale Confirmation/Client/input_Sale Offer_Client'))
 

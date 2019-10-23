@@ -16,8 +16,11 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
 WebUI.scrollToPosition(0, 0, FailureHandling.OPTIONAL)
+
+WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
 WebUI.waitForElementVisible(findTestObject('Waiters/WaitPurchaseModule_Element'), 20)
 
@@ -31,7 +34,9 @@ WebDriver openPOR = DriverFactory.getWebDriver()
 
 WebElement por = openPOR.findElement(By.xpath('/html/body/div[4]/div[3]/div/div/ul[28]/li/ul/li[2]/div/a')).click()
 
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitBRButton_Element'), 20)
+WebUI.waitForElementVisible(findTestObject('Waiters/WaitPurchaseReq_Element'), 20)
+
+CustomKeywords.'linkers.Link.purchase_req'()
 
 WebUI.selectOptionByValue(findTestObject('POR/select_Purchase Order'), findTestData('DropDowns').getValue(8, 4), false)
 
@@ -45,4 +50,8 @@ String dateFuture = CustomKeywords.'dates.DateGenerate.dateWeek'()
 WebUI.setText(findTestObject('POR/From SD/input_Deadline'), dateFuture)
 
 WebUI.click(findTestObject('POR/From SD/input_Purchase Create'))
+
+WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(2)
 

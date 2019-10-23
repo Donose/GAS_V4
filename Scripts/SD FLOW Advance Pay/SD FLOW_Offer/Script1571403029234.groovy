@@ -19,7 +19,11 @@ WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20, Fa
 
 CustomKeywords.'linkers.Link.offer'()
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+
+WebUI.waitForElementVisible(findTestObject('SO/Status Open/input_Sale Offer_Open'), 20)
+
+WebUI.waitForElementClickable(findTestObject('SO/Status Open/input_Sale Offer_Open'), 20)
 
 WebUI.click(findTestObject('SO/Status Open/input_Sale Offer_Open'))
 
@@ -55,4 +59,6 @@ WebUI.selectOptionByValue(findTestObject('SO/Status In Progress/Warehouse/select
         1, 49), false)
 
 WebUI.click(findTestObject('SO/Status In Progress/input_Sale Offer_SendForConfirmation'))
+
+WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
