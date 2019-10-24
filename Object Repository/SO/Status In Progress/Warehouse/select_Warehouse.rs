@@ -18,7 +18,7 @@
          <value>(.//*[normalize-space(text()) and normalize-space(.)='Warehouse'])[4]/following::select[1]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

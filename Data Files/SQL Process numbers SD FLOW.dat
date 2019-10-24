@@ -12,7 +12,7 @@
    <password></password>
    <query>SELECT meetings.meeting_id, offers.offer_id, contracts.contract_id, billing_requests.br_id, 
 pyr.payment_request_id, payr.payment_receivable_id, products_orders.products_order_id, purchase_requisitions.purchase_requisition_id, purchase_orders.purchase_order_id,
- order_requests_import.order_request_import_id, orders_import.order_import_id ,meetings.meeting_comment
+ order_requests_import.order_request_import_id, orders_import.order_import_id, mobile_service_notifications.msn_id, mobile_service_notifications.mso_id , meetings.meeting_comment
 FROM erp.meetings AS meetings 
 LEFT JOIN erp.offers AS offers ON meetings.meeting_id = offers.meeting_id
 LEFT JOIN erp.contracts AS contracts ON meetings.meeting_id = contracts.meeting_id
@@ -24,7 +24,9 @@ LEFT JOIN erp.purchase_requisitions AS purchase_requisitions ON purchase_requisi
 LEFT JOIN erp.purchase_orders AS purchase_orders ON purchase_orders.purchase_requisition_id = purchase_requisitions.purchase_requisition_id
 LEFT JOIN warehouse.order_requests_import AS order_requests_import ON order_requests_import.offer_id = offers.offer_id
 LEFT JOIN warehouse.orders_import AS orders_import ON orders_import.order_request_import_id = order_requests_import.order_request_import_id
-WHERE meetings.meeting_comment LIKE 'This%' ORDER BY meetings.meeting_id DESC</query>
+LEFT JOIN service.mobile_service_notifications AS mobile_service_notifications ON mobile_service_notifications.parent_process_id = orders_import.order_import_id
+WHERE meetings.meeting_comment LIKE 'This%' ORDER BY meetings.meeting_id DESC
+LIMIT 20</query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName></sheetName>
    <user></user>

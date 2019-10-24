@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>SD-PO from LOGIN</name>
+   <name>SD Flow ME-GR from LOGIN</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -90,5 +90,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW PO</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5207deca-e6db-4c00-94cf-8671e70dd38f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW ID_GI_GR_SN_FN_Passport</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

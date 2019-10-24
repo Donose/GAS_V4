@@ -50,6 +50,8 @@ WebUI.waitForElementVisible(findTestObject('Waiters/WaitBRButton_Element'), 20, 
 
 WebUI.waitForElementClickable(findTestObject('Waiters/WaitBRButton_Element'), 20)
 
+WebUI.delay(2)
+
 CustomKeywords.'linkers.Link.purchase_order'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
@@ -57,6 +59,8 @@ WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element')
 WebUI.waitForElementVisible(findTestObject('PO/input_Purchase Order_Approved'), 20)
 
 WebUI.waitForElementClickable(findTestObject('PO/input_Purchase Order_Approved'), 20)
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('PO/input_Purchase Order_Approved'))
 
@@ -87,6 +91,4 @@ WebUI.scrollToElement(findTestObject('PO/PO from SD/input_Add_InvoicePriceSD'), 
 WebUI.sendKeys(findTestObject('PO/PO from SD/input_Add_InvoicePriceSD'), price)
 
 WebUI.click(findTestObject('PO/input_Purchase OrderClose'))
-
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 

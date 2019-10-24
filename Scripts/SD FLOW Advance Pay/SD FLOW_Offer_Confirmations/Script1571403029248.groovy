@@ -69,6 +69,8 @@ WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
 
 WebUI.waitForElementClickable(findTestObject('Waiters/WaitButton_Element'), 20)
 
+WebUI.delay(1)
+
 CustomKeywords.'linkers.Link.offer'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)

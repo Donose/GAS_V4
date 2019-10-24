@@ -210,4 +210,76 @@ public class Link {
 			}
 		}
 	}
+	@Keyword
+	def inbound_delivery(){
+		DBData sqldata = findTestData('SQL Process numbers SD FLOW')
+		sqldata.fetchedData = sqldata.fetchData()
+		WebDriver driver = DriverFactory.getWebDriver()
+		String lookFor = findTestData('SQL Process numbers SD FLOW').getValue(10,1)
+		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
+		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
+		int rows_count = rows_table.size
+		for (int row = 0; row < rows_count; row++){
+			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('button'))
+			int columns_count = Columns_row.size()
+			println(((lookFor) + ' are ') + columns_count)
+			for (int column = 0; column < columns_count; column++){
+				String celltext = Columns_row.get(column).getText()
+				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
+				if (celltext == 'ID-'+lookFor){
+					rows_table.get(row).findElement(By.tagName('input')).click()
+					return
+				}
+				break
+			}
+		}
+	}
+	@Keyword
+	def mobile_service_notification(){
+		DBData sqldata = findTestData('SQL Process numbers SD FLOW')
+		sqldata.fetchedData = sqldata.fetchData()
+		WebDriver driver = DriverFactory.getWebDriver()
+		String lookFor = findTestData('SQL Process numbers SD FLOW').getValue(11,1)
+		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
+		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
+		int rows_count = rows_table.size
+		for (int row = 0; row < rows_count; row++){
+			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('button'))
+			int columns_count = Columns_row.size()
+			println(((lookFor) + ' are ') + columns_count)
+			for (int column = 0; column < columns_count; column++){
+				String celltext = Columns_row.get(column).getText()
+				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
+				if (celltext == 'ID-'+lookFor){
+					rows_table.get(row).findElement(By.tagName('button')).click()
+					return
+				}
+				break
+			}
+		}
+	}
+	@Keyword
+	def mobile_service_order(){
+		DBData sqldata = findTestData('SQL Process numbers SD FLOW')
+		sqldata.fetchedData = sqldata.fetchData()
+		WebDriver driver = DriverFactory.getWebDriver()
+		String lookFor = findTestData('SQL Process numbers SD FLOW').getValue(10,1)
+		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
+		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
+		int rows_count = rows_table.size
+		for (int row = 0; row < rows_count; row++){
+			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('button'))
+			int columns_count = Columns_row.size()
+			println(((lookFor) + ' are ') + columns_count)
+			for (int column = 0; column < columns_count; column++){
+				String celltext = Columns_row.get(column).getText()
+				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
+				if (celltext == 'ID-'+lookFor){
+					rows_table.get(row).findElement(By.tagName('button')).click()
+					return
+				}
+				break
+			}
+		}
+	}
 }

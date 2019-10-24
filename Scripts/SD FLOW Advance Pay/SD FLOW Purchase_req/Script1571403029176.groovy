@@ -40,7 +40,7 @@ CustomKeywords.'linkers.Link.purchase_req'()
 
 WebUI.selectOptionByValue(findTestObject('POR/select_Purchase Order'), findTestData('DropDowns').getValue(8, 4), false)
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.CONTINUE_ON_FAILURE)
 
 'Priority dropboxes have difrent values in the system'
 WebUI.selectOptionByIndex(findTestObject('POR/From SD/select_prio'), 1)
