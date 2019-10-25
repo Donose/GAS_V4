@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@type='checkbox'])[9]</value>
+         <value>/html/body/div[7]/div[1]/div/form/table[2]/tbody/tr[15]/td[7]/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -22,38 +22,38 @@ public class RadioButton {
 
 	@Keyword
 	def OwnCompany(){
-		if (WebUI.verifyElementText(findTestObject('SO/Status In Progress/Radio buttons/span_Own Companies'), 'Own Companies')==true){
-			WebUI.check(findTestObject('SO/Status In Progress/Radio buttons/input_Own Companies'))
+		if (WebUI.verifyElementText(findTestObject('OF/Status In Progress/Radio buttons/span_Own Companies'), 'Own Companies')==true){
+			WebUI.check(findTestObject('OF/Status In Progress/Radio buttons/input_Own Companies'))
 		}
 	}
 	@Keyword
 	def ClientCompanies(){
-		if (WebUI.verifyElementText(findTestObject('SO/Status In Progress/Radio buttons/span_Office'), 'Office')==true){
-			WebUI.check(findTestObject('SO/Status In Progress/Radio buttons/input_Office'))
+		if (WebUI.verifyElementText(findTestObject('OF/Status In Progress/Radio buttons/span_Office'), 'Office')==true){
+			WebUI.check(findTestObject('OF/Status In Progress/Radio buttons/input_Office'))
 		}
 	}
 	@Keyword
 	def Office(){
-		if (WebUI.verifyElementText(findTestObject('SO/Status In Progress/Radio buttons/span_Office'), 'Office')==true){
-			WebUI.check(findTestObject('SO/Status In Progress/Radio buttons/input_Office'))
+		if (WebUI.verifyElementText(findTestObject('OF/Status In Progress/Radio buttons/span_Office'), 'Office')==true){
+			WebUI.check(findTestObject('OF/Status In Progress/Radio buttons/input_Office'))
 		}
 	}
 	@Keyword
 	def Gaming(){
-		if (WebUI.verifyElementText(findTestObject('SO/Status In Progress/Radio buttons/span_Gaming Hall'), 'Gaming Hall')==true){
-			WebUI.check(findTestObject('SO/Status In Progress/Radio buttons/input_Gaming Hall'))
+		if (WebUI.verifyElementText(findTestObject('OF/Status In Progress/Radio buttons/span_Gaming Hall'), 'Gaming Hall')==true){
+			WebUI.check(findTestObject('OF/Status In Progress/Radio buttons/input_Gaming Hall'))
 		}
 	}
 	@Keyword
 	def Warehouse(){
-		if (WebUI.verifyElementText(findTestObject('SO/Status In Progress/Radio buttons/span_Warehouse'), 'Warehouse')==true){
-			WebUI.check(findTestObject('SO/Status In Progress/Radio buttons/input_Warehouse'))
+		if (WebUI.verifyElementText(findTestObject('OF/Status In Progress/Radio buttons/span_Warehouse'), 'Warehouse')==true){
+			WebUI.check(findTestObject('OF/Status In Progress/Radio buttons/input_Warehouse'))
 		}
 	}
 	@Keyword
 	def BetShop(){
-		if (WebUI.verifyElementText(findTestObject('SO/Status In Progress/Radio buttons/span_Bet Shop'), 'Bet Shop')==true){
-			WebUI.check(findTestObject('SO/Status In Progress/Radio buttons/input_Bet Shop'))
+		if (WebUI.verifyElementText(findTestObject('OF/Status In Progress/Radio buttons/span_Bet Shop'), 'Bet Shop')==true){
+			WebUI.check(findTestObject('OF/Status In Progress/Radio buttons/input_Bet Shop'))
 		}
 	}
 }

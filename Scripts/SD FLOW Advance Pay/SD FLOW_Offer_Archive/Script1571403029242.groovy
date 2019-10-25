@@ -26,5 +26,5 @@ CustomKeywords.'linkers.Link.offer'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
-WebUI.click(findTestObject('SO/Status Archiving/input_Sale_Offer_Close'))
+WebUI.click(findTestObject('OF/Status Archiving/input_Sale_Offer_Close'))
 

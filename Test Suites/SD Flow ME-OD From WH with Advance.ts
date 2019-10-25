@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>SD Flow ME-GR from LOGIN</name>
+   <name>SD Flow ME-OD From WH with Advance</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
-   <numberOfRerun>10</numberOfRerun>
+   <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <testSuiteGuid>1d5bb4a3-1fa5-4951-aad4-5ff7a18aa10e</testSuiteGuid>
+   <testSuiteGuid>9a688389-5261-4d65-a44a-be8835476559</testSuiteGuid>
    <testCaseLink>
-      <guid>1c0a4311-b794-4b97-b0b9-421d33181826</guid>
+      <guid>d5ec20f8-e7b3-4c8a-af52-7f9f8282ae2e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login/LoginAdmin</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>c0e96ed4-9f82-4d03-aed6-3ce75a564a55</guid>
+      <guid>d6fd58be-1909-450c-8ba6-df70d1a1a7e8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW_Meeting</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d4875971-fb74-45cb-b32b-2f39556a0450</guid>
+      <guid>db8e4602-2130-45ad-a13d-d1d51ba3a827</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW_Offer</testCaseId>
@@ -35,66 +35,39 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>f61c318a-4494-4bff-a0f2-57fbd48e9a0b</guid>
+      <guid>e046db42-cf53-4c96-bbaf-e95acec04546</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW_Offer_Confirmations</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>4057ad21-c7c0-4f35-aee8-146c9aabafee</guid>
+      <guid>ddc8d727-9d28-4f58-b9b9-10bf9f46084e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW_Offer_Archive</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d9c7b634-f8db-4367-ba13-032f1ccd28df</guid>
+      <guid>38e4b7c9-d3a0-410c-ba00-c99c8af82cc6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW_Contract_Skip</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>2c5be9ef-16f8-4f12-aae2-7db989e848ce</guid>
+      <guid>51521c6b-f29d-4110-8f39-cfadca15b77f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW_BR_Advance_and_BI</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>1bfaf9c0-667f-4383-b21c-e882001948f1</guid>
+      <guid>07e18397-be7f-4829-aa29-27ed7e4043e0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW_RE</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>3cde458b-e89c-4b95-8547-537c58b9b411</guid>
+      <guid>6c960e10-9e41-4dd1-8162-63c3946c14ac</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW SaleOrder_from_Vendor</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>acfe2e88-3e8b-4645-86a4-cdc2c30a3000</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW Purchase_req</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>7849e292-d7b2-400d-9669-fc2d88c34412</id>
-         <iterationEntity>
-            <iterationType>SPECIFIC</iterationType>
-            <value>44</value>
-         </iterationEntity>
-         <testDataId>Data Files/Warehouses</testDataId>
-      </testDataLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b86b5dd4-03b3-4edf-bdb8-d9b325426e67</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW PO</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5207deca-e6db-4c00-94cf-8671e70dd38f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW ID_GI_GR_SN_FN_Passport</testCaseId>
+      <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW SaleOrder_from_WH</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

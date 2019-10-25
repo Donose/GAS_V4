@@ -21,44 +21,44 @@ CustomKeywords.'linkers.Link.offer'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
-WebUI.waitForElementVisible(findTestObject('SO/Status Open/input_Sale Offer_Open'), 20)
+WebUI.waitForElementVisible(findTestObject('OF/Status Open/input_Sale Offer_Open'), 20)
 
-WebUI.waitForElementClickable(findTestObject('SO/Status Open/input_Sale Offer_Open'), 20)
+WebUI.waitForElementClickable(findTestObject('OF/Status Open/input_Sale Offer_Open'), 20)
 
-WebUI.click(findTestObject('SO/Status Open/input_Sale Offer_Open'))
+WebUI.click(findTestObject('OF/Status Open/input_Sale Offer_Open'))
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
 String date = CustomKeywords.'dates.DateGenerate.dateWeek'()
 
-WebUI.sendKeys(findTestObject('SO/Status In Progress/input_Offer Validity_Date'), date)
+WebUI.sendKeys(findTestObject('OF/Status In Progress/input_Offer Validity_Date'), date)
 
 'TO BE MADE'
-not_run: WebUI.sendKeys(findTestObject('SO/Status In Progress/input_Discount'), '')
+not_run: WebUI.sendKeys(findTestObject('OF/Status In Progress/input_Discount'), '')
 
-WebUI.sendKeys(findTestObject('SO/Status In Progress/input_Advance - Pay'), '50')
+WebUI.sendKeys(findTestObject('OF/Status In Progress/input_Advance - Pay'), '50')
 
 String dateAdvance = CustomKeywords.'dates.DateGenerate.dateWeek'()
 
-WebUI.sendKeys(findTestObject('SO/Status In Progress/input_First Advance Payment (deadline)'), dateAdvance)
+WebUI.sendKeys(findTestObject('OF/Status In Progress/input_First Advance Payment (deadline)'), dateAdvance)
 
-WebUI.selectOptionByIndex(findTestObject('SO/Status In Progress/select_Installments'), 5)
+WebUI.selectOptionByIndex(findTestObject('OF/Status In Progress/select_Installments'), 5)
 
 'TO BE MADE'
-not_run: WebUI.sendKeys(findTestObject('SO/Status In Progress/input_Interest'), '')
+not_run: WebUI.sendKeys(findTestObject('OF/Status In Progress/input_Interest'), '')
 
-WebUI.click(findTestObject('SO/Status In Progress/Calculate'))
+WebUI.click(findTestObject('OF/Status In Progress/Calculate'))
 
 CustomKeywords.'checkers.RadioButton.OwnCompany'()
 
-WebUI.selectOptionByIndex(findTestObject('SO/Status In Progress/select_Company'), 1)
+WebUI.selectOptionByIndex(findTestObject('OF/Status In Progress/select_Company'), 1)
 
 CustomKeywords.'checkers.RadioButton.Warehouse'()
 
-WebUI.selectOptionByValue(findTestObject('SO/Status In Progress/Warehouse/select_Warehouse'), findTestData('Warehouses').getValue(
+WebUI.selectOptionByValue(findTestObject('OF/Status In Progress/Warehouse/select_Warehouse'), findTestData('Warehouses').getValue(
         1, 49), false)
 
-WebUI.click(findTestObject('SO/Status In Progress/input_Sale Offer_SendForConfirmation'))
+WebUI.click(findTestObject('OF/Status In Progress/input_Sale Offer_SendForConfirmation'))
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 

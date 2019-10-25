@@ -15,9 +15,9 @@ import internal.GlobalVariable as GlobalVariable
 Map<String, String> suiteProperties = new HashMap<String, String>();
 
 
-suiteProperties.put('id', 'Test Suites/SD Flow ME-GR from LOGIN')
+suiteProperties.put('id', 'Test Suites/SD Flow ME-GR From Vendor with Advance')
 
-suiteProperties.put('name', 'SD Flow ME-GR from LOGIN')
+suiteProperties.put('name', 'SD Flow ME-GR From Vendor with Advance')
 
 suiteProperties.put('description', '')
  
@@ -29,8 +29,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191025_104711\\SD Flow ME-GR from LOGIN\\20191025_104711\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191025_164453\\SD Flow ME-GR From Vendor with Advance\\20191025_164453\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/SD Flow ME-GR from LOGIN', suiteProperties, new File("C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191025_104711\\SD Flow ME-GR from LOGIN\\20191025_104711\\testCaseBinding"))
+TestCaseMain.startTestSuite('Test Suites/SD Flow ME-GR From Vendor with Advance', suiteProperties, new File("C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191025_164453\\SD Flow ME-GR From Vendor with Advance\\20191025_164453\\testCaseBinding"))
