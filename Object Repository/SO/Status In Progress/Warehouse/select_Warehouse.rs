@@ -15,7 +15,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Warehouse'])[4]/following::select[1]</value>
+         <value>/html/body/div[6]/div[1]/div/form/div[6]/div/table/tbody/tr[3]/td[3]/table/tbody/tr[1]/td[2]/div[1]/select</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
