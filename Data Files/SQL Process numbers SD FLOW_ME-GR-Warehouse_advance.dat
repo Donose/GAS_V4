@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>SQL Process numbers SD FLOW_ME-GR-Warehouse_advance</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>aac7c49a-58bf-47fe-a21a-c0a9ac77f364</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>DBData</driver>
+   <driverClassName></driverClassName>
+   <isInternalPath>false</isInternalPath>
+   <password></password>
+   <query>SELECT meetings.meeting_id, offers.offer_id, contracts.contract_id, billing_requests.br_id, 
+pyr.payment_request_id, payr.payment_receivable_id, products_orders.products_order_id, purchase_requisitions.purchase_requisition_id, purchase_orders.purchase_order_id,
+ order_requests_import.order_request_import_id, orders_import.order_import_id, mobile_service_notifications.msn_id, mobile_service_notifications.mso_id , meetings.meeting_comment
+FROM erp.meetings AS meetings 
+LEFT JOIN erp.offers AS offers ON meetings.meeting_id = offers.meeting_id
+LEFT JOIN erp.contracts AS contracts ON meetings.meeting_id = contracts.meeting_id
+LEFT JOIN erp.billing_requests AS billing_requests ON offers.offer_id = billing_requests.offer_id
+LEFT JOIN accounting.payment_request pyr on pyr.process_parents like concat('{&quot;623&quot;:[',billing_requests.br_id,']}')
+LEFT JOIN accounting.payment_receivables payr ON payr.payment_request_id=pyr.payment_request_id
+LEFT JOIN erp.products_orders AS products_orders ON products_orders.offer_id = offers.offer_id
+LEFT JOIN erp.purchase_requisitions AS purchase_requisitions ON purchase_requisitions.offer_id = offers.offer_id
+LEFT JOIN erp.purchase_orders AS purchase_orders ON purchase_orders.purchase_requisition_id = purchase_requisitions.purchase_requisition_id
+LEFT JOIN warehouse.order_requests_import AS order_requests_import ON order_requests_import.offer_id = offers.offer_id
+LEFT JOIN warehouse.orders_import AS orders_import ON orders_import.order_request_import_id = order_requests_import.order_request_import_id
+LEFT JOIN service.mobile_service_notifications AS mobile_service_notifications ON mobile_service_notifications.parent_process_id = orders_import.order_import_id
+WHERE meetings.meeting_comment LIKE '%WAREHOUSE%' ORDER BY meetings.meeting_id DESC
+LIMIT 20</query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <user></user>
+   <usingGlobalDBSetting>true</usingGlobalDBSetting>
+</DataFileEntity>

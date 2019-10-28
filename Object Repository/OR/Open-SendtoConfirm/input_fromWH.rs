@@ -6,14 +6,22 @@
    <elementGuidId>81a049b0-9d2b-477a-a3c0-15997d47a3a8</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>/html[@class=&quot;k-webkit k-webkit77&quot;]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;modal fade in&quot;]/div[@class=&quot;modal-dialog modal-offer&quot;]/div[@class=&quot;modal-content&quot;]/form[@class=&quot;ng-pristine ng-valid&quot;]/table[@class=&quot;table table-bordered table-striped&quot;]/tbody[1]/tr[8]/td[@class=&quot;col-sm-2 text-center&quot;]/input[@class=&quot;ng-pristine ng-valid ng-empty ng-touched&quot;][count(. | //input[@type = 'checkbox' and @ng-disabled = concat('mode_edit==' , &quot;'&quot; , 'view')]) = count(//input[@type = 'checkbox' and @ng-disabled = concat('mode_edit==' , &quot;'&quot; , 'view')])]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>/html/body/div[7]/div[1]/div/form/table[2]/tbody/tr[15]/td[7]/input</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -27,7 +35,7 @@
       <value>checkbox</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-disabled</name>
       <type>Main</type>
@@ -62,7 +70,7 @@
       <value>ng-pristine ng-valid ng-empty ng-touched</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
