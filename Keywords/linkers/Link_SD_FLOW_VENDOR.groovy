@@ -24,7 +24,6 @@ public class Link_SD_FLOW_VENDOR {
 		String lookFor = findTestData('SQL Process numbers SD FLOW_ME-GR-Vendor_advance').getValue(3,1)
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
 		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
-		List<WebElement> buttons = Table.findElements(By.tagName('button'))
 		int rows_count = rows_table.size
 		for (int row = 0; row < rows_count; row++){
 			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('button'))

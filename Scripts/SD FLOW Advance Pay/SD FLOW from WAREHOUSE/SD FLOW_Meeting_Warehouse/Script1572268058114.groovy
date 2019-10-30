@@ -57,7 +57,7 @@ WebUI.setText(findTestObject('Object Repository/ME/DatePick/input_Meeting date')
 
 WebUI.waitForElementVisible(findTestObject('ME/Client Products/span_Client interested in products'), 5)
 
-WebUI.setText(findTestObject('ME/Client Products/input_Quantty'), '5')
+WebUI.setText(findTestObject('ME/Client Products/input_Quantty'), '20')
 
 WebUI.click(findTestObject('ME/Client Products/span_Select material'))
 
