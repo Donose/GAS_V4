@@ -17,8 +17,10 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-//for (int i = 0; i = 20; i++) {
+for (int i = 0; i = 20; i++) {
 WebUI.waitForElementVisible(findTestObject('MainDashboard/Nav_Menu_Top/a_SD'), 10)
 
 CustomKeywords.'mainDashboardSelections.Selectors.selectSDMeeting'()
@@ -31,13 +33,13 @@ WebUI.selectOptionByLabel(findTestObject('ME/select_me_prio'), findTestData('Dro
 
 WebUI.click(findTestObject('ME/span_Company name'))
 
-WebUI.setText(findTestObject('ME/input_Company name'), 'COMPANY TEST', FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('ME/input_Company name'), findTestData('Clients').getValue(1, 2), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.sendKeys(findTestObject('ME/input_Company name'), Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('ME/span_Contact name'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('ME/input_Contact name'), 'admin1')
+WebUI.setText(findTestObject('ME/input_Contact name'), 'Ivanka Petrova')
 
 WebUI.sendKeys(findTestObject('ME/input_Contact name'), Keys.chord(Keys.ENTER))
 
@@ -57,11 +59,11 @@ WebUI.setText(findTestObject('Object Repository/ME/DatePick/input_Meeting date')
 
 WebUI.waitForElementVisible(findTestObject('ME/Client Products/span_Client interested in products'), 5)
 
-WebUI.setText(findTestObject('ME/Client Products/input_Quantty'), findTestData('Materials').getValue(1, 24))
+WebUI.setText(findTestObject('ME/Client Products/input_Quantty'), '5')
 
 WebUI.click(findTestObject('ME/Client Products/span_Select material'))
 
-WebUI.setText(findTestObject('ME/Client Products/input_Materials'), 'Gaming_machine1')
+WebUI.setText(findTestObject('ME/Client Products/input_Materials'), findTestData('Materials').getValue(1, 1))
 
 WebUI.sendKeys(findTestObject('ME/Client Products/input_Materials'), Keys.chord(Keys.ENTER))
 
@@ -74,9 +76,12 @@ not_run: WebUI.setText(findTestObject('ME/Client Products/input_Prefer Delivery 
 
 WebUI.setText(findTestObject('ME/textarea_Comment'), 'This will be from VENDOR ONLY')
 
+WebUI.scrollToElement(findTestObject('ME/button_Create Offer'), 20)
+
 WebUI.click(findTestObject('ME/button_Create Offer'))
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
 WebUI.scrollToPosition(0, 0)
 
+}

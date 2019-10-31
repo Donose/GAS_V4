@@ -1,123 +1,59 @@
 package dates
 
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.checkpoint.CheckpointFactory
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testcase.TestCase
+import com.kms.katalon.core.testcase.TestCaseFactory
 import com.kms.katalon.core.testdata.TestData
+import com.kms.katalon.core.testdata.TestDataFactory
+import com.kms.katalon.core.testobject.ObjectRepository
 import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 
 import internal.GlobalVariable
+import java.text.DateFormat
+import java.text.SimpleDateFormat
+import MobileBuiltInKeywords as Mobile
+import WSBuiltInKeywords as WS
+import WebUiBuiltInKeywords as WebUI
+
 import org.openqa.selenium.WebElement
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.By
+
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
+import com.kms.katalon.core.webui.driver.DriverFactory
+
+import com.kms.katalon.core.testobject.RequestObject
+import com.kms.katalon.core.testobject.ResponseObject
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObjectProperty
+
+import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
+import com.kms.katalon.core.util.KeywordUtil
+import org.codehaus.groovy.runtime.*;
+
+import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 public class DatePicker {
-
+	
+	
 	@Keyword
-	public static void handleDatepicker(TestObject calender, String exp_Date, String exp_Month,
-			String exp_Year)throws Exception{
-		String expDate = null, calYear = null,datepickerText=null,minYear=null,maxYear=null;
-		int expMonth = 0, expYear = 0;
-		WebElement datePicker;
-		List<WebElement> noOfDays=null,noOfMonths=null,noOfYears=null;
-		boolean dateNotFound = true;
-		List<String> monthList = Arrays.asList("None","Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul",
-				"Aug", "Sep", "Oct", "Nov", "Dec");
-		def driver = DriverFactory.getWebDriver()
-		WebElement SelectCalender = WebUiCommonHelper.findWebElement(calender, 20);
-		//		JavascriptExecutor executor = ((JavascriptExecutor)driver);
-		//		executor.executeScript("arguments[0].click();", SelectCalender);
-		SelectCalender.click()
-		// Set your expected date, month and year.
-		expDate = (exp_Date);
-		expMonth = Integer.parseInt(exp_Month);
-		expYear = Integer.parseInt(exp_Year);
-
-		WebElement datePicker_Heading1 =(driver).findElement(By.xpath("//div[@class='datepicker-days']/table/thead/tr[1]/th[2]"));
-		WebDriverWait wait = new WebDriverWait(driver,10);
-		wait.until(ExpectedConditions.elementToBeClickable(datePicker_Heading1));
-		datePicker_Heading1.click();
-		//executor.executeScript("arguments[0].click();", datePicker_Heading1);
-		WebElement datePicker_Heading2 =(driver).findElement(By.xpath("//div[@class='datepicker-months']/table/thead/tr[1]/th[2]"));
-		wait.until(ExpectedConditions.elementToBeClickable(datePicker_Heading2));
-		datePicker_Heading2.click();
-
-		while (dateNotFound) {
-			WebElement datePicker_Heading3 =(driver).findElement(By.xpath("//div[@class='datepicker-years']/table/thead/tr[1]/th[2]"));
-			wait.until(ExpectedConditions.visibilityOf(datePicker_Heading3));
-			datepickerText =datePicker_Heading3.getText();
-			String[] datepickerYear = datepickerText.split("-");
-			minYear =datepickerYear[0];
-			maxYear = datepickerYear[1];
-			// If current selected month and year are same as expected month
-			// and year then go Inside this condition.
-			if((expYear >= Integer.parseInt(minYear)) && (expYear<=Integer.parseInt(maxYear)))
-			{
-				datePicker = (driver).findElement(By.xpath("//div[@class='datepicker-years']/table"));
-				noOfYears = datePicker.findElements(By.xpath("//span[contains(@class,'year')]"));
-				firstloop:
-				for (WebElement year : noOfYears) {
-					// Select the date from date picker when condition
-					// match.
-					if (year.getText().equalsIgnoreCase((String)exp_Year)) {
-						year.click();
-						Thread.sleep(1500);
-						datePicker = (driver).findElement(By.xpath("//div[@class='datepicker-months']/table"));
-						noOfMonths = datePicker.findElements(By.xpath("//span[@class='month']"));
-						Thread.sleep(1000);
-						for (WebElement month : noOfMonths) {
-							System.out.println(" the expected month in int  is : "+expMonth);
-							System.out.println(" the expected month is : "+monthList.get(expMonth));
-							System.out.println(" the Actual  month is : "+month.getText());
-							if ((monthList.get(expMonth)).equalsIgnoreCase(month.getText())) {
-								month.click();
-								datePicker = (driver).findElement(By.xpath("//div[@class='datepicker-days']/table"));
-								noOfDays = datePicker.findElements(By.xpath("//td[@class='day']"));
-								Thread.sleep(1500);
-								for (WebElement cell : noOfDays) {
-									if (cell.getText().equalsIgnoreCase(expDate)) {
-										cell.click();
-										break firstloop;
-									}
-								}
-							}
-						}
-					}
-					//					else{
-					//
-					//						throw new Exception()
-					//					}
-				}
-				dateNotFound = false;
-			}else if (expYear > Integer.parseInt(maxYear)) {
-				WebElement Next =(driver).findElement(By.xpath("//div[@class='datepicker-years']/table/thead/tr[1]/th[@class='next']"));
-				if(Next.getAttribute("style").equalsIgnoreCase("visibility: visible;"))
-				{// Click on next button of date picker.
-					Next.click();
-				}else {
-					throw new Exception("This is exception")
-				}
-			}
-			// If current selected month and year are greater than expected
-			// month and year then go Inside this condition.
-			else if (expYear < Integer.parseInt(minYear)) {
-				WebElement Previous =(driver).findElement(By.xpath("//div[@class='datepicker-years']/table/thead/tr[1]/th[@class='prev']"));
-				if(Previous.getAttribute("style").equalsIgnoreCase("visibility: visible;"))
-				{
-					// Click on previous button of date picker.
-					Previous.click();
-				}else{
-					throw new Exception("This is exception")
-				}
-			}
-		}
+	def pickThis() {
+	WebDriver driver = DriverFactory.getWebDriver()
+	WebElement date_picker = driver.findElement(By.xpath('/html/body/div[5]/div[1]/div/div/div[2]/div[4]/div/div/table/tbody/tr[1]/td[2]/ul/li[1]/div/table/tbody'))
+	List<WebElement> date_rows = date_picker.findElements(By.tagName("tr"))
+	println(date_rows.size())
+	int row_count = date_rows.size
+	for (int row = 0; row <row_count; row++ ){
+		List<WebElement> date_column = date_picker.findElements(By.xpath("//*[@class='btn btn-default btn-sm']"))
+		println(date_column.size())
+		int column_count = date_column.size
 	}
+ } 
+	
 }

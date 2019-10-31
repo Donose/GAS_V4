@@ -49,7 +49,7 @@
    <testCaseLink>
       <guid>d9c7b634-f8db-4367-ba13-032f1ccd28df</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Contract_Skip</testCaseId>
    </testCaseLink>
    <testCaseLink>

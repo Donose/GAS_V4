@@ -8,9 +8,10 @@
    <dataFileGUID>643388fa-1393-4529-8490-657b025c8bef</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>DBData</driver>
+   <driverClassName></driverClassName>
    <isInternalPath>false</isInternalPath>
    <password></password>
-   <query>SELECT provider_id,provider_name FROM warehouse.providers  WHERE provider_id >= 39 ORDER BY provider_id ASC</query>
+   <query>SELECT provider_id,provider_name FROM warehouse.providers   ORDER BY provider_id ASC</query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName></sheetName>
    <user></user>

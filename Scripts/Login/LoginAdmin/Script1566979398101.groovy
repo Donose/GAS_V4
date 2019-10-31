@@ -17,7 +17,7 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl(GlobalVariable.WorkLogin)
+WebUI.navigateToUrl(GlobalVariable.Web7Login)
 
 WebUI.setText(findTestObject('Login/input_username'), 'daniel.donose')
 

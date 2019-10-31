@@ -1,0 +1,1621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="SD Flow ME-GR From Vendor with Advance" time="417.241" tests="11" failures="4" errors="2">
+   <testsuite name="SD Flow ME-GR From Vendor with Advance" tests="11" failures="4" errors="2" time="417.241" timestamp="2019-10-31 15:37:45" hostname="daniel.donose - egt-danieldonose.egt.local" id="Test Suites/SD Flow ME-GR From Vendor with Advance">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191031_153740\\SD Flow ME-GR From Vendor with Advance\\20191031_153740"/>
+         <property name="logFiles" value="C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191031_153740\\SD Flow ME-GR From Vendor with Advance\\20191031_153740\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191031_153740\\SD Flow ME-GR From Vendor with Advance\\20191031_153740\\1572529202673.png, C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191031_153740\\SD Flow ME-GR From Vendor with Advance\\20191031_153740\\1572529267289.png, C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191031_153740\\SD Flow ME-GR From Vendor with Advance\\20191031_153740\\1572529416593.png, C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191031_153740\\SD Flow ME-GR From Vendor with Advance\\20191031_153740\\1572529480837.png"/>
+         <property name="hostName" value="daniel.donose - egt-danieldonose.egt.local"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.0.3.1"/>
+         <property name="browser" value="Chrome 77.0.3865.120"/>
+         <property name="dbServerInfo" value="PostgreSQL 9.6.10"/>
+         <property name="hostAddress" value="10.120.2.94"/>
+         <property name="sessionId" value="c5d8a73740f236cca115335207d37fa0"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Login/LoginAdmin" time="17.891" classname="Test Cases/Login/LoginAdmin" status="PASSED">
+         <system-out><![CDATA[2019-10-31 15:37:45 - [TEST_CASE][PASSED] - Test Cases/Login/LoginAdmin: Test Cases/Login/LoginAdmin
+
+2019-10-31 15:37:46 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-10-31 15:37:47 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-10-31 15:37:47 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-10-31 15:37:54 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-10-31 15:37:54 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-10-31 15:37:58 - [MESSAGE][PASSED] - Current window maximized
+
+2019-10-31 15:37:58 - [TEST_STEP][PASSED] - navigateToUrl(Web7Login): Navigate to 'http://10.120.1.4:7955/?#!/' successfully
+
+2019-10-31 15:38:02 - [MESSAGE][PASSED] - Navigate to 'http://10.120.1.4:7955/?#!/' successfully
+
+2019-10-31 15:38:02 - [TEST_STEP][PASSED] - setText(findTestObject("Login/input_username"), "daniel.donose"): Text 'daniel.donose' is set on object 'Object Repository/Login/input_username'
+
+2019-10-31 15:38:02 - [MESSAGE][PASSED] - Text 'daniel.donose' is set on object 'Object Repository/Login/input_username'
+
+2019-10-31 15:38:02 - [TEST_STEP][PASSED] - setText(findTestObject("Login/input_password"), "11111sase"): Text '11111sase' is set on object 'Object Repository/Login/input_password'
+
+2019-10-31 15:38:03 - [MESSAGE][PASSED] - Text '11111sase' is set on object 'Object Repository/Login/input_password'
+
+2019-10-31 15:38:03 - [TEST_STEP][PASSED] - click(findTestObject("Login/button_Login")): Object: 'Object Repository/Login/button_Login' is clicked on
+
+2019-10-31 15:38:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/button_Login' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Meeting_Vendor" time="36.454" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Meeting_Vendor" status="PASSED">
+         <system-out><![CDATA[2019-10-31 15:38:03 - [TEST_CASE][PASSED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Meeting_Vendor: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Meeting_Vendor
+
+2019-10-31 15:38:04 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("MainDashboard/Nav_Menu_Top/a_SD"), 10): Object 'Object Repository/MainDashboard/Nav_Menu_Top/a_SD' is visible
+
+2019-10-31 15:38:08 - [MESSAGE][PASSED] - Object 'Object Repository/MainDashboard/Nav_Menu_Top/a_SD' is visible
+
+2019-10-31 15:38:08 - [TEST_STEP][PASSED] - mainDashboardSelections.Selectors.selectSDMeeting(): mainDashboardSelections.Selectors.selectSDMeeting is PASSED
+
+2019-10-31 15:38:09 - [MESSAGE][PASSED] - Object: 'Object Repository/MainDashboard/Nav_Menu_Top/a_SD' is clicked on
+
+2019-10-31 15:38:11 - [MESSAGE][PASSED] - Object: 'Object Repository/MainDashboard/Nav_Menu_Top/SD/a_Add New Meeting' is clicked on
+
+2019-10-31 15:38:11 - [MESSAGE][PASSED] - mainDashboardSelections.Selectors.selectSDMeeting is PASSED
+
+2019-10-31 15:38:11 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:38:13 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:38:13 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-10-31 15:38:18 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-10-31 15:38:18 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("ME/select_me_prio"), findTestData("DropDowns").getValue(1, 1), false): All options with label 'Low' are selected in object 'Object Repository/ME/select_me_prio' 
+
+2019-10-31 15:38:19 - [MESSAGE][PASSED] - All options with label 'Low' are selected in object 'Object Repository/ME/select_me_prio' 
+
+2019-10-31 15:38:19 - [TEST_STEP][PASSED] - click(findTestObject("ME/span_Company name")): Object: 'Object Repository/ME/span_Company name' is clicked on
+
+2019-10-31 15:38:20 - [MESSAGE][PASSED] - Object: 'Object Repository/ME/span_Company name' is clicked on
+
+2019-10-31 15:38:20 - [TEST_STEP][PASSED] - setText(findTestObject("ME/input_Company name"), findTestData("Clients").getValue(1, 2), STOP_ON_FAILURE): Text 'MEGA IMAGE' is set on object 'Object Repository/ME/input_Company name'
+
+2019-10-31 15:38:21 - [MESSAGE][PASSED] - Text 'MEGA IMAGE' is set on object 'Object Repository/ME/input_Company name'
+
+2019-10-31 15:38:21 - [TEST_STEP][PASSED] - sendKeys(findTestObject("ME/input_Company name"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ME/input_Company name'
+
+2019-10-31 15:38:21 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ME/input_Company name'
+
+2019-10-31 15:38:21 - [TEST_STEP][PASSED] - click(findTestObject("ME/span_Contact name"), STOP_ON_FAILURE): Object: 'Object Repository/ME/span_Contact name' is clicked on
+
+2019-10-31 15:38:22 - [MESSAGE][PASSED] - Object: 'Object Repository/ME/span_Contact name' is clicked on
+
+2019-10-31 15:38:22 - [TEST_STEP][PASSED] - setText(findTestObject("ME/input_Contact name"), "Ivanka Petrova"): Text 'Ivanka Petrova' is set on object 'Object Repository/ME/input_Contact name'
+
+2019-10-31 15:38:24 - [MESSAGE][PASSED] - Text 'Ivanka Petrova' is set on object 'Object Repository/ME/input_Contact name'
+
+2019-10-31 15:38:24 - [TEST_STEP][PASSED] - sendKeys(findTestObject("ME/input_Contact name"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ME/input_Contact name'
+
+2019-10-31 15:38:24 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ME/input_Contact name'
+
+2019-10-31 15:38:24 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/select_Meeting"), findTestData("DropDowns").getValue(2, 1), false): All options with value 'Meeting' are selected in object 'Object Repository/ME/select_Meeting' 
+
+2019-10-31 15:38:26 - [MESSAGE][PASSED] - All options with value 'Meeting' are selected in object 'Object Repository/ME/select_Meeting' 
+
+2019-10-31 15:38:26 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/select_Deal"), findTestData("DropDowns").getValue(3, 1), false): All options with value 'New Deal' are selected in object 'Object Repository/ME/select_Deal' 
+
+2019-10-31 15:38:27 - [MESSAGE][PASSED] - All options with value 'New Deal' are selected in object 'Object Repository/ME/select_Deal' 
+
+2019-10-31 15:38:27 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/select_Location"), findTestData("DropDowns").getValue(4, 1), false): All options with value 'Own Office' are selected in object 'Object Repository/ME/select_Location' 
+
+2019-10-31 15:38:28 - [MESSAGE][PASSED] - All options with value 'Own Office' are selected in object 'Object Repository/ME/select_Location' 
+
+2019-10-31 15:38:28 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/select_Opportunity"), findTestData("DropDowns").getValue(5, 1), false): All options with value 'High' are selected in object 'Object Repository/ME/select_Opportunity' 
+
+2019-10-31 15:38:29 - [MESSAGE][PASSED] - All options with value 'High' are selected in object 'Object Repository/ME/select_Opportunity' 
+
+2019-10-31 15:38:29 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/select_Purpose"), findTestData("DropDowns").getValue(6, 1), false): All options with value 'Offer' are selected in object 'Object Repository/ME/select_Purpose' 
+
+2019-10-31 15:38:30 - [MESSAGE][PASSED] - All options with value 'Offer' are selected in object 'Object Repository/ME/select_Purpose' 
+
+2019-10-31 15:38:30 - [TEST_STEP][PASSED] - dateCurrent = dates.DateGenerate.date(): dates.DateGenerate.date is PASSED
+
+2019-10-31 15:38:30 - [MESSAGE][PASSED] - dates.DateGenerate.date is PASSED
+
+2019-10-31 15:38:30 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/ME/DatePick/input_Meeting date"), dateCurrent, STOP_ON_FAILURE): Text '2019-10-31' is set on object 'Object Repository/ME/DatePick/input_Meeting date'
+
+2019-10-31 15:38:31 - [MESSAGE][PASSED] - Text '2019-10-31' is set on object 'Object Repository/ME/DatePick/input_Meeting date'
+
+2019-10-31 15:38:31 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("ME/Client Products/span_Client interested in products"), 5): Object 'Object Repository/ME/Client Products/span_Client interested in products' is visible
+
+2019-10-31 15:38:31 - [MESSAGE][PASSED] - Object 'Object Repository/ME/Client Products/span_Client interested in products' is visible
+
+2019-10-31 15:38:31 - [TEST_STEP][PASSED] - setText(findTestObject("ME/Client Products/input_Quantty"), "5"): Text '5' is set on object 'Object Repository/ME/Client Products/input_Quantty'
+
+2019-10-31 15:38:32 - [MESSAGE][PASSED] - Text '5' is set on object 'Object Repository/ME/Client Products/input_Quantty'
+
+2019-10-31 15:38:32 - [TEST_STEP][PASSED] - click(findTestObject("ME/Client Products/span_Select material")): Object: 'Object Repository/ME/Client Products/span_Select material' is clicked on
+
+2019-10-31 15:38:33 - [MESSAGE][PASSED] - Object: 'Object Repository/ME/Client Products/span_Select material' is clicked on
+
+2019-10-31 15:38:33 - [TEST_STEP][PASSED] - setText(findTestObject("ME/Client Products/input_Materials"), findTestData("Materials").getValue(1, 1)): Text 'EM Sauvignon Blanc PDO Nova Zagora ' is set on object 'Object Repository/ME/Client Products/input_Materials'
+
+2019-10-31 15:38:34 - [MESSAGE][PASSED] - Text 'EM Sauvignon Blanc PDO Nova Zagora ' is set on object 'Object Repository/ME/Client Products/input_Materials'
+
+2019-10-31 15:38:34 - [TEST_STEP][PASSED] - sendKeys(findTestObject("ME/Client Products/input_Materials"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ME/Client Products/input_Materials'
+
+2019-10-31 15:38:35 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ME/Client Products/input_Materials'
+
+2019-10-31 15:38:35 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/Client Products/select_DealTypeForMaterial"), findTestData("DropDowns").getValue(7, 1), false): All options with value 'Sale' are selected in object 'Object Repository/ME/Client Products/select_DealTypeForMaterial' 
+
+2019-10-31 15:38:37 - [MESSAGE][PASSED] - All options with value 'Sale' are selected in object 'Object Repository/ME/Client Products/select_DealTypeForMaterial' 
+
+2019-10-31 15:38:37 - [TEST_STEP][PASSED] - dateFuture = dates.DateGenerate.dateWeek(): dates.DateGenerate.dateWeek is PASSED
+
+2019-10-31 15:38:37 - [MESSAGE][PASSED] - dates.DateGenerate.dateWeek is PASSED
+
+2019-10-31 15:38:37 - [TEST_STEP][NOT_RUN] - setText(findTestObject("ME/Client Products/input_Prefer Delivery Date"), dateFuture): NOT_RUN: setText(findTestObject("ME/Client Products/input_Prefer Delivery Date"), dateFuture)
+
+2019-10-31 15:38:37 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject("ME/Client Products/input_Prefer Delivery Date"), dateFuture)
+
+2019-10-31 15:38:37 - [TEST_STEP][PASSED] - setText(findTestObject("ME/textarea_Comment"), "This will be from VENDOR ONLY"): Text 'This will be from VENDOR ONLY' is set on object 'Object Repository/ME/textarea_Comment'
+
+2019-10-31 15:38:38 - [MESSAGE][PASSED] - Text 'This will be from VENDOR ONLY' is set on object 'Object Repository/ME/textarea_Comment'
+
+2019-10-31 15:38:38 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("ME/button_Create Offer"), 20): Scroll to object 'Object Repository/ME/button_Create Offer' successfully
+
+2019-10-31 15:38:39 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/ME/button_Create Offer' successfully
+
+2019-10-31 15:38:39 - [TEST_STEP][PASSED] - click(findTestObject("ME/button_Create Offer")): Object: 'Object Repository/ME/button_Create Offer' is clicked on
+
+2019-10-31 15:38:39 - [MESSAGE][PASSED] - Object: 'Object Repository/ME/button_Create Offer' is clicked on
+
+2019-10-31 15:38:39 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:38:40 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:38:40 - [TEST_STEP][PASSED] - scrollToPosition(0, 0): Browser is scrolled to position x = 0, y = 0
+
+2019-10-31 15:38:40 - [MESSAGE][PASSED] - Browser is scrolled to position x = 0, y = 0]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer" time="26.993" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer" status="PASSED">
+         <system-out><![CDATA[2019-10-31 15:38:40 - [TEST_CASE][PASSED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer
+
+2019-10-31 15:38:40 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:38:41 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:38:41 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitButton_Element"), 20, STOP_ON_FAILURE): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:38:46 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:38:46 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer(): linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-10-31 15:38:49 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-10-31 15:38:49 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:38:51 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:38:51 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("OF/Status Open/input_Sale Offer_Open"), 20): Object 'Object Repository/OF/Status Open/input_Sale Offer_Open' is visible
+
+2019-10-31 15:38:51 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Open/input_Sale Offer_Open' is visible
+
+2019-10-31 15:38:51 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("OF/Status Open/input_Sale Offer_Open"), 20): Object 'Object Repository/OF/Status Open/input_Sale Offer_Open' is clickable
+
+2019-10-31 15:38:52 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Open/input_Sale Offer_Open' is clickable
+
+2019-10-31 15:38:52 - [TEST_STEP][PASSED] - click(findTestObject("OF/Status Open/input_Sale Offer_Open")): Object: 'Object Repository/OF/Status Open/input_Sale Offer_Open' is clicked on
+
+2019-10-31 15:38:52 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status Open/input_Sale Offer_Open' is clicked on
+
+2019-10-31 15:38:52 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:38:53 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:38:53 - [TEST_STEP][PASSED] - date = dates.DateGenerate.dateWeek(): dates.DateGenerate.dateWeek is PASSED
+
+2019-10-31 15:38:53 - [MESSAGE][PASSED] - dates.DateGenerate.dateWeek is PASSED
+
+2019-10-31 15:38:53 - [TEST_STEP][PASSED] - sendKeys(findTestObject("OF/Status In Progress/input_Offer Validity_Date"), date): Keys '2019-11-07' sent to object: 'Object Repository/OF/Status In Progress/input_Offer Validity_Date'
+
+2019-10-31 15:38:54 - [MESSAGE][PASSED] - Keys '2019-11-07' sent to object: 'Object Repository/OF/Status In Progress/input_Offer Validity_Date'
+
+2019-10-31 15:38:54 - [TEST_STEP][NOT_RUN] - sendKeys(findTestObject("OF/Status In Progress/input_Discount"), ""): NOT_RUN: sendKeys(findTestObject("OF/Status In Progress/input_Discount"), "")
+
+2019-10-31 15:38:54 - [MESSAGE][NOT_RUN] - NOT_RUN: sendKeys(findTestObject("OF/Status In Progress/input_Discount"), "")
+
+2019-10-31 15:38:54 - [TEST_STEP][PASSED] - sendKeys(findTestObject("OF/Status In Progress/input_Advance - Pay"), "50"): Keys '50' sent to object: 'Object Repository/OF/Status In Progress/input_Advance - Pay'
+
+2019-10-31 15:38:55 - [MESSAGE][PASSED] - Keys '50' sent to object: 'Object Repository/OF/Status In Progress/input_Advance - Pay'
+
+2019-10-31 15:38:55 - [TEST_STEP][PASSED] - dateAdvance = dates.DateGenerate.dateWeek(): dates.DateGenerate.dateWeek is PASSED
+
+2019-10-31 15:38:55 - [MESSAGE][PASSED] - dates.DateGenerate.dateWeek is PASSED
+
+2019-10-31 15:38:55 - [TEST_STEP][PASSED] - sendKeys(findTestObject("OF/Status In Progress/input_First Advance Payment (deadline)"), dateAdvance): Keys '2019-11-07' sent to object: 'Object Repository/OF/Status In Progress/input_First Advance Payment (deadline)'
+
+2019-10-31 15:38:56 - [MESSAGE][PASSED] - Keys '2019-11-07' sent to object: 'Object Repository/OF/Status In Progress/input_First Advance Payment (deadline)'
+
+2019-10-31 15:38:56 - [TEST_STEP][PASSED] - selectOptionByIndex(findTestObject("OF/Status In Progress/select_Installments"), 5): All options with index in [5] are selected on object 'Object Repository/OF/Status In Progress/select_Installments'
+
+2019-10-31 15:38:58 - [MESSAGE][PASSED] - All options with index in [5] are selected on object 'Object Repository/OF/Status In Progress/select_Installments'
+
+2019-10-31 15:38:58 - [TEST_STEP][NOT_RUN] - sendKeys(findTestObject("OF/Status In Progress/input_Interest"), ""): NOT_RUN: sendKeys(findTestObject("OF/Status In Progress/input_Interest"), "")
+
+2019-10-31 15:38:58 - [MESSAGE][NOT_RUN] - NOT_RUN: sendKeys(findTestObject("OF/Status In Progress/input_Interest"), "")
+
+2019-10-31 15:38:58 - [TEST_STEP][PASSED] - click(findTestObject("OF/Status In Progress/Calculate")): Object: 'Object Repository/OF/Status In Progress/Calculate' is clicked on
+
+2019-10-31 15:38:59 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status In Progress/Calculate' is clicked on
+
+2019-10-31 15:38:59 - [TEST_STEP][PASSED] - checkers.RadioButton.OwnCompany(): checkers.RadioButton.OwnCompany is PASSED
+
+2019-10-31 15:39:00 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/OF/Status In Progress/Radio buttons/span_Own Companies' are matched.
+
+2019-10-31 15:39:00 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status In Progress/Radio buttons/input_Own Companies' is checked
+
+2019-10-31 15:39:00 - [MESSAGE][PASSED] - checkers.RadioButton.OwnCompany is PASSED
+
+2019-10-31 15:39:00 - [TEST_STEP][PASSED] - selectOptionByIndex(findTestObject("OF/Status In Progress/select_Company"), 1): All options with index in [1] are selected on object 'Object Repository/OF/Status In Progress/select_Company'
+
+2019-10-31 15:39:02 - [MESSAGE][PASSED] - All options with index in [1] are selected on object 'Object Repository/OF/Status In Progress/select_Company'
+
+2019-10-31 15:39:02 - [TEST_STEP][PASSED] - checkers.RadioButton.Warehouse(): checkers.RadioButton.Warehouse is PASSED
+
+2019-10-31 15:39:03 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/OF/Status In Progress/Radio buttons/span_Warehouse' are matched.
+
+2019-10-31 15:39:03 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status In Progress/Radio buttons/input_Warehouse' is checked
+
+2019-10-31 15:39:03 - [MESSAGE][PASSED] - checkers.RadioButton.Warehouse is PASSED
+
+2019-10-31 15:39:03 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("OF/Status In Progress/Warehouse/select_Warehouse"), findTestData("Warehouses").getValue(1, 4), false): All options with value '4' are selected in object 'Object Repository/OF/Status In Progress/Warehouse/select_Warehouse' 
+
+2019-10-31 15:39:04 - [MESSAGE][PASSED] - All options with value '4' are selected in object 'Object Repository/OF/Status In Progress/Warehouse/select_Warehouse' 
+
+2019-10-31 15:39:04 - [TEST_STEP][PASSED] - click(findTestObject("OF/Status In Progress/input_Sale Offer_SendForConfirmation")): Object: 'Object Repository/OF/Status In Progress/input_Sale Offer_SendForConfirmation' is clicked on
+
+2019-10-31 15:39:05 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status In Progress/input_Sale Offer_SendForConfirmation' is clicked on
+
+2019-10-31 15:39:05 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:07 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer_Confirmations" time="32.58" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer_Confirmations" status="PASSED">
+         <system-out><![CDATA[2019-10-31 15:39:07 - [TEST_CASE][PASSED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer_Confirmations: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer_Confirmations
+
+2019-10-31 15:39:07 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:08 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:08 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitButton_Element"), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:39:08 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:39:08 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitButton_Element"), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:39:09 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:39:09 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer(): linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-10-31 15:39:11 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-10-31 15:39:11 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:13 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:13 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director"), 20): Object 'Object Repository/OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director' is visible
+
+2019-10-31 15:39:13 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director' is visible
+
+2019-10-31 15:39:13 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director"), 20): Object 'Object Repository/OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director' is clickable
+
+2019-10-31 15:39:14 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director' is clickable
+
+2019-10-31 15:39:14 - [TEST_STEP][PASSED] - click(findTestObject("OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director")): Object: 'Object Repository/OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director' is clicked on
+
+2019-10-31 15:39:14 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director' is clicked on
+
+2019-10-31 15:39:14 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:16 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:16 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitButton_Element"), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:39:16 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:39:16 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer(): linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-10-31 15:39:18 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-10-31 15:39:18 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:20 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:20 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector"), 20): Object 'Object Repository/OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector' is visible
+
+2019-10-31 15:39:21 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector' is visible
+
+2019-10-31 15:39:21 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector"), 20): Object 'Object Repository/OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector' is clickable
+
+2019-10-31 15:39:21 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector' is clickable
+
+2019-10-31 15:39:21 - [TEST_STEP][PASSED] - click(findTestObject("OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector")): Object: 'Object Repository/OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector' is clicked on
+
+2019-10-31 15:39:22 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector' is clicked on
+
+2019-10-31 15:39:22 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:23 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:23 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitButton_Element"), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:39:24 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:39:24 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitButton_Element"), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:39:24 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:39:24 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer(): linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-10-31 15:39:27 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-10-31 15:39:27 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:29 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:29 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector"), 20): Object 'Object Repository/OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector' is visible
+
+2019-10-31 15:39:29 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector' is visible
+
+2019-10-31 15:39:29 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector"), 20): Object 'Object Repository/OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector' is clickable
+
+2019-10-31 15:39:30 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector' is clickable
+
+2019-10-31 15:39:30 - [TEST_STEP][PASSED] - click(findTestObject("OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector")): Object: 'Object Repository/OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector' is clicked on
+
+2019-10-31 15:39:30 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector' is clicked on
+
+2019-10-31 15:39:30 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:32 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:32 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitButton_Element"), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:39:33 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:39:33 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Waiters/WaitButton_Element"), 20): Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-10-31 15:39:33 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-10-31 15:39:33 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-10-31 15:39:34 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-10-31 15:39:34 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer(): linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-10-31 15:39:36 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-10-31 15:39:36 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:38 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:38 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("OF/Status Sale Confirmation/Client/input_Sale Offer_Client"), 20): Object 'Object Repository/OF/Status Sale Confirmation/Client/input_Sale Offer_Client' is visible
+
+2019-10-31 15:39:38 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Sale Confirmation/Client/input_Sale Offer_Client' is visible
+
+2019-10-31 15:39:38 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("OF/Status Sale Confirmation/Client/input_Sale Offer_Client"), 20): Object 'Object Repository/OF/Status Sale Confirmation/Client/input_Sale Offer_Client' is clickable
+
+2019-10-31 15:39:39 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Sale Confirmation/Client/input_Sale Offer_Client' is clickable
+
+2019-10-31 15:39:39 - [TEST_STEP][PASSED] - click(findTestObject("OF/Status Sale Confirmation/Client/input_Sale Offer_Client")): Object: 'Object Repository/OF/Status Sale Confirmation/Client/input_Sale Offer_Client' is clicked on
+
+2019-10-31 15:39:39 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status Sale Confirmation/Client/input_Sale Offer_Client' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer_Archive" time="6.086" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer_Archive" status="PASSED">
+         <system-out><![CDATA[2019-10-31 15:39:39 - [TEST_CASE][PASSED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer_Archive: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer_Archive
+
+2019-10-31 15:39:40 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:41 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:41 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitButton_Element"), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:39:41 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:39:41 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer(): linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-10-31 15:39:43 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-10-31 15:39:43 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:45 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:45 - [TEST_STEP][PASSED] - click(findTestObject("OF/Status Archiving/input_Sale_Offer_Close")): Object: 'Object Repository/OF/Status Archiving/input_Sale_Offer_Close' is clicked on
+
+2019-10-31 15:39:46 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status Archiving/input_Sale_Offer_Close' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_BR_Advance_and_BI" time="17.228" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_BR_Advance_and_BI" status="FAILED">
+         <failure type="FAILED" message="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_BR_Advance_and_BI FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to select option by label 'ING' of object 'Object Repository/BI/select_BANK' 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.selectOptionByLabel(SelectOptionByLabelKeyword.groovy:98)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.execute(SelectOptionByLabelKeyword.groovy:71)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByLabel(WebUiBuiltInKeywords.groovy:1200)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$selectOptionByLabel$7.call(Unknown Source)
+	at SD FLOW_BR_Advance_and_BI.run(SD FLOW_BR_Advance_and_BI:59)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: ING
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.selectOrDeselectOptionsByLabel(WebUiCommonHelper.java:309)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword$_selectOptionByLabel_closure1.doCall(SelectOptionByLabelKeyword.groovy:87)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword$_selectOptionByLabel_closure1.call(SelectOptionByLabelKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+"/>
+         <system-out><![CDATA[2019-10-31 15:39:46 - [TEST_CASE][FAILED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_BR_Advance_and_BI: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_BR_Advance_and_BI FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to select option by label 'ING' of object 'Object Repository/BI/select_BANK' 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.selectOptionByLabel(SelectOptionByLabelKeyword.groovy:98)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.execute(SelectOptionByLabelKeyword.groovy:71)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByLabel(WebUiBuiltInKeywords.groovy:1200)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$selectOptionByLabel$7.call(Unknown Source)
+	at SD FLOW_BR_Advance_and_BI.run(SD FLOW_BR_Advance_and_BI:59)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: ING
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.selectOrDeselectOptionsByLabel(WebUiCommonHelper.java:309)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword$_selectOptionByLabel_closure1.doCall(SelectOptionByLabelKeyword.groovy:87)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword$_selectOptionByLabel_closure1.call(SelectOptionByLabelKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+
+
+2019-10-31 15:39:46 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20, CONTINUE_ON_FAILURE): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:48 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:48 - [TEST_STEP][PASSED] - scrollToPosition(0, 0): Browser is scrolled to position x = 0, y = 0
+
+2019-10-31 15:39:48 - [MESSAGE][PASSED] - Browser is scrolled to position x = 0, y = 0
+
+2019-10-31 15:39:48 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitSDModule_Element"), 20): Object 'Object Repository/Waiters/WaitSDModule_Element' is visible
+
+2019-10-31 15:39:48 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitSDModule_Element' is visible
+
+2019-10-31 15:39:48 - [TEST_STEP][PASSED] - bilingOpen = getWebDriver(): null
+
+2019-10-31 15:39:48 - [TEST_STEP][PASSED] - plus = xpath(" /html/body/div[4]/div[3]/div/div/ul[29]/li/div/button/b")).click(): null
+
+2019-10-31 15:39:49 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitBillingReq_Element"), 20): Object 'Object Repository/Waiters/WaitBillingReq_Element' is visible
+
+2019-10-31 15:39:50 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitBillingReq_Element' is visible
+
+2019-10-31 15:39:50 - [TEST_STEP][PASSED] - billingElem = getWebDriver(): null
+
+2019-10-31 15:39:50 - [TEST_STEP][PASSED] - billing = xpath("/html/body/div[4]/div[3]/div/div/ul[29]/li/ul/li[1]/div/a")).click(): null
+
+2019-10-31 15:39:51 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20, CONTINUE_ON_FAILURE): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:51 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:51 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitBRButton_Element"), 20): Object 'Object Repository/Waiters/WaitBRButton_Element' is visible
+
+2019-10-31 15:39:52 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitBRButton_Element' is visible
+
+2019-10-31 15:39:52 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.billing_request(): linkers.Link_SD_FLOW_VENDOR.billing_request is PASSED
+
+2019-10-31 15:39:55 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.billing_request is PASSED
+
+2019-10-31 15:39:55 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20, CONTINUE_ON_FAILURE): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:55 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:55 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitBRCheckbox_Element"), 20): Object 'Object Repository/Waiters/WaitBRCheckbox_Element' is visible
+
+2019-10-31 15:39:56 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitBRCheckbox_Element' is visible
+
+2019-10-31 15:39:56 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("BR/select_Generate Billing"), findTestData("DropDowns").getValue(8, 1), false): All options with label 'Generate Billing' are selected in object 'Object Repository/BR/select_Generate Billing' 
+
+2019-10-31 15:39:56 - [MESSAGE][PASSED] - All options with label 'Generate Billing' are selected in object 'Object Repository/BR/select_Generate Billing' 
+
+2019-10-31 15:39:56 - [TEST_STEP][PASSED] - click(findTestObject("BR/input_InProgress")): Object: 'Object Repository/BR/input_InProgress' is clicked on
+
+2019-10-31 15:39:58 - [MESSAGE][PASSED] - Object: 'Object Repository/BR/input_InProgress' is clicked on
+
+2019-10-31 15:39:58 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20, CONTINUE_ON_FAILURE): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:59 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:39:59 - [TEST_STEP][PASSED] - setText(findTestObject("BI/input__form_invoiceNR"), String.valueOf(Math.abs(Random().nextInt() % 9999) + 1)): Text '5734' is set on object 'Object Repository/BI/input__form_invoiceNR'
+
+2019-10-31 15:40:00 - [MESSAGE][PASSED] - Text '5734' is set on object 'Object Repository/BI/input__form_invoiceNR'
+
+2019-10-31 15:40:00 - [TEST_STEP][PASSED] - invoiceDateNow = dates.DateGenerate.date(): dates.DateGenerate.date is PASSED
+
+2019-10-31 15:40:00 - [MESSAGE][PASSED] - dates.DateGenerate.date is PASSED
+
+2019-10-31 15:40:00 - [TEST_STEP][PASSED] - setText(findTestObject("BI/input__form_DATE"), invoiceDateNow): Text '2019-10-31' is set on object 'Object Repository/BI/input__form_DATE'
+
+2019-10-31 15:40:00 - [MESSAGE][PASSED] - Text '2019-10-31' is set on object 'Object Repository/BI/input__form_DATE'
+
+2019-10-31 15:40:00 - [TEST_STEP][FAILED] - selectOptionByLabel(findTestObject("BI/select_BANK"), findTestData("DropDowns").getValue(9, 1), false): Unable to select option by label 'ING' of object 'Object Repository/BI/select_BANK'  (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to select option by label 'ING' of object 'Object Repository/BI/select_BANK' 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.selectOptionByLabel(SelectOptionByLabelKeyword.groovy:98)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.execute(SelectOptionByLabelKeyword.groovy:71)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByLabel(WebUiBuiltInKeywords.groovy:1200)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$selectOptionByLabel$7.call(Unknown Source)
+	at SD FLOW_BR_Advance_and_BI.run(SD FLOW_BR_Advance_and_BI:59)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: ING
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.selectOrDeselectOptionsByLabel(WebUiCommonHelper.java:309)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword$_selectOptionByLabel_closure1.doCall(SelectOptionByLabelKeyword.groovy:87)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword$_selectOptionByLabel_closure1.call(SelectOptionByLabelKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.selectOptionByLabel(SelectOptionByLabelKeyword.groovy:98)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.execute(SelectOptionByLabelKeyword.groovy:71)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByLabel(WebUiBuiltInKeywords.groovy:1200)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$selectOptionByLabel$7.call(Unknown Source)
+	at Script1572268139619.run(Script1572268139619.groovy:59)
+	... 13 more
+)
+
+2019-10-31 15:40:03 - [MESSAGE][FAILED] - Unable to select option by label 'ING' of object 'Object Repository/BI/select_BANK'  (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to select option by label 'ING' of object 'Object Repository/BI/select_BANK' 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.selectOptionByLabel(SelectOptionByLabelKeyword.groovy:98)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.execute(SelectOptionByLabelKeyword.groovy:71)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByLabel(WebUiBuiltInKeywords.groovy:1200)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$selectOptionByLabel$7.call(Unknown Source)
+	at SD FLOW_BR_Advance_and_BI.run(SD FLOW_BR_Advance_and_BI:59)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: ING
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.selectOrDeselectOptionsByLabel(WebUiCommonHelper.java:309)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword$_selectOptionByLabel_closure1.doCall(SelectOptionByLabelKeyword.groovy:87)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword$_selectOptionByLabel_closure1.call(SelectOptionByLabelKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.selectOptionByLabel(SelectOptionByLabelKeyword.groovy:98)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.execute(SelectOptionByLabelKeyword.groovy:71)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByLabel(WebUiBuiltInKeywords.groovy:1200)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$selectOptionByLabel$7.call(Unknown Source)
+	at Script1572268139619.run(Script1572268139619.groovy:59)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191031_153740\\SD Flow ME-GR From Vendor with Advance\\20191031_153740\\1572529202673.png]]]]></system-out>
+         <system-err><![CDATA[2019-10-31 15:39:46 - [TEST_CASE][FAILED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_BR_Advance_and_BI: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_BR_Advance_and_BI FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to select option by label 'ING' of object 'Object Repository/BI/select_BANK' 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.selectOptionByLabel(SelectOptionByLabelKeyword.groovy:98)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.execute(SelectOptionByLabelKeyword.groovy:71)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByLabel(WebUiBuiltInKeywords.groovy:1200)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$selectOptionByLabel$7.call(Unknown Source)
+	at SD FLOW_BR_Advance_and_BI.run(SD FLOW_BR_Advance_and_BI:59)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: ING
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.selectOrDeselectOptionsByLabel(WebUiCommonHelper.java:309)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword$_selectOptionByLabel_closure1.doCall(SelectOptionByLabelKeyword.groovy:87)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword$_selectOptionByLabel_closure1.call(SelectOptionByLabelKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_RE" time="64.575" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_RE" status="FAILED">
+         <failure type="FAILED" message="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_RE FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/RE/input_Receivable_Start'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at SD FLOW_RE.run(SD FLOW_RE:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/RE/input_Receivable_Start' located by 'By.xpath: //input[@value='In Progress']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1113)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+"/>
+         <system-out><![CDATA[2019-10-31 15:40:03 - [TEST_CASE][FAILED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_RE: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_RE FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/RE/input_Receivable_Start'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at SD FLOW_RE.run(SD FLOW_RE:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/RE/input_Receivable_Start' located by 'By.xpath: //input[@value='In Progress']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1113)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+
+
+2019-10-31 15:40:03 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitButton_Element"), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:40:03 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:40:03 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Waiters/WaitButton_Element"), 20): Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-10-31 15:40:04 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-10-31 15:40:04 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.receivables(): linkers.Link_SD_FLOW_VENDOR.receivables is PASSED
+
+2019-10-31 15:40:06 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.receivables is PASSED
+
+2019-10-31 15:40:06 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20, STOP_ON_FAILURE): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:40:07 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:40:07 - [TEST_STEP][FAILED] - click(findTestObject("RE/input_Receivable_Start")): Unable to click on object 'Object Repository/RE/input_Receivable_Start' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/RE/input_Receivable_Start'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at SD FLOW_RE.run(SD FLOW_RE:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/RE/input_Receivable_Start' located by 'By.xpath: //input[@value='In Progress']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1113)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at Script1572268139697.run(Script1572268139697.groovy:24)
+	... 13 more
+)
+
+2019-10-31 15:41:07 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@value='In Progress']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-31 15:41:07 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/RE/input_Receivable_Start' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/RE/input_Receivable_Start'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at SD FLOW_RE.run(SD FLOW_RE:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/RE/input_Receivable_Start' located by 'By.xpath: //input[@value='In Progress']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1113)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at Script1572268139697.run(Script1572268139697.groovy:24)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191031_153740\\SD Flow ME-GR From Vendor with Advance\\20191031_153740\\1572529267289.png]]]]></system-out>
+         <system-err><![CDATA[2019-10-31 15:40:03 - [TEST_CASE][FAILED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_RE: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_RE FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/RE/input_Receivable_Start'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at SD FLOW_RE.run(SD FLOW_RE:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/RE/input_Receivable_Start' located by 'By.xpath: //input[@value='In Progress']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1113)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW SaleOrder_from_Vendor" time="149.341" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW SaleOrder_from_Vendor" status="FAILED">
+         <failure type="FAILED" message="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW SaleOrder_from_Vendor FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at SD FLOW SaleOrder_from_Vendor.run(SD FLOW SaleOrder_from_Vendor:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress' located by 'By.xpath: //input[@value='In Progress']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1113)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+"/>
+         <system-out><![CDATA[2019-10-31 15:41:07 - [TEST_CASE][FAILED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW SaleOrder_from_Vendor: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW SaleOrder_from_Vendor FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at SD FLOW SaleOrder_from_Vendor.run(SD FLOW SaleOrder_from_Vendor:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress' located by 'By.xpath: //input[@value='In Progress']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1113)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+
+
+2019-10-31 15:41:08 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:41:08 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:41:08 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitButton_Element"), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:41:09 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-10-31 15:41:09 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Waiters/WaitButton_Element"), 20): Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-10-31 15:41:09 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-10-31 15:41:09 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-31 15:41:11 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-31 15:41:11 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.order(): linkers.Link_SD_FLOW_VENDOR.order is PASSED
+
+2019-10-31 15:41:15 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.order is PASSED
+
+2019-10-31 15:41:15 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:41:16 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:41:16 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("OR/Open-SendtoConfirm/input_Sale Order_Progress"), 20): Web element with id: 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress' located by 'By.xpath: //input[@value='In Progress']' not found
+
+2019-10-31 15:41:56 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@value='In Progress']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-31 15:41:56 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress' located by 'By.xpath: //input[@value='In Progress']' not found
+
+2019-10-31 15:41:56 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("OR/Open-SendtoConfirm/input_Sale Order_Progress"), 20): Web element with id: 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress' located by 'By.xpath: //input[@value='In Progress']' not found
+
+2019-10-31 15:42:36 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@value='In Progress']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-31 15:42:36 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress' located by 'By.xpath: //input[@value='In Progress']' not found
+
+2019-10-31 15:42:36 - [TEST_STEP][FAILED] - click(findTestObject("OR/Open-SendtoConfirm/input_Sale Order_Progress")): Unable to click on object 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at SD FLOW SaleOrder_from_Vendor.run(SD FLOW SaleOrder_from_Vendor:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress' located by 'By.xpath: //input[@value='In Progress']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1113)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at Script1572268139610.run(Script1572268139610.groovy:37)
+	... 13 more
+)
+
+2019-10-31 15:43:36 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@value='In Progress']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-31 15:43:37 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at SD FLOW SaleOrder_from_Vendor.run(SD FLOW SaleOrder_from_Vendor:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress' located by 'By.xpath: //input[@value='In Progress']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1113)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at Script1572268139610.run(Script1572268139610.groovy:37)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191031_153740\\SD Flow ME-GR From Vendor with Advance\\20191031_153740\\1572529416593.png]]]]></system-out>
+         <system-err><![CDATA[2019-10-31 15:41:07 - [TEST_CASE][FAILED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW SaleOrder_from_Vendor: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW SaleOrder_from_Vendor FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at SD FLOW SaleOrder_from_Vendor.run(SD FLOW SaleOrder_from_Vendor:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress' located by 'By.xpath: //input[@value='In Progress']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1113)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW Purchase_req" time="2.056" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW Purchase_req" status="ERROR">
+         <error type="ERROR" message="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW Purchase_req FAILED.
+Reason:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;b style=&quot;color: white&quot;>...&lt;/b> is not clickable at point (26, 313). Other element would receive the click: &lt;div modal-render=&quot;true&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; class=&quot;modal fade in&quot; uib-modal-animation-class=&quot;fade&quot; modal-in-class=&quot;in&quot; ng-style=&quot;{'z-index': 1050 + index*10, display: 'block'}&quot; uib-modal-window=&quot;modal-window&quot; size=&quot;offer&quot; index=&quot;0&quot; animate=&quot;animate&quot; modal-animation=&quot;true&quot; style=&quot;z-index: 1050; display: block;&quot;>...&lt;/div>
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DANIEL~1.DON\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55999}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c5d8a73740f236cca115335207d37fa0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click$3.call(Unknown Source)
+	at SD FLOW Purchase_req.run(SD FLOW Purchase_req:29)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+"/>
+         <system-out><![CDATA[2019-10-31 15:43:37 - [TEST_CASE][ERROR] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW Purchase_req: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW Purchase_req FAILED.
+Reason:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <b style="color: white">...</b> is not clickable at point (26, 313). Other element would receive the click: <div modal-render="true" tabindex="-1" role="dialog" class="modal fade in" uib-modal-animation-class="fade" modal-in-class="in" ng-style="{'z-index': 1050 + index*10, display: 'block'}" uib-modal-window="modal-window" size="offer" index="0" animate="animate" modal-animation="true" style="z-index: 1050; display: block;">...</div>
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DANIEL~1.DON\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55999}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c5d8a73740f236cca115335207d37fa0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click$3.call(Unknown Source)
+	at SD FLOW Purchase_req.run(SD FLOW Purchase_req:29)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+
+
+2019-10-31 15:43:37 - [TEST_STEP][PASSED] - scrollToPosition(0, 0, OPTIONAL): Browser is scrolled to position x = 0, y = 0
+
+2019-10-31 15:43:37 - [MESSAGE][PASSED] - Browser is scrolled to position x = 0, y = 0
+
+2019-10-31 15:43:37 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:43:38 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:43:38 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitPurchaseModule_Element"), 20): Object 'Object Repository/Waiters/WaitPurchaseModule_Element' is visible
+
+2019-10-31 15:43:38 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitPurchaseModule_Element' is visible
+
+2019-10-31 15:43:38 - [TEST_STEP][PASSED] - openPurchase = getWebDriver(): null
+
+2019-10-31 15:43:38 - [TEST_STEP][PASSED] - plus = xpath("html/body/div[4]/div[3]/div/div/ul[28]/li/div/button/b")).click(): null]]></system-out>
+         <system-err><![CDATA[2019-10-31 15:43:37 - [TEST_CASE][ERROR] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW Purchase_req: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW Purchase_req FAILED.
+Reason:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <b style="color: white">...</b> is not clickable at point (26, 313). Other element would receive the click: <div modal-render="true" tabindex="-1" role="dialog" class="modal fade in" uib-modal-animation-class="fade" modal-in-class="in" ng-style="{'z-index': 1050 + index*10, display: 'block'}" uib-modal-window="modal-window" size="offer" index="0" animate="animate" modal-animation="true" style="z-index: 1050; display: block;">...</div>
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DANIEL~1.DON\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55999}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c5d8a73740f236cca115335207d37fa0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click$3.call(Unknown Source)
+	at SD FLOW Purchase_req.run(SD FLOW Purchase_req:29)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW PO" time="62.127" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW PO" status="FAILED">
+         <failure type="FAILED" message="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW PO FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/PO/PO from SD/input_Purchase InProgressSD'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at SD FLOW PO.run(SD FLOW PO:27)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/PO/PO from SD/input_Purchase InProgressSD' located by 'By.xpath: //input[@value='In Progress']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1113)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+"/>
+         <system-out><![CDATA[2019-10-31 15:43:39 - [TEST_CASE][FAILED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW PO: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW PO FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/PO/PO from SD/input_Purchase InProgressSD'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at SD FLOW PO.run(SD FLOW PO:27)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/PO/PO from SD/input_Purchase InProgressSD' located by 'By.xpath: //input[@value='In Progress']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1113)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+
+
+2019-10-31 15:43:39 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:43:40 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:43:40 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-10-31 15:43:42 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-10-31 15:43:42 - [TEST_STEP][FAILED] - click(findTestObject("PO/PO from SD/input_Purchase InProgressSD")): Unable to click on object 'Object Repository/PO/PO from SD/input_Purchase InProgressSD' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/PO/PO from SD/input_Purchase InProgressSD'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at SD FLOW PO.run(SD FLOW PO:27)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/PO/PO from SD/input_Purchase InProgressSD' located by 'By.xpath: //input[@value='In Progress']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1113)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at Script1572268139587.run(Script1572268139587.groovy:27)
+	... 13 more
+)
+
+2019-10-31 15:44:40 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //input[@value='In Progress']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2019-10-31 15:44:41 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/PO/PO from SD/input_Purchase InProgressSD' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/PO/PO from SD/input_Purchase InProgressSD'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at SD FLOW PO.run(SD FLOW PO:27)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/PO/PO from SD/input_Purchase InProgressSD' located by 'By.xpath: //input[@value='In Progress']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1113)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at Script1572268139587.run(Script1572268139587.groovy:27)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191031_153740\\SD Flow ME-GR From Vendor with Advance\\20191031_153740\\1572529480837.png]]]]></system-out>
+         <system-err><![CDATA[2019-10-31 15:43:39 - [TEST_CASE][FAILED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW PO: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW PO FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/PO/PO from SD/input_Purchase InProgressSD'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:42)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at SD FLOW PO.run(SD FLOW PO:27)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/PO/PO from SD/input_Purchase InProgressSD' located by 'By.xpath: //input[@value='In Progress']' not found
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.findWebElement(WebUiCommonHelper.java:1113)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:27)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW ID_GI_GR_SN_FN_Passport" time="1.42" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW ID_GI_GR_SN_FN_Passport" status="ERROR">
+         <error type="ERROR" message="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW ID_GI_GR_SN_FN_Passport FAILED.
+Reason:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;b style=&quot;color: white&quot;>...&lt;/b> is not clickable at point (26, 573). Other element would receive the click: &lt;div modal-render=&quot;true&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; class=&quot;modal fade in&quot; uib-modal-animation-class=&quot;fade&quot; modal-in-class=&quot;in&quot; ng-style=&quot;{'z-index': 1050 + index*10, display: 'block'}&quot; uib-modal-window=&quot;modal-window&quot; size=&quot;offer&quot; index=&quot;0&quot; animate=&quot;animate&quot; modal-animation=&quot;true&quot; style=&quot;z-index: 1050; display: block;&quot;>...&lt;/div>
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DANIEL~1.DON\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55999}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c5d8a73740f236cca115335207d37fa0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click$3.call(Unknown Source)
+	at SD FLOW ID_GI_GR_SN_FN_Passport.run(SD FLOW ID_GI_GR_SN_FN_Passport:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+"/>
+         <system-out><![CDATA[2019-10-31 15:44:41 - [TEST_CASE][ERROR] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW ID_GI_GR_SN_FN_Passport: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW ID_GI_GR_SN_FN_Passport FAILED.
+Reason:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <b style="color: white">...</b> is not clickable at point (26, 573). Other element would receive the click: <div modal-render="true" tabindex="-1" role="dialog" class="modal fade in" uib-modal-animation-class="fade" modal-in-class="in" ng-style="{'z-index': 1050 + index*10, display: 'block'}" uib-modal-window="modal-window" size="offer" index="0" animate="animate" modal-animation="true" style="z-index: 1050; display: block;">...</div>
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DANIEL~1.DON\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55999}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c5d8a73740f236cca115335207d37fa0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click$3.call(Unknown Source)
+	at SD FLOW ID_GI_GR_SN_FN_Passport.run(SD FLOW ID_GI_GR_SN_FN_Passport:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+
+
+2019-10-31 15:44:41 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:44:42 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-10-31 15:44:42 - [TEST_STEP][PASSED] - driverWH = getWebDriver(): null
+
+2019-10-31 15:44:42 - [TEST_STEP][PASSED] - mainDashboard = xpath("/html/body/div[4]/div[3]/div/div/ul[32]/li/div/button/b")).click(): null]]></system-out>
+         <system-err><![CDATA[2019-10-31 15:44:41 - [TEST_CASE][ERROR] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW ID_GI_GR_SN_FN_Passport: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW ID_GI_GR_SN_FN_Passport FAILED.
+Reason:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <b style="color: white">...</b> is not clickable at point (26, 573). Other element would receive the click: <div modal-render="true" tabindex="-1" role="dialog" class="modal fade in" uib-modal-animation-class="fade" modal-in-class="in" ng-style="{'z-index': 1050 + index*10, display: 'block'}" uib-modal-window="modal-window" size="offer" index="0" animate="animate" modal-animation="true" style="z-index: 1050; display: block;">...</div>
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DANIEL~1.DON\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55999}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c5d8a73740f236cca115335207d37fa0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click$3.call(Unknown Source)
+	at SD FLOW ID_GI_GR_SN_FN_Passport.run(SD FLOW ID_GI_GR_SN_FN_Passport:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-10-31 15:37:45 - [TEST_SUITE][FAILED] - SD Flow ME-GR From Vendor with Advance: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_BR_Advance_and_BI FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to select option by label 'ING' of object 'Object Repository/BI/select_BANK' 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.selectOptionByLabel(SelectOptionByLabelKeyword.groovy:98)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.execute(SelectOptionByLabelKeyword.groovy:71)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByLabel(WebUiBuiltInKeywords.groovy:1200)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$selectOptionByLabel$7.call(Unknown Source)
+	at SD FLOW_BR_Advance_and_BI.run(SD FLOW_BR_Advance_and_BI:59)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: ING
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.selectOrDeselectOptionsByLabel(WebUiCommonHelper.java:309)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword$_selectOptionByLabel_closure1.doCall(SelectOptionByLabelKeyword.groovy:87)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword$_selectOptionByLabel_closure1.call(SelectOptionByLabelKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-out>
+      <system-err><![CDATA[2019-10-31 15:37:45 - [TEST_SUITE][FAILED] - SD Flow ME-GR From Vendor with Advance: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_BR_Advance_and_BI FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to select option by label 'ING' of object 'Object Repository/BI/select_BANK' 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.selectOptionByLabel(SelectOptionByLabelKeyword.groovy:98)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword.execute(SelectOptionByLabelKeyword.groovy:71)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:60)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByLabel(WebUiBuiltInKeywords.groovy:1200)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$selectOptionByLabel$7.call(Unknown Source)
+	at SD FLOW_BR_Advance_and_BI.run(SD FLOW_BR_Advance_and_BI:59)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1572529060397.run(TempTestSuite1572529060397.groovy:36)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: ING
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.kms.katalon.core.webui.common.WebUiCommonHelper.selectOrDeselectOptionsByLabel(WebUiCommonHelper.java:309)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword$_selectOptionByLabel_closure1.doCall(SelectOptionByLabelKeyword.groovy:87)
+	at com.kms.katalon.core.webui.keyword.builtin.SelectOptionByLabelKeyword$_selectOptionByLabel_closure1.call(SelectOptionByLabelKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+   </testsuite>
+</testsuites>

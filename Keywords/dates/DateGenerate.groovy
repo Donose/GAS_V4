@@ -72,4 +72,6 @@ class DateGenerate {
 		String formatdateAgo = datePast.format('yyyy-MM-dd')
 		return formatdateAgo
 	}
+	
+
 }

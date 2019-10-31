@@ -27,17 +27,17 @@ public class CheckBox {
 		for (int row = 0; row < rows_count; row++){
 			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('td'))
 			int columns_count = Columns_row.size()
-            for (int column = 0; column < columns_count; column++){
+			for (int column = 0; column < columns_count; column++){
 				while (q>a){
 
 					rows_table.get(row).findElement(By.xpath('//td[7]/input[@type="checkbox"]')).click()
 					a++
-					
+
 				}
 				break
 			}
 		}
-	}	
+	}
 }
 
 

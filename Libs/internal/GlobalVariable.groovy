@@ -12,6 +12,11 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
+    public static Object Web7Login
+     
+    /**
+     * <p></p>
+     */
     public static Object HomeLogin
      
     /**
@@ -71,6 +76,7 @@ public class GlobalVariable {
 			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
             selectedVariables += RunConfiguration.getOverridingParameters()
     
+            Web7Login = selectedVariables['Web7Login']
             HomeLogin = selectedVariables['HomeLogin']
             WorkLogin = selectedVariables['WorkLogin']
             Meeting = selectedVariables['Meeting']
