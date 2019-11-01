@@ -20,7 +20,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-for (int i = 0; i = 20; i++) {
+//for (int i = 0; i = 20; i++) {
 WebUI.waitForElementVisible(findTestObject('MainDashboard/Nav_Menu_Top/a_SD'), 10)
 
 CustomKeywords.'mainDashboardSelections.Selectors.selectSDMeeting'()
@@ -53,9 +53,7 @@ WebUI.selectOptionByValue(findTestObject('ME/select_Opportunity'), findTestData(
 
 WebUI.selectOptionByValue(findTestObject('ME/select_Purpose'), findTestData('DropDowns').getValue(6, 1), false)
 
-String dateCurrent = CustomKeywords.'dates.DateGenerate.date'()
-
-WebUI.setText(findTestObject('Object Repository/ME/DatePick/input_Meeting date'), dateCurrent, FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'dates.DatePicker.pickThisMeeting'()
 
 WebUI.waitForElementVisible(findTestObject('ME/Client Products/span_Client interested in products'), 5)
 
@@ -84,4 +82,3 @@ WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element')
 
 WebUI.scrollToPosition(0, 0)
 
-}

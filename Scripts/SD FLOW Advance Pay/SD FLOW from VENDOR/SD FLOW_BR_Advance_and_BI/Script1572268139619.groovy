@@ -16,6 +16,8 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -52,9 +54,7 @@ WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element')
 'This must be saved/ future'
 WebUI.setText(findTestObject('BI/input__form_invoiceNR'), String.valueOf(Math.abs(new Random().nextInt() % 9999) + 1))
 
-String invoiceDateNow = CustomKeywords.'dates.DateGenerate.date'()
-
-WebUI.setText(findTestObject('BI/input__form_DATE'), invoiceDateNow)
+CustomKeywords.'dates.DatePicker.pickThisBilling'()
 
 WebUI.selectOptionByLabel(findTestObject('BI/select_BANK'), findTestData('DropDowns').getValue(9, 1), false)
 
