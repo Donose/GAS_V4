@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="SD Flow ME-GR From Vendor with Advance" time="297.665" tests="11" failures="0" errors="2">
+   <testsuite name="SD Flow ME-GR From Vendor with Advance" tests="11" failures="0" errors="2" time="297.665" timestamp="2019-11-06 16:36:44" hostname="daniel.donose - egt-danieldonose.egt.local" id="Test Suites/SD Flow ME-GR From Vendor with Advance">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191106_163640\\SD Flow ME-GR From Vendor with Advance\\20191106_163640"/>
+         <property name="logFiles" value="C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191106_163640\\SD Flow ME-GR From Vendor with Advance\\20191106_163640\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="daniel.donose - egt-danieldonose.egt.local"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.0.3.1"/>
+         <property name="browser" value="Chrome 77.0.3865.120"/>
+         <property name="dbServerInfo" value="PostgreSQL 9.6.10"/>
+         <property name="hostAddress" value="10.120.2.94"/>
+         <property name="sessionId" value="741c9e929540425d2645767d778fd3da"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Login/LoginAdmin" time="18.558" classname="Test Cases/Login/LoginAdmin" status="PASSED">
+         <system-out><![CDATA[2019-11-06 16:36:45 - [TEST_CASE][PASSED] - Test Cases/Login/LoginAdmin: Test Cases/Login/LoginAdmin
+
+2019-11-06 16:36:46 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-11-06 16:36:46 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-11-06 16:36:46 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-11-06 16:36:54 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-11-06 16:36:54 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-11-06 16:36:58 - [MESSAGE][PASSED] - Current window maximized
+
+2019-11-06 16:36:58 - [TEST_STEP][PASSED] - navigateToUrl(Web7TestEnv): Navigate to 'http://web7.egt-bg.ro:7955/?#!/' successfully
+
+2019-11-06 16:37:02 - [MESSAGE][PASSED] - Navigate to 'http://web7.egt-bg.ro:7955/?#!/' successfully
+
+2019-11-06 16:37:02 - [TEST_STEP][PASSED] - setText(findTestObject("Login/input_username"), "daniel.donose"): Text 'daniel.donose' is set on object 'Object Repository/Login/input_username'
+
+2019-11-06 16:37:02 - [MESSAGE][PASSED] - Text 'daniel.donose' is set on object 'Object Repository/Login/input_username'
+
+2019-11-06 16:37:02 - [TEST_STEP][PASSED] - setText(findTestObject("Login/input_password"), "11111sase"): Text '11111sase' is set on object 'Object Repository/Login/input_password'
+
+2019-11-06 16:37:03 - [MESSAGE][PASSED] - Text '11111sase' is set on object 'Object Repository/Login/input_password'
+
+2019-11-06 16:37:03 - [TEST_STEP][PASSED] - click(findTestObject("Login/button_Login")): Object: 'Object Repository/Login/button_Login' is clicked on
+
+2019-11-06 16:37:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/button_Login' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Meeting_Vendor" time="46.918" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Meeting_Vendor" status="PASSED">
+         <system-out><![CDATA[2019-11-06 16:37:03 - [TEST_CASE][PASSED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Meeting_Vendor: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Meeting_Vendor
+
+2019-11-06 16:37:04 - [TEST_STEP][PASSED] - pathWait = "/Waiters/WaitLoadingAnim_Element": null
+
+2019-11-06 16:37:04 - [TEST_STEP][PASSED] - companyName = "ME/input_Company name": null
+
+2019-11-06 16:37:04 - [TEST_STEP][PASSED] - contactName = "ME/input_Contact name": null
+
+2019-11-06 16:37:04 - [TEST_STEP][PASSED] - materialSelect = "ME/Client Products/input_Materials": null
+
+2019-11-06 16:37:04 - [TEST_STEP][PASSED] - meetingButton = "ME/button_Create Offer": null
+
+2019-11-06 16:37:04 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("MainDashboard/Nav_Menu_Top/a_SD"), 10): Object 'Object Repository/MainDashboard/Nav_Menu_Top/a_SD' is visible
+
+2019-11-06 16:37:12 - [MESSAGE][PASSED] - Object 'Object Repository/MainDashboard/Nav_Menu_Top/a_SD' is visible
+
+2019-11-06 16:37:12 - [TEST_STEP][PASSED] - mainDashboardSelections.Selectors.selectSDMeeting(): mainDashboardSelections.Selectors.selectSDMeeting is PASSED
+
+2019-11-06 16:37:12 - [MESSAGE][PASSED] - Object: 'Object Repository/MainDashboard/Nav_Menu_Top/a_SD' is clicked on
+
+2019-11-06 16:37:13 - [MESSAGE][PASSED] - Object: 'Object Repository/MainDashboard/Nav_Menu_Top/SD/a_Add New Meeting' is clicked on
+
+2019-11-06 16:37:13 - [MESSAGE][PASSED] - mainDashboardSelections.Selectors.selectSDMeeting is PASSED
+
+2019-11-06 16:37:13 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(pathWait), 20): Object 'Object Repository//Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:37:14 - [MESSAGE][PASSED] - Object 'Object Repository//Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:37:14 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-11-06 16:37:19 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-11-06 16:37:19 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("ME/select_me_prio"), findTestData("DropDowns").getValue(1, 1), false): All options with label 'Low' are selected in object 'Object Repository/ME/select_me_prio' 
+
+2019-11-06 16:37:21 - [MESSAGE][PASSED] - All options with label 'Low' are selected in object 'Object Repository/ME/select_me_prio' 
+
+2019-11-06 16:37:21 - [TEST_STEP][PASSED] - click(findTestObject("ME/span_Company name")): Object: 'Object Repository/ME/span_Company name' is clicked on
+
+2019-11-06 16:37:21 - [MESSAGE][PASSED] - Object: 'Object Repository/ME/span_Company name' is clicked on
+
+2019-11-06 16:37:21 - [TEST_STEP][PASSED] - setText(findTestObject(companyName), findTestData("Clients").getValue(1, 2), STOP_ON_FAILURE): Text 'MEGA IMAGE' is set on object 'Object Repository/ME/input_Company name'
+
+2019-11-06 16:37:22 - [MESSAGE][PASSED] - Text 'MEGA IMAGE' is set on object 'Object Repository/ME/input_Company name'
+
+2019-11-06 16:37:22 - [TEST_STEP][PASSED] - sendKeys(findTestObject(companyName), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ME/input_Company name'
+
+2019-11-06 16:37:23 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ME/input_Company name'
+
+2019-11-06 16:37:23 - [TEST_STEP][PASSED] - click(findTestObject("ME/span_Contact name"), STOP_ON_FAILURE): Object: 'Object Repository/ME/span_Contact name' is clicked on
+
+2019-11-06 16:37:24 - [MESSAGE][PASSED] - Object: 'Object Repository/ME/span_Contact name' is clicked on
+
+2019-11-06 16:37:24 - [TEST_STEP][PASSED] - setText(findTestObject(contactName), "Ivanka Petrova"): Text 'Ivanka Petrova' is set on object 'Object Repository/ME/input_Contact name'
+
+2019-11-06 16:37:25 - [MESSAGE][PASSED] - Text 'Ivanka Petrova' is set on object 'Object Repository/ME/input_Contact name'
+
+2019-11-06 16:37:25 - [TEST_STEP][PASSED] - sendKeys(findTestObject(contactName), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ME/input_Contact name'
+
+2019-11-06 16:37:26 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ME/input_Contact name'
+
+2019-11-06 16:37:26 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/select_Meeting"), findTestData("DropDowns").getValue(2, 1), false): All options with value 'Meeting' are selected in object 'Object Repository/ME/select_Meeting' 
+
+2019-11-06 16:37:27 - [MESSAGE][PASSED] - All options with value 'Meeting' are selected in object 'Object Repository/ME/select_Meeting' 
+
+2019-11-06 16:37:27 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/select_Deal"), findTestData("DropDowns").getValue(3, 1), false): All options with value 'New Deal' are selected in object 'Object Repository/ME/select_Deal' 
+
+2019-11-06 16:37:28 - [MESSAGE][PASSED] - All options with value 'New Deal' are selected in object 'Object Repository/ME/select_Deal' 
+
+2019-11-06 16:37:28 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/select_Location"), findTestData("DropDowns").getValue(4, 1), false): All options with value 'Own Office' are selected in object 'Object Repository/ME/select_Location' 
+
+2019-11-06 16:37:29 - [MESSAGE][PASSED] - All options with value 'Own Office' are selected in object 'Object Repository/ME/select_Location' 
+
+2019-11-06 16:37:29 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/select_Opportunity"), findTestData("DropDowns").getValue(5, 1), false): All options with value 'High' are selected in object 'Object Repository/ME/select_Opportunity' 
+
+2019-11-06 16:37:30 - [MESSAGE][PASSED] - All options with value 'High' are selected in object 'Object Repository/ME/select_Opportunity' 
+
+2019-11-06 16:37:30 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/select_Purpose"), findTestData("DropDowns").getValue(6, 1), false): All options with value 'Offer' are selected in object 'Object Repository/ME/select_Purpose' 
+
+2019-11-06 16:37:32 - [MESSAGE][PASSED] - All options with value 'Offer' are selected in object 'Object Repository/ME/select_Purpose' 
+
+2019-11-06 16:37:32 - [TEST_STEP][PASSED] - dateNow = dates.DateGenerate.date(): dates.DateGenerate.date is PASSED
+
+2019-11-06 16:37:32 - [MESSAGE][PASSED] - dates.DateGenerate.date is PASSED
+
+2019-11-06 16:37:32 - [TEST_STEP][PASSED] - setText(findTestObject("ME/DatePick/input_Meeting date"), dateNow): Text '2019-11-06' is set on object 'Object Repository/ME/DatePick/input_Meeting date'
+
+2019-11-06 16:37:32 - [MESSAGE][PASSED] - Text '2019-11-06' is set on object 'Object Repository/ME/DatePick/input_Meeting date'
+
+2019-11-06 16:37:32 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("ME/Client Products/span_Client interested in products"), 5): Object 'Object Repository/ME/Client Products/span_Client interested in products' is visible
+
+2019-11-06 16:37:33 - [MESSAGE][PASSED] - Object 'Object Repository/ME/Client Products/span_Client interested in products' is visible
+
+2019-11-06 16:37:33 - [TEST_STEP][PASSED] - setText(findTestObject("ME/Client Products/input_Quantty"), "5"): Text '5' is set on object 'Object Repository/ME/Client Products/input_Quantty'
+
+2019-11-06 16:37:34 - [MESSAGE][PASSED] - Text '5' is set on object 'Object Repository/ME/Client Products/input_Quantty'
+
+2019-11-06 16:37:34 - [TEST_STEP][PASSED] - click(findTestObject("ME/Client Products/span_Select material")): Object: 'Object Repository/ME/Client Products/span_Select material' is clicked on
+
+2019-11-06 16:37:35 - [MESSAGE][PASSED] - Object: 'Object Repository/ME/Client Products/span_Select material' is clicked on
+
+2019-11-06 16:37:35 - [TEST_STEP][PASSED] - setText(findTestObject(materialSelect), findTestData("Materials").getValue(1, 7)): Text 'EM Chardonnay PDO Nova Zagora ' is set on object 'Object Repository/ME/Client Products/input_Materials'
+
+2019-11-06 16:37:37 - [MESSAGE][PASSED] - Text 'EM Chardonnay PDO Nova Zagora ' is set on object 'Object Repository/ME/Client Products/input_Materials'
+
+2019-11-06 16:37:37 - [TEST_STEP][PASSED] - sendKeys(findTestObject(materialSelect), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ME/Client Products/input_Materials'
+
+2019-11-06 16:37:38 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ME/Client Products/input_Materials'
+
+2019-11-06 16:37:38 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/Client Products/select_DealTypeForMaterial"), findTestData("DropDowns").getValue(7, 1), false): All options with value 'Sale' are selected in object 'Object Repository/ME/Client Products/select_DealTypeForMaterial' 
+
+2019-11-06 16:37:40 - [MESSAGE][PASSED] - All options with value 'Sale' are selected in object 'Object Repository/ME/Client Products/select_DealTypeForMaterial' 
+
+2019-11-06 16:37:40 - [TEST_STEP][PASSED] - click(findTestObject("ME/Client Products/button_AddMaterial")): Object: 'Object Repository/ME/Client Products/button_AddMaterial' is clicked on
+
+2019-11-06 16:37:40 - [MESSAGE][PASSED] - Object: 'Object Repository/ME/Client Products/button_AddMaterial' is clicked on
+
+2019-11-06 16:37:40 - [TEST_STEP][PASSED] - setText(findTestObject("ME/Client Products/input_-_fmaterial_Qtt2"), "5"): Text '5' is set on object 'Object Repository/ME/Client Products/input_-_fmaterial_Qtt2'
+
+2019-11-06 16:37:41 - [MESSAGE][PASSED] - Text '5' is set on object 'Object Repository/ME/Client Products/input_-_fmaterial_Qtt2'
+
+2019-11-06 16:37:41 - [TEST_STEP][PASSED] - click(findTestObject("ME/Client Products/span_Select material2")): Object: 'Object Repository/ME/Client Products/span_Select material2' is clicked on
+
+2019-11-06 16:37:42 - [MESSAGE][PASSED] - Object: 'Object Repository/ME/Client Products/span_Select material2' is clicked on
+
+2019-11-06 16:37:42 - [TEST_STEP][PASSED] - setText(findTestObject("ME/Client Products/input_Select material2"), findTestData("Materials").getValue(1, 4)): Text 'EM Sauvignon Blanc PDO Nova Zagora ' is set on object 'Object Repository/ME/Client Products/input_Select material2'
+
+2019-11-06 16:37:44 - [MESSAGE][PASSED] - Text 'EM Sauvignon Blanc PDO Nova Zagora ' is set on object 'Object Repository/ME/Client Products/input_Select material2'
+
+2019-11-06 16:37:44 - [TEST_STEP][PASSED] - sendKeys(findTestObject("ME/Client Products/input_Select material2"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ME/Client Products/input_Select material2'
+
+2019-11-06 16:37:45 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ME/Client Products/input_Select material2'
+
+2019-11-06 16:37:45 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/Client Products/select_saleRent2"), findTestData("DropDowns").getValue(7, 1), false): All options with value 'Sale' are selected in object 'Object Repository/ME/Client Products/select_saleRent2' 
+
+2019-11-06 16:37:47 - [MESSAGE][PASSED] - All options with value 'Sale' are selected in object 'Object Repository/ME/Client Products/select_saleRent2' 
+
+2019-11-06 16:37:47 - [TEST_STEP][PASSED] - setText(findTestObject("ME/textarea_Comment"), "This will be from VENDOR ONLY"): Text 'This will be from VENDOR ONLY' is set on object 'Object Repository/ME/textarea_Comment'
+
+2019-11-06 16:37:48 - [MESSAGE][PASSED] - Text 'This will be from VENDOR ONLY' is set on object 'Object Repository/ME/textarea_Comment'
+
+2019-11-06 16:37:48 - [TEST_STEP][PASSED] - scrollToElement(findTestObject(meetingButton), 20): Scroll to object 'Object Repository/ME/button_Create Offer' successfully
+
+2019-11-06 16:37:48 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/ME/button_Create Offer' successfully
+
+2019-11-06 16:37:48 - [TEST_STEP][PASSED] - click(findTestObject(meetingButton)): Object: 'Object Repository/ME/button_Create Offer' is clicked on
+
+2019-11-06 16:37:49 - [MESSAGE][PASSED] - Object: 'Object Repository/ME/button_Create Offer' is clicked on
+
+2019-11-06 16:37:49 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(pathWait), 20): Object 'Object Repository//Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:37:50 - [MESSAGE][PASSED] - Object 'Object Repository//Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:37:50 - [TEST_STEP][PASSED] - scrollToPosition(0, 0): Browser is scrolled to position x = 0, y = 0
+
+2019-11-06 16:37:50 - [MESSAGE][PASSED] - Browser is scrolled to position x = 0, y = 0]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer" time="27.972" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer" status="PASSED">
+         <system-out><![CDATA[2019-11-06 16:37:50 - [TEST_CASE][PASSED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer
+
+2019-11-06 16:37:51 - [TEST_STEP][PASSED] - waitLoad = "Waiters/WaitLoadingAnim_Element": null
+
+2019-11-06 16:37:51 - [TEST_STEP][PASSED] - waitFirstButton = "Waiters/WaitButton_Element": null
+
+2019-11-06 16:37:51 - [TEST_STEP][PASSED] - waitOpen = "OF/Status Open/input_Sale Offer_Open": null
+
+2019-11-06 16:37:51 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:37:51 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:37:51 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitFirstButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:37:56 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:37:56 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer(): linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-11-06 16:37:58 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-11-06 16:37:58 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:01 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:01 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitOpen), 20): Object 'Object Repository/OF/Status Open/input_Sale Offer_Open' is visible
+
+2019-11-06 16:38:01 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Open/input_Sale Offer_Open' is visible
+
+2019-11-06 16:38:01 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject(waitOpen), 20): Object 'Object Repository/OF/Status Open/input_Sale Offer_Open' is clickable
+
+2019-11-06 16:38:02 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Open/input_Sale Offer_Open' is clickable
+
+2019-11-06 16:38:02 - [TEST_STEP][PASSED] - click(findTestObject(waitOpen)): Object: 'Object Repository/OF/Status Open/input_Sale Offer_Open' is clicked on
+
+2019-11-06 16:38:02 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status Open/input_Sale Offer_Open' is clicked on
+
+2019-11-06 16:38:02 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:03 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:03 - [TEST_STEP][PASSED] - date = dates.DateGenerate.dateWeek(): dates.DateGenerate.dateWeek is PASSED
+
+2019-11-06 16:38:03 - [MESSAGE][PASSED] - dates.DateGenerate.dateWeek is PASSED
+
+2019-11-06 16:38:03 - [TEST_STEP][PASSED] - sendKeys(findTestObject("OF/Status In Progress/input_Offer Validity_Date"), date): Keys '2019-11-13' sent to object: 'Object Repository/OF/Status In Progress/input_Offer Validity_Date'
+
+2019-11-06 16:38:04 - [MESSAGE][PASSED] - Keys '2019-11-13' sent to object: 'Object Repository/OF/Status In Progress/input_Offer Validity_Date'
+
+2019-11-06 16:38:04 - [TEST_STEP][NOT_RUN] - sendKeys(findTestObject("OF/Status In Progress/input_Discount"), ""): NOT_RUN: sendKeys(findTestObject("OF/Status In Progress/input_Discount"), "")
+
+2019-11-06 16:38:04 - [MESSAGE][NOT_RUN] - NOT_RUN: sendKeys(findTestObject("OF/Status In Progress/input_Discount"), "")
+
+2019-11-06 16:38:04 - [TEST_STEP][PASSED] - sendKeys(findTestObject("OF/Status In Progress/input_Advance - Pay"), "50"): Keys '50' sent to object: 'Object Repository/OF/Status In Progress/input_Advance - Pay'
+
+2019-11-06 16:38:05 - [MESSAGE][PASSED] - Keys '50' sent to object: 'Object Repository/OF/Status In Progress/input_Advance - Pay'
+
+2019-11-06 16:38:05 - [TEST_STEP][PASSED] - dateAdvance = dates.DateGenerate.dateWeek(): dates.DateGenerate.dateWeek is PASSED
+
+2019-11-06 16:38:05 - [MESSAGE][PASSED] - dates.DateGenerate.dateWeek is PASSED
+
+2019-11-06 16:38:05 - [TEST_STEP][PASSED] - sendKeys(findTestObject("OF/Status In Progress/input_First Advance Payment (deadline)"), dateAdvance): Keys '2019-11-13' sent to object: 'Object Repository/OF/Status In Progress/input_First Advance Payment (deadline)'
+
+2019-11-06 16:38:06 - [MESSAGE][PASSED] - Keys '2019-11-13' sent to object: 'Object Repository/OF/Status In Progress/input_First Advance Payment (deadline)'
+
+2019-11-06 16:38:06 - [TEST_STEP][PASSED] - selectOptionByIndex(findTestObject("OF/Status In Progress/select_Installments"), 5): All options with index in [5] are selected on object 'Object Repository/OF/Status In Progress/select_Installments'
+
+2019-11-06 16:38:08 - [MESSAGE][PASSED] - All options with index in [5] are selected on object 'Object Repository/OF/Status In Progress/select_Installments'
+
+2019-11-06 16:38:08 - [TEST_STEP][NOT_RUN] - sendKeys(findTestObject("OF/Status In Progress/input_Interest"), ""): NOT_RUN: sendKeys(findTestObject("OF/Status In Progress/input_Interest"), "")
+
+2019-11-06 16:38:08 - [MESSAGE][NOT_RUN] - NOT_RUN: sendKeys(findTestObject("OF/Status In Progress/input_Interest"), "")
+
+2019-11-06 16:38:08 - [TEST_STEP][PASSED] - click(findTestObject("OF/Status In Progress/Calculate")): Object: 'Object Repository/OF/Status In Progress/Calculate' is clicked on
+
+2019-11-06 16:38:09 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status In Progress/Calculate' is clicked on
+
+2019-11-06 16:38:09 - [TEST_STEP][PASSED] - checkers.RadioButton.OwnCompany(): checkers.RadioButton.OwnCompany is PASSED
+
+2019-11-06 16:38:10 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/OF/Status In Progress/Radio buttons/span_Own Companies' are matched.
+
+2019-11-06 16:38:10 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status In Progress/Radio buttons/input_Own Companies' is checked
+
+2019-11-06 16:38:10 - [MESSAGE][PASSED] - checkers.RadioButton.OwnCompany is PASSED
+
+2019-11-06 16:38:10 - [TEST_STEP][PASSED] - selectOptionByIndex(findTestObject("OF/Status In Progress/select_Company"), 1): All options with index in [1] are selected on object 'Object Repository/OF/Status In Progress/select_Company'
+
+2019-11-06 16:38:12 - [MESSAGE][PASSED] - All options with index in [1] are selected on object 'Object Repository/OF/Status In Progress/select_Company'
+
+2019-11-06 16:38:12 - [TEST_STEP][PASSED] - checkers.RadioButton.Warehouse(): checkers.RadioButton.Warehouse is PASSED
+
+2019-11-06 16:38:13 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/OF/Status In Progress/Radio buttons/span_Warehouse' are matched.
+
+2019-11-06 16:38:14 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status In Progress/Radio buttons/input_Warehouse' is checked
+
+2019-11-06 16:38:14 - [MESSAGE][PASSED] - checkers.RadioButton.Warehouse is PASSED
+
+2019-11-06 16:38:14 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("OF/Status In Progress/Warehouse/select_Warehouse"), findTestData("Warehouses").getValue(1, 4), false): All options with value '4' are selected in object 'Object Repository/OF/Status In Progress/Warehouse/select_Warehouse' 
+
+2019-11-06 16:38:15 - [MESSAGE][PASSED] - All options with value '4' are selected in object 'Object Repository/OF/Status In Progress/Warehouse/select_Warehouse' 
+
+2019-11-06 16:38:15 - [TEST_STEP][PASSED] - click(findTestObject("OF/Status In Progress/input_Sale Offer_SendForConfirmation")): Object: 'Object Repository/OF/Status In Progress/input_Sale Offer_SendForConfirmation' is clicked on
+
+2019-11-06 16:38:16 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status In Progress/input_Sale Offer_SendForConfirmation' is clicked on
+
+2019-11-06 16:38:16 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:18 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer_Confirmations" time="35.163" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer_Confirmations" status="PASSED">
+         <system-out><![CDATA[2019-11-06 16:38:18 - [TEST_CASE][PASSED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer_Confirmations: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer_Confirmations
+
+2019-11-06 16:38:19 - [TEST_STEP][PASSED] - waitLoad = "Waiters/WaitLoadingAnim_Element": null
+
+2019-11-06 16:38:19 - [TEST_STEP][PASSED] - waitButton = "Waiters/WaitButton_Element": null
+
+2019-11-06 16:38:19 - [TEST_STEP][PASSED] - waitDirector = "OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director": null
+
+2019-11-06 16:38:19 - [TEST_STEP][PASSED] - waitRODirector = "OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector": null
+
+2019-11-06 16:38:19 - [TEST_STEP][PASSED] - waitBGDirector = "OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector": null
+
+2019-11-06 16:38:19 - [TEST_STEP][PASSED] - waitClient = "OF/Status Sale Confirmation/Client/input_Sale Offer_Client": null
+
+2019-11-06 16:38:19 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:19 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:19 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:38:20 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:38:20 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:38:20 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:38:20 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer(): linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-11-06 16:38:23 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-11-06 16:38:23 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:25 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:25 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitDirector), 20): Object 'Object Repository/OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director' is visible
+
+2019-11-06 16:38:25 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director' is visible
+
+2019-11-06 16:38:25 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject(waitDirector), 20): Object 'Object Repository/OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director' is clickable
+
+2019-11-06 16:38:25 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director' is clickable
+
+2019-11-06 16:38:25 - [TEST_STEP][PASSED] - click(findTestObject(waitDirector)): Object: 'Object Repository/OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director' is clicked on
+
+2019-11-06 16:38:26 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director' is clicked on
+
+2019-11-06 16:38:26 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:28 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:28 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:38:28 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:38:28 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer(): linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-11-06 16:38:30 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-11-06 16:38:30 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:33 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:33 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitRODirector), 20): Object 'Object Repository/OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector' is visible
+
+2019-11-06 16:38:33 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector' is visible
+
+2019-11-06 16:38:33 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject(waitRODirector), 20): Object 'Object Repository/OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector' is clickable
+
+2019-11-06 16:38:34 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector' is clickable
+
+2019-11-06 16:38:34 - [TEST_STEP][PASSED] - click(findTestObject(waitRODirector)): Object: 'Object Repository/OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector' is clicked on
+
+2019-11-06 16:38:34 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector' is clicked on
+
+2019-11-06 16:38:34 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:37 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:37 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:38:37 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:38:37 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:38:38 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:38:38 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer(): linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-11-06 16:38:41 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-11-06 16:38:41 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:43 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:43 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitBGDirector), 20): Object 'Object Repository/OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector' is visible
+
+2019-11-06 16:38:43 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector' is visible
+
+2019-11-06 16:38:43 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject(waitBGDirector), 20): Object 'Object Repository/OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector' is clickable
+
+2019-11-06 16:38:44 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector' is clickable
+
+2019-11-06 16:38:44 - [TEST_STEP][PASSED] - click(findTestObject(waitBGDirector)): Object: 'Object Repository/OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector' is clicked on
+
+2019-11-06 16:38:44 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector' is clicked on
+
+2019-11-06 16:38:44 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:46 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:46 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:38:46 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:38:46 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-11-06 16:38:47 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-11-06 16:38:47 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-11-06 16:38:48 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-11-06 16:38:48 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer(): linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-11-06 16:38:50 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-11-06 16:38:50 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:52 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:52 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitClient), 20): Object 'Object Repository/OF/Status Sale Confirmation/Client/input_Sale Offer_Client' is visible
+
+2019-11-06 16:38:53 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Sale Confirmation/Client/input_Sale Offer_Client' is visible
+
+2019-11-06 16:38:53 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject(waitClient), 20): Object 'Object Repository/OF/Status Sale Confirmation/Client/input_Sale Offer_Client' is clickable
+
+2019-11-06 16:38:53 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Sale Confirmation/Client/input_Sale Offer_Client' is clickable
+
+2019-11-06 16:38:53 - [TEST_STEP][PASSED] - click(findTestObject(waitClient)): Object: 'Object Repository/OF/Status Sale Confirmation/Client/input_Sale Offer_Client' is clicked on
+
+2019-11-06 16:38:53 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status Sale Confirmation/Client/input_Sale Offer_Client' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer_Archive" time="9.271" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer_Archive" status="PASSED">
+         <system-out><![CDATA[2019-11-06 16:38:53 - [TEST_CASE][PASSED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer_Archive: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_Offer_Archive
+
+2019-11-06 16:38:54 - [TEST_STEP][PASSED] - waitLoad = "Waiters/WaitLoadingAnim_Element": null
+
+2019-11-06 16:38:54 - [TEST_STEP][PASSED] - waitButton = "Waiters/WaitButton_Element": null
+
+2019-11-06 16:38:54 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:56 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:38:56 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:38:56 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:38:56 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer(): linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-11-06 16:38:59 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.offer is PASSED
+
+2019-11-06 16:38:59 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:39:02 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:39:02 - [TEST_STEP][PASSED] - click(findTestObject("OF/Status Archiving/input_Sale_Offer_Close")): Object: 'Object Repository/OF/Status Archiving/input_Sale_Offer_Close' is clicked on
+
+2019-11-06 16:39:03 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status Archiving/input_Sale_Offer_Close' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_BR_Advance_and_BI" time="46.595" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_BR_Advance_and_BI" status="PASSED">
+         <system-out><![CDATA[2019-11-06 16:39:03 - [TEST_CASE][PASSED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_BR_Advance_and_BI: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_BR_Advance_and_BI
+
+2019-11-06 16:39:03 - [TEST_STEP][PASSED] - waitLoad = "Waiters/WaitLoadingAnim_Element": null
+
+2019-11-06 16:39:03 - [TEST_STEP][PASSED] - waitButton = "Waiters/WaitBRButton_Element": null
+
+2019-11-06 16:39:03 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-11-06 16:39:03 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20, CONTINUE_ON_FAILURE): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:39:06 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:39:06 - [TEST_STEP][PASSED] - scrollToPosition(0, 0): Browser is scrolled to position x = 0, y = 0
+
+2019-11-06 16:39:06 - [MESSAGE][PASSED] - Browser is scrolled to position x = 0, y = 0
+
+2019-11-06 16:39:06 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitLoad), 20, CONTINUE_ON_FAILURE): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is not visible after 20 second(s)
+
+2019-11-06 16:39:26 - [MESSAGE][WARNING] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is not visible after 20 second(s)
+
+2019-11-06 16:39:26 - [TEST_STEP][PASSED] - plus = xpath(" /html/body/div[4]/div[3]/div/div/ul[29]/li/div/button/b")).click(): null
+
+2019-11-06 16:39:27 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitBillingReq_Element"), 20): Object 'Object Repository/Waiters/WaitBillingReq_Element' is visible
+
+2019-11-06 16:39:28 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitBillingReq_Element' is visible
+
+2019-11-06 16:39:28 - [TEST_STEP][PASSED] - billing = xpath("/html/body/div[4]/div[3]/div/div/ul[29]/li/ul/li[1]/div/a")).click(): null
+
+2019-11-06 16:39:28 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20, CONTINUE_ON_FAILURE): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:39:30 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:39:30 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitBRButton_Element' is visible
+
+2019-11-06 16:39:31 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitBRButton_Element' is visible
+
+2019-11-06 16:39:31 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.billing_request(): linkers.Link_SD_FLOW_VENDOR.billing_request is PASSED
+
+2019-11-06 16:39:33 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.billing_request is PASSED
+
+2019-11-06 16:39:33 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20, CONTINUE_ON_FAILURE): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:39:34 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:39:34 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitBRCheckbox_Element"), 20): Object 'Object Repository/Waiters/WaitBRCheckbox_Element' is visible
+
+2019-11-06 16:39:34 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitBRCheckbox_Element' is visible
+
+2019-11-06 16:39:34 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("BR/select_Generate Billing"), findTestData("DropDowns").getValue(8, 1), false): All options with label 'Generate Billing' are selected in object 'Object Repository/BR/select_Generate Billing' 
+
+2019-11-06 16:39:35 - [MESSAGE][PASSED] - All options with label 'Generate Billing' are selected in object 'Object Repository/BR/select_Generate Billing' 
+
+2019-11-06 16:39:35 - [TEST_STEP][PASSED] - click(findTestObject("BR/input_InProgress")): Object: 'Object Repository/BR/input_InProgress' is clicked on
+
+2019-11-06 16:39:37 - [MESSAGE][PASSED] - Object: 'Object Repository/BR/input_InProgress' is clicked on
+
+2019-11-06 16:39:37 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20, CONTINUE_ON_FAILURE): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:39:39 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:39:39 - [TEST_STEP][PASSED] - setText(findTestObject("BI/input__form_invoiceNR"), String.valueOf(Math.abs(Random().nextInt() % 9999) + 1)): Text '6761' is set on object 'Object Repository/BI/input__form_invoiceNR'
+
+2019-11-06 16:39:39 - [MESSAGE][PASSED] - Text '6761' is set on object 'Object Repository/BI/input__form_invoiceNR'
+
+2019-11-06 16:39:39 - [TEST_STEP][PASSED] - dateNow = dates.DateGenerate.date(): dates.DateGenerate.date is PASSED
+
+2019-11-06 16:39:39 - [MESSAGE][PASSED] - dates.DateGenerate.date is PASSED
+
+2019-11-06 16:39:39 - [TEST_STEP][PASSED] - setText(findTestObject("BI/input__form_DATE"), dateNow): Text '2019-11-06' is set on object 'Object Repository/BI/input__form_DATE'
+
+2019-11-06 16:39:40 - [MESSAGE][PASSED] - Text '2019-11-06' is set on object 'Object Repository/BI/input__form_DATE'
+
+2019-11-06 16:39:40 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("BI/select_incomeType"), "Sales Incomes", false): All options with label 'Sales Incomes' are selected in object 'Object Repository/BI/select_incomeType' 
+
+2019-11-06 16:39:41 - [MESSAGE][PASSED] - All options with label 'Sales Incomes' are selected in object 'Object Repository/BI/select_incomeType' 
+
+2019-11-06 16:39:41 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("BI/select_transactionDetails"), "Advance Sales", false): All options with label 'Advance Sales' are selected in object 'Object Repository/BI/select_transactionDetails' 
+
+2019-11-06 16:39:42 - [MESSAGE][PASSED] - All options with label 'Advance Sales' are selected in object 'Object Repository/BI/select_transactionDetails' 
+
+2019-11-06 16:39:42 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("BI/select_cashBox"), "ING Bank", false): All options with label 'ING Bank' are selected in object 'Object Repository/BI/select_cashBox' 
+
+2019-11-06 16:39:43 - [MESSAGE][PASSED] - All options with label 'ING Bank' are selected in object 'Object Repository/BI/select_cashBox' 
+
+2019-11-06 16:39:43 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("BI/select_documentType"), "Receipt", false): All options with label 'Receipt' are selected in object 'Object Repository/BI/select_documentType' 
+
+2019-11-06 16:39:44 - [MESSAGE][PASSED] - All options with label 'Receipt' are selected in object 'Object Repository/BI/select_documentType' 
+
+2019-11-06 16:39:44 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("BI/select_paymentMethod"), "Bank Transfer", false): All options with label 'Bank Transfer' are selected in object 'Object Repository/BI/select_paymentMethod' 
+
+2019-11-06 16:39:45 - [MESSAGE][PASSED] - All options with label 'Bank Transfer' are selected in object 'Object Repository/BI/select_paymentMethod' 
+
+2019-11-06 16:39:45 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("BI/select_accountingDivision"), "Sales Romania Division", false): All options with label 'Sales Romania Division' are selected in object 'Object Repository/BI/select_accountingDivision' 
+
+2019-11-06 16:39:46 - [MESSAGE][PASSED] - All options with label 'Sales Romania Division' are selected in object 'Object Repository/BI/select_accountingDivision' 
+
+2019-11-06 16:39:46 - [TEST_STEP][PASSED] - click(findTestObject("BI/input_Billing")): Object: 'Object Repository/BI/input_Billing' is clicked on
+
+2019-11-06 16:39:47 - [MESSAGE][PASSED] - Object: 'Object Repository/BI/input_Billing' is clicked on
+
+2019-11-06 16:39:47 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20, CONTINUE_ON_FAILURE): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:39:48 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:39:48 - [TEST_STEP][PASSED] - driverMD = getWebDriver(): null
+
+2019-11-06 16:39:48 - [TEST_STEP][PASSED] - mainDashboard = xpath("/html/body/div[4]/div[3]/div/div/ul[7]/li/div/a")).click(): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_RE" time="33.365" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_RE" status="PASSED">
+         <system-out><![CDATA[2019-11-06 16:39:49 - [TEST_CASE][PASSED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_RE: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW_RE
+
+2019-11-06 16:39:50 - [TEST_STEP][PASSED] - waitLoad = "Waiters/WaitButton_Element": null
+
+2019-11-06 16:39:50 - [TEST_STEP][PASSED] - waitButton = "Waiters/WaitButton_Element": null
+
+2019-11-06 16:39:50 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:39:51 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:39:51 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-11-06 16:39:52 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-11-06 16:39:52 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.receivables(): linkers.Link_SD_FLOW_VENDOR.receivables is PASSED
+
+2019-11-06 16:39:54 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.receivables is PASSED
+
+2019-11-06 16:39:54 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 10): Object 'Object Repository/Waiters/WaitButton_Element' is visible after 10 second(s)
+
+2019-11-06 16:40:05 - [MESSAGE][WARNING] - Object 'Object Repository/Waiters/WaitButton_Element' is visible after 10 second(s)
+
+2019-11-06 16:40:05 - [TEST_STEP][PASSED] - click(findTestObject("RE/input_Receivable_Start")): Object: 'Object Repository/RE/input_Receivable_Start' is clicked on
+
+2019-11-06 16:40:06 - [MESSAGE][PASSED] - Object: 'Object Repository/RE/input_Receivable_Start' is clicked on
+
+2019-11-06 16:40:06 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 10): Object 'Object Repository/Waiters/WaitButton_Element' is visible after 10 second(s)
+
+2019-11-06 16:40:17 - [MESSAGE][WARNING] - Object 'Object Repository/Waiters/WaitButton_Element' is visible after 10 second(s)
+
+2019-11-06 16:40:17 - [TEST_STEP][PASSED] - click(findTestObject("RE/input_Receivable_Entry")): Object: 'Object Repository/RE/input_Receivable_Entry' is clicked on
+
+2019-11-06 16:40:18 - [MESSAGE][PASSED] - Object: 'Object Repository/RE/input_Receivable_Entry' is clicked on
+
+2019-11-06 16:40:18 - [TEST_STEP][PASSED] - dateNow = dates.DateGenerate.date(): dates.DateGenerate.date is PASSED
+
+2019-11-06 16:40:18 - [MESSAGE][PASSED] - dates.DateGenerate.date is PASSED
+
+2019-11-06 16:40:18 - [TEST_STEP][PASSED] - setText(findTestObject("RE/input_Transaction Date"), dateNow): Text '2019-11-06' is set on object 'Object Repository/RE/input_Transaction Date'
+
+2019-11-06 16:40:19 - [MESSAGE][PASSED] - Text '2019-11-06' is set on object 'Object Repository/RE/input_Transaction Date'
+
+2019-11-06 16:40:19 - [TEST_STEP][PASSED] - amount = getText(findTestObject("RE/span_getText")): Text of object 'Object Repository/RE/span_getText' is: '191.19'
+
+2019-11-06 16:40:19 - [MESSAGE][PASSED] - Text of object 'Object Repository/RE/span_getText' is: '191.19'
+
+2019-11-06 16:40:19 - [TEST_STEP][PASSED] - currency = getText(findTestObject("RE/span_Currency")): Text of object 'Object Repository/RE/span_Currency' is: 'RON'
+
+2019-11-06 16:40:20 - [MESSAGE][PASSED] - Text of object 'Object Repository/RE/span_Currency' is: 'RON'
+
+2019-11-06 16:40:20 - [TEST_STEP][PASSED] - rate = getText(findTestObject("RE/input_ExchangeRate")): Text of object 'Object Repository/RE/input_ExchangeRate' is: ''
+
+2019-11-06 16:40:20 - [MESSAGE][PASSED] - Text of object 'Object Repository/RE/input_ExchangeRate' is: ''
+
+2019-11-06 16:40:20 - [TEST_STEP][PASSED] - println("Amout in " + amount + " Currency: " + currency + " At a rate of: " + rate): null
+
+2019-11-06 16:40:20 - [TEST_STEP][PASSED] - setText(findTestObject("RE/input_Amount"), amount): Text '191.19' is set on object 'Object Repository/RE/input_Amount'
+
+2019-11-06 16:40:21 - [MESSAGE][PASSED] - Text '191.19' is set on object 'Object Repository/RE/input_Amount'
+
+2019-11-06 16:40:21 - [TEST_STEP][PASSED] - click(findTestObject("RE/input_Save")): Object: 'Object Repository/RE/input_Save' is clicked on
+
+2019-11-06 16:40:22 - [MESSAGE][PASSED] - Object: 'Object Repository/RE/input_Save' is clicked on
+
+2019-11-06 16:40:22 - [TEST_STEP][PASSED] - click(findTestObject("RE/input_Receivable_Close")): Object: 'Object Repository/RE/input_Receivable_Close' is clicked on
+
+2019-11-06 16:40:23 - [MESSAGE][PASSED] - Object: 'Object Repository/RE/input_Receivable_Close' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW SaleOrder_from_Vendor" time="48.798" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW SaleOrder_from_Vendor" status="PASSED">
+         <system-out><![CDATA[2019-11-06 16:40:23 - [TEST_CASE][PASSED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW SaleOrder_from_Vendor: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW SaleOrder_from_Vendor
+
+2019-11-06 16:40:23 - [TEST_STEP][PASSED] - waitLoad = "Waiters/WaitLoadingAnim_Element": null
+
+2019-11-06 16:40:23 - [TEST_STEP][PASSED] - waitButton = "Waiters/WaitButton_Element": null
+
+2019-11-06 16:40:23 - [TEST_STEP][PASSED] - waitConfirm = "OR/Open-SendtoConfirm/input_Sale Order_Progress": null
+
+2019-11-06 16:40:23 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:40:26 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:40:26 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:40:26 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:40:26 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-11-06 16:40:27 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-11-06 16:40:27 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 16:40:29 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 16:40:29 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.order(): linkers.Link_SD_FLOW_VENDOR.order is PASSED
+
+2019-11-06 16:40:31 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.order is PASSED
+
+2019-11-06 16:40:31 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:40:33 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:40:33 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitConfirm), 20): Object 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress' is visible
+
+2019-11-06 16:40:33 - [MESSAGE][PASSED] - Object 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress' is visible
+
+2019-11-06 16:40:33 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject(waitConfirm), 20): Object 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress' is clickable
+
+2019-11-06 16:40:34 - [MESSAGE][PASSED] - Object 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress' is clickable
+
+2019-11-06 16:40:34 - [TEST_STEP][PASSED] - click(findTestObject(waitConfirm)): Object: 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress' is clicked on
+
+2019-11-06 16:40:35 - [MESSAGE][PASSED] - Object: 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_Progress' is clicked on
+
+2019-11-06 16:40:35 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:40:37 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:40:37 - [TEST_STEP][NOT_RUN] - selectOptionByIndex(findTestObject("OR/Open-SendtoConfirm/select_Activation"), 1): NOT_RUN: selectOptionByIndex(findTestObject("OR/Open-SendtoConfirm/select_Activation"), 1)
+
+2019-11-06 16:40:37 - [MESSAGE][NOT_RUN] - NOT_RUN: selectOptionByIndex(findTestObject("OR/Open-SendtoConfirm/select_Activation"), 1)
+
+2019-11-06 16:40:37 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("OR/Open-SendtoConfirm/select_OrderTo"), findTestData("Provider Company").getValue(2, 1), false): All options with label 'Edoardo Miroglio' are selected in object 'Object Repository/OR/Open-SendtoConfirm/select_OrderTo' 
+
+2019-11-06 16:40:39 - [MESSAGE][PASSED] - All options with label 'Edoardo Miroglio' are selected in object 'Object Repository/OR/Open-SendtoConfirm/select_OrderTo' 
+
+2019-11-06 16:40:39 - [TEST_STEP][PASSED] - dateFutureWEeek = dates.DateGenerate.dateWeek(): dates.DateGenerate.dateWeek is PASSED
+
+2019-11-06 16:40:39 - [MESSAGE][PASSED] - dates.DateGenerate.dateWeek is PASSED
+
+2019-11-06 16:40:39 - [TEST_STEP][PASSED] - setText(findTestObject("OR/Open-SendtoConfirm/input_Deadline"), dateFutureWEeek): Text '2019-11-13' is set on object 'Object Repository/OR/Open-SendtoConfirm/input_Deadline'
+
+2019-11-06 16:40:39 - [MESSAGE][PASSED] - Text '2019-11-13' is set on object 'Object Repository/OR/Open-SendtoConfirm/input_Deadline'
+
+2019-11-06 16:40:39 - [TEST_STEP][PASSED] - click(findTestObject("OR/Open-SendtoConfirm/div_Save_scrollToTopModal"), STOP_ON_FAILURE): Object: 'Object Repository/OR/Open-SendtoConfirm/div_Save_scrollToTopModal' is clicked on
+
+2019-11-06 16:40:40 - [MESSAGE][PASSED] - Object: 'Object Repository/OR/Open-SendtoConfirm/div_Save_scrollToTopModal' is clicked on
+
+2019-11-06 16:40:40 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("OR/Open-SendtoConfirm/input_Sale Order_SendForConfirmation"), 20): Object 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_SendForConfirmation' is visible
+
+2019-11-06 16:40:41 - [MESSAGE][PASSED] - Object 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_SendForConfirmation' is visible
+
+2019-11-06 16:40:41 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("OR/Open-SendtoConfirm/input_Sale Order_SendForConfirmation"), 20): Object 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_SendForConfirmation' is clickable
+
+2019-11-06 16:40:41 - [MESSAGE][PASSED] - Object 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_SendForConfirmation' is clickable
+
+2019-11-06 16:40:41 - [TEST_STEP][PASSED] - click(findTestObject("OR/Open-SendtoConfirm/input_Sale Order_SendForConfirmation")): Object: 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_SendForConfirmation' is clicked on
+
+2019-11-06 16:40:42 - [MESSAGE][PASSED] - Object: 'Object Repository/OR/Open-SendtoConfirm/input_Sale Order_SendForConfirmation' is clicked on
+
+2019-11-06 16:40:42 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:40:43 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:40:43 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:40:44 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:40:44 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-11-06 16:40:45 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-11-06 16:40:45 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 16:40:47 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 16:40:47 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.order(): linkers.Link_SD_FLOW_VENDOR.order is PASSED
+
+2019-11-06 16:40:49 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.order is PASSED
+
+2019-11-06 16:40:49 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:40:50 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:40:50 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("OR/OR Confirm/input_Sale Order_FirstConfirm"), 20): Object 'Object Repository/OR/OR Confirm/input_Sale Order_FirstConfirm' is visible
+
+2019-11-06 16:40:51 - [MESSAGE][PASSED] - Object 'Object Repository/OR/OR Confirm/input_Sale Order_FirstConfirm' is visible
+
+2019-11-06 16:40:51 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("OR/OR Confirm/input_Sale Order_FirstConfirm"), 20): Object 'Object Repository/OR/OR Confirm/input_Sale Order_FirstConfirm' is clickable
+
+2019-11-06 16:40:51 - [MESSAGE][PASSED] - Object 'Object Repository/OR/OR Confirm/input_Sale Order_FirstConfirm' is clickable
+
+2019-11-06 16:40:51 - [TEST_STEP][PASSED] - click(findTestObject("OR/OR Confirm/input_Sale Order_FirstConfirm")): Object: 'Object Repository/OR/OR Confirm/input_Sale Order_FirstConfirm' is clicked on
+
+2019-11-06 16:40:52 - [MESSAGE][PASSED] - Object: 'Object Repository/OR/OR Confirm/input_Sale Order_FirstConfirm' is clicked on
+
+2019-11-06 16:40:52 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:40:54 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:40:54 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:40:54 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:40:54 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-11-06 16:40:55 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-11-06 16:40:55 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.order(): linkers.Link_SD_FLOW_VENDOR.order is PASSED
+
+2019-11-06 16:40:58 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.order is PASSED
+
+2019-11-06 16:40:58 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:40:59 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:40:59 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("OR/OR Confirm/input_Sale Order_SendOrder"), 20): Object 'Object Repository/OR/OR Confirm/input_Sale Order_SendOrder' is visible
+
+2019-11-06 16:41:00 - [MESSAGE][PASSED] - Object 'Object Repository/OR/OR Confirm/input_Sale Order_SendOrder' is visible
+
+2019-11-06 16:41:00 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("OR/OR Confirm/input_Sale Order_SendOrder"), 20): Object 'Object Repository/OR/OR Confirm/input_Sale Order_SendOrder' is clickable
+
+2019-11-06 16:41:00 - [MESSAGE][PASSED] - Object 'Object Repository/OR/OR Confirm/input_Sale Order_SendOrder' is clickable
+
+2019-11-06 16:41:00 - [TEST_STEP][PASSED] - click(findTestObject("OR/OR Confirm/input_Sale Order_SendOrder")): Object: 'Object Repository/OR/OR Confirm/input_Sale Order_SendOrder' is clicked on
+
+2019-11-06 16:41:01 - [MESSAGE][PASSED] - Object: 'Object Repository/OR/OR Confirm/input_Sale Order_SendOrder' is clicked on
+
+2019-11-06 16:41:01 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:03 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:03 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:41:03 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-06 16:41:03 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-11-06 16:41:04 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is clickable
+
+2019-11-06 16:41:04 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.order(): linkers.Link_SD_FLOW_VENDOR.order is PASSED
+
+2019-11-06 16:41:06 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.order is PASSED
+
+2019-11-06 16:41:06 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:08 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:08 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("OR/OR Confirm/input_Sale Order_Close"), 20): Object 'Object Repository/OR/OR Confirm/input_Sale Order_Close' is visible
+
+2019-11-06 16:41:08 - [MESSAGE][PASSED] - Object 'Object Repository/OR/OR Confirm/input_Sale Order_Close' is visible
+
+2019-11-06 16:41:08 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("OR/OR Confirm/input_Sale Order_Close"), 20): Object 'Object Repository/OR/OR Confirm/input_Sale Order_Close' is clickable
+
+2019-11-06 16:41:09 - [MESSAGE][PASSED] - Object 'Object Repository/OR/OR Confirm/input_Sale Order_Close' is clickable
+
+2019-11-06 16:41:09 - [TEST_STEP][PASSED] - click(findTestObject("OR/OR Confirm/input_Sale Order_Close")): Object: 'Object Repository/OR/OR Confirm/input_Sale Order_Close' is clicked on
+
+2019-11-06 16:41:10 - [MESSAGE][PASSED] - Object: 'Object Repository/OR/OR Confirm/input_Sale Order_Close' is clicked on
+
+2019-11-06 16:41:10 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:11 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW Purchase_req" time="18.753" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW Purchase_req" status="PASSED">
+         <system-out><![CDATA[2019-11-06 16:41:11 - [TEST_CASE][PASSED] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW Purchase_req: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW Purchase_req
+
+2019-11-06 16:41:12 - [TEST_STEP][PASSED] - scrollToPosition(0, 0, OPTIONAL): Browser is scrolled to position x = 0, y = 0
+
+2019-11-06 16:41:12 - [MESSAGE][PASSED] - Browser is scrolled to position x = 0, y = 0
+
+2019-11-06 16:41:12 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:13 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:13 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitPurchaseModule_Element"), 20): Object 'Object Repository/Waiters/WaitPurchaseModule_Element' is visible
+
+2019-11-06 16:41:13 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitPurchaseModule_Element' is visible
+
+2019-11-06 16:41:13 - [TEST_STEP][PASSED] - openPurchase = getWebDriver(): null
+
+2019-11-06 16:41:13 - [TEST_STEP][PASSED] - plus = xpath("html/body/div[4]/div[3]/div/div/ul[28]/li/div/button/b")).click(): null
+
+2019-11-06 16:41:14 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitPurchaseReq_Element"), 20): Object 'Object Repository/Waiters/WaitPurchaseReq_Element' is visible
+
+2019-11-06 16:41:14 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitPurchaseReq_Element' is visible
+
+2019-11-06 16:41:14 - [TEST_STEP][PASSED] - openPOR = getWebDriver(): null
+
+2019-11-06 16:41:14 - [TEST_STEP][PASSED] - por = xpath("/html/body/div[4]/div[3]/div/div/ul[28]/li/ul/li[2]/div/a")).click(): null
+
+2019-11-06 16:41:15 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitPurchaseReq_Element"), 20): Object 'Object Repository/Waiters/WaitPurchaseReq_Element' is visible
+
+2019-11-06 16:41:18 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitPurchaseReq_Element' is visible
+
+2019-11-06 16:41:18 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW_VENDOR.purchase_req(): linkers.Link_SD_FLOW_VENDOR.purchase_req is PASSED
+
+2019-11-06 16:41:20 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW_VENDOR.purchase_req is PASSED
+
+2019-11-06 16:41:20 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("POR/select_Purchase Order"), findTestData("DropDowns").getValue(8, 4), false): All options with value 'purchase_order' are selected in object 'Object Repository/POR/select_Purchase Order' 
+
+2019-11-06 16:41:21 - [MESSAGE][PASSED] - All options with value 'purchase_order' are selected in object 'Object Repository/POR/select_Purchase Order' 
+
+2019-11-06 16:41:21 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20, CONTINUE_ON_FAILURE): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:22 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:22 - [TEST_STEP][PASSED] - selectOptionByIndex(findTestObject("POR/From SD/select_prio"), 1): All options with index in [1] are selected on object 'Object Repository/POR/From SD/select_prio'
+
+2019-11-06 16:41:24 - [MESSAGE][PASSED] - All options with index in [1] are selected on object 'Object Repository/POR/From SD/select_prio'
+
+2019-11-06 16:41:24 - [TEST_STEP][PASSED] - dateFuture = dates.DateGenerate.dateWeek(): dates.DateGenerate.dateWeek is PASSED
+
+2019-11-06 16:41:24 - [MESSAGE][PASSED] - dates.DateGenerate.dateWeek is PASSED
+
+2019-11-06 16:41:24 - [TEST_STEP][PASSED] - setText(findTestObject("POR/From SD/input_Deadline"), dateFuture): Text '2019-11-13' is set on object 'Object Repository/POR/From SD/input_Deadline'
+
+2019-11-06 16:41:25 - [MESSAGE][PASSED] - Text '2019-11-13' is set on object 'Object Repository/POR/From SD/input_Deadline'
+
+2019-11-06 16:41:25 - [TEST_STEP][PASSED] - click(findTestObject("POR/From SD/input_Purchase Create")): Object: 'Object Repository/POR/From SD/input_Purchase Create' is clicked on
+
+2019-11-06 16:41:26 - [MESSAGE][PASSED] - Object: 'Object Repository/POR/From SD/input_Purchase Create' is clicked on
+
+2019-11-06 16:41:26 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20, STOP_ON_FAILURE): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:28 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:28 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 16:41:30 - [MESSAGE][PASSED] - Delayed 2 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW PO" time="10.204" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW PO" status="ERROR">
+         <error type="ERROR" message="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW PO FAILED.
+Reason:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a ng-disabled=&quot;!childItem.menu_clickable&quot; ng-click=&quot;toTop()&quot; class=&quot;btn btn-xs menuChildBtn documenter_top&quot; style=&quot;background-color:#2C7987;&quot; href=&quot;#!/purchasing_department/purchase_orders&quot;>...&lt;/a> is not clickable at point (155, 339). Other element would receive the click: &lt;div ng-if=&quot;actionForUser==1&quot;>...&lt;/div>
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DANIEL~1.DON\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59687}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 741c9e929540425d2645767d778fd3da
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click$3.call(Unknown Source)
+	at SD FLOW PO.run(SD FLOW PO:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1573051000896.run(TempTestSuite1573051000896.groovy:36)
+"/>
+         <system-out><![CDATA[2019-11-06 16:41:30 - [TEST_CASE][ERROR] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW PO: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW PO FAILED.
+Reason:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a ng-disabled="!childItem.menu_clickable" ng-click="toTop()" class="btn btn-xs menuChildBtn documenter_top" style="background-color:#2C7987;" href="#!/purchasing_department/purchase_orders">...</a> is not clickable at point (155, 339). Other element would receive the click: <div ng-if="actionForUser==1">...</div>
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DANIEL~1.DON\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59687}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 741c9e929540425d2645767d778fd3da
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click$3.call(Unknown Source)
+	at SD FLOW PO.run(SD FLOW PO:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1573051000896.run(TempTestSuite1573051000896.groovy:36)
+
+
+2019-11-06 16:41:31 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:31 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:31 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-11-06 16:41:33 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-11-06 16:41:33 - [TEST_STEP][PASSED] - click(findTestObject("PO/PO from SD/input_Purchase InProgressSD")): Object: 'Object Repository/PO/PO from SD/input_Purchase InProgressSD' is clicked on
+
+2019-11-06 16:41:34 - [MESSAGE][PASSED] - Object: 'Object Repository/PO/PO from SD/input_Purchase InProgressSD' is clicked on
+
+2019-11-06 16:41:34 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:35 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:35 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("PO/PO from SD/input_Add_offerPriceSD"), 20): Scroll to object 'Object Repository/PO/PO from SD/input_Add_offerPriceSD' successfully
+
+2019-11-06 16:41:36 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/PO/PO from SD/input_Add_offerPriceSD' successfully
+
+2019-11-06 16:41:36 - [TEST_STEP][PASSED] - price = Math.abs(Random().nextInt() % 9999): null
+
+2019-11-06 16:41:36 - [TEST_STEP][PASSED] - sendKeys(findTestObject("PO/PO from SD/input_Add_offerPriceSD"), price): Keys '7656' sent to object: 'Object Repository/PO/PO from SD/input_Add_offerPriceSD'
+
+2019-11-06 16:41:36 - [MESSAGE][PASSED] - Keys '7656' sent to object: 'Object Repository/PO/PO from SD/input_Add_offerPriceSD'
+
+2019-11-06 16:41:36 - [TEST_STEP][PASSED] - click(findTestObject("PO/input_Purchase Order_SendAprove")): Object: 'Object Repository/PO/input_Purchase Order_SendAprove' is clicked on
+
+2019-11-06 16:41:38 - [MESSAGE][PASSED] - Object: 'Object Repository/PO/input_Purchase Order_SendAprove' is clicked on
+
+2019-11-06 16:41:38 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:39 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:39 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("MainDashboard/Nav_Menu_Left/a_Purchase Orders"), 20): Object 'Object Repository/MainDashboard/Nav_Menu_Left/a_Purchase Orders' is visible
+
+2019-11-06 16:41:40 - [MESSAGE][PASSED] - Object 'Object Repository/MainDashboard/Nav_Menu_Left/a_Purchase Orders' is visible
+
+2019-11-06 16:41:40 - [TEST_STEP][PASSED] - driverMD = getWebDriver(): null
+
+2019-11-06 16:41:40 - [TEST_STEP][PASSED] - purchaseOrders = xpath("/html/body/div[4]/div[3]/div/div/ul[28]/li/ul/li[1]/div/a")).click(): null]]></system-out>
+         <system-err><![CDATA[2019-11-06 16:41:30 - [TEST_CASE][ERROR] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW PO: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW PO FAILED.
+Reason:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a ng-disabled="!childItem.menu_clickable" ng-click="toTop()" class="btn btn-xs menuChildBtn documenter_top" style="background-color:#2C7987;" href="#!/purchasing_department/purchase_orders">...</a> is not clickable at point (155, 339). Other element would receive the click: <div ng-if="actionForUser==1">...</div>
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DANIEL~1.DON\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59687}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 741c9e929540425d2645767d778fd3da
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click$3.call(Unknown Source)
+	at SD FLOW PO.run(SD FLOW PO:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1573051000896.run(TempTestSuite1573051000896.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW ID_GI_GR_SN_FN_Passport" time="1.465" classname="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW ID_GI_GR_SN_FN_Passport" status="ERROR">
+         <error type="ERROR" message="Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW ID_GI_GR_SN_FN_Passport FAILED.
+Reason:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;b style=&quot;color: white&quot;>...&lt;/b> is not clickable at point (26, 651). Other element would receive the click: &lt;div modal-render=&quot;true&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; class=&quot;modal fade in&quot; uib-modal-animation-class=&quot;fade&quot; modal-in-class=&quot;in&quot; ng-style=&quot;{'z-index': 1050 + index*10, display: 'block'}&quot; uib-modal-window=&quot;modal-window&quot; size=&quot;floated-balance&quot; index=&quot;0&quot; animate=&quot;animate&quot; modal-animation=&quot;true&quot; style=&quot;z-index: 1050; display: block;&quot;>...&lt;/div>
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DANIEL~1.DON\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59687}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 741c9e929540425d2645767d778fd3da
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click$3.call(Unknown Source)
+	at SD FLOW ID_GI_GR_SN_FN_Passport.run(SD FLOW ID_GI_GR_SN_FN_Passport:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1573051000896.run(TempTestSuite1573051000896.groovy:36)
+"/>
+         <system-out><![CDATA[2019-11-06 16:41:40 - [TEST_CASE][ERROR] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW ID_GI_GR_SN_FN_Passport: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW ID_GI_GR_SN_FN_Passport FAILED.
+Reason:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <b style="color: white">...</b> is not clickable at point (26, 651). Other element would receive the click: <div modal-render="true" tabindex="-1" role="dialog" class="modal fade in" uib-modal-animation-class="fade" modal-in-class="in" ng-style="{'z-index': 1050 + index*10, display: 'block'}" uib-modal-window="modal-window" size="floated-balance" index="0" animate="animate" modal-animation="true" style="z-index: 1050; display: block;">...</div>
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DANIEL~1.DON\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59687}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 741c9e929540425d2645767d778fd3da
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click$3.call(Unknown Source)
+	at SD FLOW ID_GI_GR_SN_FN_Passport.run(SD FLOW ID_GI_GR_SN_FN_Passport:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1573051000896.run(TempTestSuite1573051000896.groovy:36)
+
+
+2019-11-06 16:41:41 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject("Waiters/WaitLoadingAnim_Element"), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:42 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-06 16:41:42 - [TEST_STEP][PASSED] - driverWH = getWebDriver(): null
+
+2019-11-06 16:41:42 - [TEST_STEP][PASSED] - mainDashboard = xpath("/html/body/div[4]/div[3]/div/div/ul[32]/li/div/button/b")).click(): null]]></system-out>
+         <system-err><![CDATA[2019-11-06 16:41:40 - [TEST_CASE][ERROR] - Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW ID_GI_GR_SN_FN_Passport: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW ID_GI_GR_SN_FN_Passport FAILED.
+Reason:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <b style="color: white">...</b> is not clickable at point (26, 651). Other element would receive the click: <div modal-render="true" tabindex="-1" role="dialog" class="modal fade in" uib-modal-animation-class="fade" modal-in-class="in" ng-style="{'z-index': 1050 + index*10, display: 'block'}" uib-modal-window="modal-window" size="floated-balance" index="0" animate="animate" modal-animation="true" style="z-index: 1050; display: block;">...</div>
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DANIEL~1.DON\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59687}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 741c9e929540425d2645767d778fd3da
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click$3.call(Unknown Source)
+	at SD FLOW ID_GI_GR_SN_FN_Passport.run(SD FLOW ID_GI_GR_SN_FN_Passport:24)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1573051000896.run(TempTestSuite1573051000896.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-11-06 16:36:44 - [TEST_SUITE][ERROR] - SD Flow ME-GR From Vendor with Advance: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW PO FAILED.
+Reason:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a ng-disabled="!childItem.menu_clickable" ng-click="toTop()" class="btn btn-xs menuChildBtn documenter_top" style="background-color:#2C7987;" href="#!/purchasing_department/purchase_orders">...</a> is not clickable at point (155, 339). Other element would receive the click: <div ng-if="actionForUser==1">...</div>
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DANIEL~1.DON\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59687}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 741c9e929540425d2645767d778fd3da
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click$3.call(Unknown Source)
+	at SD FLOW PO.run(SD FLOW PO:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1573051000896.run(TempTestSuite1573051000896.groovy:36)]]></system-out>
+      <system-err><![CDATA[2019-11-06 16:36:44 - [TEST_SUITE][ERROR] - SD Flow ME-GR From Vendor with Advance: Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW PO FAILED.
+Reason:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a ng-disabled="!childItem.menu_clickable" ng-click="toTop()" class="btn btn-xs menuChildBtn documenter_top" style="background-color:#2C7987;" href="#!/purchasing_department/purchase_orders">...</a> is not clickable at point (155, 339). Other element would receive the click: <div ng-if="actionForUser==1">...</div>
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'EGT-DANIELDONOS', ip: '10.120.2.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DANIEL~1.DON\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:59687}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 741c9e929540425d2645767d778fd3da
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at org.openqa.selenium.WebElement$click$3.call(Unknown Source)
+	at SD FLOW PO.run(SD FLOW PO:45)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1573051000896.run(TempTestSuite1573051000896.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

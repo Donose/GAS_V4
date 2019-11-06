@@ -9,7 +9,7 @@ import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.webui.driver.DriverFactory
 
 public class DatePicker {
-    @Keyword
+	@Keyword
 	def pickThisMeeting() {
 		Date date = new Date()
 		String formatdateNow = date.format('dd')
@@ -35,7 +35,7 @@ public class DatePicker {
 			}
 		}
 	}
-	
+
 	@Keyword
 	def pickThisBilling() {
 		Date date = new Date()

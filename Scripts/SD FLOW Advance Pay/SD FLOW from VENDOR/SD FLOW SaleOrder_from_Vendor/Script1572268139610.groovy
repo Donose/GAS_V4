@@ -18,31 +18,37 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+String waitLoad = 'Waiters/WaitLoadingAnim_Element'
 
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
+String waitButton = 'Waiters/WaitButton_Element'
 
-WebUI.waitForElementClickable(findTestObject('Waiters/WaitButton_Element'), 20)
+String waitConfirm = 'OR/Open-SendtoConfirm/input_Sale Order_Progress'
+
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
+
+WebUI.waitForElementVisible(findTestObject(waitButton), 20)
+
+WebUI.waitForElementClickable(findTestObject(waitButton), 20)
 
 WebUI.delay(2)
 
 CustomKeywords.'linkers.Link_SD_FLOW_VENDOR.order'()
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
-WebUI.waitForElementVisible(findTestObject('OR/Open-SendtoConfirm/input_Sale Order_Progress'), 20)
+WebUI.waitForElementVisible(findTestObject(waitConfirm), 20)
 
-WebUI.waitForElementClickable(findTestObject('OR/Open-SendtoConfirm/input_Sale Order_Progress'), 20)
+WebUI.waitForElementClickable(findTestObject(waitConfirm), 20)
 
-WebUI.click(findTestObject('OR/Open-SendtoConfirm/input_Sale Order_Progress'))
+WebUI.click(findTestObject(waitConfirm))
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
 'Will not be mandatory'
-WebUI.selectOptionByIndex(findTestObject('OR/Open-SendtoConfirm/select_Activation'), 1)
+not_run: WebUI.selectOptionByIndex(findTestObject('OR/Open-SendtoConfirm/select_Activation'), 1)
 
 WebUI.selectOptionByLabel(findTestObject('OR/Open-SendtoConfirm/select_OrderTo'), findTestData('Provider Company').getValue(
-        2, 6), false)
+        2, 1), false)
 
 String dateFutureWEeek = CustomKeywords.'dates.DateGenerate.dateWeek'()
 
@@ -56,17 +62,17 @@ WebUI.waitForElementClickable(findTestObject('OR/Open-SendtoConfirm/input_Sale O
 
 WebUI.click(findTestObject('OR/Open-SendtoConfirm/input_Sale Order_SendForConfirmation'))
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
+WebUI.waitForElementVisible(findTestObject(waitButton), 20)
 
-WebUI.waitForElementClickable(findTestObject('Waiters/WaitButton_Element'), 20)
+WebUI.waitForElementClickable(findTestObject(waitButton), 20)
 
 WebUI.delay(2)
 
 CustomKeywords.'linkers.Link_SD_FLOW_VENDOR.order'()
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
 WebUI.waitForElementVisible(findTestObject('OR/OR Confirm/input_Sale Order_FirstConfirm'), 20)
 
@@ -74,15 +80,15 @@ WebUI.waitForElementClickable(findTestObject('OR/OR Confirm/input_Sale Order_Fir
 
 WebUI.click(findTestObject('OR/OR Confirm/input_Sale Order_FirstConfirm'))
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
+WebUI.waitForElementVisible(findTestObject(waitButton), 20)
 
-WebUI.waitForElementClickable(findTestObject('Waiters/WaitButton_Element'), 20)
+WebUI.waitForElementClickable(findTestObject(waitButton), 20)
 
 CustomKeywords.'linkers.Link_SD_FLOW_VENDOR.order'()
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
 WebUI.waitForElementVisible(findTestObject('OR/OR Confirm/input_Sale Order_SendOrder'), 20)
 
@@ -90,15 +96,15 @@ WebUI.waitForElementClickable(findTestObject('OR/OR Confirm/input_Sale Order_Sen
 
 WebUI.click(findTestObject('OR/OR Confirm/input_Sale Order_SendOrder'))
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
+WebUI.waitForElementVisible(findTestObject(waitButton), 20)
 
-WebUI.waitForElementClickable(findTestObject('Waiters/WaitButton_Element'), 20)
+WebUI.waitForElementClickable(findTestObject(waitButton), 20)
 
 CustomKeywords.'linkers.Link_SD_FLOW_VENDOR.order'()
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
 WebUI.waitForElementVisible(findTestObject('OR/OR Confirm/input_Sale Order_Close'), 20)
 
@@ -106,5 +112,5 @@ WebUI.waitForElementClickable(findTestObject('OR/OR Confirm/input_Sale Order_Clo
 
 WebUI.click(findTestObject('OR/OR Confirm/input_Sale Order_Close'))
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 

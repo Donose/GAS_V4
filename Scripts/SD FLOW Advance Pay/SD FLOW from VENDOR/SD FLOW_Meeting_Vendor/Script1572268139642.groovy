@@ -21,11 +21,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 //for (int i = 0; i = 20; i++) {
+String pathWait = '/Waiters/WaitLoadingAnim_Element'
+
+String companyName = 'ME/input_Company name'
+
+String contactName = 'ME/input_Contact name'
+
+String materialSelect = 'ME/Client Products/input_Materials'
+
+String meetingButton = 'ME/button_Create Offer'
+
 WebUI.waitForElementVisible(findTestObject('MainDashboard/Nav_Menu_Top/a_SD'), 10)
 
 CustomKeywords.'mainDashboardSelections.Selectors.selectSDMeeting'()
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(pathWait), 20)
 
 WebUI.delay(5)
 
@@ -33,15 +43,15 @@ WebUI.selectOptionByLabel(findTestObject('ME/select_me_prio'), findTestData('Dro
 
 WebUI.click(findTestObject('ME/span_Company name'))
 
-WebUI.setText(findTestObject('ME/input_Company name'), findTestData('Clients').getValue(1, 2), FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject(companyName), findTestData('Clients').getValue(1, 2), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('ME/input_Company name'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject(companyName), Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('ME/span_Contact name'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('ME/input_Contact name'), 'Ivanka Petrova')
+WebUI.setText(findTestObject(contactName), 'Ivanka Petrova')
 
-WebUI.sendKeys(findTestObject('ME/input_Contact name'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject(contactName), Keys.chord(Keys.ENTER))
 
 WebUI.selectOptionByValue(findTestObject('ME/select_Meeting'), findTestData('DropDowns').getValue(2, 1), false)
 
@@ -53,7 +63,9 @@ WebUI.selectOptionByValue(findTestObject('ME/select_Opportunity'), findTestData(
 
 WebUI.selectOptionByValue(findTestObject('ME/select_Purpose'), findTestData('DropDowns').getValue(6, 1), false)
 
-CustomKeywords.'dates.DatePicker.pickThisMeeting'()
+String dateNow = CustomKeywords.'dates.DateGenerate.date'()
+
+WebUI.setText(findTestObject('ME/DatePick/input_Meeting date'), dateNow)
 
 WebUI.waitForElementVisible(findTestObject('ME/Client Products/span_Client interested in products'), 5)
 
@@ -61,24 +73,20 @@ WebUI.setText(findTestObject('ME/Client Products/input_Quantty'), '5')
 
 WebUI.click(findTestObject('ME/Client Products/span_Select material'))
 
-WebUI.setText(findTestObject('ME/Client Products/input_Materials'), findTestData('Materials').getValue(1, 1))
+WebUI.setText(findTestObject(materialSelect), findTestData('Materials').getValue(1, 7))
 
-WebUI.sendKeys(findTestObject('ME/Client Products/input_Materials'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject(materialSelect), Keys.chord(Keys.ENTER))
 
 WebUI.selectOptionByValue(findTestObject('ME/Client Products/select_DealTypeForMaterial'), findTestData('DropDowns').getValue(
         7, 1), false)
 
-String dateFuture = CustomKeywords.'dates.DateGenerate.dateWeek'()
-
-not_run: WebUI.setText(findTestObject('ME/Client Products/input_Prefer Delivery Date'), dateFuture)
-
 WebUI.setText(findTestObject('ME/textarea_Comment'), 'This will be from VENDOR ONLY')
 
-WebUI.scrollToElement(findTestObject('ME/button_Create Offer'), 20)
+WebUI.scrollToElement(findTestObject(meetingButton), 20)
 
-WebUI.click(findTestObject('ME/button_Create Offer'))
+WebUI.click(findTestObject(meetingButton))
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(pathWait), 20)
 
 WebUI.scrollToPosition(0, 0)
 

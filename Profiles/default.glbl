@@ -64,4 +64,9 @@
       <initValue>findTestData('Process numbers').getValue(9, 1)</initValue>
       <name>Purchase_order</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://web7.egt-bg.ro:7955/?#!/'</initValue>
+      <name>Web7TestEnv</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

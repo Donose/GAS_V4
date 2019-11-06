@@ -13,21 +13,25 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+final String waitLoad = 'Waiters/WaitLoadingAnim_Element'
+final String waitFirstButton = 'Waiters/WaitButton_Element'
+final String waitOpen = 'OF/Status Open/input_Sale Offer_Open'
 
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20, FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
+
+WebUI.waitForElementVisible(findTestObject(waitFirstButton), 20,)
 
 CustomKeywords.'linkers.Link_SD_FLOW_VENDOR.offer'()
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
-WebUI.waitForElementVisible(findTestObject('OF/Status Open/input_Sale Offer_Open'), 20)
+WebUI.waitForElementVisible(findTestObject(waitOpen), 20)
 
-WebUI.waitForElementClickable(findTestObject('OF/Status Open/input_Sale Offer_Open'), 20)
+WebUI.waitForElementClickable(findTestObject(waitOpen), 20)
 
-WebUI.click(findTestObject('OF/Status Open/input_Sale Offer_Open'))
+WebUI.click(findTestObject(waitOpen))
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
 String date = CustomKeywords.'dates.DateGenerate.dateWeek'()
 
@@ -60,5 +64,5 @@ WebUI.selectOptionByValue(findTestObject('OF/Status In Progress/Warehouse/select
 
 WebUI.click(findTestObject('OF/Status In Progress/input_Sale Offer_SendForConfirmation'))
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 

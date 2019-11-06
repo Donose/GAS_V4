@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_CURRENCY</name>
+   <name>span_Select material2</name>
    <tag></tag>
-   <elementGuidId>47a35556-3d37-4567-ae81-808db2c07dbc</elementGuidId>
+   <elementGuidId>d12f177e-8cb1-4ff6-90cf-e8c6929ce3bd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Currency:'])[1]/following::select[1]</value>
+         <value>//div[@id='mainData']/div/div/div[2]/ng-include/form/div/div[5]/div/table/tbody/tr[2]/td[3]/div/div/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -17,97 +17,95 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>select</value>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control input-sm ng-pristine ng-untouched ng-valid ng-not-empty</value>
+      <value>btn btn-default form-control ui-select-toggle</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>ng-options</name>
+      <name>aria-label</name>
       <type>Main</type>
-      <value>currency.currency_id as currency.currency_name for currency in currencies | array</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ng-change</name>
-      <type>Main</type>
-      <value>currency_logic_calculate();</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ng-model</name>
-      <type>Main</type>
-      <value>formData.currency_id</value>
+      <value>Select box activate</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-disabled</name>
       <type>Main</type>
-      <value>processData.payment_request_status != processStatusesMap['IN_PROGRESS']</value>
+      <value>$select.disabled</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>ng-if</name>
+      <name>ng-click</name>
       <type>Main</type>
-      <value>processData.payment_request_status &lt;= processStatusesMap['IN_PROGRESS']</value>
+      <value>$select.activate()</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Romanian LeuEuro</value>
+      <value>Select material 
+                        
+                            
+                        
+                        
+                      </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[@class=&quot;k-webkit k-webkit77&quot;]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;modal fade in&quot;]/div[@class=&quot;modal-dialog modal-offer&quot;]/div[@class=&quot;modal-content&quot;]/div[1]/div[2]/div[4]/div[@class=&quot;addCompany&quot;]/div[1]/table[1]/tbody[1]/tr[6]/td[@class=&quot;col-sm-3&quot;]/select[@class=&quot;form-control input-sm ng-pristine ng-untouched ng-valid ng-not-empty&quot;]</value>
+      <value>id(&quot;mainData&quot;)/div[1]/div[@class=&quot;row-fluid&quot;]/div[@class=&quot;row-fluid&quot;]/ng-include[1]/form[@class=&quot;ng-valid ng-valid-date ng-dirty ng-valid-parse&quot;]/div[@class=&quot;treeGroups&quot;]/div[5]/div[@class=&quot;addCompany&quot;]/table[1]/tbody[1]/tr[2]/td[3]/div[@class=&quot;form-control input-sm ui-select-container ui-select-bootstrap dropdown input-required ng-empty ng-valid&quot;]/div[@class=&quot;ui-select-match&quot;]/span[@class=&quot;btn btn-default form-control ui-select-toggle&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
+      <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Currency:'])[1]/following::select[1]</value>
+      <value>//div[@id='mainData']/div/div/div[2]/ng-include/form/div/div[5]/div/table/tbody/tr[2]/td[3]/div/div/span</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cash Box:'])[1]/following::select[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[2]/following::span[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Exchange Rate:'])[1]/preceding::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='+'])[79]/following::span[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Document Type:'])[1]/preceding::select[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select number'])[2]/preceding::span[5]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[6]/td/select</value>
+      <value>//tr[2]/td[3]/div/div/span</value>
    </webElementXpaths>
 </WebElementEntity>

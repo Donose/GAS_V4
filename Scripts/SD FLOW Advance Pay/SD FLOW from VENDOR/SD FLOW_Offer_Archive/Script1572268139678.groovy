@@ -18,13 +18,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+final String waitLoad = 'Waiters/WaitLoadingAnim_Element'
+final String waitButton = 'Waiters/WaitButton_Element'
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
+WebUI.waitForElementVisible(findTestObject(waitButton), 20)
 
 CustomKeywords.'linkers.Link_SD_FLOW_VENDOR.offer'()
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
 WebUI.click(findTestObject('OF/Status Archiving/input_Sale_Offer_Close'))
 

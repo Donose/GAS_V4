@@ -19,29 +19,31 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.CONTINUE_ON_FAILURE)
+String waitLoad = 'Waiters/WaitLoadingAnim_Element'
+
+String waitButton = 'Waiters/WaitBRButton_Element'
+
+WebDriver driver = DriverFactory.getWebDriver()
+
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.scrollToPosition(0, 0)
 
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitSDModule_Element'), 20)
+WebUI.waitForElementVisible(findTestObject(waitLoad), 20, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebDriver bilingOpen = DriverFactory.getWebDriver()
-
-WebElement plus = bilingOpen.findElement(By.xpath(' /html/body/div[4]/div[3]/div/div/ul[29]/li/div/button/b')).click()
+WebElement plus = driver.findElement(By.xpath(' /html/body/div[4]/div[3]/div/div/ul[29]/li/div/button/b')).click()
 
 WebUI.waitForElementVisible(findTestObject('Waiters/WaitBillingReq_Element'), 20)
 
-WebDriver billingElem = DriverFactory.getWebDriver()
+WebElement billing = driver.findElement(By.xpath('/html/body/div[4]/div[3]/div/div/ul[29]/li/ul/li[1]/div/a')).click()
 
-WebElement billing = billingElem.findElement(By.xpath('/html/body/div[4]/div[3]/div/div/ul[29]/li/ul/li[1]/div/a')).click()
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitBRButton_Element'), 20)
+WebUI.waitForElementVisible(findTestObject(waitButton), 20)
 
 CustomKeywords.'linkers.Link_SD_FLOW_VENDOR.billing_request'()
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.waitForElementVisible(findTestObject('Waiters/WaitBRCheckbox_Element'), 20)
 
@@ -49,30 +51,33 @@ WebUI.selectOptionByLabel(findTestObject('BR/select_Generate Billing'), findTest
 
 WebUI.click(findTestObject('BR/input_InProgress'))
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20, FailureHandling.CONTINUE_ON_FAILURE)
 
 'This must be saved/ future'
 WebUI.setText(findTestObject('BI/input__form_invoiceNR'), String.valueOf(Math.abs(new Random().nextInt() % 9999) + 1))
 
-CustomKeywords.'dates.DatePicker.pickThisBilling'()
+String dateNow = CustomKeywords.'dates.DateGenerate.date'()
 
-WebUI.selectOptionByLabel(findTestObject('BI/select_BANK'), findTestData('DropDowns').getValue(9, 1), false)
+WebUI.setText(findTestObject('BI/input__form_DATE'), dateNow)
+
+WebUI.selectOptionByLabel(findTestObject('BI/select_incomeType'), 'Sales Incomes', false)
 
 'Disabled'
-not_run: WebUI.selectOptionByLabel(findTestObject('BI/select_TYPE'), findTestData('DropDowns').getValue(10, 2), false)
+WebUI.selectOptionByLabel(findTestObject('BI/select_transactionDetails'), 'Advance Sales', false)
 
 'Disabled'
-WebUI.selectOptionByLabel(findTestObject('BI/select_AccountingDivision'), findTestData('DropDowns').getValue(11, 2), false)
+WebUI.selectOptionByLabel(findTestObject('BI/select_cashBox'), 'ING Bank', false)
 
-WebUI.selectOptionByLabel(findTestObject('BI/select_CURRENCY'), findTestData('DropDowns').getValue(12, 2), false)
+WebUI.selectOptionByLabel(findTestObject('BI/select_documentType'), 'Receipt', false)
 
 'Disabled\r\n'
-not_run: WebUI.selectOptionByLabel(findTestObject('BI/select_PaymentMethod'), findTestData('DropDowns').getValue(13, 3), 
-    false)
+WebUI.selectOptionByLabel(findTestObject('BI/select_paymentMethod'), 'Bank Transfer', false)
+
+WebUI.selectOptionByLabel(findTestObject('BI/select_accountingDivision'), 'Sales Romania Division', false)
 
 WebUI.click(findTestObject('BI/input_Billing'))
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebDriver driverMD = DriverFactory.getWebDriver()
 

@@ -69,6 +69,11 @@ public class GlobalVariable {
      */
     public static Object Purchase_order
      
+    /**
+     * <p></p>
+     */
+    public static Object Web7TestEnv
+     
 
     static {
         try {
@@ -88,6 +93,7 @@ public class GlobalVariable {
             Sale_Order = selectedVariables['Sale_Order']
             Purchase_req = selectedVariables['Purchase_req']
             Purchase_order = selectedVariables['Purchase_order']
+            Web7TestEnv = selectedVariables['Web7TestEnv']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

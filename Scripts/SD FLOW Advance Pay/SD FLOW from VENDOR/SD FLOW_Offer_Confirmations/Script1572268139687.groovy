@@ -13,71 +13,75 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
+final String waitLoad = 'Waiters/WaitLoadingAnim_Element'
+final String waitButton = 'Waiters/WaitButton_Element'
+final String waitDirector = 'OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director'
+final String waitRODirector = 'OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector'
+final String waitBGDirector = 'OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector'
+final String waitClient = 'OF/Status Sale Confirmation/Client/input_Sale Offer_Client'
 
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
-CustomKeywords.'linkers.Link_SD_FLOW_VENDOR.offer'()
+WebUI.waitForElementVisible(findTestObject(waitButton), 20)
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
-
-WebUI.waitForElementVisible(findTestObject('OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director'), 20)
-
-WebUI.waitForElementClickable(findTestObject('OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director'), 20)
-
-WebUI.click(findTestObject('OF/Status Sale Confirmation/Sale Director/input_Sale Offer_director'))
-
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
-
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
+WebUI.waitForElementVisible(findTestObject(waitButton), 20)
 
 CustomKeywords.'linkers.Link_SD_FLOW_VENDOR.offer'()
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
-WebUI.waitForElementVisible(findTestObject('OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector'), 
-    20)
+WebUI.waitForElementVisible(findTestObject(waitDirector), 20)
 
-WebUI.waitForElementClickable(findTestObject('OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector'), 
-    20)
+WebUI.waitForElementClickable(findTestObject(waitDirector), 20)
 
-WebUI.click(findTestObject('OF/Status Sale Confirmation/EGT Romania Director/input_Sale Offer_RODirector'))
+WebUI.click(findTestObject(waitDirector))
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
-
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
+WebUI.waitForElementVisible(findTestObject(waitButton), 20)
 
 CustomKeywords.'linkers.Link_SD_FLOW_VENDOR.offer'()
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
-WebUI.waitForElementVisible(findTestObject('OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector'), 
-    20)
+WebUI.waitForElementVisible(findTestObject(waitRODirector), 20)
 
-WebUI.waitForElementClickable(findTestObject('OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector'), 
-    20)
+WebUI.waitForElementClickable(findTestObject(waitRODirector), 20)
 
-WebUI.click(findTestObject('OF/Status Sale Confirmation/EGT Bulgaria Director/input_Sale Offer_BGDirector'))
+WebUI.click(findTestObject(waitRODirector))
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
+WebUI.waitForElementVisible(findTestObject(waitButton), 20)
 
-WebUI.waitForElementClickable(findTestObject('Waiters/WaitButton_Element'), 20)
+WebUI.waitForElementVisible(findTestObject(waitButton), 20)
+
+CustomKeywords.'linkers.Link_SD_FLOW_VENDOR.offer'()
+
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
+
+WebUI.waitForElementVisible(findTestObject(waitBGDirector), 20)
+
+WebUI.waitForElementClickable(findTestObject(waitBGDirector), 20)
+
+WebUI.click(findTestObject(waitBGDirector))
+
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
+
+WebUI.waitForElementVisible(findTestObject(waitButton), 20)
+
+WebUI.waitForElementClickable(findTestObject(waitButton), 20)
 
 WebUI.delay(1)
 
 CustomKeywords.'linkers.Link_SD_FLOW_VENDOR.offer'()
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
-WebUI.waitForElementVisible(findTestObject('OF/Status Sale Confirmation/Client/input_Sale Offer_Client'), 20)
+WebUI.waitForElementVisible(findTestObject(waitClient), 20)
 
-WebUI.waitForElementClickable(findTestObject('OF/Status Sale Confirmation/Client/input_Sale Offer_Client'), 20)
+WebUI.waitForElementClickable(findTestObject(waitClient), 20)
 
-WebUI.click(findTestObject('OF/Status Sale Confirmation/Client/input_Sale Offer_Client'))
+WebUI.click(findTestObject(waitClient))
 

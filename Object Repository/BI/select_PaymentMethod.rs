@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_PaymentMethod</name>
+   <name>select_paymentMethod</name>
    <tag></tag>
-   <elementGuidId>1ba5aef3-e13d-4905-9f87-19e7388dffd2</elementGuidId>
+   <elementGuidId>ae0f10c4-6148-472d-9ecb-4c0e6c37155c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -24,7 +24,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control input-sm ng-pristine ng-untouched ng-valid ng-not-empty</value>
+      <value>form-control input-sm ng-pristine ng-untouched ng-valid input-required ng-empty</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -66,7 +66,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[@class=&quot;k-webkit k-webkit77&quot;]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;modal fade in&quot;]/div[@class=&quot;modal-dialog modal-offer&quot;]/div[@class=&quot;modal-content&quot;]/div[1]/div[2]/div[4]/div[@class=&quot;addCompany&quot;]/div[1]/table[1]/tbody[1]/tr[9]/td[@class=&quot;col-sm-3&quot;]/select[@class=&quot;form-control input-sm ng-pristine ng-untouched ng-valid ng-not-empty&quot;]</value>
+      <value>/html[@class=&quot;k-webkit k-webkit77&quot;]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;modal fade in&quot;]/div[@class=&quot;modal-dialog modal-offer&quot;]/div[@class=&quot;modal-content&quot;]/div[1]/div[2]/div[4]/div[@class=&quot;addCompany&quot;]/div[1]/table[1]/tbody[1]/tr[9]/td[@class=&quot;col-sm-3&quot;]/select[@class=&quot;form-control input-sm ng-pristine ng-untouched ng-valid input-required ng-empty&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

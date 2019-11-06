@@ -56,18 +56,18 @@ String invoiceDateNow = CustomKeywords.'dates.DateGenerate.date'()
 
 WebUI.setText(findTestObject('BI/input__form_DATE'), invoiceDateNow)
 
-WebUI.selectOptionByLabel(findTestObject('BI/select_BANK'), findTestData('DropDowns').getValue(9, 1), false)
+WebUI.selectOptionByLabel(findTestObject('null'), findTestData('DropDowns').getValue(9, 1), false)
 
 'Disabled'
-not_run: WebUI.selectOptionByLabel(findTestObject('BI/select_TYPE'), findTestData('DropDowns').getValue(10, 2), false)
+not_run: WebUI.selectOptionByLabel(findTestObject('null'), findTestData('DropDowns').getValue(10, 2), false)
 
 'Disabled'
-WebUI.selectOptionByLabel(findTestObject('BI/select_AccountingDivision'), findTestData('DropDowns').getValue(11, 2), false)
+WebUI.selectOptionByLabel(findTestObject('null'), findTestData('DropDowns').getValue(11, 2), false)
 
-WebUI.selectOptionByLabel(findTestObject('BI/select_CURRENCY'), findTestData('DropDowns').getValue(12, 2), false)
+WebUI.selectOptionByLabel(findTestObject('null'), findTestData('DropDowns').getValue(12, 2), false)
 
 'Disabled\r\n'
-not_run: WebUI.selectOptionByLabel(findTestObject('BI/select_PaymentMethod'), findTestData('DropDowns').getValue(13, 3), 
+not_run: WebUI.selectOptionByLabel(findTestObject('null'), findTestData('DropDowns').getValue(13, 3), 
     false)
 
 WebUI.click(findTestObject('BI/input_Billing'))
