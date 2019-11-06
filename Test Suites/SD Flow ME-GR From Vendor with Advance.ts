@@ -95,6 +95,6 @@
       <guid>5207deca-e6db-4c00-94cf-8671e70dd38f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW ID_GI_GR_SN_FN_Passport</testCaseId>
+      <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW from VENDOR/SD FLOW ID_GI_GR</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

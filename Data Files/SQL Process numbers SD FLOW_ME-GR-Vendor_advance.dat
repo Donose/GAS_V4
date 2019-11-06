@@ -26,7 +26,8 @@ LEFT JOIN erp.purchase_orders AS purchase_orders ON purchase_orders.purchase_req
 LEFT JOIN warehouse.order_requests_import AS order_requests_import ON order_requests_import.offer_id = offers.offer_id
 LEFT JOIN warehouse.orders_import AS orders_import ON orders_import.order_request_import_id = order_requests_import.order_request_import_id
 LEFT JOIN service.mobile_service_notifications AS mobile_service_notifications ON mobile_service_notifications.parent_process_id = orders_import.order_import_id
-WHERE meetings.meeting_comment LIKE '%VENDOR%' ORDER BY meetings.meeting_id DESC</query>
+WHERE meetings.meeting_comment LIKE '%VENDOR%' ORDER BY meetings.meeting_id DESC
+LIMIT 20</query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName></sheetName>
    <user></user>

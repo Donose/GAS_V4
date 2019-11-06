@@ -30,7 +30,7 @@ WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element')
 
 WebUI.scrollToElement(findTestObject('PO/PO from SD/input_Add_offerPriceSD'), 20)
 
-String price = Math.abs(new Random().nextInt() % 9999)
+String price = Math.abs(new Random().nextInt(900) + 100)
 
 WebUI.sendKeys(findTestObject('PO/PO from SD/input_Add_offerPriceSD'), price)
 
@@ -38,21 +38,21 @@ WebUI.click(findTestObject('PO/input_Purchase Order_SendAprove'))
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
-WebUI.waitForElementVisible(findTestObject('MainDashboard/Nav_Menu_Left/a_Purchase Orders'), 20)
+not_run: WebUI.waitForElementVisible(findTestObject('MainDashboard/Nav_Menu_Left/a_Purchase Orders'), 20)
 
-WebDriver driverMD = DriverFactory.getWebDriver()
+not_run: WebDriver driverMD = DriverFactory.getWebDriver()
 
-WebElement purchaseOrders = driverMD.findElement(By.xpath('/html/body/div[4]/div[3]/div/div/ul[28]/li/ul/li[1]/div/a')).click()
+not_run: WebElement purchaseOrders = driverMD.findElement(By.xpath('/html/body/div[4]/div[3]/div/div/ul[28]/li/ul/li[1]/div/a')).click()
 
-WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+not_run: WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
-WebUI.waitForElementVisible(findTestObject('Waiters/WaitBRButton_Element'), 20, FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.waitForElementVisible(findTestObject('Waiters/WaitBRButton_Element'), 20)
 
-WebUI.waitForElementClickable(findTestObject('Waiters/WaitBRButton_Element'), 20)
+not_run: WebUI.waitForElementClickable(findTestObject('Waiters/WaitBRButton_Element'), 20)
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-CustomKeywords.'linkers.Link_SD_FLOW_VENDOR.purchase_order'()
+not_run: CustomKeywords.'linkers.Link_SD_FLOW_VENDOR.purchase_order'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
@@ -72,7 +72,7 @@ WebUI.waitForElementClickable(findTestObject('Waiters/WaitBRButton_Element'), 20
 
 WebUI.delay(2)
 
-CustomKeywords.'linkers.Link_SD_FLOW_VENDOR.purchase_order'()
+not_run: CustomKeywords.'linkers.Link_SD_FLOW_VENDOR.purchase_order'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 

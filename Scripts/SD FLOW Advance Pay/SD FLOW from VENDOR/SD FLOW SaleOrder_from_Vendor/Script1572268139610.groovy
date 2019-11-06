@@ -54,7 +54,7 @@ String dateFutureWEeek = CustomKeywords.'dates.DateGenerate.dateWeek'()
 
 WebUI.setText(findTestObject('OR/Open-SendtoConfirm/input_Deadline'), dateFutureWEeek)
 
-WebUI.click(findTestObject('OR/Open-SendtoConfirm/div_Save_scrollToTopModal'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('OR/Open-SendtoConfirm/div_Save_scrollToTopModal'), 5)
 
 WebUI.waitForElementVisible(findTestObject('OR/Open-SendtoConfirm/input_Sale Order_SendForConfirmation'), 20)
 

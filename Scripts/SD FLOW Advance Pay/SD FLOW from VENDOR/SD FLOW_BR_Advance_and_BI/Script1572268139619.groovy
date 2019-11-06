@@ -25,11 +25,11 @@ String waitButton = 'Waiters/WaitBRButton_Element'
 
 WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
 WebUI.scrollToPosition(0, 0)
 
-WebUI.waitForElementVisible(findTestObject(waitLoad), 20, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementVisible(findTestObject(waitLoad), 20)
 
 WebElement plus = driver.findElement(By.xpath(' /html/body/div[4]/div[3]/div/div/ul[29]/li/div/button/b')).click()
 
@@ -37,7 +37,7 @@ WebUI.waitForElementVisible(findTestObject('Waiters/WaitBillingReq_Element'), 20
 
 WebElement billing = driver.findElement(By.xpath('/html/body/div[4]/div[3]/div/div/ul[29]/li/ul/li[1]/div/a')).click()
 
-WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
 WebUI.waitForElementVisible(findTestObject(waitButton), 20)
 
@@ -51,7 +51,7 @@ WebUI.selectOptionByLabel(findTestObject('BR/select_Generate Billing'), findTest
 
 WebUI.click(findTestObject('BR/input_InProgress'))
 
-WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
 'This must be saved/ future'
 WebUI.setText(findTestObject('BI/input__form_invoiceNR'), String.valueOf(Math.abs(new Random().nextInt() % 9999) + 1))
@@ -77,7 +77,7 @@ WebUI.selectOptionByLabel(findTestObject('BI/select_accountingDivision'), 'Sales
 
 WebUI.click(findTestObject('BI/input_Billing'))
 
-WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
 WebDriver driverMD = DriverFactory.getWebDriver()
 
