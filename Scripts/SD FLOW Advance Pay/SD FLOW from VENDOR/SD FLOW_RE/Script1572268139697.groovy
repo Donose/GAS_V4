@@ -13,21 +13,21 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-final String waitLoad = 'Waiters/WaitButton_Element'
+String waitLoad = '/Waiters/WaitLoadingAnim_Element'
 
-final String waitButton = 'Waiters/WaitButton_Element'
+String waitButton = 'Waiters/WaitButton_Element'
 
-WebUI.waitForElementVisible(findTestObject(waitLoad), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
 WebUI.waitForElementClickable(findTestObject(waitButton), 20)
 
 CustomKeywords.'linkers.Link_SD_FLOW_VENDOR.receivables'()
 
-WebUI.waitForElementNotVisible(findTestObject(waitLoad), 10,)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 10)
 
 WebUI.click(findTestObject('RE/input_Receivable_Start'))
 
-WebUI.waitForElementNotVisible(findTestObject(waitLoad), 10,)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 10)
 
 WebUI.click(findTestObject('RE/input_Receivable_Entry'))
 

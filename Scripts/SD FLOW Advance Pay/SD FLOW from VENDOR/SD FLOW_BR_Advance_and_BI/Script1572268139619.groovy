@@ -29,7 +29,7 @@ WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
 WebUI.scrollToPosition(0, 0)
 
-WebUI.waitForElementVisible(findTestObject(waitLoad), 20)
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
 WebElement plus = driver.findElement(By.xpath(' /html/body/div[4]/div[3]/div/div/ul[29]/li/div/button/b')).click()
 

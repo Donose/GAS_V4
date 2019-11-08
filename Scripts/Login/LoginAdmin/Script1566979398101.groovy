@@ -12,6 +12,8 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 WebUI.openBrowser('')
 
@@ -24,4 +26,6 @@ WebUI.setText(findTestObject('Login/input_username'), 'daniel.donose')
 WebUI.setText(findTestObject('Login/input_password'), '11111sase')
 
 WebUI.click(findTestObject('Login/button_Login'))
+
+not_run: WebUI.callTestCase(findTestCase('DailyRates'), [:], FailureHandling.STOP_ON_FAILURE)
 

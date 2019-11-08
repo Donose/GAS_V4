@@ -31,7 +31,7 @@ WebUI.selectOptionByLabel(findTestObject('ME/select_me_prio'), findTestData('Dro
 
 WebUI.click(findTestObject('ME/span_Company name'))
 
-WebUI.setText(findTestObject('ME/input_Company name'), 'COMPANY TEST2', FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('ME/input_Company name'), findTestData('Clients').getValue(1, 2), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.sendKeys(findTestObject('ME/input_Company name'), Keys.chord(Keys.ENTER))
 
@@ -61,7 +61,7 @@ WebUI.setText(findTestObject('ME/Client Products/input_Quantty'), '20')
 
 WebUI.click(findTestObject('ME/Client Products/span_Select material'))
 
-WebUI.setText(findTestObject('ME/Client Products/input_Materials'), 'Gaming_machine1')
+WebUI.setText(findTestObject('ME/Client Products/input_Materials'), findTestData('Materials').getValue(1, 1))
 
 WebUI.sendKeys(findTestObject('ME/Client Products/input_Materials'), Keys.chord(Keys.ENTER))
 

@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>(.//*[normalize-space(text()) and normalize-space(.)='+'])[80]/following::button[1]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>/html[@class=&quot;k-webkit k-webkit78&quot;]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;modal fade materialSinglesModal in&quot;]/div[@class=&quot;modal-dialog&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;form-group&quot;]/button[@class=&quot;btn btn-default&quot;][count(. | //*[@ng-click = 'saveMaterialsWithoutFnSn()' and (text() = 'OK' or . = 'OK')]) = count(//*[@ng-click = 'saveMaterialsWithoutFnSn()' and (text() = 'OK' or . = 'OK')])]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -27,7 +31,7 @@
       <value>btn btn-default</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-click</name>
       <type>Main</type>
@@ -41,7 +45,7 @@
       <value>OK</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

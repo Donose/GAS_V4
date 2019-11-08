@@ -41,7 +41,7 @@ WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element')
 
 WebUI.selectOptionByValue(findTestObject('ID/ID from SD/Create_GR/select_Prio'), '2', false)
 
-WebUI.selectOptionByLabel(findTestObject('ID/ID from SD/Create_GR/select_Supervisor'), 'Daniel Donose', false)
+not_run: WebUI.selectOptionByLabel(findTestObject('ID/ID from SD/Create_GR/select_Supervisor'), 'Daniel Donose', false)
 
 WebUI.click(findTestObject('ID/ID from SD/Create_GR/button_Create GR'))
 
@@ -55,32 +55,30 @@ WebUI.click(findTestObject('ID/ID from SD/Create_GR/button_materialOk'))
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
-not_run: WebUI.click(findTestObject('ID/ID from SD/Create_GR/input_CompleteHandover'))
+WebUI.click(findTestObject('ID/ID from SD/Create_GR/input_CompleteHandover'))
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 
-WebUI.scrollToElement(findTestObject('ID/ID from SD/GR Close/input_SerialID'), 20)
+not_run: WebUI.scrollToElement(findTestObject('ID/ID from SD/GR Close/input_SerialID'), 1, FailureHandling.OPTIONAL)
 
 String randomNumbers = Math.abs(new Random().nextInt() % 9999)
 
-WebUI.setText(findTestObject('ID/ID from SD/GR Close/input_Number of document'), randomNumbers)
-
-String dateNow = CustomKeywords.'dates.DateGenerate.date'()
-
-WebUI.setText(findTestObject('ID/ID from SD/GR Close/input_Document from date_form'), dateNow)
-
-CustomKeywords.'com.kms.katalon.keyword.uploadfile.UploadFile.uploadFile'(findTestObject('ID/ID from SD/GR Close/input_Attach Delivery Protocol'), 
-    'C:\\\\Users\\\\daniel.donose\\\\git\\\\GAS_V4\\\\Data Files\\\\toupload.pdf')
-
 WebUI.setText(findTestObject('ID/ID from SD/GR Close/input_Delivery Company'), 'DHL')
+
+not_run: String dateNow = CustomKeywords.'dates.DateGenerate.date'()
+
+not_run: WebUI.setText(findTestObject('ID/ID from SD/GR Close/input_Document from date_form'), dateNow)
+
+not_run: CustomKeywords.'com.kms.katalon.keyword.uploadfile.UploadFile.uploadFile'(findTestObject('ID/ID from SD/GR Close/input_Attach Delivery Protocol'), 
+    'C:\\\\Users\\\\daniel.donose\\\\git\\\\GAS_V4\\\\Data Files\\\\toupload.pdf')
 
 WebUI.setText(findTestObject('ID/ID from SD/GR Close/input_Delivery Responsible'), 'Curier_name')
 
 WebUI.setText(findTestObject('ID/ID from SD/GR Close/input_SerialID'), randomNumbers)
 
-WebUI.setText(findTestObject('ID/ID from SD/GR Close/input_NumberID'), randomNumbers)
+WebUI.setText(findTestObject('ID/ID from SD/GR Close/SerialNBhandover'), randomNumbers)
 
-WebUI.scrollToElement(findTestObject('ID/ID from SD/GR Close/input_Close'), 20)
+WebUI.scrollToElement(findTestObject('ID/ID from SD/GR Close/input_Close'), 1, FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('ID/ID from SD/GR Close/a_Generate_pdfHandover'))
 

@@ -8,9 +8,10 @@
    <dataFileGUID>1afa325f-57ef-4713-b582-80c40cd00356</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>DBData</driver>
+   <driverClassName></driverClassName>
    <isInternalPath>false</isInternalPath>
    <password></password>
-   <query>SELECT material_name,creation_date FROM warehouse.materials WHERE creation_date > 1565004025</query>
+   <query>SELECT material_name,material_number,creation_date FROM warehouse.materials ORDER BY material_number ASC</query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName></sheetName>
    <user></user>

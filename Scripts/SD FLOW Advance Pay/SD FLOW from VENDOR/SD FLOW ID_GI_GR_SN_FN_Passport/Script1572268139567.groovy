@@ -112,7 +112,7 @@ WebUI.setText(findTestObject('ID/ID from SD/GR Close/input_Delivery Responsible'
 
 WebUI.setText(findTestObject('ID/ID from SD/GR Close/input_SerialID'), randomNumbers)
 
-WebUI.setText(findTestObject('ID/ID from SD/GR Close/input_NumberID'), randomNumbers)
+WebUI.setText(findTestObject('ID/ID from SD/GR Close/input_Number of document'), randomNumbers)
 
 WebUI.scrollToElement(findTestObject('ID/ID from SD/GR Close/input_Close'), 20)
 

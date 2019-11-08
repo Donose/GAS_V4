@@ -9,11 +9,15 @@
          <key>XPATH</key>
          <value>(//input[@type='text'])[31]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>/html[@class=&quot;k-webkit k-webkit77&quot;]/body[@class=&quot;modal-open&quot;]/div[@class=&quot;modal fade in&quot;]/div[@class=&quot;modal-dialog modal-balance&quot;]/div[@class=&quot;modal-content&quot;]/div[1]/form[@class=&quot;ng-pristine ng-valid ng-valid-date&quot;]/div[@class=&quot;treeGroups&quot;]/div[4]/div[1]/div[@class=&quot;field-group&quot;]/div[2]/table[2]/tbody[1]/tr[4]/td[2]/input[@class=&quot;form-control input-sm input-free text-center ng-pristine ng-untouched ng-valid input-required ng-empty&quot;][count(. | //input[@type = 'text' and @placeholder = ' - number -' and @ng-model = 'formData.delivery_resp_id_number']) = count(//input[@type = 'text' and @placeholder = ' - number -' and @ng-model = 'formData.delivery_resp_id_number'])]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -41,14 +45,14 @@
       <value> - number -</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-model</name>
       <type>Main</type>
       <value>formData.delivery_resp_id_number</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

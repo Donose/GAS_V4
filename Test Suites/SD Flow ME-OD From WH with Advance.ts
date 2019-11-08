@@ -49,14 +49,14 @@
    <testCaseLink>
       <guid>38e4b7c9-d3a0-410c-ba00-c99c8af82cc6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW from WAREHOUSE/SD FLOW_Contract_Skip</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>51521c6b-f29d-4110-8f39-cfadca15b77f</guid>
+      <guid>a45146fb-0e17-4ea1-ad88-98794f64625e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW from WAREHOUSE/SD FLOW_BR_Advance_and_BI</testCaseId>
+      <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW from WAREHOUSE/SD FLOW_BR_Advance_and_BI - Copy</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>07e18397-be7f-4829-aa29-27ed7e4043e0</guid>
@@ -67,7 +67,7 @@
    <testCaseLink>
       <guid>6c960e10-9e41-4dd1-8162-63c3946c14ac</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/SD FLOW Advance Pay/SD FLOW from WAREHOUSE/SD FLOW SaleOrder_from_WH</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
