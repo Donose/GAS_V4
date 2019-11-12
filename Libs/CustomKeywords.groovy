@@ -30,50 +30,6 @@ import kms.turing.katalon.plugins.helper.table.WebTableHelper.CellTextOptions
 import kms.turing.katalon.plugins.helper.XPathHelper.CompareOptions
 
 
-def static "linkers.Link_SD_FLOW_WAREHOUSE.contract"() {
-    (new linkers.Link_SD_FLOW_WAREHOUSE()).contract()
-}
-
-def static "linkers.Link_SD_FLOW_WAREHOUSE.offer"() {
-    (new linkers.Link_SD_FLOW_WAREHOUSE()).offer()
-}
-
-def static "linkers.Link_SD_FLOW_WAREHOUSE.billing_request"() {
-    (new linkers.Link_SD_FLOW_WAREHOUSE()).billing_request()
-}
-
-def static "linkers.Link_SD_FLOW_WAREHOUSE.billing"() {
-    (new linkers.Link_SD_FLOW_WAREHOUSE()).billing()
-}
-
-def static "linkers.Link_SD_FLOW_WAREHOUSE.receivables"() {
-    (new linkers.Link_SD_FLOW_WAREHOUSE()).receivables()
-}
-
-def static "linkers.Link_SD_FLOW_WAREHOUSE.order"() {
-    (new linkers.Link_SD_FLOW_WAREHOUSE()).order()
-}
-
-def static "linkers.Link_SD_FLOW_WAREHOUSE.purchase_req"() {
-    (new linkers.Link_SD_FLOW_WAREHOUSE()).purchase_req()
-}
-
-def static "linkers.Link_SD_FLOW_WAREHOUSE.purchase_order"() {
-    (new linkers.Link_SD_FLOW_WAREHOUSE()).purchase_order()
-}
-
-def static "linkers.Link_SD_FLOW_WAREHOUSE.inbound_delivery"() {
-    (new linkers.Link_SD_FLOW_WAREHOUSE()).inbound_delivery()
-}
-
-def static "linkers.Link_SD_FLOW_WAREHOUSE.mobile_service_notification"() {
-    (new linkers.Link_SD_FLOW_WAREHOUSE()).mobile_service_notification()
-}
-
-def static "linkers.Link_SD_FLOW_WAREHOUSE.mobile_service_order"() {
-    (new linkers.Link_SD_FLOW_WAREHOUSE()).mobile_service_order()
-}
-
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoRows"(
     	Row row1	
      , 	Row row2	) {
@@ -394,6 +350,50 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getColumnsByIndex"(
          , 	columnIndexes)
 }
 
+def static "linkers.Link_SD_FLOW_WAREHOUSE.contract"() {
+    (new linkers.Link_SD_FLOW_WAREHOUSE()).contract()
+}
+
+def static "linkers.Link_SD_FLOW_WAREHOUSE.offer"() {
+    (new linkers.Link_SD_FLOW_WAREHOUSE()).offer()
+}
+
+def static "linkers.Link_SD_FLOW_WAREHOUSE.billing_request"() {
+    (new linkers.Link_SD_FLOW_WAREHOUSE()).billing_request()
+}
+
+def static "linkers.Link_SD_FLOW_WAREHOUSE.billing"() {
+    (new linkers.Link_SD_FLOW_WAREHOUSE()).billing()
+}
+
+def static "linkers.Link_SD_FLOW_WAREHOUSE.receivables"() {
+    (new linkers.Link_SD_FLOW_WAREHOUSE()).receivables()
+}
+
+def static "linkers.Link_SD_FLOW_WAREHOUSE.order"() {
+    (new linkers.Link_SD_FLOW_WAREHOUSE()).order()
+}
+
+def static "linkers.Link_SD_FLOW_WAREHOUSE.purchase_req"() {
+    (new linkers.Link_SD_FLOW_WAREHOUSE()).purchase_req()
+}
+
+def static "linkers.Link_SD_FLOW_WAREHOUSE.purchase_order"() {
+    (new linkers.Link_SD_FLOW_WAREHOUSE()).purchase_order()
+}
+
+def static "linkers.Link_SD_FLOW_WAREHOUSE.inbound_delivery"() {
+    (new linkers.Link_SD_FLOW_WAREHOUSE()).inbound_delivery()
+}
+
+def static "linkers.Link_SD_FLOW_WAREHOUSE.mobile_service_notification"() {
+    (new linkers.Link_SD_FLOW_WAREHOUSE()).mobile_service_notification()
+}
+
+def static "linkers.Link_SD_FLOW_WAREHOUSE.mobile_service_order"() {
+    (new linkers.Link_SD_FLOW_WAREHOUSE()).mobile_service_order()
+}
+
 def static "com.katalon.plugin.keyword.calendar.SetDateCalendarKeyword.setDate"(
     	TestObject to	
      , 	int day	
@@ -424,6 +424,10 @@ def static "com.kms.katalon.keyword.uploadfile.UploadFile.uploadFileUsingRobot"(
     (new com.kms.katalon.keyword.uploadfile.UploadFile()).uploadFileUsingRobot(
         	object
          , 	file)
+}
+
+def static "checkers.SNFNpickWH.from_warehouse_checkbox"() {
+    (new checkers.SNFNpickWH()).from_warehouse_checkbox()
 }
 
 def static "outputExcel.NotificationOutput.write"(
@@ -496,10 +500,6 @@ def static "outputExcel.NotificationOutput.writePO"(
     (new outputExcel.NotificationOutput()).writePO(
         	name
          , 	Column_Name)
-}
-
-def static "checkers.CheckBox.from_warehouse_checkbox"() {
-    (new checkers.CheckBox()).from_warehouse_checkbox()
 }
 
 def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.clickOnColumn"(
@@ -938,6 +938,50 @@ def static "dates.DatePicker.pickThisBilling"() {
     (new dates.DatePicker()).pickThisBilling()
 }
 
+def static "linkers.Link_SD_FLOW_IDless.contract"() {
+    (new linkers.Link_SD_FLOW_IDless()).contract()
+}
+
+def static "linkers.Link_SD_FLOW_IDless.offer"() {
+    (new linkers.Link_SD_FLOW_IDless()).offer()
+}
+
+def static "linkers.Link_SD_FLOW_IDless.billing_request"() {
+    (new linkers.Link_SD_FLOW_IDless()).billing_request()
+}
+
+def static "linkers.Link_SD_FLOW_IDless.billing"() {
+    (new linkers.Link_SD_FLOW_IDless()).billing()
+}
+
+def static "linkers.Link_SD_FLOW_IDless.receivables"() {
+    (new linkers.Link_SD_FLOW_IDless()).receivables()
+}
+
+def static "linkers.Link_SD_FLOW_IDless.order"() {
+    (new linkers.Link_SD_FLOW_IDless()).order()
+}
+
+def static "linkers.Link_SD_FLOW_IDless.purchase_req"() {
+    (new linkers.Link_SD_FLOW_IDless()).purchase_req()
+}
+
+def static "linkers.Link_SD_FLOW_IDless.purchase_order"() {
+    (new linkers.Link_SD_FLOW_IDless()).purchase_order()
+}
+
+def static "linkers.Link_SD_FLOW_IDless.inbound_delivery"() {
+    (new linkers.Link_SD_FLOW_IDless()).inbound_delivery()
+}
+
+def static "linkers.Link_SD_FLOW_IDless.mobile_service_notification"() {
+    (new linkers.Link_SD_FLOW_IDless()).mobile_service_notification()
+}
+
+def static "linkers.Link_SD_FLOW_IDless.mobile_service_order"() {
+    (new linkers.Link_SD_FLOW_IDless()).mobile_service_order()
+}
+
 def static "checkers.RadioButton.OwnCompany"() {
     (new checkers.RadioButton()).OwnCompany()
 }
@@ -982,48 +1026,8 @@ def static "dates.DateGenerate.dateWeekAgo"() {
     (new dates.DateGenerate()).dateWeekAgo()
 }
 
-def static "linkers.Link_SD_FLOW_VENDOR.contract"() {
-    (new linkers.Link_SD_FLOW_VENDOR()).contract()
-}
-
-def static "linkers.Link_SD_FLOW_VENDOR.offer"() {
-    (new linkers.Link_SD_FLOW_VENDOR()).offer()
-}
-
-def static "linkers.Link_SD_FLOW_VENDOR.billing_request"() {
-    (new linkers.Link_SD_FLOW_VENDOR()).billing_request()
-}
-
-def static "linkers.Link_SD_FLOW_VENDOR.billing"() {
-    (new linkers.Link_SD_FLOW_VENDOR()).billing()
-}
-
-def static "linkers.Link_SD_FLOW_VENDOR.receivables"() {
-    (new linkers.Link_SD_FLOW_VENDOR()).receivables()
-}
-
-def static "linkers.Link_SD_FLOW_VENDOR.order"() {
-    (new linkers.Link_SD_FLOW_VENDOR()).order()
-}
-
-def static "linkers.Link_SD_FLOW_VENDOR.purchase_req"() {
-    (new linkers.Link_SD_FLOW_VENDOR()).purchase_req()
-}
-
-def static "linkers.Link_SD_FLOW_VENDOR.purchase_order"() {
-    (new linkers.Link_SD_FLOW_VENDOR()).purchase_order()
-}
-
-def static "linkers.Link_SD_FLOW_VENDOR.inbound_delivery"() {
-    (new linkers.Link_SD_FLOW_VENDOR()).inbound_delivery()
-}
-
-def static "linkers.Link_SD_FLOW_VENDOR.mobile_service_notification"() {
-    (new linkers.Link_SD_FLOW_VENDOR()).mobile_service_notification()
-}
-
-def static "linkers.Link_SD_FLOW_VENDOR.mobile_service_order"() {
-    (new linkers.Link_SD_FLOW_VENDOR()).mobile_service_order()
+def static "checkers.IDlessPickWH.pick_from_warehouse_qtty"() {
+    (new checkers.IDlessPickWH()).pick_from_warehouse_qtty()
 }
 
 def static "VerifySelection.verifyPrio"() {

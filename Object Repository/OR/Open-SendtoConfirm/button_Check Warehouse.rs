@@ -9,11 +9,15 @@
          <key>XPATH</key>
          <value>/html/body/div[6]/div[1]/div/form/div[3]/div/table[1]/tbody/tr[2]/td/table/tbody/tr/td[2]/button</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[@type = 'button' and (text() = 'Check Warehouse' or . = 'Check Warehouse')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

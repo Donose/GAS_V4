@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SD FLOW_OF_0Advance_1Installment</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>40703041-7ff5-49f5-b708-c25d3a737027</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('Warehouses').getValue(1, 44)</defaultValue>
+      <description></description>
+      <id>a6b92489-a0b7-49dd-bd33-74df88e0b65d</id>
+      <masked>false</masked>
+      <name>Warehouse</name>
+   </variable>
+</TestCaseEntity>

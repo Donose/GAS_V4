@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='mainData']/table/thead/tr/th[20]/div/select</value>
+         <value>//*[@id=&quot;mainData&quot;]/table/thead/tr/th[21]/div/select/option[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
