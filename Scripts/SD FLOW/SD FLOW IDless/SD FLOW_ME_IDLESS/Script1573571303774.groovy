@@ -73,7 +73,7 @@ WebUI.setText(findTestObject('ME/Client Products/input_Quantty'), '10')
 
 WebUI.click(findTestObject('ME/Client Products/span_Select material'))
 
-WebUI.setText(findTestObject(materialSelect), findTestData('Materials').getValue(1, 23))
+WebUI.setText(findTestObject(materialSelect), findTestData('Materials').getValue(1, 1))
 
 WebUI.sendKeys(findTestObject(materialSelect), Keys.chord(Keys.ENTER))
 
