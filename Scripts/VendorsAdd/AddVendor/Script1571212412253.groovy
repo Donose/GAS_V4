@@ -25,65 +25,65 @@ for (int i = 1; i <=count; i++) {
 
     WebUI.delay(2)
 
-    WebUI.setText(findTestObject('VendorAdd/input_Company Name_inputText'), findTestData('Vendors').getValue(1, i))
+    WebUI.setText(findTestObject('VendorAdd/input_Company Name_inputText'), findTestData('null').getValue(1, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_Brand Name'), findTestData('Vendors').getValue(2, i++))
+    WebUI.setText(findTestObject('VendorAdd/input_Brand Name'), findTestData('null').getValue(2, i++))
 
-    WebUI.setText(findTestObject('VendorAdd/input_Company Email_inputText'), findTestData('Vendors').getValue(3, i))
+    WebUI.setText(findTestObject('VendorAdd/input_Company Email_inputText'), findTestData('null').getValue(3, i))
 
     WebUI.selectOptionByIndex(findTestObject('VendorAdd/select_Type'), 1, FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.setText(findTestObject('VendorAdd/input_Country'), findTestData('Vendors').getValue(5, i))
+    WebUI.setText(findTestObject('VendorAdd/input_Country'), findTestData('null').getValue(5, i))
 
     WebUI.delay(1)
 
     WebUI.sendKeys(findTestObject('VendorAdd/input_Country'), Keys.chord(Keys.ARROW_DOWN, Keys.ENTER))
 
-    WebUI.setText(findTestObject('VendorAdd/input_County'), findTestData('Vendors').getValue(6, i))
+    WebUI.setText(findTestObject('VendorAdd/input_County'), findTestData('null').getValue(6, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_City'), findTestData('Vendors').getValue(7, i))
+    WebUI.setText(findTestObject('VendorAdd/input_City'), findTestData('null').getValue(7, i))
 
     WebUI.delay(1)
 
     WebUI.sendKeys(findTestObject('VendorAdd/input_City'), Keys.chord(Keys.ARROW_DOWN, Keys.ENTER))
 
-    WebUI.setText(findTestObject('VendorAdd/input_District'), findTestData('Vendors').getValue(8, i))
+    WebUI.setText(findTestObject('VendorAdd/input_District'), findTestData('null').getValue(8, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_Street'), findTestData('Vendors').getValue(9, i))
+    WebUI.setText(findTestObject('VendorAdd/input_Street'), findTestData('null').getValue(9, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_Number'), findTestData('Vendors').getValue(10, i))
+    WebUI.setText(findTestObject('VendorAdd/input_Number'), findTestData('null').getValue(10, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_Building(Block)'), findTestData('Vendors').getValue(11, i))
+    WebUI.setText(findTestObject('VendorAdd/input_Building(Block)'), findTestData('null').getValue(11, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_Entrance'), findTestData('Vendors').getValue(12, i))
+    WebUI.setText(findTestObject('VendorAdd/input_Entrance'), findTestData('null').getValue(12, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_Floor'), findTestData('Vendors').getValue(13, i))
+    WebUI.setText(findTestObject('VendorAdd/input_Floor'), findTestData('null').getValue(13, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_Apartment(Office)'), findTestData('Vendors').getValue(14, i))
+    WebUI.setText(findTestObject('VendorAdd/input_Apartment(Office)'), findTestData('null').getValue(14, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_Post Code'), findTestData('Vendors').getValue(15, i))
+    WebUI.setText(findTestObject('VendorAdd/input_Post Code'), findTestData('null').getValue(15, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_Web Page'), findTestData('Vendors').getValue(16, i))
+    WebUI.setText(findTestObject('VendorAdd/input_Web Page'), findTestData('null').getValue(16, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_Phone'), findTestData('Vendors').getValue(17, i))
+    WebUI.setText(findTestObject('VendorAdd/input_Phone'), findTestData('null').getValue(17, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_Fax'), findTestData('Vendors').getValue(18, i))
+    WebUI.setText(findTestObject('VendorAdd/input_Fax'), findTestData('null').getValue(18, i))
 
     WebUI.selectOptionByIndex(findTestObject('VendorAdd/select_Currency'), 1)
 
-    WebUI.setText(findTestObject('VendorAdd/input_Trade Register number'), findTestData('Vendors').getValue(20, i))
+    WebUI.setText(findTestObject('VendorAdd/input_Trade Register number'), findTestData('null').getValue(20, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_Fiscal Code'), findTestData('Vendors').getValue(21, i))
+    WebUI.setText(findTestObject('VendorAdd/input_Fiscal Code'), findTestData('null').getValue(21, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_VAT Number'), findTestData('Vendors').getValue(22, i))
+    WebUI.setText(findTestObject('VendorAdd/input_VAT Number'), findTestData('null').getValue(22, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_BANK account (IBAN)'), findTestData('Vendors').getValue(23, i))
+    WebUI.setText(findTestObject('VendorAdd/input_BANK account (IBAN)'), findTestData('null').getValue(23, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_BANK_'), findTestData('Vendors').getValue(24, i))
+    WebUI.setText(findTestObject('VendorAdd/input_BANK_'), findTestData('null').getValue(24, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_BIC Code (SWIFT)'), findTestData('Vendors').getValue(25, i))
+    WebUI.setText(findTestObject('VendorAdd/input_BIC Code (SWIFT)'), findTestData('null').getValue(25, i))
 
-    WebUI.setText(findTestObject('VendorAdd/input_Agency'), findTestData('Vendors').getValue(26, i))
+    WebUI.setText(findTestObject('VendorAdd/input_Agency'), findTestData('null').getValue(26, i))
 
     WebUI.click(findTestObject('VendorAdd/button_Create'))
 

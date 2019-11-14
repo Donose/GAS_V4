@@ -86,12 +86,12 @@
       <guid>3cde458b-e89c-4b95-8547-537c58b9b411</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/SD FLOW/SD FLOW IDless/SD FLOW SO_from_WH_Vendor</testCaseId>
+      <testCaseId>Test Cases/SD FLOW/SD FLOW IDless/SD FLOW SO_from_Vendor</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>acfe2e88-3e8b-4645-86a4-cdc2c30a3000</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/SD FLOW/SD FLOW IDless/SD FLOW POR</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -106,13 +106,13 @@
    <testCaseLink>
       <guid>b86b5dd4-03b3-4edf-bdb8-d9b325426e67</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/SD FLOW/SD FLOW IDless/SD FLOW PO</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>5207deca-e6db-4c00-94cf-8671e70dd38f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/SD FLOW/SD FLOW IDless/SD FLOW ID_GI_GR</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

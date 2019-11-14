@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ID" time="114.085" tests="5" failures="0" errors="0">
+   <testsuite name="ID" tests="5" failures="0" errors="0" time="114.085" timestamp="2019-11-14 17:43:19" hostname="daniel.donose - egt-danieldonose.egt.local" id="Test Suites/ID">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191114_174316\\ID\\20191114_174316"/>
+         <property name="logFiles" value="C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191114_174316\\ID\\20191114_174316\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="daniel.donose - egt-danieldonose.egt.local"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.0.3.1"/>
+         <property name="dbServerInfo" value="PostgreSQL 9.6.10"/>
+         <property name="browser" value="Chrome 78.0.3904.97"/>
+         <property name="hostAddress" value="10.120.2.94"/>
+         <property name="sessionId" value="bfe3798d5c25db3e067cbc2cac715467"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Login/LoginAdmin" time="16.762" classname="Test Cases/Login/LoginAdmin" status="PASSED">
+         <system-out><![CDATA[2019-11-14 17:43:20 - [TEST_CASE][PASSED] - Test Cases/Login/LoginAdmin: Test Cases/Login/LoginAdmin
+
+2019-11-14 17:43:20 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-11-14 17:43:21 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-11-14 17:43:21 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-11-14 17:43:27 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-11-14 17:43:27 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-11-14 17:43:31 - [MESSAGE][PASSED] - Current window maximized
+
+2019-11-14 17:43:31 - [TEST_STEP][PASSED] - navigateToUrl(Web7TestEnv): Navigate to 'http://web7.egt-bg.ro:7955/?#!/' successfully
+
+2019-11-14 17:43:35 - [MESSAGE][PASSED] - Navigate to 'http://web7.egt-bg.ro:7955/?#!/' successfully
+
+2019-11-14 17:43:35 - [TEST_STEP][PASSED] - setText(findTestObject("Login/input_username"), "daniel.donose"): Text 'daniel.donose' is set on object 'Object Repository/Login/input_username'
+
+2019-11-14 17:43:35 - [MESSAGE][PASSED] - Text 'daniel.donose' is set on object 'Object Repository/Login/input_username'
+
+2019-11-14 17:43:35 - [TEST_STEP][PASSED] - setText(findTestObject("Login/input_password"), "11111sase"): Text '11111sase' is set on object 'Object Repository/Login/input_password'
+
+2019-11-14 17:43:36 - [MESSAGE][PASSED] - Text '11111sase' is set on object 'Object Repository/Login/input_password'
+
+2019-11-14 17:43:36 - [TEST_STEP][PASSED] - click(findTestObject("Login/button_Login")): Object: 'Object Repository/Login/button_Login' is clicked on
+
+2019-11-14 17:43:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/button_Login' is clicked on
+
+2019-11-14 17:43:36 - [TEST_STEP][NOT_RUN] - callTestCase(findTestCase("DailyRates"), [:], STOP_ON_FAILURE): NOT_RUN: callTestCase(findTestCase("DailyRates"), [:], STOP_ON_FAILURE)
+
+2019-11-14 17:43:36 - [MESSAGE][NOT_RUN] - NOT_RUN: callTestCase(findTestCase("DailyRates"), [:], STOP_ON_FAILURE)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Manual Processes/ID" time="25.789" classname="Test Cases/Manual Processes/ID" status="PASSED">
+         <system-out><![CDATA[2019-11-14 17:43:36 - [TEST_CASE][PASSED] - Test Cases/Manual Processes/ID: Test Cases/Manual Processes/ID
+
+2019-11-14 17:43:37 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("MainDashboard/Nav_Menu_Top/a_Warehouse"), 20): Object 'Object Repository/MainDashboard/Nav_Menu_Top/a_Warehouse' is visible
+
+2019-11-14 17:43:42 - [MESSAGE][PASSED] - Object 'Object Repository/MainDashboard/Nav_Menu_Top/a_Warehouse' is visible
+
+2019-11-14 17:43:42 - [TEST_STEP][PASSED] - mainDashboardSelections.Selectors.selectWHinboundAdd(): mainDashboardSelections.Selectors.selectWHinboundAdd is PASSED
+
+2019-11-14 17:43:42 - [MESSAGE][PASSED] - Object: 'Object Repository/MainDashboard/Nav_Menu_Top/a_Warehouse' is clicked on
+
+2019-11-14 17:43:43 - [MESSAGE][PASSED] - Object: 'Object Repository/MainDashboard/Nav_Menu_Top/Warehouse/a_Add Inbound Delivery' is clicked on
+
+2019-11-14 17:43:43 - [MESSAGE][PASSED] - mainDashboardSelections.Selectors.selectWHinboundAdd is PASSED
+
+2019-11-14 17:43:43 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ID/ID Manual/select_Prio"), "2", false): All options with value '2' are selected in object 'Object Repository/ID/ID Manual/select_Prio' 
+
+2019-11-14 17:43:45 - [MESSAGE][PASSED] - All options with value '2' are selected in object 'Object Repository/ID/ID Manual/select_Prio' 
+
+2019-11-14 17:43:45 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("ID/ID Manual/select_Wh"), findTestData("Warehouses").getValue(2, 6), false): All options with label 'WH Report' are selected in object 'Object Repository/ID/ID Manual/select_Wh' 
+
+2019-11-14 17:43:47 - [MESSAGE][PASSED] - All options with label 'WH Report' are selected in object 'Object Repository/ID/ID Manual/select_Wh' 
+
+2019-11-14 17:43:47 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("ID/ID Manual/select_Type"), "Provider Company", false): All options with label 'Provider Company' are selected in object 'Object Repository/ID/ID Manual/select_Type' 
+
+2019-11-14 17:43:48 - [MESSAGE][PASSED] - All options with label 'Provider Company' are selected in object 'Object Repository/ID/ID Manual/select_Type' 
+
+2019-11-14 17:43:48 - [TEST_STEP][PASSED] - click(findTestObject("ID/ID Manual/span_Select provider")): Object: 'Object Repository/ID/ID Manual/span_Select provider' is clicked on
+
+2019-11-14 17:43:49 - [MESSAGE][PASSED] - Object: 'Object Repository/ID/ID Manual/span_Select provider' is clicked on
+
+2019-11-14 17:43:49 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/input_Select provider"), findTestData("Provider Company").getValue(2, 1)): Text 'Edoardo Miroglio' is set on object 'Object Repository/ID/ID Manual/input_Select provider'
+
+2019-11-14 17:43:51 - [MESSAGE][PASSED] - Text 'Edoardo Miroglio' is set on object 'Object Repository/ID/ID Manual/input_Select provider'
+
+2019-11-14 17:43:51 - [TEST_STEP][PASSED] - sendKeys(findTestObject("ID/ID Manual/input_Select provider"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Select provider'
+
+2019-11-14 17:43:51 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Select provider'
+
+2019-11-14 17:43:51 - [TEST_STEP][PASSED] - click(findTestObject("ID/ID Manual/span_Select client")): Object: 'Object Repository/ID/ID Manual/span_Select client' is clicked on
+
+2019-11-14 17:43:53 - [MESSAGE][PASSED] - Object: 'Object Repository/ID/ID Manual/span_Select client' is clicked on
+
+2019-11-14 17:43:53 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/input_Select client"), variable): Text 'MEGA IMAGE' is set on object 'Object Repository/ID/ID Manual/input_Select client'
+
+2019-11-14 17:43:54 - [MESSAGE][PASSED] - Text 'MEGA IMAGE' is set on object 'Object Repository/ID/ID Manual/input_Select client'
+
+2019-11-14 17:43:54 - [TEST_STEP][PASSED] - sendKeys(findTestObject("ID/ID Manual/input_Select client"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Select client'
+
+2019-11-14 17:43:54 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Select client'
+
+2019-11-14 17:43:54 - [TEST_STEP][PASSED] - click(findTestObject("ID/ID Manual/span_Select_Material_ID")): Object: 'Object Repository/ID/ID Manual/span_Select_Material_ID' is clicked on
+
+2019-11-14 17:43:55 - [MESSAGE][PASSED] - Object: 'Object Repository/ID/ID Manual/span_Select_Material_ID' is clicked on
+
+2019-11-14 17:43:55 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/input_Material_ID"), findTestData("Materials").getValue(2, 1)): Text '400001' is set on object 'Object Repository/ID/ID Manual/input_Material_ID'
+
+2019-11-14 17:43:56 - [MESSAGE][PASSED] - Text '400001' is set on object 'Object Repository/ID/ID Manual/input_Material_ID'
+
+2019-11-14 17:43:56 - [TEST_STEP][PASSED] - sendKeys(findTestObject("ID/ID Manual/input_Material_ID"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Material_ID'
+
+2019-11-14 17:43:57 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Material_ID'
+
+2019-11-14 17:43:57 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/input_Qtty"), "10"): Text '10' is set on object 'Object Repository/ID/ID Manual/input_Qtty'
+
+2019-11-14 17:43:58 - [MESSAGE][PASSED] - Text '10' is set on object 'Object Repository/ID/ID Manual/input_Qtty'
+
+2019-11-14 17:43:58 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ID/ID Manual/select_Reason"), "8", false): All options with value '8' are selected in object 'Object Repository/ID/ID Manual/select_Reason' 
+
+2019-11-14 17:44:00 - [MESSAGE][PASSED] - All options with value '8' are selected in object 'Object Repository/ID/ID Manual/select_Reason' 
+
+2019-11-14 17:44:00 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ID/ID Manual/select_Acquisition_Type"), "0", false): All options with value '0' are selected in object 'Object Repository/ID/ID Manual/select_Acquisition_Type' 
+
+2019-11-14 17:44:01 - [MESSAGE][PASSED] - All options with value '0' are selected in object 'Object Repository/ID/ID Manual/select_Acquisition_Type' 
+
+2019-11-14 17:44:01 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/textarea_Comments"), "This is MANUAL ID automated"): Text 'This is MANUAL ID automated' is set on object 'Object Repository/ID/ID Manual/textarea_Comments'
+
+2019-11-14 17:44:02 - [MESSAGE][PASSED] - Text 'This is MANUAL ID automated' is set on object 'Object Repository/ID/ID Manual/textarea_Comments'
+
+2019-11-14 17:44:02 - [TEST_STEP][PASSED] - click(findTestObject("ID/ID Manual/input_Inbound Delivery_Close")): Object: 'Object Repository/ID/ID Manual/input_Inbound Delivery_Close' is clicked on
+
+2019-11-14 17:44:02 - [MESSAGE][PASSED] - Object: 'Object Repository/ID/ID Manual/input_Inbound Delivery_Close' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Manual Processes/ID" time="23.774" classname="Test Cases/Manual Processes/ID" status="PASSED">
+         <system-out><![CDATA[2019-11-14 17:44:02 - [TEST_CASE][PASSED] - Test Cases/Manual Processes/ID: Test Cases/Manual Processes/ID
+
+2019-11-14 17:44:02 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("MainDashboard/Nav_Menu_Top/a_Warehouse"), 20): Object 'Object Repository/MainDashboard/Nav_Menu_Top/a_Warehouse' is visible
+
+2019-11-14 17:44:07 - [MESSAGE][PASSED] - Object 'Object Repository/MainDashboard/Nav_Menu_Top/a_Warehouse' is visible
+
+2019-11-14 17:44:07 - [TEST_STEP][PASSED] - mainDashboardSelections.Selectors.selectWHinboundAdd(): mainDashboardSelections.Selectors.selectWHinboundAdd is PASSED
+
+2019-11-14 17:44:07 - [MESSAGE][PASSED] - Object: 'Object Repository/MainDashboard/Nav_Menu_Top/a_Warehouse' is clicked on
+
+2019-11-14 17:44:08 - [MESSAGE][PASSED] - Object: 'Object Repository/MainDashboard/Nav_Menu_Top/Warehouse/a_Add Inbound Delivery' is clicked on
+
+2019-11-14 17:44:08 - [MESSAGE][PASSED] - mainDashboardSelections.Selectors.selectWHinboundAdd is PASSED
+
+2019-11-14 17:44:08 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ID/ID Manual/select_Prio"), "2", false): All options with value '2' are selected in object 'Object Repository/ID/ID Manual/select_Prio' 
+
+2019-11-14 17:44:10 - [MESSAGE][PASSED] - All options with value '2' are selected in object 'Object Repository/ID/ID Manual/select_Prio' 
+
+2019-11-14 17:44:10 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("ID/ID Manual/select_Wh"), findTestData("Warehouses").getValue(2, 6), false): All options with label 'WH Report' are selected in object 'Object Repository/ID/ID Manual/select_Wh' 
+
+2019-11-14 17:44:11 - [MESSAGE][PASSED] - All options with label 'WH Report' are selected in object 'Object Repository/ID/ID Manual/select_Wh' 
+
+2019-11-14 17:44:11 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("ID/ID Manual/select_Type"), "Provider Company", false): All options with label 'Provider Company' are selected in object 'Object Repository/ID/ID Manual/select_Type' 
+
+2019-11-14 17:44:12 - [MESSAGE][PASSED] - All options with label 'Provider Company' are selected in object 'Object Repository/ID/ID Manual/select_Type' 
+
+2019-11-14 17:44:12 - [TEST_STEP][PASSED] - click(findTestObject("ID/ID Manual/span_Select provider")): Object: 'Object Repository/ID/ID Manual/span_Select provider' is clicked on
+
+2019-11-14 17:44:13 - [MESSAGE][PASSED] - Object: 'Object Repository/ID/ID Manual/span_Select provider' is clicked on
+
+2019-11-14 17:44:13 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/input_Select provider"), findTestData("Provider Company").getValue(2, 1)): Text 'Edoardo Miroglio' is set on object 'Object Repository/ID/ID Manual/input_Select provider'
+
+2019-11-14 17:44:14 - [MESSAGE][PASSED] - Text 'Edoardo Miroglio' is set on object 'Object Repository/ID/ID Manual/input_Select provider'
+
+2019-11-14 17:44:14 - [TEST_STEP][PASSED] - sendKeys(findTestObject("ID/ID Manual/input_Select provider"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Select provider'
+
+2019-11-14 17:44:15 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Select provider'
+
+2019-11-14 17:44:15 - [TEST_STEP][PASSED] - click(findTestObject("ID/ID Manual/span_Select client")): Object: 'Object Repository/ID/ID Manual/span_Select client' is clicked on
+
+2019-11-14 17:44:16 - [MESSAGE][PASSED] - Object: 'Object Repository/ID/ID Manual/span_Select client' is clicked on
+
+2019-11-14 17:44:16 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/input_Select client"), variable): Text 'METRO CASH & CARRY' is set on object 'Object Repository/ID/ID Manual/input_Select client'
+
+2019-11-14 17:44:18 - [MESSAGE][PASSED] - Text 'METRO CASH & CARRY' is set on object 'Object Repository/ID/ID Manual/input_Select client'
+
+2019-11-14 17:44:18 - [TEST_STEP][PASSED] - sendKeys(findTestObject("ID/ID Manual/input_Select client"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Select client'
+
+2019-11-14 17:44:18 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Select client'
+
+2019-11-14 17:44:18 - [TEST_STEP][PASSED] - click(findTestObject("ID/ID Manual/span_Select_Material_ID")): Object: 'Object Repository/ID/ID Manual/span_Select_Material_ID' is clicked on
+
+2019-11-14 17:44:19 - [MESSAGE][PASSED] - Object: 'Object Repository/ID/ID Manual/span_Select_Material_ID' is clicked on
+
+2019-11-14 17:44:19 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/input_Material_ID"), findTestData("Materials").getValue(2, 1)): Text '400001' is set on object 'Object Repository/ID/ID Manual/input_Material_ID'
+
+2019-11-14 17:44:20 - [MESSAGE][PASSED] - Text '400001' is set on object 'Object Repository/ID/ID Manual/input_Material_ID'
+
+2019-11-14 17:44:20 - [TEST_STEP][PASSED] - sendKeys(findTestObject("ID/ID Manual/input_Material_ID"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Material_ID'
+
+2019-11-14 17:44:21 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Material_ID'
+
+2019-11-14 17:44:21 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/input_Qtty"), "10"): Text '10' is set on object 'Object Repository/ID/ID Manual/input_Qtty'
+
+2019-11-14 17:44:22 - [MESSAGE][PASSED] - Text '10' is set on object 'Object Repository/ID/ID Manual/input_Qtty'
+
+2019-11-14 17:44:22 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ID/ID Manual/select_Reason"), "8", false): All options with value '8' are selected in object 'Object Repository/ID/ID Manual/select_Reason' 
+
+2019-11-14 17:44:23 - [MESSAGE][PASSED] - All options with value '8' are selected in object 'Object Repository/ID/ID Manual/select_Reason' 
+
+2019-11-14 17:44:23 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ID/ID Manual/select_Acquisition_Type"), "0", false): All options with value '0' are selected in object 'Object Repository/ID/ID Manual/select_Acquisition_Type' 
+
+2019-11-14 17:44:25 - [MESSAGE][PASSED] - All options with value '0' are selected in object 'Object Repository/ID/ID Manual/select_Acquisition_Type' 
+
+2019-11-14 17:44:25 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/textarea_Comments"), "This is MANUAL ID automated"): Text 'This is MANUAL ID automated' is set on object 'Object Repository/ID/ID Manual/textarea_Comments'
+
+2019-11-14 17:44:25 - [MESSAGE][PASSED] - Text 'This is MANUAL ID automated' is set on object 'Object Repository/ID/ID Manual/textarea_Comments'
+
+2019-11-14 17:44:25 - [TEST_STEP][PASSED] - click(findTestObject("ID/ID Manual/input_Inbound Delivery_Close")): Object: 'Object Repository/ID/ID Manual/input_Inbound Delivery_Close' is clicked on
+
+2019-11-14 17:44:26 - [MESSAGE][PASSED] - Object: 'Object Repository/ID/ID Manual/input_Inbound Delivery_Close' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Manual Processes/ID" time="23.731" classname="Test Cases/Manual Processes/ID" status="PASSED">
+         <system-out><![CDATA[2019-11-14 17:44:26 - [TEST_CASE][PASSED] - Test Cases/Manual Processes/ID: Test Cases/Manual Processes/ID
+
+2019-11-14 17:44:26 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("MainDashboard/Nav_Menu_Top/a_Warehouse"), 20): Object 'Object Repository/MainDashboard/Nav_Menu_Top/a_Warehouse' is visible
+
+2019-11-14 17:44:31 - [MESSAGE][PASSED] - Object 'Object Repository/MainDashboard/Nav_Menu_Top/a_Warehouse' is visible
+
+2019-11-14 17:44:31 - [TEST_STEP][PASSED] - mainDashboardSelections.Selectors.selectWHinboundAdd(): mainDashboardSelections.Selectors.selectWHinboundAdd is PASSED
+
+2019-11-14 17:44:31 - [MESSAGE][PASSED] - Object: 'Object Repository/MainDashboard/Nav_Menu_Top/a_Warehouse' is clicked on
+
+2019-11-14 17:44:32 - [MESSAGE][PASSED] - Object: 'Object Repository/MainDashboard/Nav_Menu_Top/Warehouse/a_Add Inbound Delivery' is clicked on
+
+2019-11-14 17:44:32 - [MESSAGE][PASSED] - mainDashboardSelections.Selectors.selectWHinboundAdd is PASSED
+
+2019-11-14 17:44:32 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ID/ID Manual/select_Prio"), "2", false): All options with value '2' are selected in object 'Object Repository/ID/ID Manual/select_Prio' 
+
+2019-11-14 17:44:34 - [MESSAGE][PASSED] - All options with value '2' are selected in object 'Object Repository/ID/ID Manual/select_Prio' 
+
+2019-11-14 17:44:34 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("ID/ID Manual/select_Wh"), findTestData("Warehouses").getValue(2, 6), false): All options with label 'WH Report' are selected in object 'Object Repository/ID/ID Manual/select_Wh' 
+
+2019-11-14 17:44:35 - [MESSAGE][PASSED] - All options with label 'WH Report' are selected in object 'Object Repository/ID/ID Manual/select_Wh' 
+
+2019-11-14 17:44:35 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("ID/ID Manual/select_Type"), "Provider Company", false): All options with label 'Provider Company' are selected in object 'Object Repository/ID/ID Manual/select_Type' 
+
+2019-11-14 17:44:36 - [MESSAGE][PASSED] - All options with label 'Provider Company' are selected in object 'Object Repository/ID/ID Manual/select_Type' 
+
+2019-11-14 17:44:36 - [TEST_STEP][PASSED] - click(findTestObject("ID/ID Manual/span_Select provider")): Object: 'Object Repository/ID/ID Manual/span_Select provider' is clicked on
+
+2019-11-14 17:44:37 - [MESSAGE][PASSED] - Object: 'Object Repository/ID/ID Manual/span_Select provider' is clicked on
+
+2019-11-14 17:44:37 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/input_Select provider"), findTestData("Provider Company").getValue(2, 1)): Text 'Edoardo Miroglio' is set on object 'Object Repository/ID/ID Manual/input_Select provider'
+
+2019-11-14 17:44:38 - [MESSAGE][PASSED] - Text 'Edoardo Miroglio' is set on object 'Object Repository/ID/ID Manual/input_Select provider'
+
+2019-11-14 17:44:38 - [TEST_STEP][PASSED] - sendKeys(findTestObject("ID/ID Manual/input_Select provider"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Select provider'
+
+2019-11-14 17:44:39 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Select provider'
+
+2019-11-14 17:44:39 - [TEST_STEP][PASSED] - click(findTestObject("ID/ID Manual/span_Select client")): Object: 'Object Repository/ID/ID Manual/span_Select client' is clicked on
+
+2019-11-14 17:44:40 - [MESSAGE][PASSED] - Object: 'Object Repository/ID/ID Manual/span_Select client' is clicked on
+
+2019-11-14 17:44:40 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/input_Select client"), variable): Text 'COMPANY TEST' is set on object 'Object Repository/ID/ID Manual/input_Select client'
+
+2019-11-14 17:44:41 - [MESSAGE][PASSED] - Text 'COMPANY TEST' is set on object 'Object Repository/ID/ID Manual/input_Select client'
+
+2019-11-14 17:44:41 - [TEST_STEP][PASSED] - sendKeys(findTestObject("ID/ID Manual/input_Select client"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Select client'
+
+2019-11-14 17:44:42 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Select client'
+
+2019-11-14 17:44:42 - [TEST_STEP][PASSED] - click(findTestObject("ID/ID Manual/span_Select_Material_ID")): Object: 'Object Repository/ID/ID Manual/span_Select_Material_ID' is clicked on
+
+2019-11-14 17:44:43 - [MESSAGE][PASSED] - Object: 'Object Repository/ID/ID Manual/span_Select_Material_ID' is clicked on
+
+2019-11-14 17:44:43 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/input_Material_ID"), findTestData("Materials").getValue(2, 1)): Text '400001' is set on object 'Object Repository/ID/ID Manual/input_Material_ID'
+
+2019-11-14 17:44:44 - [MESSAGE][PASSED] - Text '400001' is set on object 'Object Repository/ID/ID Manual/input_Material_ID'
+
+2019-11-14 17:44:44 - [TEST_STEP][PASSED] - sendKeys(findTestObject("ID/ID Manual/input_Material_ID"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Material_ID'
+
+2019-11-14 17:44:45 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Material_ID'
+
+2019-11-14 17:44:45 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/input_Qtty"), "10"): Text '10' is set on object 'Object Repository/ID/ID Manual/input_Qtty'
+
+2019-11-14 17:44:46 - [MESSAGE][PASSED] - Text '10' is set on object 'Object Repository/ID/ID Manual/input_Qtty'
+
+2019-11-14 17:44:46 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ID/ID Manual/select_Reason"), "8", false): All options with value '8' are selected in object 'Object Repository/ID/ID Manual/select_Reason' 
+
+2019-11-14 17:44:47 - [MESSAGE][PASSED] - All options with value '8' are selected in object 'Object Repository/ID/ID Manual/select_Reason' 
+
+2019-11-14 17:44:47 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ID/ID Manual/select_Acquisition_Type"), "0", false): All options with value '0' are selected in object 'Object Repository/ID/ID Manual/select_Acquisition_Type' 
+
+2019-11-14 17:44:48 - [MESSAGE][PASSED] - All options with value '0' are selected in object 'Object Repository/ID/ID Manual/select_Acquisition_Type' 
+
+2019-11-14 17:44:48 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/textarea_Comments"), "This is MANUAL ID automated"): Text 'This is MANUAL ID automated' is set on object 'Object Repository/ID/ID Manual/textarea_Comments'
+
+2019-11-14 17:44:49 - [MESSAGE][PASSED] - Text 'This is MANUAL ID automated' is set on object 'Object Repository/ID/ID Manual/textarea_Comments'
+
+2019-11-14 17:44:49 - [TEST_STEP][PASSED] - click(findTestObject("ID/ID Manual/input_Inbound Delivery_Close")): Object: 'Object Repository/ID/ID Manual/input_Inbound Delivery_Close' is clicked on
+
+2019-11-14 17:44:50 - [MESSAGE][PASSED] - Object: 'Object Repository/ID/ID Manual/input_Inbound Delivery_Close' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Manual Processes/ID" time="23.571" classname="Test Cases/Manual Processes/ID" status="PASSED">
+         <system-out><![CDATA[2019-11-14 17:44:50 - [TEST_CASE][PASSED] - Test Cases/Manual Processes/ID: Test Cases/Manual Processes/ID
+
+2019-11-14 17:44:50 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("MainDashboard/Nav_Menu_Top/a_Warehouse"), 20): Object 'Object Repository/MainDashboard/Nav_Menu_Top/a_Warehouse' is visible
+
+2019-11-14 17:44:54 - [MESSAGE][PASSED] - Object 'Object Repository/MainDashboard/Nav_Menu_Top/a_Warehouse' is visible
+
+2019-11-14 17:44:54 - [TEST_STEP][PASSED] - mainDashboardSelections.Selectors.selectWHinboundAdd(): mainDashboardSelections.Selectors.selectWHinboundAdd is PASSED
+
+2019-11-14 17:44:54 - [MESSAGE][PASSED] - Object: 'Object Repository/MainDashboard/Nav_Menu_Top/a_Warehouse' is clicked on
+
+2019-11-14 17:44:55 - [MESSAGE][PASSED] - Object: 'Object Repository/MainDashboard/Nav_Menu_Top/Warehouse/a_Add Inbound Delivery' is clicked on
+
+2019-11-14 17:44:55 - [MESSAGE][PASSED] - mainDashboardSelections.Selectors.selectWHinboundAdd is PASSED
+
+2019-11-14 17:44:55 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ID/ID Manual/select_Prio"), "2", false): All options with value '2' are selected in object 'Object Repository/ID/ID Manual/select_Prio' 
+
+2019-11-14 17:44:57 - [MESSAGE][PASSED] - All options with value '2' are selected in object 'Object Repository/ID/ID Manual/select_Prio' 
+
+2019-11-14 17:44:57 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("ID/ID Manual/select_Wh"), findTestData("Warehouses").getValue(2, 6), false): All options with label 'WH Report' are selected in object 'Object Repository/ID/ID Manual/select_Wh' 
+
+2019-11-14 17:44:58 - [MESSAGE][PASSED] - All options with label 'WH Report' are selected in object 'Object Repository/ID/ID Manual/select_Wh' 
+
+2019-11-14 17:44:58 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("ID/ID Manual/select_Type"), "Provider Company", false): All options with label 'Provider Company' are selected in object 'Object Repository/ID/ID Manual/select_Type' 
+
+2019-11-14 17:45:00 - [MESSAGE][PASSED] - All options with label 'Provider Company' are selected in object 'Object Repository/ID/ID Manual/select_Type' 
+
+2019-11-14 17:45:00 - [TEST_STEP][PASSED] - click(findTestObject("ID/ID Manual/span_Select provider")): Object: 'Object Repository/ID/ID Manual/span_Select provider' is clicked on
+
+2019-11-14 17:45:00 - [MESSAGE][PASSED] - Object: 'Object Repository/ID/ID Manual/span_Select provider' is clicked on
+
+2019-11-14 17:45:00 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/input_Select provider"), findTestData("Provider Company").getValue(2, 1)): Text 'Edoardo Miroglio' is set on object 'Object Repository/ID/ID Manual/input_Select provider'
+
+2019-11-14 17:45:02 - [MESSAGE][PASSED] - Text 'Edoardo Miroglio' is set on object 'Object Repository/ID/ID Manual/input_Select provider'
+
+2019-11-14 17:45:02 - [TEST_STEP][PASSED] - sendKeys(findTestObject("ID/ID Manual/input_Select provider"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Select provider'
+
+2019-11-14 17:45:02 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Select provider'
+
+2019-11-14 17:45:02 - [TEST_STEP][PASSED] - click(findTestObject("ID/ID Manual/span_Select client")): Object: 'Object Repository/ID/ID Manual/span_Select client' is clicked on
+
+2019-11-14 17:45:04 - [MESSAGE][PASSED] - Object: 'Object Repository/ID/ID Manual/span_Select client' is clicked on
+
+2019-11-14 17:45:04 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/input_Select client"), variable): Text 'SHOP & GO' is set on object 'Object Repository/ID/ID Manual/input_Select client'
+
+2019-11-14 17:45:05 - [MESSAGE][PASSED] - Text 'SHOP & GO' is set on object 'Object Repository/ID/ID Manual/input_Select client'
+
+2019-11-14 17:45:05 - [TEST_STEP][PASSED] - sendKeys(findTestObject("ID/ID Manual/input_Select client"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Select client'
+
+2019-11-14 17:45:05 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Select client'
+
+2019-11-14 17:45:05 - [TEST_STEP][PASSED] - click(findTestObject("ID/ID Manual/span_Select_Material_ID")): Object: 'Object Repository/ID/ID Manual/span_Select_Material_ID' is clicked on
+
+2019-11-14 17:45:06 - [MESSAGE][PASSED] - Object: 'Object Repository/ID/ID Manual/span_Select_Material_ID' is clicked on
+
+2019-11-14 17:45:06 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/input_Material_ID"), findTestData("Materials").getValue(2, 1)): Text '400001' is set on object 'Object Repository/ID/ID Manual/input_Material_ID'
+
+2019-11-14 17:45:08 - [MESSAGE][PASSED] - Text '400001' is set on object 'Object Repository/ID/ID Manual/input_Material_ID'
+
+2019-11-14 17:45:08 - [TEST_STEP][PASSED] - sendKeys(findTestObject("ID/ID Manual/input_Material_ID"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Material_ID'
+
+2019-11-14 17:45:08 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ID/ID Manual/input_Material_ID'
+
+2019-11-14 17:45:08 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/input_Qtty"), "10"): Text '10' is set on object 'Object Repository/ID/ID Manual/input_Qtty'
+
+2019-11-14 17:45:09 - [MESSAGE][PASSED] - Text '10' is set on object 'Object Repository/ID/ID Manual/input_Qtty'
+
+2019-11-14 17:45:09 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ID/ID Manual/select_Reason"), "8", false): All options with value '8' are selected in object 'Object Repository/ID/ID Manual/select_Reason' 
+
+2019-11-14 17:45:11 - [MESSAGE][PASSED] - All options with value '8' are selected in object 'Object Repository/ID/ID Manual/select_Reason' 
+
+2019-11-14 17:45:11 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ID/ID Manual/select_Acquisition_Type"), "0", false): All options with value '0' are selected in object 'Object Repository/ID/ID Manual/select_Acquisition_Type' 
+
+2019-11-14 17:45:12 - [MESSAGE][PASSED] - All options with value '0' are selected in object 'Object Repository/ID/ID Manual/select_Acquisition_Type' 
+
+2019-11-14 17:45:12 - [TEST_STEP][PASSED] - setText(findTestObject("ID/ID Manual/textarea_Comments"), "This is MANUAL ID automated"): Text 'This is MANUAL ID automated' is set on object 'Object Repository/ID/ID Manual/textarea_Comments'
+
+2019-11-14 17:45:13 - [MESSAGE][PASSED] - Text 'This is MANUAL ID automated' is set on object 'Object Repository/ID/ID Manual/textarea_Comments'
+
+2019-11-14 17:45:13 - [TEST_STEP][PASSED] - click(findTestObject("ID/ID Manual/input_Inbound Delivery_Close")): Object: 'Object Repository/ID/ID Manual/input_Inbound Delivery_Close' is clicked on
+
+2019-11-14 17:45:13 - [MESSAGE][PASSED] - Object: 'Object Repository/ID/ID Manual/input_Inbound Delivery_Close' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-11-14 17:43:19 - [TEST_SUITE][PASSED] - ID: Test Cases/Manual Processes/ID]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

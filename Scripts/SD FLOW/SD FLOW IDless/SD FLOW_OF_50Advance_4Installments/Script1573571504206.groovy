@@ -13,13 +13,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-final String waitLoad = 'Waiters/WaitLoadingAnim_Element'
-final String waitFirstButton = 'Waiters/WaitButton_Element'
-final String waitOpen = 'OF/Status Open/input_Sale Offer_Open'
+String waitLoad = 'Waiters/WaitLoadingAnim_Element'
+
+String waitFirstButton = 'Waiters/WaitButton_Element'
+
+String waitOpen = 'OF/Status Open/input_Sale Offer_Open'
 
 WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
-WebUI.waitForElementVisible(findTestObject(waitFirstButton), 20,)
+WebUI.waitForElementVisible(findTestObject(waitFirstButton), 20)
 
 CustomKeywords.'linkers.Link_SD_FLOW_IDless.offer'()
 
@@ -60,7 +62,7 @@ WebUI.selectOptionByIndex(findTestObject('OF/Status In Progress/select_Company')
 CustomKeywords.'checkers.RadioButton.Warehouse'()
 
 WebUI.selectOptionByValue(findTestObject('OF/Status In Progress/Warehouse/select_Warehouse'), findTestData('Warehouses').getValue(
-        1, 4), false)
+        1, 6), false)
 
 WebUI.click(findTestObject('OF/Status In Progress/input_Sale Offer_SendForConfirmation'))
 
