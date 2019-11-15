@@ -17,7 +17,8 @@
          <value>true</value>
       </entry>
    </properties>
-   <query>SELECT companies.company_name  FROM erp.companies</query>
+   <query>SELECT companies.company_name  FROM erp.companies
+WHERE NOT company_id = '1'</query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName></sheetName>
    <user></user>

@@ -43,7 +43,7 @@ WebUI.selectOptionByLabel(findTestObject('ME/select_me_prio'), findTestData('Dro
 
 WebUI.click(findTestObject('ME/span_Company name'))
 
-WebUI.setText(findTestObject(companyName), findTestData('Clients').getValue(1, 2), FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject(companyName), client, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.sendKeys(findTestObject(companyName), Keys.chord(Keys.ENTER))
 
@@ -73,7 +73,7 @@ WebUI.setText(findTestObject('ME/Client Products/input_Quantty'), '10')
 
 WebUI.click(findTestObject('ME/Client Products/span_Select material'))
 
-WebUI.setText(findTestObject(materialSelect), findTestData('Materials').getValue(1, 1))
+WebUI.setText(findTestObject(materialSelect), materials_noID)
 
 WebUI.sendKeys(findTestObject(materialSelect), Keys.chord(Keys.ENTER))
 

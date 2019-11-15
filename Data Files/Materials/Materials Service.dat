@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>Materials Service</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>b91c0f80-fe81-4d72-846b-f9cc48454240</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>DBData</driver>
+   <driverClassName></driverClassName>
+   <isInternalPath>false</isInternalPath>
+   <password></password>
+   <query>SELECT material_name,material_number,creation_date,f_num,s_num, material_description FROM warehouse.materials 
+WHERE material_description LIKE '%service%'
+ORDER BY material_number ASC</query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <user></user>
+   <usingGlobalDBSetting>true</usingGlobalDBSetting>
+</DataFileEntity>

@@ -41,7 +41,7 @@ WebUI.sendKeys(findTestObject('ID/ID Manual/input_Select client'), Keys.chord(Ke
 
 WebUI.click(findTestObject('ID/ID Manual/span_Select_Material_ID'))
 
-WebUI.setText(findTestObject('ID/ID Manual/input_Material_ID'), findTestData('Materials').getValue(2, 1))
+WebUI.setText(findTestObject('ID/ID Manual/input_Material_ID'), findTestData('Materials IDless').getValue(2, 1))
 
 WebUI.sendKeys(findTestObject('ID/ID Manual/input_Material_ID'), Keys.chord(Keys.ENTER))
 

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-11-15T15:50:48</date>
+  <millis>1573825848388</millis>
+  <sequence>0</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startSuite</method>
+  <thread>1</thread>
+  <message>Start Test Suite : Test Suites/SD Flow ME-GR SN FN</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="name">SD Flow ME-GR SN FN</property>
+  <property name="description"></property>
+  <property name="id">Test Suites/SD Flow ME-GR SN FN</property>
+</record>
+<record>
+  <date>2019-11-15T15:50:48</date>
+  <millis>1573825848488</millis>
+  <sequence>1</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostName = daniel.donose - egt-danieldonose.egt.local</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostName">daniel.donose - egt-danieldonose.egt.local</property>
+</record>
+<record>
+  <date>2019-11-15T15:50:48</date>
+  <millis>1573825848489</millis>
+  <sequence>2</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>os = Windows 10 64bit</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="os">Windows 10 64bit</property>
+</record>
+<record>
+  <date>2019-11-15T15:50:48</date>
+  <millis>1573825848491</millis>
+  <sequence>3</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostAddress = 10.120.2.94</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostAddress">10.120.2.94</property>
+</record>
+<record>
+  <date>2019-11-15T15:50:48</date>
+  <millis>1573825848493</millis>
+  <sequence>4</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>katalonVersion = 7.0.3.1</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="katalonVersion">7.0.3.1</property>
+</record>
+<record>
+  <date>2019-11-15T15:50:48</date>
+  <millis>1573825848499</millis>
+  <sequence>5</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>dbServerInfo = PostgreSQL 9.6.10</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="dbServerInfo">PostgreSQL 9.6.10</property>
+</record>
+<record>
+  <date>2019-11-15T15:50:50</date>
+  <millis>1573825850396</millis>
+  <sequence>6</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Login/LoginAdmin</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Login/LoginAdmin</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Login/LoginAdmin</property>
+  <property name="source">C:\\Users\\daniel.donose\\git\\GAS_V4\\Test Cases\\Login\\LoginAdmin.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>

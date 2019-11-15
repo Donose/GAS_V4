@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>SQL Processes numbers Manual ID</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>7eef1093-338c-4510-9e28-5c6427410806</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>DBData</driver>
+   <driverClassName></driverClassName>
+   <isInternalPath>false</isInternalPath>
+   <password></password>
+   <query>SELECT process_id, process_comment_text FROM erp.processes_comments WHERE processes_comments.process_comment_text LIKE '%MANUAL%' 
+ORDER BY processes_comments.process_id DESC
+LIMIT 20</query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <user></user>
+   <usingGlobalDBSetting>true</usingGlobalDBSetting>
+</DataFileEntity>

@@ -6,14 +6,18 @@
    <elementGuidId>4e5bc15e-8d1e-4054-82b2-a13e12df02e2</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//button[@type = 'button' and @data-ng-click = 'import(importMaterial)']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[126]</value>
+         <value>(//button[@type='button'])</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
@@ -34,14 +38,14 @@
       <value>btn pull-center ng-binding btn-danger </value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-ng-click</name>
       <type>Main</type>
       <value>import(importMaterial)</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>

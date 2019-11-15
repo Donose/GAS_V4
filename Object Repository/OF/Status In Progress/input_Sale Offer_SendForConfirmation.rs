@@ -6,11 +6,15 @@
    <elementGuidId>912dae2f-b959-44aa-b0c8-2fc2b54cc076</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//input[@value='Send for Confirmation']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

@@ -25,7 +25,7 @@ WebUI.delay(1)
 
 WebUI.waitForElementVisible(findTestObject('Waiters/WaitBRButton_Element'), 20)
 
-CustomKeywords.'linkers.Link_SD_FLOW_IDless.inbound_delivery'()
+CustomKeywords.'linkers.Link_SD_FLOW.inbound_delivery'()
 
 WebUI.waitForElementVisible(findTestObject('Waiters/WaitIDCheckbox_Element'), 20)
 

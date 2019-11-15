@@ -19,7 +19,7 @@ WebUI.waitForElementVisible(findTestObject('Waiters/WaitButton_Element'), 20)
 
 WebUI.waitForElementClickable(findTestObject('Waiters/WaitButton_Element'), 20)
 
-CustomKeywords.'linkers.Link_SD_FLOW_IDless.mobile_service_notification'()
+CustomKeywords.'linkers.Link_SD_FLOW.mobile_service_notification'()
 
 WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 

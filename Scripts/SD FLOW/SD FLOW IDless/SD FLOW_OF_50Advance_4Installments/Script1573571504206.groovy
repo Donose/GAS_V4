@@ -23,7 +23,7 @@ WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
 WebUI.waitForElementVisible(findTestObject(waitFirstButton), 20)
 
-CustomKeywords.'linkers.Link_SD_FLOW_IDless.offer'()
+CustomKeywords.'linkers.Link_SD_FLOW.offer'()
 
 WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
@@ -61,10 +61,11 @@ WebUI.selectOptionByIndex(findTestObject('OF/Status In Progress/select_Company')
 
 CustomKeywords.'checkers.RadioButton.Warehouse'()
 
-WebUI.selectOptionByValue(findTestObject('OF/Status In Progress/Warehouse/select_Warehouse'), findTestData('Warehouses').getValue(
-        1, 6), false)
+WebUI.selectOptionByValue(findTestObject('OF/Status In Progress/Warehouse/select_Warehouse'), warehouse, false)
 
-WebUI.click(findTestObject('OF/Status In Progress/input_Sale Offer_SendForConfirmation'))
+WebUI.scrollToElement(findTestObject('OF/input_Sale Offer'), 5)
+
+WebUI.click(findTestObject('OF/input_Sale Offer'))
 
 WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
