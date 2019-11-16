@@ -35,7 +35,7 @@ WebUI.sendKeys(findTestObject('ID/ID Manual/input_Select provider'), Keys.chord(
 
 WebUI.click(findTestObject('ID/ID Manual/span_Select client'))
 
-WebUI.setText(findTestObject('ID/ID Manual/input_Select client'), variable)
+WebUI.setText(findTestObject('ID/ID Manual/input_Select client'), client)
 
 WebUI.sendKeys(findTestObject('ID/ID Manual/input_Select client'), Keys.chord(Keys.ENTER))
 
@@ -54,4 +54,10 @@ WebUI.selectOptionByValue(findTestObject('ID/ID Manual/select_Acquisition_Type')
 WebUI.setText(findTestObject('ID/ID Manual/textarea_Comments'), 'This is MANUAL ID automated')
 
 WebUI.click(findTestObject('ID/ID Manual/input_Inbound Delivery_Close'))
+
+WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
+
+WebUI.navigateToUrl('http://web7.egt-bg.ro:7955/?#!/warehouse/inbound_deliveries')
+
+WebUI.acceptAlert()
 

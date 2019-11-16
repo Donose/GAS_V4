@@ -15,6 +15,21 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login/LoginAdmin</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>c1b081a7-bfe4-40f2-9ae2-9eed6bb4b144</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Servers</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bcde9f71-3495-49f6-a85c-d105464074e2</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>c0e96ed4-9f82-4d03-aed6-3ce75a564a55</guid>
@@ -56,7 +71,7 @@
       <guid>02bc83bb-c66e-4409-9312-3225f762236e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/SD FLOW/SD FLOW IDless/SD FLOW_OF_50Advance_4Installments</testCaseId>
+      <testCaseId>Test Cases/SD FLOW/SD FLOW IDless/OF Payment/SD FLOW_OF_50Advance_4Installments</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>b6e16d9b-1d68-4add-8c5c-6af32c00a5aa</id>

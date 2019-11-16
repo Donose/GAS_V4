@@ -12,21 +12,6 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
-    public static Object Web7Login
-     
-    /**
-     * <p></p>
-     */
-    public static Object HomeLogin
-     
-    /**
-     * <p></p>
-     */
-    public static Object WorkLogin
-     
-    /**
-     * <p></p>
-     */
     public static Object Meeting
      
     /**
@@ -69,11 +54,6 @@ public class GlobalVariable {
      */
     public static Object Purchase_order
      
-    /**
-     * <p></p>
-     */
-    public static Object Web7TestEnv
-     
 
     static {
         try {
@@ -81,9 +61,6 @@ public class GlobalVariable {
 			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
             selectedVariables += RunConfiguration.getOverridingParameters()
     
-            Web7Login = selectedVariables['Web7Login']
-            HomeLogin = selectedVariables['HomeLogin']
-            WorkLogin = selectedVariables['WorkLogin']
             Meeting = selectedVariables['Meeting']
             Offer = selectedVariables['Offer']
             Contract = selectedVariables['Contract']
@@ -93,7 +70,6 @@ public class GlobalVariable {
             Sale_Order = selectedVariables['Sale_Order']
             Purchase_req = selectedVariables['Purchase_req']
             Purchase_order = selectedVariables['Purchase_order']
-            Web7TestEnv = selectedVariables['Web7TestEnv']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
