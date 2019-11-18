@@ -40,7 +40,7 @@
          <testDataId>Data Files/Warehouses</testDataId>
       </testDataLink>
       <testDataLink>
-         <combinationType>MANY</combinationType>
+         <combinationType>ONE</combinationType>
          <id>3d38c7f5-9175-4b85-a76c-b5d8558a754c</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
