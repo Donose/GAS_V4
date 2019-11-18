@@ -15,6 +15,12 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login/LoginAdmin</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bcde9f71-3495-49f6-a85c-d105464074e2</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>e9690517-104d-42e0-a1ac-3feb1f58f388</guid>

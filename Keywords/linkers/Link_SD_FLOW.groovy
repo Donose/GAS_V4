@@ -28,7 +28,7 @@ public class Link_SD_FLOW {
 		for (int row = 0; row < rows_count; row++){
 			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('button'))
 			int columns_count = Columns_row.size()
-			println(((lookFor) + ' are ') + columns_count)
+			println(('CT-'+(lookFor) + ' are ') + columns_count)
 			for (int column = 0; column < columns_count; column++){
 				String celltext = Columns_row.get(column).getText()
 				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
@@ -52,7 +52,7 @@ public class Link_SD_FLOW {
 		for (int row = 0; row < rows_count; row++){
 			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('button'))
 			int columns_count = Columns_row.size()
-			println(((lookFor) + ' are ') + columns_count)
+			println(('OF-'+(lookFor) + ' are ') + columns_count)
 			for (int column = 0; column < columns_count; column++){
 				String celltext = Columns_row.get(column).getText()
 				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
@@ -76,7 +76,7 @@ public class Link_SD_FLOW {
 		for (int row = 0; row < rows_count; row++){
 			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('button'))
 			int columns_count = Columns_row.size()
-			println(((lookFor) + ' are ') + columns_count)
+			println(('BR-'+(lookFor) + ' are ') + columns_count)
 			for (int column = 0; column < columns_count; column++){
 				String celltext = Columns_row.get(column).getText()
 				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
@@ -100,7 +100,7 @@ public class Link_SD_FLOW {
 		for (int row = 0; row < rows_count; row++){
 			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('button'))
 			int columns_count = Columns_row.size()
-			println(((lookFor) + ' are ') + columns_count)
+			println(('BI-'+(lookFor) + ' are ') + columns_count)
 			for (int column = 0; column < columns_count; column++){
 				String celltext = Columns_row.get(column).getText()
 				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
@@ -125,7 +125,7 @@ public class Link_SD_FLOW {
 		for (int row = 0; row < rows_count; row++){
 			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('button'))
 			int columns_count = Columns_row.size()
-			println(((lookFor) + ' are ') + columns_count)
+			println(('RE-'+(lookFor) + ' are ') + columns_count)
 			for (int column = 0; column < columns_count; column++){
 				String celltext = Columns_row.get(column).getText()
 				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
@@ -149,7 +149,7 @@ public class Link_SD_FLOW {
 		for (int row = 0; row < rows_count; row++){
 			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('button'))
 			int columns_count = Columns_row.size()
-			println(((lookFor) + ' are ') + columns_count)
+			println(('OR-'+(lookFor) + ' are ') + columns_count)
 			for (int column = 0; column < columns_count; column++){
 				String celltext = Columns_row.get(column).getText()
 				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
@@ -173,7 +173,7 @@ public class Link_SD_FLOW {
 		for (int row = 0; row < rows_count; row++){
 			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('button'))
 			int columns_count = Columns_row.size()
-			println(((lookFor) + ' are ') + columns_count)
+			println(('POR-'+(lookFor) + ' are ') + columns_count)
 			for (int column = 0; column < columns_count; column++){
 				String celltext = Columns_row.get(column).getText()
 				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
@@ -197,7 +197,7 @@ public class Link_SD_FLOW {
 		for (int row = 0; row < rows_count; row++){
 			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('button'))
 			int columns_count = Columns_row.size()
-			println(((lookFor) + ' are ') + columns_count)
+			println(('PO-'+(lookFor) + ' are ') + columns_count)
 			for (int column = 0; column < columns_count; column++){
 				String celltext = Columns_row.get(column).getText()
 				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
@@ -221,7 +221,7 @@ public class Link_SD_FLOW {
 		for (int row = 0; row < rows_count; row++){
 			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('button'))
 			int columns_count = Columns_row.size()
-			println(((lookFor) + ' are ') + columns_count)
+			println(('ID-'+(lookFor) + ' are ') + columns_count)
 			for (int column = 0; column < columns_count; column++){
 				String celltext = Columns_row.get(column).getText()
 				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
@@ -245,7 +245,7 @@ public class Link_SD_FLOW {
 		for (int row = 0; row < rows_count; row++){
 			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('button'))
 			int columns_count = Columns_row.size()
-			println(((lookFor) + ' are ') + columns_count)
+			println(('MSN-'+(lookFor) + ' are ') + columns_count)
 			for (int column = 0; column < columns_count; column++){
 				String celltext = Columns_row.get(column).getText()
 				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
@@ -269,7 +269,7 @@ public class Link_SD_FLOW {
 		for (int row = 0; row < rows_count; row++){
 			List<WebElement> Columns_row = rows_table.get(row).findElements(By.tagName('button'))
 			int columns_count = Columns_row.size()
-			println(((lookFor) + ' are ') + columns_count)
+			println(('MSO-'+(lookFor) + ' are ') + columns_count)
 			for (int column = 0; column < columns_count; column++){
 				String celltext = Columns_row.get(column).getText()
 				println((((('Cell Value Of row number ' + row) + ' and column number ') + column) + ' Is ') + celltext)
