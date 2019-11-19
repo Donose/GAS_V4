@@ -61,8 +61,7 @@ WebUI.selectOptionByIndex(findTestObject('OF/Status In Progress/select_Company')
 
 CustomKeywords.'checkers.RadioButton.Warehouse'()
 
-WebUI.selectOptionByValue(findTestObject('OF/Status In Progress/Warehouse/select_Warehouse'), findTestData('Warehouses').getValue(
-        1, 4), false)
+WebUI.selectOptionByValue(findTestObject('OF/Status In Progress/Warehouse/select_Warehouse'), warehouse, false)
 
 WebUI.scrollToElement(findTestObject('OF/input_Sale Offer'), 5)
 

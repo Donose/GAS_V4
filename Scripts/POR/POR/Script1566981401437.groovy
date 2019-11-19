@@ -19,40 +19,39 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 //for (int i = 0; i = 10; i++) {
-    WebUI.waitForElementVisible(findTestObject('MainDashboard/Nav_Menu_Top/a_Purchasing'), 20)
+WebUI.waitForElementVisible(findTestObject('MainDashboard/Nav_Menu_Top/a_Purchasing'), 20)
 
-    CustomKeywords.'mainDashboardSelections.Selectors.selectPOR'()
+CustomKeywords.'mainDashboardSelections.Selectors.selectPOR'()
 
-    WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Prio'), 1)
+WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Prio'), 1)
 
-    WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Department'), 4)
+WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Department'), 4)
 
-    WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Supervisor'), 2)
+WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Supervisor'), 2)
 
-    WebUI.selectOptionByLabel(findTestObject('POR/New POR/select_wh'), warehouse, false)
+WebUI.selectOptionByLabel(findTestObject('POR/New POR/select_wh'), warehouse, false)
 
-    String dateFuture = CustomKeywords.'dates.DateGenerate.dateWeek'()
+String dateFuture = CustomKeywords.'dates.DateGenerate.dateWeek'()
 
-    WebUI.setText(findTestObject('POR/New POR/input_Deadline'), dateFuture)
+WebUI.setText(findTestObject('POR/New POR/input_Deadline'), dateFuture)
 
-    WebUI.click(findTestObject('POR/New POR/span_Select material'))
+WebUI.click(findTestObject('POR/New POR/span_Select material'))
 
-    WebUI.setText(findTestObject('POR/New POR/input_Select material'), materials)
+WebUI.setText(findTestObject('POR/New POR/input_Select material'), materials)
 
-    WebUI.delay(1)
+WebUI.delay(1)
 
-    WebUI.sendKeys(findTestObject('POR/New POR/input_Select material'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('POR/New POR/input_Select material'), Keys.chord(Keys.ENTER))
 
-    WebUI.setText(findTestObject('POR/New POR/input_QTT'), '10')
+WebUI.setText(findTestObject('POR/New POR/input_QTT'), '10')
 
-    WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Reason'), '8', FailureHandling.STOP_ON_FAILURE)
+WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Reason'), '8', FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Type'), '0', FailureHandling.STOP_ON_FAILURE)
+WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Type'), '0', FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.setText(findTestObject('POR/New POR/textarea_Comments'), 'Add POR')
+WebUI.setText(findTestObject('POR/New POR/textarea_Comments'), 'Add POR')
 
-    WebUI.click(findTestObject('POR/New POR/input_Purchase Requisition'))
+WebUI.click(findTestObject('POR/New POR/input_Purchase Requisition'))
 
-    WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
-//}
+WebUI.waitForElementNotVisible(findTestObject('Waiters/WaitLoadingAnim_Element'), 20)
 

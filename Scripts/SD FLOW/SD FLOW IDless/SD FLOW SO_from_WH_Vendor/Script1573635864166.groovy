@@ -48,12 +48,12 @@ WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
 WebUI.click(findTestObject('OR/Open-SendtoConfirm/button_Check Warehouse'))
 
-String ammount = WebUI.getText(findTestObject('OR/Open-SendtoConfirm/td_ammount'))
+Integer ammount = WebUI.getText(findTestObject('OR/Open-SendtoConfirm/td_ammount'))
 
 //String orderAmmount = String.valueOf(ammount)
-int convert = Integer.parseInt(ammount)
+//int convert = Integer.parseInt(ammount)
 
-int orderAmmount = convert / 2
+int orderAmmount = ammount / 2
 
 println('From WH will be selected: ' + orderAmmount)
 

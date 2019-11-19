@@ -12,6 +12,8 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 String waitLoad = 'Waiters/WaitLoadingAnim_Element'
 
@@ -22,6 +24,8 @@ String waitOpen = 'OF/Status Open/input_Sale Offer_Open'
 WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
 WebUI.waitForElementVisible(findTestObject(waitFirstButton), 20)
+
+WebUI.waitForElementNotVisible(findTestObject(waitLoad), 20)
 
 CustomKeywords.'linkers.Link_SD_FLOW.offer'()
 

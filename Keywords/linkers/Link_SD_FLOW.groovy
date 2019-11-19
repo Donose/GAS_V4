@@ -18,10 +18,10 @@ import internal.GlobalVariable as GlobalVariable
 public class Link_SD_FLOW {
 	@Keyword
 	def contract(){
-		DBData sqldata = findTestData('SQL Process numbers SD FLOW')
+		DBData sqldata = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW')
 		sqldata.fetchedData = sqldata.fetchData()
 		WebDriver driver = DriverFactory.getWebDriver()
-		String lookFor = findTestData('SQL Process numbers SD FLOW').getValue(3,1)
+		String lookFor = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW').getValue(3,1)
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
 		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 		int rows_count = rows_table.size
@@ -42,10 +42,10 @@ public class Link_SD_FLOW {
 	}
 	@Keyword
 	def offer(){
-		DBData sqldata = findTestData('SQL Process numbers SD FLOW')
+		DBData sqldata = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW')
 		sqldata.fetchedData = sqldata.fetchData()
 		WebDriver driver = DriverFactory.getWebDriver()
-		String lookFor = findTestData('SQL Process numbers SD FLOW').getValue(2,1)
+		String lookFor = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW').getValue(2,1)
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
 		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 		int rows_count = rows_table.size
@@ -66,10 +66,10 @@ public class Link_SD_FLOW {
 	}
 	@Keyword
 	def billing_request(){
-		DBData sqldata = findTestData('SQL Process numbers SD FLOW')
+		DBData sqldata = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW')
 		sqldata.fetchedData = sqldata.fetchData()
 		WebDriver driver = DriverFactory.getWebDriver()
-		String lookFor = findTestData('SQL Process numbers SD FLOW').getValue(4,1)
+		String lookFor = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW').getValue(4,1)
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
 		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 		int rows_count = rows_table.size
@@ -90,10 +90,10 @@ public class Link_SD_FLOW {
 	}
 	@Keyword
 	def billing(){
-		DBData sqldata = findTestData('SQL Process numbers SD FLOW')
+		DBData sqldata = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW')
 		sqldata.fetchedData = sqldata.fetchData()
 		WebDriver driver = DriverFactory.getWebDriver()
-		String lookFor = findTestData('SQL Process numbers SD FLOW').getValue(5,1)
+		String lookFor = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW').getValue(5,1)
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
 		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 		int rows_count = rows_table.size
@@ -115,10 +115,10 @@ public class Link_SD_FLOW {
 	}
 	@Keyword
 	def receivables(){
-		DBData sqldata = findTestData('SQL Process numbers SD FLOW')
+		DBData sqldata = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW')
 		sqldata.fetchedData = sqldata.fetchData()
 		WebDriver driver = DriverFactory.getWebDriver()
-		String lookFor = findTestData('SQL Process numbers SD FLOW').getValue(6,1)
+		String lookFor = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW').getValue(6,1)
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
 		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 		int rows_count = rows_table.size
@@ -139,10 +139,10 @@ public class Link_SD_FLOW {
 	}
 	@Keyword
 	def order(){
-		DBData sqldata = findTestData('SQL Process numbers SD FLOW')
+		DBData sqldata = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW')
 		sqldata.fetchedData = sqldata.fetchData()
 		WebDriver driver = DriverFactory.getWebDriver()
-		String lookFor = findTestData('SQL Process numbers SD FLOW').getValue(7,1)
+		String lookFor = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW').getValue(7,1)
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
 		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 		int rows_count = rows_table.size
@@ -163,10 +163,10 @@ public class Link_SD_FLOW {
 	}
 	@Keyword
 	def purchase_req(){
-		DBData sqldata = findTestData('SQL Process numbers SD FLOW')
+		DBData sqldata = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW')
 		sqldata.fetchedData = sqldata.fetchData()
 		WebDriver driver = DriverFactory.getWebDriver()
-		String lookFor = findTestData('SQL Process numbers SD FLOW').getValue(8,1)
+		String lookFor = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW').getValue(8,1)
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
 		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 		int rows_count = rows_table.size
@@ -187,10 +187,10 @@ public class Link_SD_FLOW {
 	}
 	@Keyword
 	def purchase_order(){
-		DBData sqldata = findTestData('SQL Process numbers SD FLOW')
+		DBData sqldata = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW')
 		sqldata.fetchedData = sqldata.fetchData()
 		WebDriver driver = DriverFactory.getWebDriver()
-		String lookFor = findTestData('SQL Process numbers SD FLOW').getValue(9,1)
+		String lookFor = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW').getValue(9,1)
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table'))
 		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 		int rows_count = rows_table.size
@@ -211,10 +211,10 @@ public class Link_SD_FLOW {
 	}
 	@Keyword
 	def inbound_delivery(){
-		DBData sqldata = findTestData('SQL Process numbers SD FLOW')
+		DBData sqldata = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW')
 		sqldata.fetchedData = sqldata.fetchData()
 		WebDriver driver = DriverFactory.getWebDriver()
-		String lookFor = findTestData('SQL Process numbers SD FLOW').getValue(10,1)
+		String lookFor = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW').getValue(10,1)
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
 		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 		int rows_count = rows_table.size
@@ -235,10 +235,10 @@ public class Link_SD_FLOW {
 	}
 	@Keyword
 	def mobile_service_notification(){
-		DBData sqldata = findTestData('SQL Process numbers SD FLOW')
+		DBData sqldata = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW')
 		sqldata.fetchedData = sqldata.fetchData()
 		WebDriver driver = DriverFactory.getWebDriver()
-		String lookFor = findTestData('SQL Process numbers SD FLOW').getValue(11,1)
+		String lookFor = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW').getValue(11,1)
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
 		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 		int rows_count = rows_table.size
@@ -259,10 +259,10 @@ public class Link_SD_FLOW {
 	}
 	@Keyword
 	def mobile_service_order(){
-		DBData sqldata = findTestData('SQL Process numbers SD FLOW')
+		DBData sqldata = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW')
 		sqldata.fetchedData = sqldata.fetchData()
 		WebDriver driver = DriverFactory.getWebDriver()
-		String lookFor = findTestData('SQL Process numbers SD FLOW').getValue(10,1)
+		String lookFor = findTestData('Data Files/SQL Process/SQL Process numbers SD FLOW').getValue(10,1)
 		WebElement Table = driver.findElement(By.xpath('//*[@id="mainData"]/table[1]/tbody'))
 		List<WebElement> rows_table = Table.findElements(By.tagName('tr'))
 		int rows_count = rows_table.size

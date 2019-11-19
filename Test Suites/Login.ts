@@ -20,7 +20,7 @@
          <id>d84ff3e2-1cc6-45a2-9b5d-82871f2c18bd</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>3</value>
+            <value>1</value>
          </iterationEntity>
          <testDataId>Data Files/Servers</testDataId>
       </testDataLink>

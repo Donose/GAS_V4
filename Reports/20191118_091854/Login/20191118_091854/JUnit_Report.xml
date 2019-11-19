@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Login" time="28.535" tests="2" failures="0" errors="0">
+   <testsuite name="Login" tests="2" failures="0" errors="0" time="28.535" timestamp="2019-11-18 09:19:00" hostname="daniel.donose - egt-danieldonose.egt.local" id="Test Suites/Login">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191118_091854\\Login\\20191118_091854"/>
+         <property name="logFiles" value="C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191118_091854\\Login\\20191118_091854\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="daniel.donose - egt-danieldonose.egt.local"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.0.3.1"/>
+         <property name="browser" value="Chrome 78.0.3904.97"/>
+         <property name="hostAddress" value="10.120.2.94"/>
+         <property name="sessionId" value="c2ec80cab88ad71575a13b7ea5460f3b"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Login/LoginAdmin" time="16.354" classname="Test Cases/Login/LoginAdmin" status="PASSED">
+         <system-out><![CDATA[2019-11-18 09:19:01 - [TEST_CASE][PASSED] - Test Cases/Login/LoginAdmin: Test Cases/Login/LoginAdmin
+
+2019-11-18 09:19:01 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-11-18 09:19:02 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-11-18 09:19:02 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-11-18 09:19:09 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-11-18 09:19:09 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-11-18 09:19:13 - [MESSAGE][PASSED] - Current window maximized
+
+2019-11-18 09:19:13 - [TEST_STEP][PASSED] - navigateToUrl(server): Navigate to 'http://web7.egt-bg.ro:7955/?#!/' successfully
+
+2019-11-18 09:19:14 - [MESSAGE][PASSED] - Navigate to 'http://web7.egt-bg.ro:7955/?#!/' successfully
+
+2019-11-18 09:19:14 - [TEST_STEP][PASSED] - setText(findTestObject("Login/input_username"), "daniel.donose"): Text 'daniel.donose' is set on object 'Object Repository/Login/input_username'
+
+2019-11-18 09:19:15 - [MESSAGE][PASSED] - Text 'daniel.donose' is set on object 'Object Repository/Login/input_username'
+
+2019-11-18 09:19:15 - [TEST_STEP][PASSED] - setText(findTestObject("Login/input_password"), "11111sase"): Text '11111sase' is set on object 'Object Repository/Login/input_password'
+
+2019-11-18 09:19:16 - [MESSAGE][PASSED] - Text '11111sase' is set on object 'Object Repository/Login/input_password'
+
+2019-11-18 09:19:16 - [TEST_STEP][PASSED] - click(findTestObject("Login/button_Login")): Object: 'Object Repository/Login/button_Login' is clicked on
+
+2019-11-18 09:19:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/button_Login' is clicked on
+
+2019-11-18 09:19:17 - [TEST_STEP][NOT_RUN] - callTestCase(findTestCase("DailyRates"), [:], STOP_ON_FAILURE): NOT_RUN: callTestCase(findTestCase("DailyRates"), [:], STOP_ON_FAILURE)
+
+2019-11-18 09:19:17 - [MESSAGE][NOT_RUN] - NOT_RUN: callTestCase(findTestCase("DailyRates"), [:], STOP_ON_FAILURE)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/DailyRates" time="11.567" classname="Test Cases/DailyRates" status="PASSED">
+         <system-out><![CDATA[2019-11-18 09:19:17 - [TEST_CASE][PASSED] - Test Cases/DailyRates: Test Cases/DailyRates
+
+2019-11-18 09:19:17 - [TEST_STEP][PASSED] - mainDashboardSelections.Selectors.selectAccDailyRates(): mainDashboardSelections.Selectors.selectAccDailyRates is PASSED
+
+2019-11-18 09:19:23 - [MESSAGE][PASSED] - Object: 'Object Repository/MainDashboard/Nav_Menu_Top/a_Accounting' is clicked on
+
+2019-11-18 09:19:25 - [MESSAGE][PASSED] - Object: 'Object Repository/MainDashboard/Nav_Menu_Top/Accounting/a_Change Daily Rates' is clicked on
+
+2019-11-18 09:19:25 - [MESSAGE][PASSED] - mainDashboardSelections.Selectors.selectAccDailyRates is PASSED
+
+2019-11-18 09:19:25 - [TEST_STEP][PASSED] - setText(findTestObject("DailyRates/input_RON"), "4.7"): Text '4.7' is set on object 'Object Repository/DailyRates/input_RON'
+
+2019-11-18 09:19:26 - [MESSAGE][PASSED] - Text '4.7' is set on object 'Object Repository/DailyRates/input_RON'
+
+2019-11-18 09:19:26 - [TEST_STEP][PASSED] - setText(findTestObject("DailyRates/input_BGN"), "2.3"): Text '2.3' is set on object 'Object Repository/DailyRates/input_BGN'
+
+2019-11-18 09:19:26 - [MESSAGE][PASSED] - Text '2.3' is set on object 'Object Repository/DailyRates/input_BGN'
+
+2019-11-18 09:19:26 - [TEST_STEP][PASSED] - setText(findTestObject("DailyRates/input_USD"), "4.4"): Text '4.4' is set on object 'Object Repository/DailyRates/input_USD'
+
+2019-11-18 09:19:27 - [MESSAGE][PASSED] - Text '4.4' is set on object 'Object Repository/DailyRates/input_USD'
+
+2019-11-18 09:19:28 - [TEST_STEP][PASSED] - click(findTestObject("DailyRates/input_Save")): Object: 'Object Repository/DailyRates/input_Save' is clicked on
+
+2019-11-18 09:19:28 - [MESSAGE][PASSED] - Object: 'Object Repository/DailyRates/input_Save' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-11-18 09:19:00 - [TEST_SUITE][PASSED] - Login: Test Cases/DailyRates]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -47,11 +47,11 @@ WebUI.setText(findTestObject(companyName), client, FailureHandling.STOP_ON_FAILU
 
 WebUI.sendKeys(findTestObject(companyName), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('ME/span_Contact name'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('ME/span_Contact name'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject(contactName), 'Ivanka Petrova')
+not_run: WebUI.setText(findTestObject(contactName), 'Ivanka Petrova')
 
-WebUI.sendKeys(findTestObject(contactName), Keys.chord(Keys.ENTER))
+not_run: WebUI.sendKeys(findTestObject(contactName), Keys.chord(Keys.ENTER))
 
 WebUI.selectOptionByValue(findTestObject('ME/select_Meeting'), findTestData('DropDowns').getValue(2, 1), false)
 
