@@ -9,6 +9,10 @@
          <key>XPATH</key>
          <value>(//input[@type='text'])[4]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'text' and @ng-model = 'product.quantity']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -34,7 +38,7 @@
       <value>form-control input-sm ng-valid ng-touched ng-dirty input-required ng-pristine ng-untouched ng-empty</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-model</name>
       <type>Main</type>

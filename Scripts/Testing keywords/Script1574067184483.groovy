@@ -17,5 +17,5 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'ammounts.ammount.multiple_materials_me'()
 
-CustomKeywords.'com.kms.katalon.keyword.uploadfile.UploadFile.uploadFile'(findTestObject(null), '')
+not_run: CustomKeywords.'com.kms.katalon.keyword.uploadfile.UploadFile.uploadFile'(findTestObject(null), '')
 

@@ -21,11 +21,11 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(server)
 
-WebUI.setText(findTestObject('Login/input_username'), 'daniel.donose')
+WebUI.setText(findTestObject('Login/input_username'), username)
 
-WebUI.setText(findTestObject('Login/input_password'), '11111sase')
+WebUI.setText(findTestObject('Login/input_password'), password)
 
 WebUI.click(findTestObject('Login/button_Login'))
 
-not_run: WebUI.callTestCase(findTestCase('DailyRates'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('DailyRates'), [:], FailureHandling.STOP_ON_FAILURE)
 

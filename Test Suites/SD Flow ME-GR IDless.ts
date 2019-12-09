@@ -15,20 +15,23 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login/LoginAdmin</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>c1b081a7-bfe4-40f2-9ae2-9eed6bb4b144</id>
-         <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
-         </iterationEntity>
-         <testDataId>Data Files/Servers</testDataId>
-      </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
          <variableId>bcde9f71-3495-49f6-a85c-d105464074e2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b3a1d02b-4320-448e-8e38-ed91be63f952</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4c9e890d-c538-4b36-9e57-7c11f7376e5f</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -76,7 +79,7 @@
    <testCaseLink>
       <guid>9b52e8b8-5787-4700-af30-7d04fa50251e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/SD FLOW/SD FLOW IDless/OF Payment/SD FLOW_OF_0Advance_1Installment</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -124,7 +127,7 @@
    <testCaseLink>
       <guid>02bc83bb-c66e-4409-9312-3225f762236e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/SD FLOW/SD FLOW IDless/OF Payment/SD FLOW_OF_50Advance_4Installments</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -157,7 +160,7 @@
    <testCaseLink>
       <guid>2c5be9ef-16f8-4f12-aae2-7db989e848ce</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/SD FLOW/SD FLOW IDless/SD FLOW_BR__BI</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -175,7 +178,7 @@
    <testCaseLink>
       <guid>90aec186-0307-4786-8c33-36cb2b8bdd3e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/SD FLOW/SD FLOW IDless/SD FLOW SO_from_WH_Vendor</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -187,7 +190,7 @@
    <testCaseLink>
       <guid>acfe2e88-3e8b-4645-86a4-cdc2c30a3000</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/SD FLOW/SD FLOW IDless/SD FLOW POR</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -202,13 +205,13 @@
    <testCaseLink>
       <guid>b86b5dd4-03b3-4edf-bdb8-d9b325426e67</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/SD FLOW/SD FLOW IDless/SD FLOW PO</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>5207deca-e6db-4c00-94cf-8671e70dd38f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/SD FLOW/SD FLOW IDless/SD FLOW ID_GI_GR</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

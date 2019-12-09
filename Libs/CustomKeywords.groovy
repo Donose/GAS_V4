@@ -9,11 +9,11 @@ import org.apache.poi.ss.usermodel.Workbook
 
 import org.apache.poi.ss.usermodel.Sheet
 
+import java.lang.Object
+
 import org.apache.poi.ss.usermodel.Cell
 
 import java.util.List
-
-import java.lang.Object
 
 import org.apache.poi.ss.usermodel.Row
 
@@ -80,10 +80,12 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelFile"(
         	filePath)
 }
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getSheetNames"(
-    	Workbook workbook	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getSheetNames(
-        	workbook)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.saveWorkbook"(
+    	String filePath	
+     , 	Workbook workbook	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).saveWorkbook(
+        	filePath
+         , 	workbook)
 }
 
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.getWorkbook"(
@@ -92,10 +94,10 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getWorkbook"(
         	filePath)
 }
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.createWorkbook"(
-    	String filePath	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createWorkbook(
-        	filePath)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheet"(
+    	Workbook workbook	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelSheet(
+        	workbook)
 }
 
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheet"(
@@ -106,42 +108,16 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheet"(
          , 	sheetName)
 }
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheet"(
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getSheetNames"(
     	Workbook workbook	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelSheet(
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getSheetNames(
         	workbook)
 }
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellByAddress"(
-    	Sheet sheet	
-     , 	String cellAddress	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellByAddress(
-        	sheet
-         , 	cellAddress)
-}
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getTableContent"(
-    	Sheet sheet	
-     , 	int startRow	
-     , 	int endRow	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getTableContent(
-        	sheet
-         , 	startRow
-         , 	endRow)
-}
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValue"(
-    	Cell cell	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValue(
-        	cell)
-}
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getDataRows"(
-    	Sheet sheet	
-     , 	java.util.List<java.lang.Integer> rowIndexs	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getDataRows(
-        	sheet
-         , 	rowIndexs)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.createWorkbook"(
+    	String filePath	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createWorkbook(
+        	filePath)
 }
 
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheet"(
@@ -172,22 +148,6 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheet"(
          , 	sheetName)
 }
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.locateCell"(
-    	Sheet sheet	
-     , 	Object cellContent	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).locateCell(
-        	sheet
-         , 	cellContent)
-}
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.saveWorkbook"(
-    	String filePath	
-     , 	Workbook workbook	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).saveWorkbook(
-        	filePath
-         , 	workbook)
-}
-
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellByIndex"(
     	Sheet sheet	
      , 	int rowIdx	
@@ -198,14 +158,44 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellByIndex"(
          , 	colIdx)
 }
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoExcels"(
-    	Workbook workbook1	
-     , 	Workbook workbook2	
-     , 	boolean isValueOnly	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoExcels(
-        	workbook1
-         , 	workbook2
-         , 	isValueOnly)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.locateCell"(
+    	Sheet sheet	
+     , 	Object cellContent	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).locateCell(
+        	sheet
+         , 	cellContent)
+}
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellByAddress"(
+    	Sheet sheet	
+     , 	String cellAddress	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellByAddress(
+        	sheet
+         , 	cellAddress)
+}
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValue"(
+    	Cell cell	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValue(
+        	cell)
+}
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getTableContent"(
+    	Sheet sheet	
+     , 	int startRow	
+     , 	int endRow	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getTableContent(
+        	sheet
+         , 	startRow
+         , 	endRow)
+}
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getDataRows"(
+    	Sheet sheet	
+     , 	java.util.List<java.lang.Integer> rowIndexs	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getDataRows(
+        	sheet
+         , 	rowIndexs)
 }
 
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoExcels"(
@@ -214,6 +204,16 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoExcels"(
     (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoExcels(
         	workbook1
          , 	workbook2)
+}
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoExcels"(
+    	Workbook workbook1	
+     , 	Workbook workbook2	
+     , 	boolean isValueOnly	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoExcels(
+        	workbook1
+         , 	workbook2
+         , 	isValueOnly)
 }
 
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoSheets"(
@@ -234,32 +234,6 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoSheets"(
          , 	isValueOnly)
 }
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoRows"(
-    	Row row1	
-     , 	Row row2	
-     , 	boolean isValueOnly	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoRows(
-        	row1
-         , 	row2
-         , 	isValueOnly)
-}
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoRows"(
-    	Row row1	
-     , 	Row row2	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoRows(
-        	row1
-         , 	row2)
-}
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoCells"(
-    	Cell cell1	
-     , 	Cell cell2	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoCells(
-        	cell1
-         , 	cell2)
-}
-
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoCells"(
     	Cell cell1	
      , 	Cell cell2	
@@ -270,72 +244,30 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoCells"(
          , 	isValueOnly)
 }
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValueByAddress"(
-    	Sheet sheet	
-     , 	String cellAddress	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValueByAddress(
-        	sheet
-         , 	cellAddress)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoCells"(
+    	Cell cell1	
+     , 	Cell cell2	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoCells(
+        	cell1
+         , 	cell2)
 }
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getColumnsByIndex"(
-    	Sheet sheet	
-     , 	java.util.List<java.lang.Integer> columnIndexes	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getColumnsByIndex(
-        	sheet
-         , 	columnIndexes)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoRows"(
+    	Row row1	
+     , 	Row row2	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoRows(
+        	row1
+         , 	row2)
 }
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheets"(
-    	Workbook workbook	
-     , 	java.util.List<String> sheetNames	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelSheets(
-        	workbook
-         , 	sheetNames)
-}
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheetByName"(
-    	String filePath	
-     , 	String sheetName	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getExcelSheetByName(
-        	filePath
-         , 	sheetName)
-}
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByAddress"(
-    	Sheet sheet	
-     , 	String cellAddress	
-     , 	Object value	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).setValueToCellByAddress(
-        	sheet
-         , 	cellAddress
-         , 	value)
-}
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellIndexByAddress"(
-    	Sheet sheet	
-     , 	String cellAddress	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellIndexByAddress(
-        	sheet
-         , 	cellAddress)
-}
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByAddresses"(
-    	Sheet sheet	
-     , 	Map content	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).setValueToCellByAddresses(
-        	sheet
-         , 	content)
-}
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getRowIndexByCellContent"(
-    	Sheet sheet	
-     , 	String cellContent	
-     , 	int columnIdxForCell	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getRowIndexByCellContent(
-        	sheet
-         , 	cellContent
-         , 	columnIdxForCell)
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.compareTwoRows"(
+    	Row row1	
+     , 	Row row2	
+     , 	boolean isValueOnly	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).compareTwoRows(
+        	row1
+         , 	row2
+         , 	isValueOnly)
 }
 
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.getMapOfKeyValueRows"(
@@ -348,6 +280,34 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getMapOfKeyValueRows"(
          , 	valueRowIdx)
 }
 
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.createExcelSheets"(
+    	Workbook workbook	
+     , 	java.util.List<String> sheetNames	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).createExcelSheets(
+        	workbook
+         , 	sheetNames)
+}
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByAddress"(
+    	Sheet sheet	
+     , 	String cellAddress	
+     , 	Object value	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).setValueToCellByAddress(
+        	sheet
+         , 	cellAddress
+         , 	value)
+}
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValueByIndex"(
+    	Sheet sheet	
+     , 	int rowIdx	
+     , 	int colIdx	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValueByIndex(
+        	sheet
+         , 	rowIdx
+         , 	colIdx)
+}
+
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValueByRangeAddress"(
     	Sheet sheet	
      , 	String topLeftAddress	
@@ -356,6 +316,60 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValueByRangeAddre
         	sheet
          , 	topLeftAddress
          , 	rightBottomAddress)
+}
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getExcelSheetByName"(
+    	String filePath	
+     , 	String sheetName	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getExcelSheetByName(
+        	filePath
+         , 	sheetName)
+}
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellIndexByAddress"(
+    	Sheet sheet	
+     , 	String cellAddress	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellIndexByAddress(
+        	sheet
+         , 	cellAddress)
+}
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByIndex"(
+    	Sheet sheet	
+     , 	int rowIndex	
+     , 	int colIndex	
+     , 	Object value	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).setValueToCellByIndex(
+        	sheet
+         , 	rowIndex
+         , 	colIndex
+         , 	value)
+}
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByAddresses"(
+    	Sheet sheet	
+     , 	Map content	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).setValueToCellByAddresses(
+        	sheet
+         , 	content)
+}
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValueByAddress"(
+    	Sheet sheet	
+     , 	String cellAddress	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValueByAddress(
+        	sheet
+         , 	cellAddress)
+}
+
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getRowIndexByCellContent"(
+    	Sheet sheet	
+     , 	String cellContent	
+     , 	int columnIdxForCell	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getRowIndexByCellContent(
+        	sheet
+         , 	cellContent
+         , 	columnIdxForCell)
 }
 
 def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValuesByRangeIndexes"(
@@ -372,26 +386,12 @@ def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValuesByRangeInde
          , 	colInd2)
 }
 
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.getCellValueByIndex"(
+def static "com.kms.katalon.keyword.excel.ExcelKeywords.getColumnsByIndex"(
     	Sheet sheet	
-     , 	int rowIdx	
-     , 	int colIdx	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getCellValueByIndex(
+     , 	java.util.List<java.lang.Integer> columnIndexes	) {
+    (new com.kms.katalon.keyword.excel.ExcelKeywords()).getColumnsByIndex(
         	sheet
-         , 	rowIdx
-         , 	colIdx)
-}
-
-def static "com.kms.katalon.keyword.excel.ExcelKeywords.setValueToCellByIndex"(
-    	Sheet sheet	
-     , 	int rowIndex	
-     , 	int colIndex	
-     , 	Object value	) {
-    (new com.kms.katalon.keyword.excel.ExcelKeywords()).setValueToCellByIndex(
-        	sheet
-         , 	rowIndex
-         , 	colIndex
-         , 	value)
+         , 	columnIndexes)
 }
 
 def static "com.katalon.plugin.keyword.calendar.SetDateCalendarKeyword.setDate"(
@@ -552,30 +552,124 @@ def static "linkers.Link_SD_FLOW.mobile_service_order"() {
 
 def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.clickOnColumn"(
     	WebElement table	
-     , 	String columnHeader	) {
+     , 	String columnHeader	
+     , 	FailureHandling flowControl	) {
     (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).clickOnColumn(
         	table
-         , 	columnHeader)
+         , 	columnHeader
+         , 	flowControl)
 }
 
 def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.clickOnColumn"(
     	WebElement table	
+     , 	String columnHeader	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).clickOnColumn(
+        	table
+         , 	columnHeader)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getCellsValueByColumnHeader"(
+    	WebElement table	
+     , 	String columnHeader	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getCellsValueByColumnHeader(
+        	table
+         , 	columnHeader)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getCellsValueByColumnHeader"(
+    	WebElement table	
      , 	String columnHeader	
      , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).clickOnColumn(
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getCellsValueByColumnHeader(
         	table
          , 	columnHeader
          , 	flowControl)
 }
 
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnIndexByHeader"(
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByHeaderAndCellsInfo"(
     	WebElement table	
      , 	String columnHeader	
+     , 	Map cellsInfo	
      , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getColumnIndexByHeader(
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByHeaderAndCellsInfo(
         	table
          , 	columnHeader
+         , 	cellsInfo
          , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByHeaderAndCellsInfo"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	Map cellsInfo	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByHeaderAndCellsInfo(
+        	table
+         , 	columnHeader
+         , 	cellsInfo)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByIndexes"(
+    	WebElement table	
+     , 	int columnIndex	
+     , 	int rowIndex	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByIndexes(
+        	table
+         , 	columnIndex
+         , 	rowIndex)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByIndexes"(
+    	WebElement table	
+     , 	int columnIndex	
+     , 	int rowIndex	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByIndexes(
+        	table
+         , 	columnIndex
+         , 	rowIndex
+         , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyRowDisplayed"(
+    	WebElement table	
+     , 	Map cellsInfo	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyRowDisplayed(
+        	table
+         , 	cellsInfo
+         , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyRowDisplayed"(
+    	WebElement table	
+     , 	Map cellsInfo	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyRowDisplayed(
+        	table
+         , 	cellsInfo)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyTableByColumnHeaders"(
+    	java.util.List<String> columnHeaders	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyTableByColumnHeaders(
+        	columnHeaders)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyTableByColumnHeaders"(
+    	java.util.List<String> columnHeaders	
+     , 	int timeout	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyTableByColumnHeaders(
+        	columnHeaders
+         , 	timeout
+         , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyTableByColumnHeaders"(
+    	java.util.List<String> columnHeaders	
+     , 	int timeout	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyTableByColumnHeaders(
+        	columnHeaders
+         , 	timeout)
 }
 
 def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnIndexByHeader"(
@@ -586,18 +680,32 @@ def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnInd
          , 	columnHeader)
 }
 
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyCellPresentWithText"(
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnIndexByHeader"(
     	WebElement table	
      , 	String columnHeader	
-     , 	String text	
-     , 	CellTextOptions textOption	
-     , 	CompareOptions compareOption	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyCellPresentWithText(
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getColumnIndexByHeader(
         	table
          , 	columnHeader
-         , 	text
-         , 	textOption
-         , 	compareOption)
+         , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getRowIndexByCellsInfo"(
+    	WebElement table	
+     , 	Map cellsInfo	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getRowIndexByCellsInfo(
+        	table
+         , 	cellsInfo
+         , 	flowControl)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getRowIndexByCellsInfo"(
+    	WebElement table	
+     , 	Map cellsInfo	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getRowIndexByCellsInfo(
+        	table
+         , 	cellsInfo)
 }
 
 def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyCellPresentWithText"(
@@ -630,156 +738,26 @@ def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyCellPr
     	WebElement table	
      , 	String columnHeader	
      , 	String text	
+     , 	CellTextOptions textOption	
+     , 	CompareOptions compareOption	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyCellPresentWithText(
+        	table
+         , 	columnHeader
+         , 	text
+         , 	textOption
+         , 	compareOption)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyCellPresentWithText"(
+    	WebElement table	
+     , 	String columnHeader	
+     , 	String text	
      , 	CellTextOptions textOption	) {
     (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyCellPresentWithText(
         	table
          , 	columnHeader
          , 	text
          , 	textOption)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyTableByColumnHeaders"(
-    	java.util.List<String> columnHeaders	
-     , 	int timeout	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyTableByColumnHeaders(
-        	columnHeaders
-         , 	timeout
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyTableByColumnHeaders"(
-    	java.util.List<String> columnHeaders	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyTableByColumnHeaders(
-        	columnHeaders)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyTableByColumnHeaders"(
-    	java.util.List<String> columnHeaders	
-     , 	int timeout	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyTableByColumnHeaders(
-        	columnHeaders
-         , 	timeout)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByIndexes"(
-    	WebElement table	
-     , 	int columnIndex	
-     , 	int rowIndex	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByIndexes(
-        	table
-         , 	columnIndex
-         , 	rowIndex
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByIndexes"(
-    	WebElement table	
-     , 	int columnIndex	
-     , 	int rowIndex	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByIndexes(
-        	table
-         , 	columnIndex
-         , 	rowIndex)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnIndexByAttribute"(
-    	WebElement table	
-     , 	String attribute	
-     , 	String value	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getColumnIndexByAttribute(
-        	table
-         , 	attribute
-         , 	value
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnIndexByAttribute"(
-    	WebElement table	
-     , 	String attribute	
-     , 	String value	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getColumnIndexByAttribute(
-        	table
-         , 	attribute
-         , 	value)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyRowDisplayed"(
-    	WebElement table	
-     , 	Map cellsInfo	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyRowDisplayed(
-        	table
-         , 	cellsInfo
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.verifyRowDisplayed"(
-    	WebElement table	
-     , 	Map cellsInfo	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).verifyRowDisplayed(
-        	table
-         , 	cellsInfo)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByHeaderAndCellsInfo"(
-    	WebElement table	
-     , 	String columnHeader	
-     , 	Map cellsInfo	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByHeaderAndCellsInfo(
-        	table
-         , 	columnHeader
-         , 	cellsInfo)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByHeaderAndCellsInfo"(
-    	WebElement table	
-     , 	String columnHeader	
-     , 	Map cellsInfo	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).identifyCellByHeaderAndCellsInfo(
-        	table
-         , 	columnHeader
-         , 	cellsInfo
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getCellsValueByColumnHeader"(
-    	WebElement table	
-     , 	String columnHeader	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getCellsValueByColumnHeader(
-        	table
-         , 	columnHeader)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getCellsValueByColumnHeader"(
-    	WebElement table	
-     , 	String columnHeader	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getCellsValueByColumnHeader(
-        	table
-         , 	columnHeader
-         , 	flowControl)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getRowIndexByCellsInfo"(
-    	WebElement table	
-     , 	Map cellsInfo	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getRowIndexByCellsInfo(
-        	table
-         , 	cellsInfo)
-}
-
-def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getRowIndexByCellsInfo"(
-    	WebElement table	
-     , 	Map cellsInfo	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getRowIndexByCellsInfo(
-        	table
-         , 	cellsInfo
-         , 	flowControl)
 }
 
 def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCellByValueAndColHeader"(
@@ -804,6 +782,28 @@ def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.identifyCell
          , 	flowControl)
 }
 
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnIndexByAttribute"(
+    	WebElement table	
+     , 	String attribute	
+     , 	String value	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getColumnIndexByAttribute(
+        	table
+         , 	attribute
+         , 	value)
+}
+
+def static "kms.turing.katalon.plugins.helper.table.HTMLTableHelper.getColumnIndexByAttribute"(
+    	WebElement table	
+     , 	String attribute	
+     , 	String value	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.helper.table.HTMLTableHelper()).getColumnIndexByAttribute(
+        	table
+         , 	attribute
+         , 	value
+         , 	flowControl)
+}
+
 def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getDayOfWeek"(
     	String date	
      , 	String dateFormat	) {
@@ -820,8 +820,52 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getDuration"(
          , 	endTime)
 }
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getDefaultTimeZone"() {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getDefaultTimeZone()
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentDate"() {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentDate()
+}
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentYear"() {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentYear()
+}
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPastTime"(
+    	int hrs	
+     , 	int minute	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getPastTime(
+        	hrs
+         , 	minute)
+}
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentMonth"() {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentMonth()
+}
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getFutureTime"(
+    	int hrs	
+     , 	int minute	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getFutureTime(
+        	hrs
+         , 	minute)
+}
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.addDays"(
+    	String stringDate	
+     , 	String dateFormat	
+     , 	int amount	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).addDays(
+        	stringDate
+         , 	dateFormat
+         , 	amount)
+}
+
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.formatStringDate"(
+    	String value	
+     , 	String currentFormat	
+     , 	String newFormat	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).formatStringDate(
+        	value
+         , 	currentFormat
+         , 	newFormat)
 }
 
 def static "com.kms.katalon.keyword.datetime.DateTimeUtility.setDefaultTimeZone"(
@@ -838,6 +882,14 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentDateTime"
          , 	dateTimeFormat)
 }
 
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.convertString2Date"(
+    	String value	
+     , 	String dateTimeFormat	) {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).convertString2Date(
+        	value
+         , 	dateTimeFormat)
+}
+
 def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPreviousDateTime"(
     	int noOfDays	
      , 	String timeZoneId	
@@ -845,14 +897,6 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPreviousDateTime
     (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getPreviousDateTime(
         	noOfDays
          , 	timeZoneId
-         , 	dateTimeFormat)
-}
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.convertString2Date"(
-    	String value	
-     , 	String dateTimeFormat	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).convertString2Date(
-        	value
          , 	dateTimeFormat)
 }
 
@@ -866,52 +910,8 @@ def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getFutureDateTime"(
          , 	dateTimeFormat)
 }
 
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getPastTime"(
-    	int hrs	
-     , 	int minute	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getPastTime(
-        	hrs
-         , 	minute)
-}
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.formatStringDate"(
-    	String value	
-     , 	String currentFormat	
-     , 	String newFormat	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).formatStringDate(
-        	value
-         , 	currentFormat
-         , 	newFormat)
-}
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentDate"() {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentDate()
-}
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentYear"() {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentYear()
-}
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getCurrentMonth"() {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getCurrentMonth()
-}
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.addDays"(
-    	String stringDate	
-     , 	String dateFormat	
-     , 	int amount	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).addDays(
-        	stringDate
-         , 	dateFormat
-         , 	amount)
-}
-
-def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getFutureTime"(
-    	int hrs	
-     , 	int minute	) {
-    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getFutureTime(
-        	hrs
-         , 	minute)
+def static "com.kms.katalon.keyword.datetime.DateTimeUtility.getDefaultTimeZone"() {
+    (new com.kms.katalon.keyword.datetime.DateTimeUtility()).getDefaultTimeZone()
 }
 
 def static "ammounts.ammount.multiple_materials_me"() {

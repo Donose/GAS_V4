@@ -129,6 +129,11 @@
 			<attribute name="javadoc_location" value="file:/C:/Katalon_Studio_Windows_64-7.0.3/configuration/resources/apidocs/com.kms.katalon.core.windows/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Katalon_Studio_Windows_64-7.0.3/configuration/plugin/install/30773/1.0.1/katalon-studio-htmltable-custom-keywords-plugin.jar"/>
+	<classpathentry kind="lib" path="C:/Katalon_Studio_Windows_64-7.0.3/configuration/plugin/install/29661/1.0.0/katalon-studio-uploadfile-plugin.jar"/>
+	<classpathentry kind="lib" path="C:/Katalon_Studio_Windows_64-7.0.3/configuration/plugin/install/27616/1.0.3/calendar-plugin.jar"/>
+	<classpathentry kind="lib" path="C:/Katalon_Studio_Windows_64-7.0.3/configuration/plugin/install/27615/1.0.0/katalon-studio-datetime-plugin.jar"/>
+	<classpathentry kind="lib" path="C:/Katalon_Studio_Windows_64-7.0.3/configuration/plugin/install/20366/1.0.2/ExcelKeywords.jar"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

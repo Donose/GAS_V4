@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>(//input[@type='text'])[23]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'text' and @ng-disabled = '!importMaterial.material_id']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -48,7 +52,7 @@
       <value>formData.purchase_request_status != STATUSES['CLOSED']</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ng-disabled</name>
       <type>Main</type>

@@ -17,6 +17,8 @@ import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 //for (int i = 0; i = 10; i++) {
 WebUI.waitForElementVisible(findTestObject('MainDashboard/Nav_Menu_Top/a_Purchasing'), 20)
@@ -43,11 +45,11 @@ WebUI.delay(1)
 
 WebUI.sendKeys(findTestObject('POR/New POR/input_Select material'), Keys.chord(Keys.ENTER))
 
-WebUI.setText(findTestObject('POR/New POR/input_QTT'), '10')
+WebUI.setText(findTestObject('POR/New POR/input_QTT'), '1000')
 
-WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Reason'), '8', FailureHandling.STOP_ON_FAILURE)
+WebUI.selectOptionByValue(findTestObject('POR/New POR/select_Reason'), '4', false)
 
-WebUI.selectOptionByIndex(findTestObject('POR/New POR/select_Type'), '0', FailureHandling.STOP_ON_FAILURE)
+WebUI.selectOptionByValue(findTestObject('POR/New POR/select_Type'), '0', false)
 
 WebUI.setText(findTestObject('POR/New POR/textarea_Comments'), 'Add POR')
 

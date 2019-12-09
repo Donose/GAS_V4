@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="SD Flow ME-GR IDless" time="113.268" tests="5" failures="0" errors="0">
+   <testsuite name="SD Flow ME-GR IDless" tests="5" failures="0" errors="0" time="113.268" timestamp="2019-11-27 11:00:38" hostname="daniel.donose - egt-danieldonose.egt.local" id="Test Suites/SD Flow ME-GR IDless">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191127_110035\\SD Flow ME-GR IDless\\20191127_110035"/>
+         <property name="logFiles" value="C:\\Users\\daniel.donose\\git\\GAS_V4\\Reports\\20191127_110035\\SD Flow ME-GR IDless\\20191127_110035\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="daniel.donose - egt-danieldonose.egt.local"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.0.3.1"/>
+         <property name="dbServerInfo" value="PostgreSQL 9.6.10"/>
+         <property name="browser" value="Chrome 78.0.3904.97"/>
+         <property name="hostAddress" value="10.120.2.94"/>
+         <property name="sessionId" value="870814f985a342d040aa95a31387aaf0"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Login/LoginAdmin" time="14.835" classname="Test Cases/Login/LoginAdmin" status="PASSED">
+         <system-out><![CDATA[2019-11-27 11:00:39 - [TEST_CASE][PASSED] - Test Cases/Login/LoginAdmin: Test Cases/Login/LoginAdmin
+
+2019-11-27 11:00:40 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-11-27 11:00:40 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-11-27 11:00:40 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-11-27 11:00:47 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-11-27 11:00:47 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2019-11-27 11:00:51 - [MESSAGE][PASSED] - Current window maximized
+
+2019-11-27 11:00:51 - [TEST_STEP][PASSED] - navigateToUrl(server): Navigate to 'http://web7.egt-bg.ro:7955/?#!/' successfully
+
+2019-11-27 11:00:52 - [MESSAGE][PASSED] - Navigate to 'http://web7.egt-bg.ro:7955/?#!/' successfully
+
+2019-11-27 11:00:52 - [TEST_STEP][PASSED] - setText(findTestObject("Login/input_username"), "daniel.donose"): Text 'daniel.donose' is set on object 'Object Repository/Login/input_username'
+
+2019-11-27 11:00:53 - [MESSAGE][PASSED] - Text 'daniel.donose' is set on object 'Object Repository/Login/input_username'
+
+2019-11-27 11:00:53 - [TEST_STEP][PASSED] - setText(findTestObject("Login/input_password"), "11111sase"): Text '11111sase' is set on object 'Object Repository/Login/input_password'
+
+2019-11-27 11:00:53 - [MESSAGE][PASSED] - Text '11111sase' is set on object 'Object Repository/Login/input_password'
+
+2019-11-27 11:00:53 - [TEST_STEP][PASSED] - click(findTestObject("Login/button_Login")): Object: 'Object Repository/Login/button_Login' is clicked on
+
+2019-11-27 11:00:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/button_Login' is clicked on
+
+2019-11-27 11:00:54 - [TEST_STEP][NOT_RUN] - callTestCase(findTestCase("DailyRates"), [:], STOP_ON_FAILURE): NOT_RUN: callTestCase(findTestCase("DailyRates"), [:], STOP_ON_FAILURE)
+
+2019-11-27 11:00:54 - [MESSAGE][NOT_RUN] - NOT_RUN: callTestCase(findTestCase("DailyRates"), [:], STOP_ON_FAILURE)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW/SD FLOW IDless/SD FLOW_ME_IDLESS" time="33.178" classname="Test Cases/SD FLOW/SD FLOW IDless/SD FLOW_ME_IDLESS" status="PASSED">
+         <system-out><![CDATA[2019-11-27 11:00:54 - [TEST_CASE][PASSED] - Test Cases/SD FLOW/SD FLOW IDless/SD FLOW_ME_IDLESS: Test Cases/SD FLOW/SD FLOW IDless/SD FLOW_ME_IDLESS
+
+2019-11-27 11:00:54 - [TEST_STEP][PASSED] - pathWait = "/Waiters/WaitLoadingAnim_Element": null
+
+2019-11-27 11:00:54 - [TEST_STEP][PASSED] - companyName = "ME/input_Company name": null
+
+2019-11-27 11:00:54 - [TEST_STEP][PASSED] - contactName = "ME/input_Contact name": null
+
+2019-11-27 11:00:54 - [TEST_STEP][PASSED] - materialSelect = "ME/Client Products/input_Materials": null
+
+2019-11-27 11:00:54 - [TEST_STEP][PASSED] - meetingButton = "ME/button_Create Offer": null
+
+2019-11-27 11:00:54 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("MainDashboard/Nav_Menu_Top/a_SD"), 10): Object 'Object Repository/MainDashboard/Nav_Menu_Top/a_SD' is visible
+
+2019-11-27 11:01:00 - [MESSAGE][PASSED] - Object 'Object Repository/MainDashboard/Nav_Menu_Top/a_SD' is visible
+
+2019-11-27 11:01:00 - [TEST_STEP][PASSED] - mainDashboardSelections.Selectors.selectSDMeeting(): mainDashboardSelections.Selectors.selectSDMeeting is PASSED
+
+2019-11-27 11:01:00 - [MESSAGE][PASSED] - Object: 'Object Repository/MainDashboard/Nav_Menu_Top/a_SD' is clicked on
+
+2019-11-27 11:01:01 - [MESSAGE][PASSED] - Object: 'Object Repository/MainDashboard/Nav_Menu_Top/SD/a_Add New Meeting' is clicked on
+
+2019-11-27 11:01:01 - [MESSAGE][PASSED] - mainDashboardSelections.Selectors.selectSDMeeting is PASSED
+
+2019-11-27 11:01:01 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(pathWait), 20): Object 'Object Repository//Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:01:02 - [MESSAGE][PASSED] - Object 'Object Repository//Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:01:02 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2019-11-27 11:01:07 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2019-11-27 11:01:07 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("ME/select_me_prio"), findTestData("DropDowns").getValue(1, 1), false): All options with label 'Low' are selected in object 'Object Repository/ME/select_me_prio' 
+
+2019-11-27 11:01:08 - [MESSAGE][PASSED] - All options with label 'Low' are selected in object 'Object Repository/ME/select_me_prio' 
+
+2019-11-27 11:01:08 - [TEST_STEP][PASSED] - click(findTestObject("ME/span_Company name")): Object: 'Object Repository/ME/span_Company name' is clicked on
+
+2019-11-27 11:01:09 - [MESSAGE][PASSED] - Object: 'Object Repository/ME/span_Company name' is clicked on
+
+2019-11-27 11:01:09 - [TEST_STEP][PASSED] - setText(findTestObject(companyName), client, STOP_ON_FAILURE): Text 'COMPANY TEST' is set on object 'Object Repository/ME/input_Company name'
+
+2019-11-27 11:01:10 - [MESSAGE][PASSED] - Text 'COMPANY TEST' is set on object 'Object Repository/ME/input_Company name'
+
+2019-11-27 11:01:10 - [TEST_STEP][PASSED] - sendKeys(findTestObject(companyName), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ME/input_Company name'
+
+2019-11-27 11:01:11 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ME/input_Company name'
+
+2019-11-27 11:01:11 - [TEST_STEP][NOT_RUN] - click(findTestObject("ME/span_Contact name"), STOP_ON_FAILURE): NOT_RUN: click(findTestObject("ME/span_Contact name"), STOP_ON_FAILURE)
+
+2019-11-27 11:01:11 - [MESSAGE][NOT_RUN] - NOT_RUN: click(findTestObject("ME/span_Contact name"), STOP_ON_FAILURE)
+
+2019-11-27 11:01:11 - [TEST_STEP][NOT_RUN] - setText(findTestObject(contactName), "Ivanka Petrova"): NOT_RUN: setText(findTestObject(contactName), "Ivanka Petrova")
+
+2019-11-27 11:01:11 - [MESSAGE][NOT_RUN] - NOT_RUN: setText(findTestObject(contactName), "Ivanka Petrova")
+
+2019-11-27 11:01:11 - [TEST_STEP][NOT_RUN] - sendKeys(findTestObject(contactName), Keys.chord(ENTER)): NOT_RUN: sendKeys(findTestObject(contactName), Keys.chord(ENTER))
+
+2019-11-27 11:01:11 - [MESSAGE][NOT_RUN] - NOT_RUN: sendKeys(findTestObject(contactName), Keys.chord(ENTER))
+
+2019-11-27 11:01:11 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/select_Meeting"), findTestData("DropDowns").getValue(2, 1), false): All options with value 'Meeting' are selected in object 'Object Repository/ME/select_Meeting' 
+
+2019-11-27 11:01:12 - [MESSAGE][PASSED] - All options with value 'Meeting' are selected in object 'Object Repository/ME/select_Meeting' 
+
+2019-11-27 11:01:12 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/select_Deal"), findTestData("DropDowns").getValue(3, 1), false): All options with value 'New Deal' are selected in object 'Object Repository/ME/select_Deal' 
+
+2019-11-27 11:01:13 - [MESSAGE][PASSED] - All options with value 'New Deal' are selected in object 'Object Repository/ME/select_Deal' 
+
+2019-11-27 11:01:13 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/select_Location"), findTestData("DropDowns").getValue(4, 1), false): All options with value 'Own Office' are selected in object 'Object Repository/ME/select_Location' 
+
+2019-11-27 11:01:14 - [MESSAGE][PASSED] - All options with value 'Own Office' are selected in object 'Object Repository/ME/select_Location' 
+
+2019-11-27 11:01:14 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/select_Opportunity"), findTestData("DropDowns").getValue(5, 1), false): All options with value 'High' are selected in object 'Object Repository/ME/select_Opportunity' 
+
+2019-11-27 11:01:15 - [MESSAGE][PASSED] - All options with value 'High' are selected in object 'Object Repository/ME/select_Opportunity' 
+
+2019-11-27 11:01:15 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/select_Purpose"), findTestData("DropDowns").getValue(6, 1), false): All options with value 'Offer' are selected in object 'Object Repository/ME/select_Purpose' 
+
+2019-11-27 11:01:16 - [MESSAGE][PASSED] - All options with value 'Offer' are selected in object 'Object Repository/ME/select_Purpose' 
+
+2019-11-27 11:01:16 - [TEST_STEP][PASSED] - dateNow = dates.DateGenerate.date(): dates.DateGenerate.date is PASSED
+
+2019-11-27 11:01:16 - [MESSAGE][PASSED] - dates.DateGenerate.date is PASSED
+
+2019-11-27 11:01:16 - [TEST_STEP][PASSED] - setText(findTestObject("ME/DatePick/input_Meeting date"), dateNow): Text '2019-11-27' is set on object 'Object Repository/ME/DatePick/input_Meeting date'
+
+2019-11-27 11:01:17 - [MESSAGE][PASSED] - Text '2019-11-27' is set on object 'Object Repository/ME/DatePick/input_Meeting date'
+
+2019-11-27 11:01:17 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("ME/Client Products/span_Client interested in products"), 5): Object 'Object Repository/ME/Client Products/span_Client interested in products' is visible
+
+2019-11-27 11:01:18 - [MESSAGE][PASSED] - Object 'Object Repository/ME/Client Products/span_Client interested in products' is visible
+
+2019-11-27 11:01:18 - [TEST_STEP][PASSED] - setText(findTestObject("ME/Client Products/input_Quantty"), "10"): Text '10' is set on object 'Object Repository/ME/Client Products/input_Quantty'
+
+2019-11-27 11:01:18 - [MESSAGE][PASSED] - Text '10' is set on object 'Object Repository/ME/Client Products/input_Quantty'
+
+2019-11-27 11:01:18 - [TEST_STEP][PASSED] - click(findTestObject("ME/Client Products/span_Select material")): Object: 'Object Repository/ME/Client Products/span_Select material' is clicked on
+
+2019-11-27 11:01:19 - [MESSAGE][PASSED] - Object: 'Object Repository/ME/Client Products/span_Select material' is clicked on
+
+2019-11-27 11:01:19 - [TEST_STEP][PASSED] - setText(findTestObject(materialSelect), materials_noID): Text 'EM Sauvignon Blanc PDO Nova Zagora ' is set on object 'Object Repository/ME/Client Products/input_Materials'
+
+2019-11-27 11:01:21 - [MESSAGE][PASSED] - Text 'EM Sauvignon Blanc PDO Nova Zagora ' is set on object 'Object Repository/ME/Client Products/input_Materials'
+
+2019-11-27 11:01:21 - [TEST_STEP][PASSED] - sendKeys(findTestObject(materialSelect), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/ME/Client Products/input_Materials'
+
+2019-11-27 11:01:22 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/ME/Client Products/input_Materials'
+
+2019-11-27 11:01:22 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("ME/Client Products/select_DealTypeForMaterial"), findTestData("DropDowns").getValue(7, 1), false): All options with value 'Sale' are selected in object 'Object Repository/ME/Client Products/select_DealTypeForMaterial' 
+
+2019-11-27 11:01:23 - [MESSAGE][PASSED] - All options with value 'Sale' are selected in object 'Object Repository/ME/Client Products/select_DealTypeForMaterial' 
+
+2019-11-27 11:01:23 - [TEST_STEP][PASSED] - setText(findTestObject("ME/textarea_Comment"), "This is made by AUTOMATION"): Text 'This is made by AUTOMATION' is set on object 'Object Repository/ME/textarea_Comment'
+
+2019-11-27 11:01:25 - [MESSAGE][PASSED] - Text 'This is made by AUTOMATION' is set on object 'Object Repository/ME/textarea_Comment'
+
+2019-11-27 11:01:25 - [TEST_STEP][PASSED] - scrollToElement(findTestObject(meetingButton), 20): Scroll to object 'Object Repository/ME/button_Create Offer' successfully
+
+2019-11-27 11:01:25 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/ME/button_Create Offer' successfully
+
+2019-11-27 11:01:25 - [TEST_STEP][PASSED] - click(findTestObject(meetingButton)): Object: 'Object Repository/ME/button_Create Offer' is clicked on
+
+2019-11-27 11:01:26 - [MESSAGE][PASSED] - Object: 'Object Repository/ME/button_Create Offer' is clicked on
+
+2019-11-27 11:01:26 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(pathWait), 20): Object 'Object Repository//Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:01:27 - [MESSAGE][PASSED] - Object 'Object Repository//Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:01:27 - [TEST_STEP][PASSED] - scrollToPosition(0, 0): Browser is scrolled to position x = 0, y = 0
+
+2019-11-27 11:01:27 - [MESSAGE][PASSED] - Browser is scrolled to position x = 0, y = 0]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW/SD FLOW IDless/OF Payment/SD FLOW_OF_50Advance_4Installments" time="28.574" classname="Test Cases/SD FLOW/SD FLOW IDless/OF Payment/SD FLOW_OF_50Advance_4Installments" status="PASSED">
+         <system-out><![CDATA[2019-11-27 11:01:27 - [TEST_CASE][PASSED] - Test Cases/SD FLOW/SD FLOW IDless/OF Payment/SD FLOW_OF_50Advance_4Installments: Test Cases/SD FLOW/SD FLOW IDless/OF Payment/SD FLOW_OF_50Advance_4Installments
+
+2019-11-27 11:01:27 - [TEST_STEP][PASSED] - waitLoad = "Waiters/WaitLoadingAnim_Element": null
+
+2019-11-27 11:01:27 - [TEST_STEP][PASSED] - waitFirstButton = "Waiters/WaitButton_Element": null
+
+2019-11-27 11:01:27 - [TEST_STEP][PASSED] - waitOpen = "OF/Status Open/input_Sale Offer_Open": null
+
+2019-11-27 11:01:27 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:01:28 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:01:28 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitFirstButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-27 11:01:34 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-27 11:01:34 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW.offer(): linkers.Link_SD_FLOW.offer is PASSED
+
+2019-11-27 11:01:36 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW.offer is PASSED
+
+2019-11-27 11:01:36 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:01:39 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:01:39 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitOpen), 20): Object 'Object Repository/OF/Status Open/input_Sale Offer_Open' is visible
+
+2019-11-27 11:01:39 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Open/input_Sale Offer_Open' is visible
+
+2019-11-27 11:01:39 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject(waitOpen), 20): Object 'Object Repository/OF/Status Open/input_Sale Offer_Open' is clickable
+
+2019-11-27 11:01:40 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status Open/input_Sale Offer_Open' is clickable
+
+2019-11-27 11:01:40 - [TEST_STEP][PASSED] - click(findTestObject(waitOpen)): Object: 'Object Repository/OF/Status Open/input_Sale Offer_Open' is clicked on
+
+2019-11-27 11:01:41 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status Open/input_Sale Offer_Open' is clicked on
+
+2019-11-27 11:01:41 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:01:42 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:01:42 - [TEST_STEP][PASSED] - date = dates.DateGenerate.dateWeek(): dates.DateGenerate.dateWeek is PASSED
+
+2019-11-27 11:01:42 - [MESSAGE][PASSED] - dates.DateGenerate.dateWeek is PASSED
+
+2019-11-27 11:01:42 - [TEST_STEP][PASSED] - sendKeys(findTestObject("OF/Status In Progress/input_Offer Validity_Date"), date): Keys '2019-12-04' sent to object: 'Object Repository/OF/Status In Progress/input_Offer Validity_Date'
+
+2019-11-27 11:01:43 - [MESSAGE][PASSED] - Keys '2019-12-04' sent to object: 'Object Repository/OF/Status In Progress/input_Offer Validity_Date'
+
+2019-11-27 11:01:43 - [TEST_STEP][NOT_RUN] - sendKeys(findTestObject("OF/Status In Progress/input_Discount"), ""): NOT_RUN: sendKeys(findTestObject("OF/Status In Progress/input_Discount"), "")
+
+2019-11-27 11:01:43 - [MESSAGE][NOT_RUN] - NOT_RUN: sendKeys(findTestObject("OF/Status In Progress/input_Discount"), "")
+
+2019-11-27 11:01:43 - [TEST_STEP][PASSED] - sendKeys(findTestObject("OF/Status In Progress/input_Advance - Pay"), "50"): Keys '50' sent to object: 'Object Repository/OF/Status In Progress/input_Advance - Pay'
+
+2019-11-27 11:01:43 - [MESSAGE][PASSED] - Keys '50' sent to object: 'Object Repository/OF/Status In Progress/input_Advance - Pay'
+
+2019-11-27 11:01:43 - [TEST_STEP][PASSED] - dateAdvance = dates.DateGenerate.dateWeek(): dates.DateGenerate.dateWeek is PASSED
+
+2019-11-27 11:01:43 - [MESSAGE][PASSED] - dates.DateGenerate.dateWeek is PASSED
+
+2019-11-27 11:01:43 - [TEST_STEP][PASSED] - sendKeys(findTestObject("OF/Status In Progress/input_First Advance Payment (deadline)"), dateAdvance): Keys '2019-12-04' sent to object: 'Object Repository/OF/Status In Progress/input_First Advance Payment (deadline)'
+
+2019-11-27 11:01:44 - [MESSAGE][PASSED] - Keys '2019-12-04' sent to object: 'Object Repository/OF/Status In Progress/input_First Advance Payment (deadline)'
+
+2019-11-27 11:01:44 - [TEST_STEP][PASSED] - selectOptionByIndex(findTestObject("OF/Status In Progress/select_Installments"), 5): All options with index in [5] are selected on object 'Object Repository/OF/Status In Progress/select_Installments'
+
+2019-11-27 11:01:46 - [MESSAGE][PASSED] - All options with index in [5] are selected on object 'Object Repository/OF/Status In Progress/select_Installments'
+
+2019-11-27 11:01:46 - [TEST_STEP][NOT_RUN] - sendKeys(findTestObject("OF/Status In Progress/input_Interest"), ""): NOT_RUN: sendKeys(findTestObject("OF/Status In Progress/input_Interest"), "")
+
+2019-11-27 11:01:46 - [MESSAGE][NOT_RUN] - NOT_RUN: sendKeys(findTestObject("OF/Status In Progress/input_Interest"), "")
+
+2019-11-27 11:01:46 - [TEST_STEP][PASSED] - click(findTestObject("OF/Status In Progress/Calculate")): Object: 'Object Repository/OF/Status In Progress/Calculate' is clicked on
+
+2019-11-27 11:01:47 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status In Progress/Calculate' is clicked on
+
+2019-11-27 11:01:47 - [TEST_STEP][PASSED] - checkers.RadioButton.OwnCompany(): checkers.RadioButton.OwnCompany is PASSED
+
+2019-11-27 11:01:48 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/OF/Status In Progress/Radio buttons/span_Own Companies' are matched.
+
+2019-11-27 11:01:49 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status In Progress/Radio buttons/input_Own Companies' is checked
+
+2019-11-27 11:01:49 - [MESSAGE][PASSED] - checkers.RadioButton.OwnCompany is PASSED
+
+2019-11-27 11:01:49 - [TEST_STEP][PASSED] - selectOptionByIndex(findTestObject("OF/Status In Progress/select_Company"), 1): All options with index in [1] are selected on object 'Object Repository/OF/Status In Progress/select_Company'
+
+2019-11-27 11:01:50 - [MESSAGE][PASSED] - All options with index in [1] are selected on object 'Object Repository/OF/Status In Progress/select_Company'
+
+2019-11-27 11:01:50 - [TEST_STEP][PASSED] - checkers.RadioButton.Warehouse(): checkers.RadioButton.Warehouse is PASSED
+
+2019-11-27 11:01:51 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/OF/Status In Progress/Radio buttons/span_Warehouse' are matched.
+
+2019-11-27 11:01:52 - [MESSAGE][PASSED] - Object 'Object Repository/OF/Status In Progress/Radio buttons/input_Warehouse' is checked
+
+2019-11-27 11:01:52 - [MESSAGE][PASSED] - checkers.RadioButton.Warehouse is PASSED
+
+2019-11-27 11:01:52 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("OF/Status In Progress/Warehouse/select_Warehouse"), warehouse, false): All options with value '6' are selected in object 'Object Repository/OF/Status In Progress/Warehouse/select_Warehouse' 
+
+2019-11-27 11:01:52 - [MESSAGE][PASSED] - All options with value '6' are selected in object 'Object Repository/OF/Status In Progress/Warehouse/select_Warehouse' 
+
+2019-11-27 11:01:52 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("OF/input_Sale Offer"), 5): Scroll to object 'Object Repository/OF/input_Sale Offer' successfully
+
+2019-11-27 11:01:53 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/OF/input_Sale Offer' successfully
+
+2019-11-27 11:01:53 - [TEST_STEP][PASSED] - click(findTestObject("OF/input_Sale Offer")): Object: 'Object Repository/OF/input_Sale Offer' is clicked on
+
+2019-11-27 11:01:54 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/input_Sale Offer' is clicked on
+
+2019-11-27 11:01:54 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:01:56 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW/SD FLOW IDless/SD FLOW_OF_Archive" time="6.555" classname="Test Cases/SD FLOW/SD FLOW IDless/SD FLOW_OF_Archive" status="PASSED">
+         <system-out><![CDATA[2019-11-27 11:01:56 - [TEST_CASE][PASSED] - Test Cases/SD FLOW/SD FLOW IDless/SD FLOW_OF_Archive: Test Cases/SD FLOW/SD FLOW IDless/SD FLOW_OF_Archive
+
+2019-11-27 11:01:56 - [TEST_STEP][PASSED] - waitLoad = "Waiters/WaitLoadingAnim_Element": null
+
+2019-11-27 11:01:56 - [TEST_STEP][PASSED] - waitButton = "Waiters/WaitButton_Element": null
+
+2019-11-27 11:01:56 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:01:57 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:01:57 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-27 11:01:58 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitButton_Element' is visible
+
+2019-11-27 11:01:58 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW.offer(): linkers.Link_SD_FLOW.offer is PASSED
+
+2019-11-27 11:02:00 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW.offer is PASSED
+
+2019-11-27 11:02:00 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:02:02 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:02:02 - [TEST_STEP][PASSED] - click(findTestObject("OF/Status Archiving/input_Sale_Offer_Close")): Object: 'Object Repository/OF/Status Archiving/input_Sale_Offer_Close' is clicked on
+
+2019-11-27 11:02:02 - [MESSAGE][PASSED] - Object: 'Object Repository/OF/Status Archiving/input_Sale_Offer_Close' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/SD FLOW/SD FLOW IDless/SD FLOW_BR__BI" time="29.603" classname="Test Cases/SD FLOW/SD FLOW IDless/SD FLOW_BR__BI" status="PASSED">
+         <system-out><![CDATA[2019-11-27 11:02:02 - [TEST_CASE][PASSED] - Test Cases/SD FLOW/SD FLOW IDless/SD FLOW_BR__BI: Test Cases/SD FLOW/SD FLOW IDless/SD FLOW_BR__BI
+
+2019-11-27 11:02:03 - [TEST_STEP][PASSED] - waitLoad = "Waiters/WaitLoadingAnim_Element": null
+
+2019-11-27 11:02:03 - [TEST_STEP][PASSED] - waitButton = "Waiters/WaitBRButton_Element": null
+
+2019-11-27 11:02:03 - [TEST_STEP][PASSED] - driver = getWebDriver(): null
+
+2019-11-27 11:02:03 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:02:05 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:02:05 - [TEST_STEP][PASSED] - navigateToUrl("http://web7.egt-bg.ro:7955/?#!/sales_department/billing"): Navigate to 'http://web7.egt-bg.ro:7955/?#!/sales_department/billing' successfully
+
+2019-11-27 11:02:05 - [MESSAGE][PASSED] - Navigate to 'http://web7.egt-bg.ro:7955/?#!/sales_department/billing' successfully
+
+2019-11-27 11:02:05 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:02:07 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:02:07 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject(waitButton), 20): Object 'Object Repository/Waiters/WaitBRButton_Element' is visible
+
+2019-11-27 11:02:08 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitBRButton_Element' is visible
+
+2019-11-27 11:02:08 - [TEST_STEP][PASSED] - linkers.Link_SD_FLOW.billing_request(): linkers.Link_SD_FLOW.billing_request is PASSED
+
+2019-11-27 11:02:11 - [MESSAGE][PASSED] - linkers.Link_SD_FLOW.billing_request is PASSED
+
+2019-11-27 11:02:11 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20, CONTINUE_ON_FAILURE): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:02:12 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:02:12 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Waiters/WaitBRCheckbox_Element"), 20): Object 'Object Repository/Waiters/WaitBRCheckbox_Element' is visible
+
+2019-11-27 11:02:13 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitBRCheckbox_Element' is visible
+
+2019-11-27 11:02:13 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("BR/select_Generate Billing"), findTestData("DropDowns").getValue(8, 1), false): All options with label 'Generate Billing' are selected in object 'Object Repository/BR/select_Generate Billing' 
+
+2019-11-27 11:02:14 - [MESSAGE][PASSED] - All options with label 'Generate Billing' are selected in object 'Object Repository/BR/select_Generate Billing' 
+
+2019-11-27 11:02:14 - [TEST_STEP][PASSED] - click(findTestObject("BR/input_InProgress")): Object: 'Object Repository/BR/input_InProgress' is clicked on
+
+2019-11-27 11:02:15 - [MESSAGE][PASSED] - Object: 'Object Repository/BR/input_InProgress' is clicked on
+
+2019-11-27 11:02:15 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:02:17 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:02:17 - [TEST_STEP][PASSED] - setText(findTestObject("BI/input__form_invoiceNR"), String.valueOf(Math.abs(Random().nextInt() % 9999) + 1)): Text '9984' is set on object 'Object Repository/BI/input__form_invoiceNR'
+
+2019-11-27 11:02:18 - [MESSAGE][PASSED] - Text '9984' is set on object 'Object Repository/BI/input__form_invoiceNR'
+
+2019-11-27 11:02:18 - [TEST_STEP][PASSED] - dateNow = dates.DateGenerate.date(): dates.DateGenerate.date is PASSED
+
+2019-11-27 11:02:18 - [MESSAGE][PASSED] - dates.DateGenerate.date is PASSED
+
+2019-11-27 11:02:18 - [TEST_STEP][PASSED] - setText(findTestObject("BI/input__form_DATE"), dateNow): Text '2019-11-27' is set on object 'Object Repository/BI/input__form_DATE'
+
+2019-11-27 11:02:20 - [MESSAGE][PASSED] - Text '2019-11-27' is set on object 'Object Repository/BI/input__form_DATE'
+
+2019-11-27 11:02:20 - [TEST_STEP][PASSED] - setText(findTestObject("BI/input_Payment Due Date (first month)"), dateNow, CONTINUE_ON_FAILURE): Text '2019-11-27' is set on object 'Object Repository/BI/input_Payment Due Date (first month)'
+
+2019-11-27 11:02:21 - [MESSAGE][PASSED] - Text '2019-11-27' is set on object 'Object Repository/BI/input_Payment Due Date (first month)'
+
+2019-11-27 11:02:21 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("BI/select_incomeType"), "Sales Incomes", false): All options with label 'Sales Incomes' are selected in object 'Object Repository/BI/select_incomeType' 
+
+2019-11-27 11:02:22 - [MESSAGE][PASSED] - All options with label 'Sales Incomes' are selected in object 'Object Repository/BI/select_incomeType' 
+
+2019-11-27 11:02:22 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("BI/select_transactionDetails"), "Advance Sales", false): All options with label 'Advance Sales' are selected in object 'Object Repository/BI/select_transactionDetails' 
+
+2019-11-27 11:02:23 - [MESSAGE][PASSED] - All options with label 'Advance Sales' are selected in object 'Object Repository/BI/select_transactionDetails' 
+
+2019-11-27 11:02:23 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("BI/select_cashBox"), "ING Bank", false): All options with label 'ING Bank' are selected in object 'Object Repository/BI/select_cashBox' 
+
+2019-11-27 11:02:24 - [MESSAGE][PASSED] - All options with label 'ING Bank' are selected in object 'Object Repository/BI/select_cashBox' 
+
+2019-11-27 11:02:24 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("BI/select_documentType"), "Receipt", false): All options with label 'Receipt' are selected in object 'Object Repository/BI/select_documentType' 
+
+2019-11-27 11:02:25 - [MESSAGE][PASSED] - All options with label 'Receipt' are selected in object 'Object Repository/BI/select_documentType' 
+
+2019-11-27 11:02:25 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("BI/select_paymentMethod"), "Bank Transfer", false): All options with label 'Bank Transfer' are selected in object 'Object Repository/BI/select_paymentMethod' 
+
+2019-11-27 11:02:26 - [MESSAGE][PASSED] - All options with label 'Bank Transfer' are selected in object 'Object Repository/BI/select_paymentMethod' 
+
+2019-11-27 11:02:26 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("BI/select_accountingDivision"), "Sales Romania Division", false): All options with label 'Sales Romania Division' are selected in object 'Object Repository/BI/select_accountingDivision' 
+
+2019-11-27 11:02:27 - [MESSAGE][PASSED] - All options with label 'Sales Romania Division' are selected in object 'Object Repository/BI/select_accountingDivision' 
+
+2019-11-27 11:02:27 - [TEST_STEP][PASSED] - click(findTestObject("BI/input_Billing")): Object: 'Object Repository/BI/input_Billing' is clicked on
+
+2019-11-27 11:02:27 - [MESSAGE][PASSED] - Object: 'Object Repository/BI/input_Billing' is clicked on
+
+2019-11-27 11:02:27 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:02:29 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:02:29 - [TEST_STEP][PASSED] - navigateToUrl("http://web7.egt-bg.ro:7955/?#!/main_dashboard"): Navigate to 'http://web7.egt-bg.ro:7955/?#!/main_dashboard' successfully
+
+2019-11-27 11:02:29 - [MESSAGE][PASSED] - Navigate to 'http://web7.egt-bg.ro:7955/?#!/main_dashboard' successfully
+
+2019-11-27 11:02:29 - [TEST_STEP][PASSED] - waitForElementNotVisible(findTestObject(waitLoad), 20): Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible
+
+2019-11-27 11:02:32 - [MESSAGE][PASSED] - Object 'Object Repository/Waiters/WaitLoadingAnim_Element' is NOT visible]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-11-27 11:00:38 - [TEST_SUITE][PASSED] - SD Flow ME-GR IDless: Test Cases/SD FLOW/SD FLOW IDless/SD FLOW_BR__BI]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

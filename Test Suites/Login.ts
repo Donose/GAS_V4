@@ -30,6 +30,18 @@
          <value>Links</value>
          <variableId>bcde9f71-3495-49f6-a85c-d105464074e2</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b3a1d02b-4320-448e-8e38-ed91be63f952</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4c9e890d-c538-4b36-9e57-7c11f7376e5f</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>bdde2724-746f-47c2-8ed4-09a0b5bc32fe</guid>

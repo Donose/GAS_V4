@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MSN_Administrative</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dd7f395c-a335-41eb-9fa7-477121dcabdb</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('Clients').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>e53998af-0933-4a69-bdcf-3448197e7a46</id>
+      <masked>false</masked>
+      <name>client</name>
+   </variable>
+</TestCaseEntity>

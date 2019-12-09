@@ -6,10 +6,24 @@
    <comment></comment>
    <testCaseGuid>3d2771ad-8a76-4066-b2c5-72d378b5474f</testCaseGuid>
    <variable>
-      <defaultValue>'http://web7.egt-bg.ro:7955/?#!/'</defaultValue>
+      <defaultValue>findTestData('Servers').getValue(1, 1)</defaultValue>
       <description></description>
       <id>bcde9f71-3495-49f6-a85c-d105464074e2</id>
       <masked>false</masked>
       <name>server</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Accounts (1)').getValue(2, 1)</defaultValue>
+      <description></description>
+      <id>b3a1d02b-4320-448e-8e38-ed91be63f952</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Accounts (1)').getValue(3, 1)</defaultValue>
+      <description></description>
+      <id>4c9e890d-c538-4b36-9e57-7c11f7376e5f</id>
+      <masked>false</masked>
+      <name>password</name>
    </variable>
 </TestCaseEntity>

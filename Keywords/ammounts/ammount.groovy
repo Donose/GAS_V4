@@ -12,8 +12,14 @@ public class ammount {
 	def multiple_materials_me(){
 		WebDriver driver = DriverFactory.getWebDriver()
 		WebElement plus = driver.findElement(By.xpath("//button[@ng-click = 'templateController.addProduct()' and (text() = '+' or . = '+')]"))
-		for(int i = 0;i=3;i++){
-       plus.click()
-		}
+		WebElement quantity = driver.findElement(By.xpath("//*[@type = 'text' and @ng-model = 'product.quantity']"))
+		List<WebElement> input_quantity = quantity.findElements(By.tagName('tr'))
+		int complete_quantity = input_quantity.size
+       for(int i = 0;i<3;i++){
+			plus.click()
+			}
+	   for (int a=0;a<3;a++){
+		   quantity(complete_quantity).sendKeys("5")
+	   }
 	}
 }
